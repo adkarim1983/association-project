@@ -1,0 +1,782 @@
+import logo from '../assets/logo.png'; // logo
+
+function Navbar() {
+  return (
+    <header className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
+      <div className="container mx-auto px-6 py-3">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="bg-white p-2 rounded-full shadow-md">
+              <img src={logo || "/placeholder.svg"} alt="Logo Association Najm" className="h-12 w-auto" />
+            </div>
+            <span className="text-xl font-bold tracking-wider">Association Najm</span>
+          </div>
+          
+          {/* Navigation */}
+          <nav className="hidden md:block">
+            <ul className="flex space-x-1">
+              <li className="group">
+                <a href="#accueil" className="inline-block px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">
+                  Accueil
+                </a>
+                <div className="h-1 w-0 bg-yellow-400 group-hover:w-full transition-all duration-300 mx-auto mt-1 rounded-full"></div>
+              </li>
+              
+              <li className="group">
+                <a href="#À propos de nous" className="inline-block px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">
+                  À propos
+                </a>
+                <div className="h-1 w-0 bg-yellow-400 group-hover:w-full transition-all duration-300 mx-auto mt-1 rounded-full"></div>
+              </li>
+              
+              {/* Activité avec menu déroulant */}
+              <li className="group relative">
+                <a href="#Activité" className="inline-block px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300 flex items-center">
+                  Activité
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-4 w-4 ml-1 group-hover:rotate-180 transition-transform duration-300" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </a>
+                <div className="h-1 w-0 bg-yellow-400 group-hover:w-full transition-all duration-300 mx-auto mt-1 rounded-full"></div>
+                
+                {/* Menu déroulant */}
+                <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50">
+                  <div className="py-2 bg-white rounded-xl shadow-xl border-t-4 border-yellow-400">
+                    <a 
+                      href="#test1" 
+                      className="block px-6 py-3 text-indigo-700 hover:bg-indigo-50 transition-colors duration-200 flex items-center"
+                    >
+                      <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                      Test 1
+                    </a>
+                    <a 
+                      href="#test2" 
+                      className="block px-6 py-3 text-indigo-700 hover:bg-indigo-50 transition-colors duration-200 flex items-center"
+                    >
+                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                      Test 2
+                    </a>
+                    <a 
+                      href="#test3" 
+                      className="block px-6 py-3 text-indigo-700 hover:bg-indigo-50 transition-colors duration-200 flex items-center"
+                    >
+                      <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
+                      Test 3
+                    </a>
+                  </div>
+                </div>
+              </li>
+              
+              <li className="group">
+                <a href="#Projets soutenus" className="inline-block px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">
+                  Projets
+                </a>
+                <div className="h-1 w-0 bg-yellow-400 group-hover:w-full transition-all duration-300 mx-auto mt-1 rounded-full"></div>
+              </li>
+              
+              <li className="group">
+                <a href="#Nos Formations" className="inline-block px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">
+                  Formations
+                </a>
+                <div className="h-1 w-0 bg-yellow-400 group-hover:w-full transition-all duration-300 mx-auto mt-1 rounded-full"></div>
+              </li>
+              
+              <li>
+                <a href="#contact" className="inline-block px-6 py-2 bg-yellow-400 text-indigo-800 font-medium rounded-full hover:bg-yellow-300 transition-colors duration-300 ml-2 shadow-md">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button className="p-2 rounded-full hover:bg-white/10 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+export default Navbar;
+---------------------------------------------------------------------------------------------------
+mot du PDG/////
+
+import { useState } from "react";
+
+export default function PresidentMessage() {
+    const [visible, setVisible] = useState(false);
+
+    return (
+        <section
+            className="bg-gray-100 py-4 px-6 text-center"
+            onMouseEnter={() => setVisible(true)}
+            onMouseLeave={() => setVisible(false)}
+        >
+            <h2
+                className="text-3xl font-bold text-blue-800 cursor-pointer transition-transform duration-300 hover:scale-105"
+                onClick={() => setVisible(!visible)}
+            >
+                Mot du Président Directeur Général
+            </h2>
+
+            {visible && (
+                <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-20 transition-opacity duration-500">
+                    <img
+                        src="https://associationnajm.ma/wp-content/uploads/2024/12/pres-1536x1337.jpg"
+                        alt="Président"
+                        className="w-80 h-80 object-cover rounded-full shadow-lg"
+                    />
+                    <p className="text-lg text-gray-700 max-w-xl text-justify">
+                        Monsieur Hassan Rizk, président de l’Association Najm, souhaite la bienvenue sur la plateforme de l’association, qui reflète son engagement pour l’insertion économique et professionnelle des jeunes.
+
+                        L’association croit fermement que les jeunes sont les moteurs du changement et que leur accompagnement est essentiel pour un développement durable. Elle s'appuie sur des valeurs comme le respect, la transparence, l’égalité et la confiance, tout en nouant des partenariats locaux et internationaux.
+
+                        Son objectif est de devenir une plateforme de référence pour guider, former et inspirer les jeunes, afin qu’ils deviennent des acteurs du développement et des leaders du futur.</p>
+                        <br />
+                </div>
+            )}
+        </section>
+    );
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+code pour la section Apropos de Nous/////////////////////////////////////////
+  import organigramme from "../assets/organigramme.png";
+
+import image16 from '../assets/image16.png';
+import image17 from '../assets/image17.png';
+import image18 from '../assets/image18.png';
+import image19 from '../assets/image19.png';
+import image20 from '../assets/image20.png';
+import image21 from '../assets/image21.png';
+import image22 from '../assets/image22.png';
+import image23 from '../assets/image23.png';
+import image24 from '../assets/image24.png';
+import image25 from '../assets/image25.png';
+import image26 from '../assets/image26.png';
+import image27 from '../assets/image27.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+
+
+const membres = [
+  {
+    nom: "Amine Moutassim",
+    statut: "Directieur Operationnel",
+    image: image16,
+    telephone: "0671 710 091",
+    email: "fatima.bennani@example.com",
+  },
+  {
+    nom: "Sanaa Bouadel",
+    statut: "Assistante administrative",
+    image: image17,
+    telephone: "0671 711 080",
+    email: "contact@eerchad.ma",
+  },
+  {
+    nom: "Khadija Kurdawi",
+    statut: " Adjointe administrative",
+    image: image18,
+    telephone: "0671 711 940",
+    email: "assistante.eerchad@gmail.com",
+  },
+  {
+    nom: "Abdul Razzaq Arbah",
+    statut: "Employé administratif",
+    image: image19,
+    telephone: "0671 710 091",
+    email: "assistant.eerchad@gmail.com",
+  },
+  {
+    nom: "Zahra Balasi",
+    statut: "Coordinatrice du projet",
+    image: image20,
+    telephone: "0671 710 091",
+    email: "Coordination.eerchad@gmail.com",
+  },
+  {
+    nom: "Siham Ghazali",
+    statut: "Coordinatrice du projet",
+    image: image21,
+    telephone: "0671 710 098",
+    email: "coordinatrice.eerchad@example.com",
+  },
+  {
+    nom: "Shaima Attar",
+    statut: "Consultante en orientation et en conseil",
+    image: image22,
+    telephone: "0671 710 052",
+    email: "Conseillère.eerchad@example.com",
+  },
+  {
+    nom: "Ayyoub Laghlali",
+    statut: " formateur et superviseur en soft skills",
+    image: image23,
+    telephone: "0671 710 000",
+    email: "formateur.eerchad@example.com",
+  },
+  {
+    nom: "Muhammad Amin Abi Al-Surur",
+    statut: "responsable du suivi sur le terrain",
+    image: image24,
+    telephone: "0671 464 664",
+    email: "accompagnateur.eerchad@example.com",
+  },
+  {
+    nom: "Hana Dahman",
+    statut: "Formatrice dans le domaine de l'entrepreneuriat",
+    image: image25,
+    telephone: "0671 710 093",
+    email: "Formateuse.eerchad@example.com",
+  },
+  {
+    nom: "Yousra Hashoum",
+    statut: " responsable du suivi Administratif.",
+    image: image26,
+    telephone: "0671 710 058",
+    email: "Accompagnatrice.eerchad@example.com",
+  },
+  {
+    nom: "Mohsen Haimoud",
+    statut: "conseiller en orientation",
+    image: image27,
+    telephone: "0671 707 272",
+    email: "Conseiller.eerchad@example.com",
+  },
+  
+];
+export default function ValeursEtPrincipes() {
+    const valeurs = [
+        {
+            titre: "Respect",
+            couleur: "bg-blue-600",
+            texte:
+                "L’association accorde une grande importance à l’établissement de relations humaines solides, fondées sur l’estime mutuelle. Elle reconnaît la valeur de chaque individu, notamment les jeunes, comme partenaires essentiels du développement.",
+            icone: "🤝",
+        },
+        {
+            titre: "Transparence",
+            couleur: "bg-yellow-400 text-black",
+            texte:
+                "La transparence garantit la clarté et la crédibilité de nos actions. L’association maintient une communication ouverte avec les jeunes et les partenaires afin de renforcer la confiance et la compréhension.",
+            icone: "✌️",
+        },
+        {
+            titre: "Confiance",
+            couleur: "bg-purple-700",
+            texte:
+                "La confiance est essentielle pour une coopération durable. L’association accompagne les jeunes avec bienveillance afin de leur permettre d’atteindre leurs objectifs avec assurance.",
+            icone: "✅",
+        },
+        {
+            titre: "Égalité",
+            couleur: "bg-green-500",
+            texte:
+                "L’égalité des chances entre tous les individus est un principe fondamental dans le travail de l’association. Elle s’engage à offrir un environnement inclusif permettant aux jeunes, quels que soient leurs milieux sociaux ou culturels, d’accéder aux opportunités qui les aident à réaliser leur potentiel et à contribuer au développement durable.",
+            icone: "⚖️",
+        },
+        {
+            titre: "Dignité",
+            couleur: "bg-red-500",
+            texte:
+                "L’association place la préservation de la dignité humaine au cœur de son action en respectant les droits des jeunes et en valorisant leur participation à la société de manière respectueuse de leur valeur et de leur potentiel. Elle s’efforce de créer un environnement favorable qui permet aux jeunes de participer activement au développement socio-économique tout en préservant leur dignité.",
+            icone: "🌟",
+        },
+        {
+            titre: "Engagement",
+            couleur: "bg-orange-500",
+            texte:
+                "L’engagement envers la responsabilité est la pierre angulaire du succès de l’association dans la réalisation de ses objectifs. L’association œuvre avec efficacité et intégrité à concevoir et mettre en œuvre des initiatives visant à l’autonomisation économique et sociale des jeunes, tout en assurant un suivi rigoureux pour garantir l’atteinte des résultats escomptés.",
+            icone: "💪",
+        },
+        {
+            titre: "Citoyenneté",
+            couleur: "bg-teal-500",
+            texte:
+                "L’association considère les jeunes comme une force motrice du développement économique et social. Elle s’efforce de renforcer leur sentiment d’appartenance en les impliquant dans des projets au service de la nation, contribuant ainsi à ancrer les valeurs d’une citoyenneté active et à favoriser une renaissance durable.",
+            icone: "🌍",
+        },
+    ];
+
+    return (
+        <>
+            <section className="bg-white py-16 px-6">
+                <div className="max-w-5xl mx-auto text-center mb-12">
+                    <h2 className="text-3xl font-bold text-blue-800 mb-6">
+                        Objectifs de l’Association Najm
+                    </h2>
+                    <div className="text-gray-700 text-lg leading-relaxed text-justify space-y-6">
+                        <p>
+                            L’Association Najm aspire à faire de la plateforme Irchad une référence de premier plan en matière d’inclusion économique des jeunes, tout en s’inscrivant dans l’esprit de l’Initiative Nationale pour le Développement Humain.
+                        </p>
+                        <p>
+                            L’association vise à faire de cette plateforme un espace de convergence pour les différents programmes destinés à la jeunesse, en vue d’en faire un modèle offrant informations et orientation, répondant ainsi aux aspirations des jeunes et contribuant à la réalisation de leurs ambitions.
+                        </p>
+                        <p>
+                            Elle se concentre sur la création d’un environnement de travail propice à l’inclusion économique des jeunes, en concluant des accords et des partenariats avec des institutions et organismes nationaux et internationaux issus des secteurs académique, économique et de la société civile.
+                        </p>
+                        <p>
+                            L’association adopte une bonne gouvernance fondée sur la compétence, en mettant en place des mécanismes transparents et souples de prise de décision, incluant l’élaboration d’un manuel de procédures complet pour les opérations administratives et financières, dans le but d’obtenir le statut d’utilité publique et de renforcer la confiance dans son action.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="py-16 px-6 bg-gray-100">
+                <h2 className="text-center text-3xl font-bold text-gray-800 mb-12">
+                    Valeurs et Principes de l’Association
+                </h2>
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    {valeurs.map((valeur, index) => (
+                        <div
+                            key={index}
+                            className={`rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 ${valeur.couleur} animate-fadeIn`}
+                        >
+                            <div className="flex justify-center mb-4">
+                                <div className="text-4xl w-16 h-16 flex items-center justify-center rounded-full bg-white text-black shadow">
+                                    {valeur.icone}
+                                </div>
+                            </div>
+                            <h3 className="text-xl font-bold text-center mb-3">{valeur.titre}</h3>
+                            <p className="text-sm text-justify leading-relaxed">{valeur.texte}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <section className="bg-white py-16 px-6">
+                <div className="max-w-5xl mx-auto text-center mb-12">
+                    <h2 className="text-3xl font-bold text-blue-800 mb-6">
+                        Vision stratégique de l’Association
+                    </h2>
+
+                    <div className="text-gray-700 text-lg leading-relaxed text-justify space-y-6">
+                        <p>
+                            L’Association Najm pour l’inclusion économique des jeunes vise à :
+                        </p>
+                        <p>
+                            <strong>Autonomiser les jeunes et renforcer leurs capacités :</strong> en développant leurs compétences pour favoriser leur intégration dans le marché du travail, à travers des programmes de formation spécialisés visant à améliorer leur performance professionnelle et à répondre aux exigences du marché.
+                        </p>
+                        <p>
+                            <strong>Mettre en valeur les talents et compétences individuelles :</strong> l’association identifie les potentiels cachés des jeunes et œuvre à les faire émerger pour favoriser leur excellence et les valoriser dans leur parcours professionnel et économique.
+                        </p>
+                        <p>
+                            <strong>Améliorer l’employabilité :</strong> elle propose des programmes de formation complets pour doter les jeunes des compétences nécessaires à une insertion professionnelle efficace et confiante, augmentant ainsi leurs chances d’embauche.
+                        </p>
+                        <p>
+                            <strong>Encourager l’esprit entrepreneurial et soutenir la création de projets :</strong> elle promeut l’esprit d’initiative et d’entrepreneuriat chez les jeunes, en leur offrant accompagnement, encadrement, appui technique et financier pour concrétiser leurs idées de projet.
+                        </p>
+                        <p>
+                            <strong>Soutenir l’économie sociale et solidaire :</strong> l’association favorise les initiatives collectives et coopératives contribuant au développement local durable et à la réponse aux défis socioéconomiques.
+                        </p>
+                        <p>
+                            <strong>Construire des partenariats et des réseaux :</strong> elle établit des partenariats solides avec les institutions nationales et internationales, ainsi que les secteurs public et privé, afin de multiplier les opportunités de collaboration et d’échange d’expériences.
+                        </p>
+                        <p>
+                            <strong>Ancrer les valeurs de citoyenneté et de volontariat :</strong> l’association diffuse les valeurs citoyennes auprès des jeunes et encourage leur engagement dans des actions volontaires, favorisant ainsi leur participation active à la vie sociale et le développement de leur sens des responsabilités.
+                        </p>
+                        <p>
+                            <strong>Contribuer au développement durable :</strong> elle crée un environnement stimulant qui encourage la créativité et l’implication des jeunes dans l’atteinte des objectifs du développement durable à l’échelle locale et nationale.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="bg-white py-16 px-6">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-blue-800 mb-10">
+          Organigramme de l’Association
+        </h2>
+        <img
+          src={organigramme}
+          alt="Organigramme de l’association"
+          className="mx-auto max-w-full h-auto rounded shadow"
+        />
+      </div>
+    </section>
+
+     <section className="bg-gray-100 py-16 px-6">
+      <div className="max-w-7xl mx-auto text-center mb-12">
+        <h2 className="text-3xl font-bold text-blue-800">Équipe de l’Association</h2>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        {membres.map((membre, index) => (
+          <div key={index} className="bg-white rounded-lg border shadow-md overflow-hidden">
+            <img
+              src={membre.image}
+              alt={membre.nom}
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-4 text-left space-y-2">
+              <h3 className="text-xl font-semibold text-gray-800">{membre.nom}</h3>
+              <p className="text-blue-600 font-medium">{membre.statut}</p>
+              <p className="text-sm text-gray-600">
+                   <FontAwesomeIcon icon={faPhone} className="text-blue-500 mr-2" />
+
+                 {membre.telephone}</p>
+              <p className="text-sm text-gray-600">📧 {membre.email}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+
+
+
+
+        </>
+    );
+}
+/////////////////////////////////////////////////////////// code about us complet////////////////
+
+
+import organigramme from "../assets/organigramme.png";
+
+import image16 from '../assets/image16.png';
+import image17 from '../assets/image17.png';
+import image18 from '../assets/image18.png';
+import image19 from '../assets/image19.png';
+import image20 from '../assets/image20.png';
+import image21 from '../assets/image21.png';
+import image22 from '../assets/image22.png';
+import image23 from '../assets/image23.png';
+import image24 from '../assets/image24.png';
+import image25 from '../assets/image25.png';
+import image26 from '../assets/image26.png';
+import image27 from '../assets/image27.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+
+
+const membres = [
+  {
+    nom: "Amine Moutassim",
+    statut: "Directieur Operationnel",
+    image: image16,
+    telephone: "0671 710 091",
+    email: "fatima.bennani@example.com",
+  },
+  {
+    nom: "Sanaa Bouadel",
+    statut: "Assistante administrative",
+    image: image17,
+    telephone: "0671 711 080",
+    email: "contact@eerchad.ma",
+  },
+  {
+    nom: "Khadija Kurdawi",
+    statut: " Adjointe administrative",
+    image: image18,
+    telephone: "0671 711 940",
+    email: "assistante.eerchad@gmail.com",
+  },
+  {
+    nom: "Abdul Razzaq Arbah",
+    statut: "Employé administratif",
+    image: image19,
+    telephone: "0671 710 091",
+    email: "assistant.eerchad@gmail.com",
+  },
+  {
+    nom: "Zahra Balasi",
+    statut: "Coordinatrice du projet",
+    image: image20,
+    telephone: "0671 710 091",
+    email: "Coordination.eerchad@gmail.com",
+  },
+  {
+    nom: "Siham Ghazali",
+    statut: "Coordinatrice du projet",
+    image: image21,
+    telephone: "0671 710 098",
+    email: "coordinatrice.eerchad@example.com",
+  },
+  {
+    nom: "Shaima Attar",
+    statut: "Consultante en orientation et en conseil",
+    image: image22,
+    telephone: "0671 710 052",
+    email: "Conseillère.eerchad@example.com",
+  },
+  {
+    nom: "Ayyoub Laghlali",
+    statut: " formateur et superviseur en soft skills",
+    image: image23,
+    telephone: "0671 710 000",
+    email: "formateur.eerchad@example.com",
+  },
+  {
+    nom: "Muhammad Amin Abi Al-Surur",
+    statut: "responsable du suivi sur le terrain",
+    image: image24,
+    telephone: "0671 464 664",
+    email: "accompagnateur.eerchad@example.com",
+  },
+  {
+    nom: "Hana Dahman",
+    statut: "Formatrice dans le domaine de l'entrepreneuriat",
+    image: image25,
+    telephone: "0671 710 093",
+    email: "Formateuse.eerchad@example.com",
+  },
+  {
+    nom: "Yousra Hashoum",
+    statut: " responsable du suivi Administratif.",
+    image: image26,
+    telephone: "0671 710 058",
+    email: "Accompagnatrice.eerchad@example.com",
+  },
+  {
+    nom: "Mohsen Haimoud",
+    statut: "conseiller en orientation",
+    image: image27,
+    telephone: "0671 707 272",
+    email: "Conseiller.eerchad@example.com",
+  },
+  
+];
+export default function ValeursEtPrincipes() {
+    const valeurs = [
+        {
+            titre: "Respect",
+            couleur: "bg-blue-600",
+            texte:
+                "L’association accorde une grande importance à l’établissement de relations humaines solides, fondées sur l’estime mutuelle. Elle reconnaît la valeur de chaque individu, notamment les jeunes, comme partenaires essentiels du développement.",
+            icone: "🤝",
+        },
+        {
+            titre: "Transparence",
+            couleur: "bg-yellow-400 text-black",
+            texte:
+                "La transparence garantit la clarté et la crédibilité de nos actions. L’association maintient une communication ouverte avec les jeunes et les partenaires afin de renforcer la confiance et la compréhension.",
+            icone: "✌️",
+        },
+        {
+            titre: "Confiance",
+            couleur: "bg-purple-700",
+            texte:
+                "La confiance est essentielle pour une coopération durable. L’association accompagne les jeunes avec bienveillance afin de leur permettre d’atteindre leurs objectifs avec assurance.",
+            icone: "✅",
+        },
+        {
+            titre: "Égalité",
+            couleur: "bg-green-500",
+            texte:
+                "L’égalité des chances entre tous les individus est un principe fondamental dans le travail de l’association. Elle s’engage à offrir un environnement inclusif permettant aux jeunes, quels que soient leurs milieux sociaux ou culturels, d’accéder aux opportunités qui les aident à réaliser leur potentiel et à contribuer au développement durable.",
+            icone: "⚖️",
+        },
+        {
+            titre: "Dignité",
+            couleur: "bg-red-500",
+            texte:
+                "L’association place la préservation de la dignité humaine au cœur de son action en respectant les droits des jeunes et en valorisant leur participation à la société de manière respectueuse de leur valeur et de leur potentiel. Elle s’efforce de créer un environnement favorable qui permet aux jeunes de participer activement au développement socio-économique tout en préservant leur dignité.",
+            icone: "🌟",
+        },
+        {
+            titre: "Engagement",
+            couleur: "bg-orange-500",
+            texte:
+                "L’engagement envers la responsabilité est la pierre angulaire du succès de l’association dans la réalisation de ses objectifs. L’association œuvre avec efficacité et intégrité à concevoir et mettre en œuvre des initiatives visant à l’autonomisation économique et sociale des jeunes, tout en assurant un suivi rigoureux pour garantir l’atteinte des résultats escomptés.",
+            icone: "💪",
+        },
+        {
+            titre: "Citoyenneté",
+            couleur: "bg-teal-500",
+            texte:
+                "L’association considère les jeunes comme une force motrice du développement économique et social. Elle s’efforce de renforcer leur sentiment d’appartenance en les impliquant dans des projets au service de la nation, contribuant ainsi à ancrer les valeurs d’une citoyenneté active et à favoriser une renaissance durable.",
+            icone: "🌍",
+        },
+    ];
+
+    return (
+        <>
+            <section className="bg-white py-16 px-6">
+                <div className="max-w-5xl mx-auto text-center mb-12">
+                    <h2 className="text-3xl font-bold text-blue-800 mb-6">
+                        Objectifs de l’Association Najm
+                    </h2>
+                    <div className="text-gray-700 text-lg leading-relaxed text-justify space-y-6">
+                        <p>
+                            L’Association Najm aspire à faire de la plateforme Irchad une référence de premier plan en matière d’inclusion économique des jeunes, tout en s’inscrivant dans l’esprit de l’Initiative Nationale pour le Développement Humain.
+                        </p>
+                        <p>
+                            L’association vise à faire de cette plateforme un espace de convergence pour les différents programmes destinés à la jeunesse, en vue d’en faire un modèle offrant informations et orientation, répondant ainsi aux aspirations des jeunes et contribuant à la réalisation de leurs ambitions.
+                        </p>
+                        <p>
+                            Elle se concentre sur la création d’un environnement de travail propice à l’inclusion économique des jeunes, en concluant des accords et des partenariats avec des institutions et organismes nationaux et internationaux issus des secteurs académique, économique et de la société civile.
+                        </p>
+                        <p>
+                            L’association adopte une bonne gouvernance fondée sur la compétence, en mettant en place des mécanismes transparents et souples de prise de décision, incluant l’élaboration d’un manuel de procédures complet pour les opérations administratives et financières, dans le but d’obtenir le statut d’utilité publique et de renforcer la confiance dans son action.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="py-16 px-6 bg-gray-100">
+                <h2 className="text-center text-3xl font-bold text-gray-800 mb-12">
+                    Valeurs et Principes de l’Association
+                </h2>
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    {valeurs.map((valeur, index) => (
+                        <div
+                            key={index}
+                            className={`rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 ${valeur.couleur} animate-fadeIn`}
+                        >
+                            <div className="flex justify-center mb-4">
+                                <div className="text-4xl w-16 h-16 flex items-center justify-center rounded-full bg-white text-black shadow">
+                                    {valeur.icone}
+                                </div>
+                            </div>
+                            <h3 className="text-xl font-bold text-center mb-3">{valeur.titre}</h3>
+                            <p className="text-sm text-justify leading-relaxed">{valeur.texte}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <section className="bg-white py-16 px-6">
+                <div className="max-w-5xl mx-auto text-center mb-12">
+                    <h2 className="text-3xl font-bold text-blue-800 mb-6">
+                        Vision stratégique de l’Association
+                    </h2>
+
+                    <div className="text-gray-700 text-lg leading-relaxed text-justify space-y-6">
+                        <p>
+                            L’Association Najm pour l’inclusion économique des jeunes vise à :
+                        </p>
+                        <p>
+                            <strong>Autonomiser les jeunes et renforcer leurs capacités :</strong> en développant leurs compétences pour favoriser leur intégration dans le marché du travail, à travers des programmes de formation spécialisés visant à améliorer leur performance professionnelle et à répondre aux exigences du marché.
+                        </p>
+                        <p>
+                            <strong>Mettre en valeur les talents et compétences individuelles :</strong> l’association identifie les potentiels cachés des jeunes et œuvre à les faire émerger pour favoriser leur excellence et les valoriser dans leur parcours professionnel et économique.
+                        </p>
+                        <p>
+                            <strong>Améliorer l’employabilité :</strong> elle propose des programmes de formation complets pour doter les jeunes des compétences nécessaires à une insertion professionnelle efficace et confiante, augmentant ainsi leurs chances d’embauche.
+                        </p>
+                        <p>
+                            <strong>Encourager l’esprit entrepreneurial et soutenir la création de projets :</strong> elle promeut l’esprit d’initiative et d’entrepreneuriat chez les jeunes, en leur offrant accompagnement, encadrement, appui technique et financier pour concrétiser leurs idées de projet.
+                        </p>
+                        <p>
+                            <strong>Soutenir l’économie sociale et solidaire :</strong> l’association favorise les initiatives collectives et coopératives contribuant au développement local durable et à la réponse aux défis socioéconomiques.
+                        </p>
+                        <p>
+                            <strong>Construire des partenariats et des réseaux :</strong> elle établit des partenariats solides avec les institutions nationales et internationales, ainsi que les secteurs public et privé, afin de multiplier les opportunités de collaboration et d’échange d’expériences.
+                        </p>
+                        <p>
+                            <strong>Ancrer les valeurs de citoyenneté et de volontariat :</strong> l’association diffuse les valeurs citoyennes auprès des jeunes et encourage leur engagement dans des actions volontaires, favorisant ainsi leur participation active à la vie sociale et le développement de leur sens des responsabilités.
+                        </p>
+                        <p>
+                            <strong>Contribuer au développement durable :</strong> elle crée un environnement stimulant qui encourage la créativité et l’implication des jeunes dans l’atteinte des objectifs du développement durable à l’échelle locale et nationale.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="bg-white py-16 px-6">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-blue-800 mb-10">
+          Organigramme de l’Association
+        </h2>
+        <img
+          src={organigramme}
+          alt="Organigramme de l’association"
+          className="mx-auto max-w-full h-auto rounded shadow"
+        />
+      </div>
+    </section>
+
+     <section className="bg-gray-100 py-16 px-6">
+  <div className="max-w-7xl mx-auto text-center mb-12">
+    <h2 className="text-3xl font-bold text-blue-800">Équipe de l’Association</h2>
+  </div>
+
+  <div className="overflow-hidden">
+    <div className="flex animate-scroll gap-6 px-4">
+      {membres.concat(membres).map((membre, index) => (
+        <div
+          key={index}
+          className="flex-shrink-0 w-72 bg-white rounded-lg border shadow-md overflow-hidden hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src={membre.image}
+            alt={membre.nom}
+            className="w-full h-52 object-cover"
+          />
+          <div className="p-4 text-left space-y-2">
+            <h3 className="text-xl font-semibold text-gray-800">{membre.nom}</h3>
+            <p className="text-blue-600 font-medium">{membre.statut}</p>
+            <p className="text-sm text-gray-600">
+              <FontAwesomeIcon icon={faPhone} className="text-blue-500 mr-2" />
+              {membre.telephone}
+            </p>
+            <p className="text-sm text-gray-600">
+              <FontAwesomeIcon icon={faEnvelope} className="text-blue-500 mr-2" />
+              {membre.email}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+  
+
+
+
+
+
+        </>
+    );
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+code  Presentations.jsx
+
+import React from "react";
+import image1 from "../assets/image1.jpg"; // voir d autres images
+
+function Presentation() {
+  return (
+    <section className="bg-white py-16 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div className="md:w-1/2">
+          <img
+            src={image1}
+            alt="Activité Najm"
+            className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-700"
+          />
+        </div>
+        <div className="md:w-1/2 text-gray-800">
+          <h2 className="text-3xl font-bold mb-4">Qui sommes-nous ?</h2>
+          <p className="text-lg leading-relaxed">
+            L’Association Najm est une organisation à but non lucratif qui vise
+            à soutenir les jeunes, les enfants et les familles à travers des actions
+            éducatives, culturelles et sociales. Elle s'engage activement pour
+            promouvoir la solidarité, l'égalité des chances et le développement local.
+             L’Association Najm est une organisation à but non lucratif qui vise
+            à soutenir les jeunes, les enfants et les familles à travers des actions
+            éducatives, culturelles et sociales. Elle s'engage activement pour
+            promouvoir la solidarité, l'égalité des chances et le développement local.
+            
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Presentation;
+
+
+
+// version originale du code,,,
