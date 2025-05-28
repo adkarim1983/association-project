@@ -5,13 +5,13 @@ export default function Activities() {
 
   const scrollRight = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 350, behavior: "smooth" });
+      scrollRef.current.scrollBy({ left: 500, behavior: "smooth" });
     }
   };
 
   const scrollLeft = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
+      scrollRef.current.scrollBy({ left: -500, behavior: "smooth" });
     }
   };
 
@@ -70,12 +70,9 @@ export default function Activities() {
   ];
 
   return (
-    <section id="activites" className="py-24 bg-white">
+    <section id="activites" className="pt-8 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <span className="text-amber-500 font-semibold uppercase tracking-wider">
-            Ce que nous faisons
-          </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mt-2 mb-4">
             Nos activités
           </h2>
@@ -105,12 +102,12 @@ export default function Activities() {
           {/* Carrousel horizontal */}
           <div
             ref={scrollRef}
-            className="flex overflow-x-auto space-x-6 px-12 scroll-smooth scrollbar-hide"
+            className="flex overflow-x-auto space-x-6 mx-40 scroll-smooth scrollbar-hide gap-6"
           >
             {activities.map((activity, index) => (
               <div
                 key={index}
-                className="min-w-[340px] bg-white border border-slate-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="min-w-[340px] mb-8 bg-white border border-slate-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="bg-amber-50 p-4 inline-flex rounded-2xl mb-6">
                   <svg

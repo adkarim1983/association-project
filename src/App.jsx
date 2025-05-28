@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Projet from './pages/Projet';
 import ListingLocationPage from "./pages/ListingLocationPage";
 import PageProjet from "./pages/PageProjet"; // 👈 importer la page test
+import Axe from './pages/Axe';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="project" element={<Projet/>} />
           <Route path="about-us" element={<AboutUs/>} />
           <Route path="*" element={<h1>Page not found</h1>} />
+          <Route path="axe" element={<Axe/>} />
 
           <Route path="/" element={<ListingLocationPage />} />
       <Route path="/projet/:id" element={<PageProjet />} /> {/* 👈 route test */}

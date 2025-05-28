@@ -16,20 +16,24 @@ const partners = [
   { id: 4, name: "", image: image7, link: "https://www.entraide.ma/" },
   { id: 5, name: "", image: image8, link: "https://www.amideast.org/morocco" },
   { id: 6, name: "", image: image9, link: "https://moulayrachid.casablancacity.ma/fr" },
-  { id: 7, name: "", image: image10, link:"https://enactus-morocco.org/" },
-  { id: 8, name: "", image: image11, link:"https://www.odco.gov.ma/" },
-  { id: 9, name: "", image: image12, link:"https://carcs.ma/" },
- 
+  { id: 7, name: "", image: image10, link: "https://enactus-morocco.org/" },
+  { id: 8, name: "", image: image11, link: "https://www.odco.gov.ma/" },
+  { id: 9, name: "", image: image12, link: "https://carcs.ma/" },
+
 ];
 
 export default function Partners() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-5 text-gray-800">
           Nos partenaires
         </h2>
-
+        <p className="text-center max-w-3xl mx-auto text-gray-700 text-lg">
+          Nous collaborons avec des partenaires stratégiques tels que l'ANAPEC, Amideast, l’OFPPT et d'autres, afin de fournir des opportunités de formation, d’orientation et d’insertion professionnelle, ce qui contribue à construire un avenir prometteur pour les jeunes et à renforcer le développement communautaire.
+        </p>
+          <br />
+          <br />
         <div className="overflow-hidden">
           <div className="flex animate-scroll gap-8">
             {partners.concat(partners).map((partner, index) => (

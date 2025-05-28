@@ -287,6 +287,78 @@ export default function ValeursEtPrincipes() {
                 </div>
             </section>
 
+            <div className="mt-16 mb-6 border-t pt-10 max-w-4xl mx-auto px-4">
+  <h2 className="text-2xl md:text-3xl font-bold text-indigo-700 text-center mb-8">
+    Foire aux questions (FAQ)
+  </h2>
+
+  <div className="space-y-4">
+    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+        Comment puis-je rejoindre l’association ?
+      </summary>
+      <p className="mt-2 text-gray-600">
+        Vous pouvez nous contacter via le formulaire de contact ou venir directement à notre siège à Moulay Rachid – Sidi Othmane.
+      </p>
+    </details>
+
+    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+        Est-ce que vous accompagnez les jeunes porteurs de projets ?
+      </summary>
+      <p className="mt-2 text-gray-600">
+        Oui, nos plateformes Irchad offrent un accompagnement personnalisé pour structurer, financer et lancer les projets des jeunes.
+      </p>
+    </details>
+
+    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+        Les formations sont-elles gratuites ?
+      </summary>
+      <p className="mt-2 text-gray-600">
+        Toutes nos formations proposées sont gratuites grâce au soutien de nos partenaires institutionnels.
+      </p>
+    </details>
+
+    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+        Puis-je bénéficier d’un financement pour mon projet ?
+      </summary>
+      <p className="mt-2 text-gray-600">
+        Oui, certains projets peuvent bénéficier de soutien financier après évaluation, notamment dans le cadre de l’Initiative Nationale pour le Développement Humain.
+      </p>
+    </details>
+
+    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+        Quels types de projets soutenez-vous ?
+      </summary>
+      <p className="mt-2 text-gray-600">
+        Nous soutenons principalement les projets à fort impact social ou économique : coopératives, auto-entrepreneuriat, initiatives communautaires.
+      </p>
+    </details>
+
+    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+        Qui peut bénéficier de vos services ?
+      </summary>
+      <p className="mt-2 text-gray-600">
+        Tout jeune âgé de 18 à 35 ans, résidant dans la région de Moulay Rachid – Sidi Othmane, ayant une idée ou un projet à développer.
+      </p>
+    </details>
+
+    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+        Comment se déroule l’accompagnement ?
+      </summary>
+      <p className="mt-2 text-gray-600">
+        Après une première rencontre, nous établissons un plan d'accompagnement qui inclut des formations, des sessions de coaching, et un suivi personnalisé.
+      </p>
+    </details>
+  </div>
+</div>
+
+
 
 
         

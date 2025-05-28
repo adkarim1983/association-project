@@ -3,8 +3,8 @@ import image1 from "../assets/image1.jpg"; // voir d autres images
 
 function Presentation() {
   return (
-    <section className="bg-white py-16 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <section className="bg-white py-16 ">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:justify-between">
         <div className="md:w-1/2">
           <img
             src={image1}

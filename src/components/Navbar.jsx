@@ -76,10 +76,10 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a href="#Axes d’intervention" className="relative group">
-                <span className="hover:text-blue-600">Axes d’intervention</span>
+              <Link to="/Axe" className="relative group">
+                <span className="hover:text-blue-600">Axe d'intervention</span>
                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/project" className="relative group">
