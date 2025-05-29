@@ -15,8 +15,13 @@ import image27 from '../assets/image27.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-
-
+import confiance from "../assets/confiance.png";
+import affichage from "../assets/affichage.png";
+import respect from "../assets/respect.png";
+import egalite from "../assets/egalite.png";
+import dignite from "../assets/dignite.png";
+import engagement from "../assets/engagement.png";
+import citoyennete from "../assets/citoyennete.png";
 
 const membres = [
     {
@@ -109,52 +114,52 @@ export default function ValeursEtPrincipes() {
     const valeurs = [
         {
             titre: "Respect",
-            couleur: "bg-blue-600",
+            couleur: "bg-[#072ac8]",
             texte:
                 "L’association accorde une grande importance à l’établissement de relations humaines solides, fondées sur l’estime mutuelle. Elle reconnaît la valeur de chaque individu, notamment les jeunes, comme partenaires essentiels du développement.",
-            icone: "🤝",
+            image: respect,
         },
         {
             titre: "Transparence",
-            couleur: "bg-yellow-400 text-black",
+            couleur: "bg-[#5465ff]",
             texte:
                 "La transparence garantit la clarté et la crédibilité de nos actions. L’association maintient une communication ouverte avec les jeunes et les partenaires afin de renforcer la confiance et la compréhension.",
-            icone: "✌️",
+            image: affichage,
         },
         {
             titre: "Confiance",
-            couleur: "bg-purple-700",
+            couleur: "bg-[#5863f8]",
             texte:
                 "La confiance est essentielle pour une coopération durable. L’association accompagne les jeunes avec bienveillance afin de leur permettre d’atteindre leurs objectifs avec assurance.",
-            icone: "✅",
+            image: confiance,
         },
         {
             titre: "Égalité",
-            couleur: "bg-green-500",
+            couleur: "bg-[#072ac8]",
             texte:
                 "L’égalité des chances entre tous les individus est un principe fondamental dans le travail de l’association. Elle s’engage à offrir un environnement inclusif permettant aux jeunes, quels que soient leurs milieux sociaux ou culturels, d’accéder aux opportunités qui les aident à réaliser leur potentiel et à contribuer au développement durable.",
-            icone: "⚖️",
+            image: egalite,
         },
         {
             titre: "Dignité",
-            couleur: "bg-red-500",
+            couleur: "bg-[#5465ff]",
             texte:
                 "L’association place la préservation de la dignité humaine au cœur de son action en respectant les droits des jeunes et en valorisant leur participation à la société de manière respectueuse de leur valeur et de leur potentiel. Elle s’efforce de créer un environnement favorable qui permet aux jeunes de participer activement au développement socio-économique tout en préservant leur dignité.",
-            icone: "🌟",
+            image: dignite,
         },
         {
             titre: "Engagement",
-            couleur: "bg-orange-500",
+            couleur: "bg-[#5465ff]",
             texte:
                 "L’engagement envers la responsabilité est la pierre angulaire du succès de l’association dans la réalisation de ses objectifs. L’association œuvre avec efficacité et intégrité à concevoir et mettre en œuvre des initiatives visant à l’autonomisation économique et sociale des jeunes, tout en assurant un suivi rigoureux pour garantir l’atteinte des résultats escomptés.",
-            icone: "💪",
+            image: engagement,
         },
         {
             titre: "Citoyenneté",
-            couleur: "bg-teal-500",
+            couleur: "bg-[#072ac8]",
             texte:
                 "L’association considère les jeunes comme une force motrice du développement économique et social. Elle s’efforce de renforcer leur sentiment d’appartenance en les impliquant dans des projets au service de la nation, contribuant ainsi à ancrer les valeurs d’une citoyenneté active et à favoriser une renaissance durable.",
-            icone: "🌍",
+            image: citoyennete,
         },
     ];
 
@@ -182,27 +187,40 @@ export default function ValeursEtPrincipes() {
                 </div>
             </section>
             <section className="py-16 px-6 bg-gray-100">
-                <h2 className="text-center text-3xl font-bold text-gray-800 mb-12">
+                <h2 className="text-center text-3xl font-bold text-blue-800 mb-12">
                     Valeurs et Principes de l’Association
                 </h2>
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+                <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     {valeurs.map((valeur, index) => (
                         <div
                             key={index}
-                            className={`rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 ${valeur.couleur} animate-fadeIn`}
+                            className="group perspective w-80 h-64 cursor-pointer"
                         >
-                            <div className="flex justify-center mb-4">
-                                <div className="text-4xl w-16 h-16 flex items-center justify-center rounded-full bg-white text-black shadow">
-                                    {valeur.icone}
+                            <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+
+                                {/* Face avant titre */}
+                                <div className={`absolute w-full h-full ${valeur.couleur} text-white rounded-xl shadow-xl px-6 py-10 flex flex-col items-center justify-center backface-hidden`}>
+                                    <img
+                                        src={valeur.image}
+                                        alt={valeur.titre}
+                                        className="w-20 h-20 rounded-full bg-white p-1 mb-4 shadow-md object-cover"
+                                    />
+                                    <h3 className="text-2xl font-semibold text-center tracking-wide">{valeur.titre}</h3>
+                                </div>
+
+                                {/* Face arriere paragraphe */}
+                                <div className="absolute w-full h-full bg-white text-gray-800 rounded-xl shadow-xl p-6 rotate-y-180 backface-hidden overflow-auto flex items-center justify-center">
+                                    <p className="text-sm leading-relaxed text-center">{valeur.texte}</p>
                                 </div>
                             </div>
-                            <h3 className="text-xl font-bold text-center mb-3">{valeur.titre}</h3>
-                            <p className="text-sm text-justify leading-relaxed">{valeur.texte}</p>
                         </div>
+
                     ))}
                 </div>
             </section>
-            <section className="bg-white py-16 px-6">
+
+            <section className="bg-white pt-10 px-6">
                 <div className="max-w-5xl mx-auto text-center mb-12">
                     <h2 className="text-3xl font-bold text-blue-800 mb-6">
                         Vision stratégique de l’Association
@@ -239,7 +257,7 @@ export default function ValeursEtPrincipes() {
                     </div>
                 </div>
             </section>
-            <section className="bg-white py-16 px-6">
+            <section className="bg-white pb-10 px-6">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl font-bold text-blue-800 mb-10">
                         Organigramme de l’Association
@@ -252,13 +270,13 @@ export default function ValeursEtPrincipes() {
                 </div>
             </section>
 
-            <section className="bg-gray-100 py-16 px-6">
+            <section className="bg-gray-100 py-12 px-6">
                 <div className="max-w-7xl mx-auto text-center mb-12">
                     <h2 className="text-3xl font-bold text-blue-800">Équipe de l’Association</h2>
                 </div>
 
                 <div className="overflow-hidden">
-                    <div className="flex animate-scroll gap-6 px-4">
+                    <div className="flex animate-scroll gap-6 px-4 my-4" >
                         {membres.concat(membres).map((membre, index) => (
                             <div
                                 key={index}
@@ -288,82 +306,82 @@ export default function ValeursEtPrincipes() {
             </section>
 
             <div className="mt-16 mb-6 border-t pt-10 max-w-4xl mx-auto px-4">
-  <h2 className="text-2xl md:text-3xl font-bold text-indigo-700 text-center mb-8">
-    Foire aux questions (FAQ)
-  </h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-indigo-700 text-center mb-8">
+                    Foire aux questions (FAQ)
+                </h2>
 
-  <div className="space-y-4">
-    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
-        Comment puis-je rejoindre l’association ?
-      </summary>
-      <p className="mt-2 text-gray-600">
-        Vous pouvez nous contacter via le formulaire de contact ou venir directement à notre siège à Moulay Rachid – Sidi Othmane.
-      </p>
-    </details>
+                <div className="space-y-4">
+                    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+                            Comment puis-je rejoindre l’association ?
+                        </summary>
+                        <p className="mt-2 text-gray-600">
+                            Vous pouvez nous contacter via le formulaire de contact ou venir directement à notre siège à Moulay Rachid – Sidi Othmane.
+                        </p>
+                    </details>
 
-    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
-        Est-ce que vous accompagnez les jeunes porteurs de projets ?
-      </summary>
-      <p className="mt-2 text-gray-600">
-        Oui, nos plateformes Irchad offrent un accompagnement personnalisé pour structurer, financer et lancer les projets des jeunes.
-      </p>
-    </details>
+                    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+                            Est-ce que vous accompagnez les jeunes porteurs de projets ?
+                        </summary>
+                        <p className="mt-2 text-gray-600">
+                            Oui, nos plateformes Irchad offrent un accompagnement personnalisé pour structurer, financer et lancer les projets des jeunes.
+                        </p>
+                    </details>
 
-    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
-        Les formations sont-elles gratuites ?
-      </summary>
-      <p className="mt-2 text-gray-600">
-        Toutes nos formations proposées sont gratuites grâce au soutien de nos partenaires institutionnels.
-      </p>
-    </details>
+                    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+                            Les formations sont-elles gratuites ?
+                        </summary>
+                        <p className="mt-2 text-gray-600">
+                            Toutes nos formations proposées sont gratuites grâce au soutien de nos partenaires institutionnels.
+                        </p>
+                    </details>
 
-    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
-        Puis-je bénéficier d’un financement pour mon projet ?
-      </summary>
-      <p className="mt-2 text-gray-600">
-        Oui, certains projets peuvent bénéficier de soutien financier après évaluation, notamment dans le cadre de l’Initiative Nationale pour le Développement Humain.
-      </p>
-    </details>
+                    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+                            Puis-je bénéficier d’un financement pour mon projet ?
+                        </summary>
+                        <p className="mt-2 text-gray-600">
+                            Oui, certains projets peuvent bénéficier de soutien financier après évaluation, notamment dans le cadre de l’Initiative Nationale pour le Développement Humain.
+                        </p>
+                    </details>
 
-    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
-        Quels types de projets soutenez-vous ?
-      </summary>
-      <p className="mt-2 text-gray-600">
-        Nous soutenons principalement les projets à fort impact social ou économique : coopératives, auto-entrepreneuriat, initiatives communautaires.
-      </p>
-    </details>
+                    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+                            Quels types de projets soutenez-vous ?
+                        </summary>
+                        <p className="mt-2 text-gray-600">
+                            Nous soutenons principalement les projets à fort impact social ou économique : coopératives, auto-entrepreneuriat, initiatives communautaires.
+                        </p>
+                    </details>
 
-    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
-        Qui peut bénéficier de vos services ?
-      </summary>
-      <p className="mt-2 text-gray-600">
-        Tout jeune âgé de 18 à 35 ans, résidant dans la région de Moulay Rachid – Sidi Othmane, ayant une idée ou un projet à développer.
-      </p>
-    </details>
+                    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+                            Qui peut bénéficier de vos services ?
+                        </summary>
+                        <p className="mt-2 text-gray-600">
+                            Tout jeune âgé de 18 à 35 ans, résidant dans la région de Moulay Rachid – Sidi Othmane, ayant une idée ou un projet à développer.
+                        </p>
+                    </details>
 
-    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-      <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
-        Comment se déroule l’accompagnement ?
-      </summary>
-      <p className="mt-2 text-gray-600">
-        Après une première rencontre, nous établissons un plan d'accompagnement qui inclut des formations, des sessions de coaching, et un suivi personnalisé.
-      </p>
-    </details>
-  </div>
-</div>
-
-
+                    <details className="group p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <summary className="cursor-pointer font-medium text-gray-800 group-open:text-indigo-700">
+                            Comment se déroule l’accompagnement ?
+                        </summary>
+                        <p className="mt-2 text-gray-600">
+                            Après une première rencontre, nous établissons un plan d'accompagnement qui inclut des formations, des sessions de coaching, et un suivi personnalisé.
+                        </p>
+                    </details>
+                </div>
+            </div>
 
 
-        
-              
-            
+
+
+
+
+
 
 
 

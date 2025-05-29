@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { Link } from "react-router-dom";
+import CarteProjets from "../components/CarteProjets";
+
 
 // Exemple de données projets (vraies données fictives)
 const projects = [
@@ -36,8 +38,8 @@ const projects = [
     name: "Pixel Prod",
     category: "Design",
     location: "Sidi Othmane",
-    lat: 33.61,
-    lng: -7.54,
+    lat: 33.5747295,
+    lng: -7.5524299,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image55.png",
   },
   {
@@ -200,6 +202,8 @@ export default function ListingLocationPage() {
   });
 
   return (
+      <>  
+    
     <LoadScript googleMapsApiKey="YOUR_API_KEY_HERE">
       <section className="py-16 px-4 bg-gray-50 min-h-screen">
         <h1 className="text-4xl font-bold text-center text-blue-800 mb-10">
@@ -234,7 +238,7 @@ export default function ListingLocationPage() {
           ))}
         </div>
 
-        {/* Cartes des projets */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
             <div
@@ -265,5 +269,7 @@ export default function ListingLocationPage() {
         </div>
       </section>
     </LoadScript>
+     <CarteProjets projets={filteredProjects} />
+    </>
   );
 }

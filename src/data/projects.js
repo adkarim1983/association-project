@@ -77,8 +77,8 @@ const projects = [
     name: "Baha Happye Park",
     category: "Événementiel",
     location: "Sidi Othmane",
-    lat: 33.6005,
-    lng: -7.5306,
+    lat: 33.5747295,
+    lng: -7.5524299,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image56-375x530.png",
     descriptionSections: [
       {
@@ -335,8 +335,8 @@ const projects = [
     name: "Snack Yacout",
     category: "Restauration",
     location: "Sidi Othmane",
-    lat: 33.6005,
-    lng: -7.5306,
+     lat: 33.6102,
+  lng: -7.5401,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image30.jpg",
     "descriptionSections": [
       {
@@ -737,22 +737,6 @@ const projects = [
 },
 
 
-
-
-
-
- 
-
-
-
-
-
-
-
 ];
-
-
-
-
 
 export default projects;
