@@ -1,6 +1,22 @@
 import { useParams } from "react-router-dom";
 import projects from "../data/projects";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
+
+
+
 
 export default function PageProjet() {
   const { id } = useParams();
@@ -29,17 +45,23 @@ export default function PageProjet() {
         ))}
       </div>
 
-      <div className="w-full h-[350px] mt-12 rounded-lg overflow-hidden border border-gray-200">
-        <iframe
-            title="Carte - Faculté des Lettres et des Sciences Humaines Ben M'sik"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13314.647347481883!2d-7.5382!3d33.56227!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d3f6b07b8c99%3A0x651db1e6a01f8c1b!2sFacult%C3%A9%20des%20Lettres%20et%20des%20Sciences%20Humaines%20Ben%20M'sik!5e0!3m2!1sfr!2sma!4v1716143000000!5m2!1sfr!2sma"
-            width="100%"
-            height="100%"
-            allowFullScreen=""
-            loading="lazy"
-            style={{ border: 0 }}
-          ></iframe>
+           <div className="w-full h-[350px] mt-12 rounded-lg overflow-hidden border border-gray-200">
+        <MapContainer
+          center={[project.lat, project.lng]}
+          zoom={14}
+          scrollWheelZoom={false}
+          className="h-full w-full"
+        >
+          <TileLayer
+            attribution="© OpenStreetMap"
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={[project.lat, project.lng]}>
+            <Popup>{project.name}</Popup>
+          </Marker>
+        </MapContainer>
       </div>
+
     </section>
   );
 }
