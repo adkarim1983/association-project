@@ -1,147 +1,103 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
+import logo from "../assets/logo.png"; // Importer le logo si nécessaire
 
 export default function Activities() {
-  const scrollRef = useRef(null);
+  const [show, setShow] = useState(false);
 
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 500, behavior: "smooth" });
-    }
-  };
-
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -500, behavior: "smooth" });
-    }
-  };
-
-  // Défilement automatique
   useEffect(() => {
-    const interval = setInterval(() => {
-      scrollRight();
-    }, 4000); // toutes les 4 secondes
-
-    return () => clearInterval(interval);
+    const timer = setTimeout(() => setShow(true), 300);
+    return () => clearTimeout(timer);
   }, []);
 
   const activities = [
     {
       title: "Éducation",
       description:
-        "Programmes éducatifs pour les enfants défavorisés, cours d'alphabétisation et soutien scolaire.",
-      details:
-        "Soutien scolaire, bourses, fournitures scolaires, activités parascolaires.",
+        "Soutien scolaire, alphabétisation et programmes éducatifs pour enfants défavorisés.",
+      // color: "from-blue-500 to-indigo-500",
+      image: "https://associationnajm.ma/wp-content/uploads/2024/12/qq3.jpg",
     },
     {
       title: "Aide sociale",
       description:
-        "Distribution de nourriture, vêtements et fournitures aux familles dans le besoin.",
-      details:
-        "Caravanes médicales, aides aux personnes âgées et aux orphelins.",
+        "Distribution de nourriture, vêtements et soutien aux familles vulnérables.",
+      // color: "from-rose-500 to-pink-400",
+      image: "https://associationnajm.ma/wp-content/uploads/2024/12/qq2.jpg",
     },
     {
       title: "Développement communautaire",
       description:
-        "Projets d'infrastructure et cohésion sociale dans les quartiers défavorisés.",
-      details:
-        "Rénovation d’écoles, création d’espaces communautaires.",
+        "Rénovation de quartiers, création d'espaces publics et projets d'inclusion sociale.",
+      // color: "from-emerald-500 to-green-400",
+      image: "https://associationnajm.ma/wp-content/uploads/2024/12/qq6.jpg",
     },
     {
       title: "Formation professionnelle",
       description:
-        "Ateliers de compétences et soutien à l'entrepreneuriat local.",
-      details:
-        "Informatique, artisanat, couture, cuisine pour générer des revenus.",
+        "Initiation à l'artisanat, à l'informatique, à la couture et à la cuisine.",
+      // color: "from-orange-500 to-yellow-400",
+      image: "https://associationnajm.ma/wp-content/uploads/2024/12/qq5.jpg",
     },
     {
       title: "Environnement",
       description:
-        "Sensibilisation, reboisement et gestion des déchets.",
-      details:
-        "Nettoyages, jardinage communautaire, éducation écologique.",
+        "Actions de reboisement, sensibilisation écologique et gestion des déchets.",
+      // color: "from-teal-500 to-cyan-400",
+      image: "https://associationnajm.ma/wp-content/uploads/2024/12/qq1.jpg",
     },
     {
       title: "Innovation sociale",
       description:
-        "Défis sociaux, hackathons et incubation d’idées innovantes.",
-      details:
-        "Concours d’idées, accompagnement des jeunes entrepreneurs sociaux.",
+        "Hackathons, idées innovantes et incubation de projets à impact social.",
+      // color: "from-purple-500 to-fuchsia-400",
+      image: "https://associationnajm.ma/wp-content/uploads/2024/12/qq4.jpg",
     },
   ];
 
   return (
-    <section id="activites" className="pt-8 bg-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mt-2 mb-4">
-            Nos activités
+   <section
+  id="activites"className="py-20 bg-cover bg-center bg-no-repeat"style={{backgroundImage: `url(${logo})`,
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    backgroundBlendMode: "lighten",
+    
+  }}
+>
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800">
+            Nos Activités
           </h2>
-          <div className="w-24 h-1.5 bg-amber-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-slate-600 max-w-3xl mx-auto text-lg">
-            Découvrez les domaines dans lesquels nous intervenons pour soutenir les communautés locales.
+          <p className="mt-4 text-slate-600 max-w-xl mx-auto">
+            Des actions concrètes, ciblées et durables au service de la communauté.
           </p>
         </div>
 
-        <div className="relative">
-          {/* Flèche gauche */}
-          <button
-            onClick={scrollLeft}
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/50 hover:bg-white/80 text-gray-800 p-2 rounded-full shadow-md transition duration-300"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
+        <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          {activities.map((activity, i) => (
+            <div
+              key={i}
+              className={`relative bg-white rounded-3xl overflow-hidden shadow-lg group hover:shadow-2xl transition`}
             >
-              <path d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          {/* Carrousel horizontal */}
-          <div
-            ref={scrollRef}
-            className="flex overflow-x-auto space-x-6 mx-40 scroll-smooth scrollbar-hide gap-6"
-          >
-            {activities.map((activity, index) => (
-              <div
-                key={index}
-                className="min-w-[340px] mb-8 bg-white border border-slate-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="bg-amber-50 p-4 inline-flex rounded-2xl mb-6">
-                  <svg
-                    className="w-10 h-10 text-amber-500"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.07-7.07l-1.42 1.42M6.34 17.66l-1.42 1.42m12.02 0l1.42-1.42M6.34 6.34L4.92 4.92" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-slate-800 mb-3">{activity.title}</h3>
-                <p className="text-slate-600 mb-4">{activity.description}</p>
-                <p className="text-slate-500 text-sm">{activity.details}</p>
+              <div className="relative">
+                <img
+                  src={activity.image}
+                  alt={activity.title}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition duration-500"
+                />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-tr ${activity.color} opacity-70 group-hover:opacity-60 transition`}
+                ></div>
               </div>
-            ))}
-          </div>
-
-          {/* Flèche droite */}
-          <button
-            onClick={scrollRight}
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/50 hover:bg-white/80 text-gray-800 p-2 rounded-full shadow-md transition duration-300"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+              <div className="p-6 relative z-10 bg-white">
+                <h3 className="text-xl font-bold text-slate-800 mb-2">
+                  {activity.title}
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {activity.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
