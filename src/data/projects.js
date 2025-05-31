@@ -187,8 +187,8 @@ const projects = [
     name: "AZ Event 733",
     category: "Événementiel",
     location: "Sidi Othmane",
-    lat: 33.6005,
-    lng: -7.5306,
+    lat: 33.5573031,
+    lng: -7.5552762,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image51.jpg",
     "descriptionSections": [
       {
@@ -298,8 +298,8 @@ const projects = [
     name: "Snack",
     category: "Restauration",
     location: "Sidi Othmane",
-    lat: 33.6005,
-    lng: -7.5306,
+    lat: 33.5651,
+    lng: -7.5858,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image30.jpg",
     "descriptionSections": [
       {
@@ -371,8 +371,8 @@ const projects = [
     name: "Dar Miya",
     category: "Restauration",
     location: "Sidi Othmane",
-    lat: 33.6005,
-    lng: -7.5306,
+    lat: 33.5651,
+    lng: -7.5858,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image25-398x530.jpg",
     descriptionSections: [
       {
@@ -445,8 +445,8 @@ const projects = [
   name: "LA TABLE D’MOTIONS",
   category: "Restauration",
   location: "Hay Al Baraka",
-  lat: 33.6032,
-  lng: -7.5341,
+  lat: 33.5651,
+  lng: -7.5858,
   image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image16-524x530.jpg",
   descriptionSections: [
     {
@@ -556,8 +556,8 @@ const projects = [
   name: "Delicesl Hanae",
   category: "Événementiel & Restauration",
   location: "Moulay Rachid",
-  lat: 33.6037,
-  lng: -7.5349,
+  lat: 33.585073,
+  lng: -7.592831,
   image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image9-398x530.jpg",
   descriptionSections: [
     {
@@ -667,8 +667,8 @@ const projects = [
   name: "MaMoN Food’s",
   category: "Restauration",
   location: "Quartier Essadri, Moulay Rachid",
-  lat: 33.6032,
-  lng: -7.5328,
+  lat: 33.5728,
+  lng: -7.5532,
   image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image23-524x530.jpg",
   descriptionSections: [
     {

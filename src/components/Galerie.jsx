@@ -9,7 +9,7 @@ function Galerie() {
 
   return (
     <section className="py-16 px-6 bg-white text-center">
-      <h2 className="text-3xl font-bold text-gray-800 mb-12">Nos activités en images</h2>
+      <h2 className="text-3xl font-bold text-gray-800 mb-12">Nos activités en images test</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {images.map((img, i) => (
           <img

@@ -8,7 +8,7 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
-// Fix icons Leaflet avec React
+
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
@@ -21,7 +21,7 @@ export default function CarteProjets({ projets }) {
     <div className="max-w-6xl mx-auto h-[70vh] rounded-lg overflow-hidden shadow-lg border my-8 ">
 
       <MapContainer
-        center={[33.5747295, -7.5524299]} // Casablanca par défaut
+        center={[33.5747295, -7.5524299]} // Casa par défaut
         zoom={10}
         scrollWheelZoom={true}
         className="h-full w-full"

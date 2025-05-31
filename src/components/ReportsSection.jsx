@@ -2,22 +2,23 @@ import React from 'react';
 import image1 from '../assets/image1.jpg';
 import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
+import { Link } from "react-router-dom"; // ✅ Import essentiel
 
 const reports = [
   {
     image: image1,
     text: 'Découvrez nos activités sociales et éducatives réalisées en 2024.',
-    link: '#',
+    link: '/rapports/activites-2024',
   },
   {
     image: image2,
-    text: 'Retour sur nos projets culturels avec les jeunes et les enfants.',
-    link: '#',
+    text: 'Journée d’étude sur les coopératives : Promouvoir l’économie sociale et solidaire 2024',
+    link: '/rapports/culture-et-jeunesse',
   },
   {
     image: image3,
-    text: 'Nos actions de solidarité et de développement local.',
-    link: '#',
+    text: 'Signature d’un accord de partenariat entre la plateforme Irchad et la Faculté des Lettres et des Sciences',
+    link: '/rapports/solidarite-developpement',
   },
 ];
 
@@ -26,7 +27,7 @@ export default function ReportsSection() {
     <section className="bg-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-slate-800 mb-10">
-          Nos Rapports en Images
+           Nos Rapports
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reports.map((report, index) => (
@@ -38,12 +39,14 @@ export default function ReportsSection() {
               />
               <div className="p-6">
                 <p className="text-gray-700 mb-4">{report.text}</p>
-                <a
-                  href={report.link}
+
+                {/* ✅ Utilisation correcte de Link */}
+                <Link
+                  to={report.link}
                   className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
                 >
                   Plus d’infos
-                </a>
+                </Link>
               </div>
             </div>
           ))}
