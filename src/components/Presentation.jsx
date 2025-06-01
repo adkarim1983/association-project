@@ -1,21 +1,26 @@
 import React from "react";
-import image1 from "../assets/image1.jpg"; // voir d autres images
+import image2 from "../assets/image13.jpg";
+import image3 from "../assets/image14.jpg";
 
-function Presentation() {
+export default function Presentation() {
   return (
-    <section className="bg-white py-16 ">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:justify-between">
-        <div className="md:w-1/2">
+    <section className="relative bg-white m-[25px] rounded-xl overflow-hidden shadow-xl py-15">
+      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 ">
+        
+        {/* Image gauche */}
+        <div className="w-full">
           <img
-            src={image1}
-            alt="Activité Najm"
-            className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-700"
+            src={image2}
+            alt="Image gauche"
+            className="rounded-xl shadow-lg object-cover w-full h-full"
           />
         </div>
-        <div className="md:w-1/2 text-gray-800">
-          <h2 className="text-3xl font-bold mb-4">Qui sommes-nous ?</h2>
-          <p className="text-lg leading-relaxed">
-            L’Association Najm est une organisation à but non lucratif qui vise
+
+        {/* Texte centré */}
+        <div className="text-center md:px-6">
+          <h2 className="text-3xl font-bold text-blue-800 mb-4">Qui sommes-nous ?</h2>
+          <p className="text-gray-700 leading-relaxed">
+            L’<span className="font-semibold text-blue-600">Association Najm</span> une organisation à but non lucratif qui vise
             à soutenir les jeunes, les enfants et les familles à travers des actions
             éducatives, culturelles et sociales. Elle s'engage activement pour
             promouvoir la solidarité, l'égalité des chances et le développement local.
@@ -23,16 +28,18 @@ function Presentation() {
             à soutenir les jeunes, les enfants et les familles à travers des actions
             éducatives, culturelles et sociales. Elle s'engage activement pour
             promouvoir la solidarité, l'égalité des chances et le développement local.
-            
           </p>
+        </div>
+
+        {/* Image droite */}
+        <div className="w-full">
+          <img
+            src={image3}
+            alt="Image droite"
+            className="rounded-xl shadow-lg object-cover w-full h-full"
+          />
         </div>
       </div>
     </section>
   );
 }
-
-export default Presentation;
-
-
-
-// version originale du code,,,
