@@ -4,23 +4,24 @@ import image3 from "../assets/image14.jpg";
 
 export default function Presentation() {
   return (
-    <section className="relative bg-white m-[25px] rounded-xl overflow-hidden shadow-xl py-15">
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 ">
-        
+    <section className="relative bg-white m-[25px] rounded-xl overflow-hidden shadow-xl py-12 px-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+
         {/* Image gauche */}
         <div className="w-full">
           <img
             src={image2}
             alt="Image gauche"
-            className="rounded-xl shadow-lg object-cover w-full h-full"
+            className="rounded-xl shadow-md object-cover w-full h-full"
           />
         </div>
 
-        {/* Texte centré */}
-        <div className="text-center md:px-6">
-          <h2 className="text-3xl font-bold text-blue-800 mb-4">Qui sommes-nous ?</h2>
-          <p className="text-gray-700 leading-relaxed">
-            L’<span className="font-semibold text-blue-600">Association Najm</span> une organisation à but non lucratif qui vise
+        {/* Texte centré verticalement */}
+        <div className="flex items-center justify-center text-center h-full px-4">
+          <div>
+            <h2 className="text-3xl font-bold text-blue-800 mb-4">Qui sommes-nous ?</h2>
+            <p className="text-gray-700 leading-relaxed text-justify">
+              L’<span className="font-semibold text-blue-600">Association Najm</span> ne organisation à but non lucratif qui vise
             à soutenir les jeunes, les enfants et les familles à travers des actions
             éducatives, culturelles et sociales. Elle s'engage activement pour
             promouvoir la solidarité, l'égalité des chances et le développement local.
@@ -28,7 +29,8 @@ export default function Presentation() {
             à soutenir les jeunes, les enfants et les familles à travers des actions
             éducatives, culturelles et sociales. Elle s'engage activement pour
             promouvoir la solidarité, l'égalité des chances et le développement local.
-          </p>
+            </p>
+          </div>
         </div>
 
         {/* Image droite */}
@@ -36,9 +38,10 @@ export default function Presentation() {
           <img
             src={image3}
             alt="Image droite"
-            className="rounded-xl shadow-lg object-cover w-full h-full"
+            className="rounded-xl shadow-md object-cover w-full h-full"
           />
         </div>
+
       </div>
     </section>
   );

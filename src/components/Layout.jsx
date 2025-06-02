@@ -8,7 +8,7 @@ const Layout = () => {
             <Navbar />
             <div className="min-h-screen">
                 <div className="container mt-20">
-                    {/* This is where the child routes will be rendered */}
+                  
                     <Outlet />
                 </div>
             </div>

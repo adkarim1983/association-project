@@ -2,12 +2,12 @@ import React from 'react';
 import image1 from '../assets/image1.jpg';
 import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
-import { Link } from "react-router-dom"; // ✅ Import essentiel
+import { Link } from "react-router-dom"; 
 
 const reports = [
   {
     image: image1,
-    text: 'Découvrez nos activités sociales et éducatives réalisées en 2024.',
+    text: 'Découvrez nos activités sociales et éducatives réalisées en 2024 réalisées en 2024.',
     link: '/rapports/activites-2024',
   },
   {

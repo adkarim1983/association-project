@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/logo.png"; // Importer le logo si nécessaire
+import logo from "../assets/logo.png"; 
 
 export default function Activities() {
   const [show, setShow] = useState(false);

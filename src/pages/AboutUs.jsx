@@ -211,7 +211,7 @@ export default function ValeursEtPrincipes() {
 
                                 {/* Face arriere paragraphe */}
                                 <div className="absolute w-full h-full bg-white text-gray-800 rounded-xl shadow-xl p-6 rotate-y-180 backface-hidden overflow-auto flex items-center justify-center">
-                                    <p className="text-sm leading-relaxed text-center">{valeur.texte}</p>
+                                   <p className="text-sm leading-relaxed text-justify">{valeur.texte}</p>
                                 </div>
                             </div>
                         </div>

@@ -3,40 +3,51 @@ import image2 from "../assets/image13.jpg";
 import image12 from "../assets/image14.jpg";
 import image13 from "../assets/image15.jpg";
 
-const images = [image2, image12, image13];
+const images = [
+  {
+    src: image2,
+    title: "Association Najm",
+    description: "Pour un avenir meilleur à travers l'éducation, la culture et la solidarité.",
+  },
+  {
+    src: image12,
+    title: "Éducation et Engagement",
+    description: "Rejoignez-nous pour construire un monde plus juste et plus humain.",
+  },
+  {
+    src: image13,
+    title: "Solidarité Active",
+    description: "Unissons nos forces pour un impact positif dans notre société.",
+  },
+];
 
-function Hero() {
+export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // Change every 3 seconds
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
+  const { src, title, description } = images[currentIndex];
+
   return (
-    <section className="relative h-[65vh] m-[25px] rounded-xl overflow-hidden">
+    <section className="m-[25px]">
+      <div className="relative rounded-3xl overflow-hidden shadow-2xl group transition-all duration-700">
+       
+        <img
+          src={src}
+          alt={title}
+          className="w-full h-[70vh] object-cover group-hover:scale-105 transition-transform duration-700"
+        />
 
-      {/* Image affichée directement */}
-      <img
-        src={images[currentIndex]}
-        alt="Slide"
-        className="w-full h-full object-cover transition-opacity duration-1000"
-      />
-
-      {/* Texte affiché par-dessus l'image */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-        <h1 className="text-white text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-          Association Najm
-        </h1>
-        <p className="text-white text-lg max-w-2xl drop-shadow-md">
-          Pour un avenir meilleur à travers l'éducation, la culture et la solidarité.
-          Rejoignez-nous dans nos actions pour un monde plus juste et plus humain.
-        </p>
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 animate-fade-in-up">{title}</h2>
+          <p className="text-base md:text-lg text-gray-200 animate-fade-in-up delay-200">{description}</p>
+        </div>
       </div>
     </section>
   );
 }
-
-export default Hero;

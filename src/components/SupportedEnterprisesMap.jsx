@@ -9,7 +9,7 @@ export default function SupportedEnterprisesMap() {
           </p>
         </div>
 
-        {/* Carte centrée sur l'adresse fournie avec un marqueur */}
+        
         <div className="w-full h-[450px] bg-white rounded-xl shadow-md overflow-hidden">
           <iframe
             title="Carte - Faculté des Lettres et des Sciences Humaines Ben M'sik"

@@ -21,7 +21,7 @@ export default function CarteProjets({ projets }) {
     <div className="max-w-6xl mx-auto h-[70vh] rounded-lg overflow-hidden shadow-lg border my-8 ">
 
       <MapContainer
-        center={[33.5747295, -7.5524299]} // Casa par défaut
+        center={[33.5747295, -7.5524299]} 
         zoom={10}
         scrollWheelZoom={true}
         className="h-full w-full"

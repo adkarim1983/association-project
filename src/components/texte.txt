@@ -1126,3 +1126,13 @@ ajoute aussi dans App.css
   }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+<p className="text-gray-700 leading-relaxed">
+            L’<span className="font-semibold text-blue-600">Association Najm</span> une organisation à but non lucratif qui vise
+            à soutenir les jeunes, les enfants et les familles à travers des actions
+            éducatives, culturelles et sociales. Elle s'engage activement pour
+            promouvoir la solidarité, l'égalité des chances et le développement local.
+             L’Association Najm est une organisation à but non lucratif qui vise
+            à soutenir les jeunes, les enfants et les familles à travers des actions
+            éducatives, culturelles et sociales. Elle s'engage activement pour
+            promouvoir la solidarité, l'égalité des chances et le développement local.
+          </p>

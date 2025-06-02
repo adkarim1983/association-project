@@ -16,7 +16,7 @@ export default function Footer() {
         >
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                {/* Logo + Description */}
+               
                 <div>
                     <img src={logo} alt="Logo Najm" className="h-20 mb-4" />
                     <p className="text-sm">
@@ -25,7 +25,7 @@ export default function Footer() {
                     </p>
                 </div>
 
-                {/* Adresse */}
+               
                 <div>
                     <h3 className="text-lg font-semibold mb-2"><FontAwesomeIcon icon={faLocationDot} className="text-white mr-2" /> Adresse </h3>
                     <p className="text-sm">
@@ -35,7 +35,7 @@ export default function Footer() {
                     </p>
                 </div>
 
-                {/* Contact + Réseaux sociaux */}
+                
                 <div>
                     <h3 className="text-lg font-semibold mb-2">Contact</h3>
                     <p className="text-sm text-white">
@@ -52,7 +52,7 @@ export default function Footer() {
                     </p>
                     <p className="text-sm"><FontAwesomeIcon icon={faPhoneVolume} className="text-white mr-2" /> Fixe : 08 08 69 34 45</p>
 
-                    {/* Icônes sociales avec hover stylé */}
+                    
                     <div className="flex mt-4 space-x-4">
                         <a href="https://www.facebook.com/" className="transition hover:scale-110 hover:text-white/90"><FaFacebook size={20} /></a>
                         <a href="https://www.instagram.com/" className="transition hover:scale-110 hover:text-white/90"><FaInstagram size={20} /></a>
@@ -62,7 +62,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            {/* Bas de page */}
+           
             <div className="mt-8 border-t border-white/30 pt-4 text-center text-sm">
                 © {new Date().getFullYear()} Association Najm. Tous droits réservés.
             </div>
