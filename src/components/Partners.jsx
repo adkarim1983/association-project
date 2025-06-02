@@ -29,7 +29,7 @@ export default function Partners() {
         <h2 className="text-3xl font-bold text-center mb-5 text-gray-800">
           Nos partenaires
         </h2>
-        <p className="text-center max-w-3xl mx-auto text-gray-700 text-lg">
+        <p className="text-justify max-w-3xl mx-auto text-gray-700 text-lg">
           Nous collaborons avec des partenaires stratégiques tels que l'ANAPEC, Amideast, l’OFPPT et d'autres, afin de fournir des opportunités de formation, d’orientation et d’insertion professionnelle, ce qui contribue à construire un avenir prometteur pour les jeunes et à renforcer le développement communautaire.
         </p>
           <br />
