@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/logo.png"; 
+import logo2 from "../assets/logo2.png"; 
 
 export default function Activities() {
   const [show, setShow] = useState(false);
@@ -56,7 +56,7 @@ export default function Activities() {
 
   return (
    <section
-  id="activites"className="py-20 bg-cover bg-center bg-no-repeat"style={{backgroundImage: `url(${logo})`,
+  id="activites"className="py-20 mx-6 bg-cover bg-center bg-no-repeat"style={{backgroundImage: `url(${logo2})`,
     backgroundColor: "rgba(255, 255, 255, 0.8)",
     backgroundBlendMode: "lighten",
     

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -11,7 +11,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/">
           <img
-            src={logo}
+            src={logo2}
             alt="Logo Association Najm"
             className="h-14 w-auto cursor-pointer hover:scale-105 transition-transform duration-300"
           />

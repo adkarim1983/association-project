@@ -8,6 +8,7 @@ import image9 from "../assets/image9.png";
 import image10 from "../assets/image10.png";
 import image11 from "../assets/image11.png";
 import image12 from "../assets/image12.png";
+import logo2 from "../assets/logo2.png";
 
 const partners = [
   { id: 1, name: "", image: image4, link: "https://www.univh2c.ma/" },
@@ -24,7 +25,17 @@ const partners = [
 
 export default function Partners() {
   return (
-    <section className="py-16 bg-gray-50">
+     <section
+      className="py-16 mx-5 px-6 text-center rounded-lg"
+      style={{
+        backgroundImage: `url(${logo2})`,
+        backgroundColor: "rgba(255, 255, 255, 0.9)",
+        backgroundBlendMode: "lighten",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+    
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-5 text-gray-800">
           Nos partenaires

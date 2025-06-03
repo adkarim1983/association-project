@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import logo from "../assets/logo.png";
+import logo3 from "../assets/logo3.png";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
@@ -18,7 +18,7 @@ export default function Footer() {
 
                
                 <div>
-                    <img src={logo} alt="Logo Najm" className="h-20 mb-4" />
+                    <img src={logo3} alt="Logo Najm" className="h-20 mb-4" />
                     <p className="text-sm">
                         L’Association Najm pour le développement culturel et éducatif œuvre à
                         promouvoir l’engagement des jeunes à travers des actions citoyennes et éducatives.

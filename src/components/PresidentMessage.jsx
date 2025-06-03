@@ -25,7 +25,7 @@ export default function PresidentMessage() {
   }, [isPaused, showFullMessage]);
 
   return (
-    <section className="bg-gray-100 py-4 px-4">
+    <section className="bg-gray-100 py-4 px-4 mx-7 rounded-lg">
       <div
         className="flex flex-col gap-4 overflow-hidden cursor-pointer md:flex-row md:items-center"
         onMouseEnter={() => {

@@ -1136,3 +1136,55 @@ ajoute aussi dans App.css
             éducatives, culturelles et sociales. Elle s'engage activement pour
             promouvoir la solidarité, l'égalité des chances et le développement local.
           </p>
+
+          -----------------------------------------------------------------------------------------------------------------
+          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Pages valeurs: style
+
+          import React from "react";
+
+function Valeurs() {
+  const valeurs = [
+    { emoji: "🤝", titre: "Solidarité", texte: "Nous renforçons les liens entre les membres de la société." },
+    { emoji: "📚", titre: "Éducation", texte: "Nous croyons que l’éducation est la clé du changement." },
+    { emoji: "🌍", titre: "Citoyenneté", texte: "Nous encourageons la participation active des jeunes." },
+    { emoji: "🎭", titre: "Culture", texte: "Nous valorisons la diversité culturelle et l’expression artistique." },
+  ];
+
+  return (
+    <section className="bg-white py-4 px-6">
+      <h2 className="text-4xl font-extrabold text-gray-800 mb-10 text-center">
+        Nos Valeurs
+      </h2>
+
+      <div className="relative max-w-3xl mx-auto">
+        
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-indigo-300"></div>
+
+        {valeurs.map((valeur, index) => (
+          <div
+            key={index}
+            className={`relative mb-16 flex items-start gap-2 ${
+              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+            }`}
+          >
+           
+            <div className="w-8 h-8 bg-indigo-500 rounded-full border-4 border-white shadow-md z-10"></div>
+
+          
+            <div className="bg-indigo-50 rounded-xl p-6 shadow-lg w-full max-w-md items-center text-center">
+              <div className="text-3xl mb-2">{valeur.emoji}</div>
+              <h3 className="text-xl font-semibold text-indigo-800 mb-1">
+                {valeur.titre}
+              </h3>
+              <p className="text-sm text-gray-700">{valeur.texte}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Valeurs;
+
