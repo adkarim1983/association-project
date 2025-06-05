@@ -31,21 +31,49 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
   const { src, title, description } = images[currentIndex];
 
   return (
     <section className="m-[25px]">
       <div className="relative rounded-3xl overflow-hidden shadow-2xl group transition-all duration-700">
-       
         <img
           src={src}
           alt={title}
-          className="w-full h-[70vh] object-cover group-hover:scale-105 transition-transform duration-700"
+          className="w-full h-[70vh] object-cover transition-transform duration-700"
         />
 
+        {/* Flèche gauche */}
+        <button
+          onClick={handlePrev}
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white text-2xl font-bold px-3 py-1 rounded-full z-10"
+        >
+          &#8592;
+        </button>
+
+        {/* Flèche droite */}
+        <button
+          onClick={handleNext}
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white text-2xl font-bold px-3 py-1 rounded-full z-10"
+        >
+          &#8594;
+        </button>
+
+        {/* Texte */}
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 animate-fade-in-up">{title}</h2>
-          <p className="text-base md:text-lg text-gray-200 animate-fade-in-up delay-200">{description}</p>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-2 text-white">
+  {title}
+</h2>
+          <p className="text-base md:text-lg text-white drop-shadow-md">
+            {description}
+          </p>
         </div>
       </div>
     </section>

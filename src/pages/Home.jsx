@@ -16,7 +16,7 @@ function Home() {
         <PresidentMessage />
         <Hero />
         <Presentation />
-        <Valeurs />
+        {/* <Valeurs /> */}
         <Activities />
         {/* <PlatformObjectives /> */}
         {/* <Galerie /> */}

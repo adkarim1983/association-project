@@ -30,6 +30,7 @@ export default function Presentation() {
             éducatives, culturelles et sociales. Elle s'engage activement pour
             promouvoir la solidarité, l'égalité des chances et le développement local.
             </p>
+ 
           </div>
         </div>
 

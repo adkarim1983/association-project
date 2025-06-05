@@ -8,7 +8,7 @@ import "leaflet/dist/leaflet.css";
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <StrictMode>
+    <StrictMode >
       <App />
     </StrictMode>
   </BrowserRouter>

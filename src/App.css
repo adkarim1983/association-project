@@ -83,10 +83,11 @@
   .delay-200 {
     animation-delay: 0.2s;
   }
-
-  
 }
 
 
-
+.text-stroke {
+  -webkit-text-stroke: 1px white; /* contour blanc */
+  color: transparent;
+}
 
