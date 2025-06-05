@@ -19,7 +19,7 @@ export default function Footer() {
                
                 <div>
                     <img src={logo3} alt="Logo Najm" className="h-20 mb-4" />
-                    <p className="text-sm">
+                    <p className="text-sm text-justify">
                         L’Association Najm pour le développement culturel et éducatif œuvre à
                         promouvoir l’engagement des jeunes à travers des actions citoyennes et éducatives.
                     </p>
@@ -48,7 +48,7 @@ export default function Footer() {
                         contact@eerchad.ma
                     </p>
                     <p className="text-sm mt-2"> <FontAwesomeIcon icon={faLocationDot} className="text-white mr-2" />
-                        Rue Mohamed Bouziane, près du Bureau d’Hygiène, Sidi Othmane
+                        Rue Mohamed Bouziane, près du Bureau d’Hygiène, <br /> Sidi Othmane
                     </p>
                     <p className="text-sm"><FontAwesomeIcon icon={faPhoneVolume} className="text-white mr-2" /> Fixe : 08 08 69 34 45</p>
 

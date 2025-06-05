@@ -61,13 +61,13 @@ Ils assurent un accompagnement à moyen et long terme, via l’analyse des perfo
     },
     {
         title: "Objectifs d’un incubateur de projets",
-        content: `+Stimuler l’innovation à travers le soutien aux projets innovants
-+Réduire les risques d’échec en offrant un appui dès les premières étapes
-+Favoriser la création d’emplois
-+Renforcer l’économie locale via la valorisation de l’entrepreneuriat`,
+        content: `+ Stimuler l’innovation à travers le soutien aux projets innovants
++ Réduire les risques d’échec en offrant un appui dès les premières étapes
++ Favoriser la création d’emplois
++ Renforcer l’économie locale via la valorisation de l’entrepreneuriat`,
     },
 
-     {
+    {
         title: "Développement des capacités des jeunes",
         content: `Renforcement des compétences personnelles et professionnelles
 La plateforme vise à renforcer des compétences clés telles que :
@@ -112,7 +112,7 @@ Avantages de la plateforme :
 - Adaptation à l’ère numérique : acquisition de compétences digitales
 - Renforcement de la culture entrepreneuriale : valorisation de l’innovation`,
     },
-  
+
 
 ];
 
@@ -126,41 +126,46 @@ export default function IrchadPage() {
 
     return (
 
-        <> 
-        <div className="mb-40 p-4 mx-24 rounded-xl overflow-hidden shadow-lg bg-white">
-        <video
-          className="w-full h-auto"
-          controls
-          
-          muted
-          loop
-        >
-          <source src={videoSrc} type="video/mp4" />
-          Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-        </video>
-      </div>
-
-        <div className="max-w-5xl mx-auto px-6 py-12">
-            <h1 className="text-3xl font-bold text-center text-indigo-700 mb-10">
-                Plateforme Irchad – Aperçu global
-            </h1>
-
-            {sections.map((section, index) => (
-                <div key={index} className="mb-6 border-b">
-                    <button
-                        onClick={() => toggle(index)}
-                        className="w-full text-left text-xl font-semibold text-gray-800 hover:text-indigo-700 transition py-4"
+        <>
+            <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden p-6 mb-5">
+                <h3 className="text-2xl font-bold text-blue-800 mb-6 text-center">
+                    Découvrez notre action en vidéo
+                </h3>
+                <div className="rounded-lg overflow-hidden">
+                    <video
+                        className="w-full h-auto"
+                        controls
+                        muted
+                        loop
                     >
-                        {section.title}
-                    </button>
-                    {openIndex === index && (
-                        <div className="text-gray-700 bg-white p-4 rounded-lg shadow">
-                            <p className="leading-relaxed whitespace-pre-line">{section.content}</p>
-                        </div>
-                    )}
+                        <source src={videoSrc} type="video/mp4" />
+                        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                    </video>
                 </div>
-            ))}
-        </div>
+            </div>
+
+
+            <div className="max-w-5xl mx-auto px-6 py-12">
+                <h1 className="text-3xl font-bold text-center text-indigo-700 mb-10">
+                    Plateforme Irchad – Aperçu global
+                </h1>
+
+                {sections.map((section, index) => (
+                    <div key={index} className="mb-6 border-b">
+                        <button
+                            onClick={() => toggle(index)}
+                            className="w-full text-left text-xl font-semibold text-gray-800 hover:text-indigo-700 transition py-4"
+                        >
+                            {section.title}
+                        </button>
+                        {openIndex === index && (
+                            <div className="text-gray-700 bg-white p-4 rounded-lg shadow">
+                                <p className="leading-relaxed whitespace-pre-line text-justify ">{section.content}</p>
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
         </>
     );
 }

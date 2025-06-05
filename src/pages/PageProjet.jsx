@@ -40,7 +40,7 @@ export default function PageProjet() {
         {project.descriptionSections?.map((section, index) => (
           <div key={index}>
             <h2 className="text-2xl font-semibold text-blue-700 mb-2">{section.title}</h2>
-            <p>{section.content}</p>
+            <p className="text-justify">{section.content}</p>
           </div>
         ))}
       </div>

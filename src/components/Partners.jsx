@@ -50,8 +50,8 @@ export default function Partners() {
             {partners.concat(partners).map((partner, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-white rounded-lg shadow p-4"
-              >
+                className="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-white border-t border-b border-gray-300 rounded-lg shadow p-4"
+>
                 {partner.link ? (
                   <a
                     href={partner.link}

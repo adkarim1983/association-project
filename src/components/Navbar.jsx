@@ -42,22 +42,45 @@ export default function Navbar() {
           })}
 
           {/* Bouton langue (desktop) */}
-          <li className="relative">
-            <button
-              onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
-              className="text-gray-700 font-medium border border-gray-300 px-3 py-1 rounded-md hover:text-blue-600"
-            >
-              {language}
-            </button>
+         <li className="relative">
+  <button
+    onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+    className="w-10 h-10 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center hover:bg-blue-100 transition duration-300 shadow-sm"
+    title="Choisir la langue"
+  >
+    <svg
+      className="w-5 h-5 text-blue-600"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm.93-11.36a6.978 6.978 0 013-5.36 8.017 8.017 0 00-1.14 6.72 8.017 8.017 0 00-1.14 1.64zM4.07 10a6.962 6.962 0 011.45-4.45A8.008 8.008 0 0010 12c-2.21 0-4.2-.9-5.65-2.35A6.962 6.962 0 014.07 10z" />
+    </svg>
+  </button>
 
-            {languageMenuOpen && (
-              <div className="absolute right-0 mt-2 bg-white border rounded shadow-md z-50">
-                <button onClick={() => handleLanguageChange("Français")} className="block w-full text-left px-4 py-2 hover:text-blue-600">Français</button>
-                <button onClick={() => handleLanguageChange("English")} className="block w-full text-left px-4 py-2 hover:text-blue-600">English</button>
-                <button onClick={() => handleLanguageChange("العربية")} className="block w-full text-left px-4 py-2 hover:text-blue-600">العربية</button>
-              </div>
-            )}
-          </li>
+  {languageMenuOpen && (
+    <div className="absolute right-0 mt-2 w-44 bg-white/80 backdrop-blur-md border border-gray-200 shadow-2xl rounded-xl z-50">
+      <button
+        onClick={() => handleLanguageChange("Français")}
+        className="flex items-center gap-2 px-4 py-2 w-full text-left text-gray-800 hover:bg-blue-50 hover:text-blue-700 transition"
+      >
+        FR Français
+      </button>
+      <button
+        onClick={() => handleLanguageChange("English")}
+        className="flex items-center gap-2 px-4 py-2 w-full text-left text-gray-800 hover:bg-blue-50 hover:text-blue-700 transition"
+      >
+        ENG English
+      </button>
+      <button
+        onClick={() => handleLanguageChange("العربية")}
+        className="flex items-center gap-2 px-4 py-2 w-full text-left text-gray-800 hover:bg-blue-50 hover:text-blue-700 transition"
+      >
+        MA العربية
+      </button>
+    </div>
+  )}
+</li>
+
         </ul>
 
         {/* Burger Button (mobile) */}

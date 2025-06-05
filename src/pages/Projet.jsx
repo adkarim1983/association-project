@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import CarteProjets from "../components/CarteProjets";
 
 
-// Exemple de données projets (vraies données fictives)
+
 const projects = [
   {
     id: 1,
@@ -250,7 +250,7 @@ export default function ListingLocationPage() {
                 alt={project.name}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-5 space-y-3">
+              <div className="p-5 space-y-3 text-justify">
                 <h3 className="text-xl font-semibold text-blue-700">
                   {project.name}
                 </h3>
