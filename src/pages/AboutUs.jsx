@@ -12,6 +12,10 @@ import image24 from '../assets/image24.png';
 import image25 from '../assets/image25.png';
 import image26 from '../assets/image26.png';
 import image27 from '../assets/image27.png';
+import image30 from '../assets/image30.jpg';
+import image32 from '../assets/image32.jpg';
+import image33 from '../assets/image3.jpg';
+import image34 from '../assets/image34.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
@@ -166,26 +170,44 @@ export default function ValeursEtPrincipes() {
     return (
         <>
             <section className="bg-white py-16 px-6">
-                <div className="max-w-5xl mx-auto text-center mb-12">
-                    <h2 className="text-3xl font-bold text-blue-800 mb-6">
-                        Objectifs de l’Association Najm
-                    </h2>
-                    <div className="text-gray-700 text-lg leading-relaxed text-justify space-y-6">
-                        <p>
-                            L’Association Najm aspire à faire de la plateforme Irchad une référence de premier plan en matière d’inclusion économique des jeunes, tout en s’inscrivant dans l’esprit de l’Initiative Nationale pour le Développement Humain.
-                        </p>
-                        <p>
-                            L’association vise à faire de cette plateforme un espace de convergence pour les différents programmes destinés à la jeunesse, en vue d’en faire un modèle offrant informations et orientation, répondant ainsi aux aspirations des jeunes et contribuant à la réalisation de leurs ambitions.
-                        </p>
-                        <p>
-                            Elle se concentre sur la création d’un environnement de travail propice à l’inclusion économique des jeunes, en concluant des accords et des partenariats avec des institutions et organismes nationaux et internationaux issus des secteurs académique, économique et de la société civile.
-                        </p>
-                        <p>
-                            L’association adopte une bonne gouvernance fondée sur la compétence, en mettant en place des mécanismes transparents et souples de prise de décision, incluant l’élaboration d’un manuel de procédures complet pour les opérations administratives et financières, dans le but d’obtenir le statut d’utilité publique et de renforcer la confiance dans son action.
-                        </p>
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+                    <div className="md:w-1/2 text-gray-800">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-blue-800 mb-6 text-left">
+                            Objectifs de l’Association Najm
+                        </h2>
+                        <div className="text-lg leading-relaxed space-y-5 text-justify">
+                            <p>
+                                L’Association Najm aspire à faire de la plateforme Irchad une référence de premier plan en matière d’inclusion économique des jeunes, tout en s’inscrivant dans l’esprit de l’Initiative Nationale pour le Développement Humain.
+                            </p>
+                            <p>
+                                L’association vise à faire de cette plateforme un espace de convergence pour les différents programmes destinés à la jeunesse, en vue d’en faire un modèle offrant informations et orientation, répondant ainsi aux aspirations des jeunes et contribuant à la réalisation de leurs ambitions.            </p>
+                            <p>
+                                Elle se concentre sur la création d’un environnement de travail propice à l’inclusion économique des jeunes, en concluant des accords et des partenariats avec des institutions et organismes nationaux et internationaux issus des secteurs académique, économique et de la société civile.
+
+                            </p>
+                            <p>
+                                L’association adopte une bonne gouvernance fondée sur la compétence, en mettant en place des mécanismes transparents et souples de prise de décision, incluant l’élaboration d’un manuel de procédures complet pour les opérations administratives et financières, dans le but d’obtenir le statut d’utilité publique et de renforcer la confiance dans son action.
+
+                            </p>
+                        </div>
                     </div>
+                    {/* Deux images verticalement alignées */}
+                    <div className="md:w-1/2 flex flex-col gap-13">
+                        <img
+                            src={image30}
+                            alt="Objectif 1"
+                            className="rounded-xl shadow-md w-full h-80 object-cover"
+                        />
+                        <img
+                            src={image32}
+                            alt="Objectif 2"
+                            className="rounded-xl shadow-md w-full h-80 object-cover"
+                        />
+                    </div>
+
                 </div>
             </section>
+
             <section className="py-16 px-6 bg-gray-100">
                 <h2 className="text-center text-3xl font-bold text-blue-800 mb-12">
                     Valeurs et Principes de l’Association
@@ -211,7 +233,7 @@ export default function ValeursEtPrincipes() {
 
                                 {/* Face arriere paragraphe */}
                                 <div className="absolute w-full h-full bg-white text-gray-800 rounded-xl shadow-xl p-6 rotate-y-180 backface-hidden overflow-auto flex items-center justify-center">
-                                   <p className="text-sm leading-relaxed text-justify">{valeur.texte}</p>
+                                    <p className="text-sm leading-relaxed text-justify">{valeur.texte}</p>
                                 </div>
                             </div>
                         </div>
@@ -220,44 +242,44 @@ export default function ValeursEtPrincipes() {
                 </div>
             </section>
 
-            <section className="bg-white pt-10 px-6">
-                <div className="max-w-5xl mx-auto text-center mb-12">
-                    <h2 className="text-3xl font-bold text-blue-800 mb-6">
-                        Vision stratégique de l’Association
-                    </h2>
+            <section className="bg-white py-16 px-6">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+                    {/* Texte à gauche */}
+                    <div className="flex flex-col justify-between text-gray-800">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-blue-800 mb-6 text-left">
+                            Vision stratégique de l’Association
+                        </h2>
+                        <div className="text-lg leading-relaxed space-y-4 text-justify">
+                            <p>
+                                L’Association Najm pour l’inclusion économique des jeunes vise à :
+                            </p>
+                            <p><strong>Autonomiser les jeunes :</strong> en développant leurs compétences pour favoriser leur intégration dans le marché du travail.</p>
+                            <p><strong>Valoriser les talents :</strong> identifier les potentiels cachés des jeunes et les faire émerger.</p>
+                            <p><strong>Améliorer l’employabilité :</strong> offrir des formations efficaces pour augmenter les chances d’embauche.</p>
+                            <p><strong>Soutenir l’entrepreneuriat :</strong> accompagner les jeunes porteurs de projets avec appui technique et financier.</p>
+                            <p><strong>Encourager l’économie sociale :</strong> promouvoir les initiatives coopératives locales durables.</p>
+                            <p><strong>Développer les partenariats :</strong> créer des réseaux avec les secteurs public, privé et associatif.</p>
+                            <p><strong>Renforcer la citoyenneté :</strong> diffuser les valeurs de volontariat et d’engagement communautaire.</p>
+                            <p><strong>Contribuer au développement durable :</strong> stimuler la créativité des jeunes pour des projets responsables.</p>
+                        </div>
+                    </div>
 
-                    <div className="text-gray-700 text-lg leading-relaxed text-justify space-y-6">
-                        <p>
-                            L’Association Najm pour l’inclusion économique des jeunes vise à :
-                        </p>
-                        <p>
-                            <strong>Autonomiser les jeunes et renforcer leurs capacités :</strong> en développant leurs compétences pour favoriser leur intégration dans le marché du travail, à travers des programmes de formation spécialisés visant à améliorer leur performance professionnelle et à répondre aux exigences du marché.
-                        </p>
-                        <p>
-                            <strong>Mettre en valeur les talents et compétences individuelles :</strong> l’association identifie les potentiels cachés des jeunes et œuvre à les faire émerger pour favoriser leur excellence et les valoriser dans leur parcours professionnel et économique.
-                        </p>
-                        <p>
-                            <strong>Améliorer l’employabilité :</strong> elle propose des programmes de formation complets pour doter les jeunes des compétences nécessaires à une insertion professionnelle efficace et confiante, augmentant ainsi leurs chances d’embauche.
-                        </p>
-                        <p>
-                            <strong>Encourager l’esprit entrepreneurial et soutenir la création de projets :</strong> elle promeut l’esprit d’initiative et d’entrepreneuriat chez les jeunes, en leur offrant accompagnement, encadrement, appui technique et financier pour concrétiser leurs idées de projet.
-                        </p>
-                        <p>
-                            <strong>Soutenir l’économie sociale et solidaire :</strong> l’association favorise les initiatives collectives et coopératives contribuant au développement local durable et à la réponse aux défis socioéconomiques.
-                        </p>
-                        <p>
-                            <strong>Construire des partenariats et des réseaux :</strong> elle établit des partenariats solides avec les institutions nationales et internationales, ainsi que les secteurs public et privé, afin de multiplier les opportunités de collaboration et d’échange d’expériences.
-                        </p>
-                        <p>
-                            <strong>Ancrer les valeurs de citoyenneté et de volontariat :</strong> l’association diffuse les valeurs citoyennes auprès des jeunes et encourage leur engagement dans des actions volontaires, favorisant ainsi leur participation active à la vie sociale et le développement de leur sens des responsabilités.
-                        </p>
-                        <p>
-                            <strong>Contribuer au développement durable :</strong> elle crée un environnement stimulant qui encourage la créativité et l’implication des jeunes dans l’atteinte des objectifs du développement durable à l’échelle locale et nationale.
-                        </p>
+                    {/* Images à droite alignées verticalement */}
+                    <div className="flex flex-col gap-6 justify-between">
+                        <img
+                            src={image33}
+                            alt="Illustration 1"
+                            className="h-1/2 rounded-xl shadow-lg object-cover w-full max-h-[320px]"
+                        />
+                        <img
+                            src={image34}
+                            alt="Illustration 2"
+                            className="h-1/2 rounded-xl shadow-lg object-cover w-full max-h-[320px]"
+                        />
                     </div>
                 </div>
             </section>
-            <section className="bg-white pb-10 px-6">
+            <section className="bg-white pb-10 px-6 mt-10">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl font-bold text-blue-800 mb-10">
                         Organigramme de l’Association
