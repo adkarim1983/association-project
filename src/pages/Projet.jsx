@@ -201,7 +201,7 @@ const projects = [
 ];
 
 const categories = ["Tous", "Restauration", "Marketing Digital", "Événementiel", "Design", "Audio Visuel"];
-const itemsPerPage = 4;
+const itemsPerPage = 3;
 
 export default function ListingLocationPage() {
   const [selectedCategory, setSelectedCategory] = useState("Tous");
