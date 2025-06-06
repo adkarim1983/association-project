@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
 import presidentImg from "../assets/image2.jpg";
 
 export default function PresidentMessage() {
+  const { t } = useTranslation();
   const scrollRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
   const [showFullMessage, setShowFullMessage] = useState(false);
@@ -38,17 +40,13 @@ export default function PresidentMessage() {
         }}
       >
         <h2 className="text-base md:text-lg font-bold text-blue-800 whitespace-nowrap">
-          Mot du Président Directeur Général :
+          {t("president_title")}
         </h2>
 
         {!showFullMessage ? (
           <div ref={scrollRef} className="flex-1 overflow-hidden">
             <div className="inline-block whitespace-nowrap text-gray-700 text-sm md:text-base min-w-max">
-              Monsieur Hassan Rizk, président de l’Association Najm, souhaite la
-              bienvenue sur la plateforme de l’association, qui reflète son
-              engagement pour l’insertion économique et professionnelle des
-              jeunes. L’association croit fermement que les jeunes sont les
-              moteurs du changement...
+              {t("president_text")}
             </div>
           </div>
         ) : (
@@ -59,19 +57,8 @@ export default function PresidentMessage() {
               className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow"
             />
             <p className="text-gray-700 text-sm sm:text-base text-justify sm:max-w-2xl">
-              Monsieur Hassan Rizk, président de l’Association Najm, souhaite la
-              bienvenue sur la plateforme de l’association, qui reflète son
-              engagement pour l’insertion économique et professionnelle des
-              jeunes. L’association croit fermement que les jeunes sont les
-              moteurs du changement et que leur accompagnement est essentiel
-              pour un développement durable. Elle s'appuie sur des valeurs comme
-              le respect, la transparence, l’égalité et la confiance, tout en
-              nouant des partenariats locaux et internationaux. Son objectif est
-              de devenir une plateforme de référence pour guider, former et
-              inspirer les jeunes, afin qu’ils deviennent des acteurs du
-              développement et des leaders du futur.
+              {t("president_full_text")}
             </p>
-            
           </div>
         )}
       </div>

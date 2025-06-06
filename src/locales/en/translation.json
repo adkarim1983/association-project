@@ -1,3 +1,4 @@
+
 {
   "menu": {
     "accueil": "Home",
@@ -5,5 +6,8 @@
     "axe": "Intervention Areas",
     "projets": "Projects",
     "contact": "Contact"
-  }
-  }
+  },
+  "president_title": "President's Message",
+  "president_text": "On behalf of all the members of the Najm Association, I welcome you to our digital platform. It reflects our commitment to youth, our vision for community development, and our desire to act for economic and professional inclusion.",
+  "president_full_text": "Mr. Hassan Rizk, President of the Najm Association, welcomes you to the association's platform, which reflects his commitment to the economic and professional integration of youth. The association firmly believes that young people are the drivers of change and that supporting them is essential for sustainable development. It is based on values such as respect, transparency, equality, and trust, while establishing local and international partnerships. Its goal is to become a reference platform to guide, train and inspire young people, so that they become actors of development and future leaders."
+}

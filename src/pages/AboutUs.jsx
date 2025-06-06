@@ -125,14 +125,14 @@ export default function ValeursEtPrincipes() {
         },
         {
             titre: "Transparence",
-            couleur: "bg-[#5465ff]",
+            couleur: "bg-[#072ac8]",
             texte:
                 "La transparence garantit la clarté et la crédibilité de nos actions. L’association maintient une communication ouverte avec les jeunes et les partenaires afin de renforcer la confiance et la compréhension.",
             image: affichage,
         },
         {
             titre: "Confiance",
-            couleur: "bg-[#5863f8]",
+            couleur: "bg-[#072ac8]",
             texte:
                 "La confiance est essentielle pour une coopération durable. L’association accompagne les jeunes avec bienveillance afin de leur permettre d’atteindre leurs objectifs avec assurance.",
             image: confiance,
@@ -146,20 +146,27 @@ export default function ValeursEtPrincipes() {
         },
         {
             titre: "Dignité",
-            couleur: "bg-[#5465ff]",
+            couleur: "bg-[#072ac8]",
             texte:
                 "L’association place la préservation de la dignité humaine au cœur de son action en respectant les droits des jeunes et en valorisant leur participation à la société de manière respectueuse de leur valeur et de leur potentiel. Elle s’efforce de créer un environnement favorable qui permet aux jeunes de participer activement au développement socio-économique tout en préservant leur dignité.",
             image: dignite,
         },
         {
             titre: "Engagement",
-            couleur: "bg-[#5465ff]",
+            couleur: "bg-[#072ac8]",
             texte:
                 "L’engagement envers la responsabilité est la pierre angulaire du succès de l’association dans la réalisation de ses objectifs. L’association œuvre avec efficacité et intégrité à concevoir et mettre en œuvre des initiatives visant à l’autonomisation économique et sociale des jeunes, tout en assurant un suivi rigoureux pour garantir l’atteinte des résultats escomptés.",
             image: engagement,
         },
         {
             titre: "Citoyenneté",
+            couleur: "bg-[#072ac8]",
+            texte:
+                "L’association considère les jeunes comme une force motrice du développement économique et social. Elle s’efforce de renforcer leur sentiment d’appartenance en les impliquant dans des projets au service de la nation, contribuant ainsi à ancrer les valeurs d’une citoyenneté active et à favoriser une renaissance durable.",
+            image: citoyennete,
+        },
+        {
+            titre: "Formation",
             couleur: "bg-[#072ac8]",
             texte:
                 "L’association considère les jeunes comme une force motrice du développement économique et social. Elle s’efforce de renforcer leur sentiment d’appartenance en les impliquant dans des projets au service de la nation, contribuant ainsi à ancrer les valeurs d’une citoyenneté active et à favoriser une renaissance durable.",
@@ -208,8 +215,8 @@ export default function ValeursEtPrincipes() {
                 </div>
             </section>
 
-            <section className="py-16 px-6 bg-gray-100">
-                <h2 className="text-center text-3xl font-bold text-blue-800 mb-12">
+            <section className="py-5 px-6 bg-gray-100 mx-6 rounded-lg">
+                <h2 className="text-center text-3xl font-bold text-blue-800 mb-6">
                     Valeurs et Principes de l’Association
                 </h2>
 
