@@ -32,6 +32,8 @@ export default function Navbar() {
           <li><Link to="/about-us">{t("menu.a_propos")}</Link></li>
           <li><Link to="/Axe">{t("menu.axe")}</Link></li>
           <li><Link to="/project">{t("menu.projets")}</Link></li>
+          <Link to="/galerie" onClick={() => setIsMenuOpen(false)}>{t("menu.galerie")}
+          </Link>
           <li><Link to="/contact">{t("menu.contact")}</Link></li>
 
           {/* Langue Desktop */}
@@ -74,6 +76,9 @@ export default function Navbar() {
             <li><Link to="/about-us" onClick={() => setIsMenuOpen(false)}>{t("menu.a_propos")}</Link></li>
             <li><Link to="/Axe" onClick={() => setIsMenuOpen(false)}>{t("menu.axe")}</Link></li>
             <li><Link to="/project" onClick={() => setIsMenuOpen(false)}>{t("menu.projets")}</Link></li>
+
+            <li><Link to="/galerie" onClick={() => setIsMenuOpen(false)}>{t("menu.galerie")}</Link></li>
+
             <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>{t("menu.contact")}</Link></li>
 
             <li className="pt-2 border-t">

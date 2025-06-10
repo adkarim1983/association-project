@@ -1,8 +1,11 @@
 import React from "react";
 import image2 from "../assets/image13.jpg";
 import image3 from "../assets/image14.jpg";
+import { useTranslation } from "react-i18next";
 
 export default function Presentation() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative bg-white m-[25px] rounded-xl overflow-hidden shadow-xl py-12 px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
@@ -19,18 +22,12 @@ export default function Presentation() {
         {/* Texte centré verticalement */}
         <div className="flex items-center justify-center text-center h-full px-4">
           <div>
-            <h2 className="text-3xl font-bold text-blue-800 mb-4">Qui sommes-nous ?</h2>
+            <h2 className="text-3xl font-bold text-blue-800 mb-4">
+              {t("presentation_title")}
+            </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
-              L’<span className="font-semibold text-blue-600">Association Najm</span> ne organisation à but non lucratif qui vise
-            à soutenir les jeunes, les enfants et les familles à travers des actions
-            éducatives, culturelles et sociales. Elle s'engage activement pour
-            promouvoir la solidarité, l'égalité des chances et le développement local.
-             L’Association Najm est une organisation à but non lucratif qui vise
-            à soutenir les jeunes, les enfants et les familles à travers des actions
-            éducatives, culturelles et sociales. Elle s'engage activement pour
-            promouvoir la solidarité, l'égalité des chances et le développement local.
+              {t("presentation_text")}
             </p>
- 
           </div>
         </div>
 

@@ -11,7 +11,7 @@ import Axe from './pages/Axe';
 import RapportActivites2024 from "./pages/RapportActivites2024";
 import RapportCultureEtJeunesse from "./pages/RapportCultureEtJeunesse";
 import RapportSolidariteDev from "./pages/RapportSolidariteDev";
-
+import GalerieImage from "./components/Galerieimage";
 
 function App() {
 
@@ -23,6 +23,10 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="project" element={<Projet/>} />
           <Route path="about-us" element={<AboutUs/>} />
+       
+         <Route path="galerie" element={<GalerieImage />} />
+         
+          
           <Route path="*" element={<h1>Page not found</h1>} />
           <Route path="axe" element={<Axe/>} />
 

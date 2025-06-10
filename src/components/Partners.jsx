@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import image4 from "../assets/image4.jpg";
 import image5 from "../assets/image5.png";
 import image6 from "../assets/image6.png";
@@ -24,6 +25,7 @@ const partners = [
 ];
 
 export default function Partners() {
+  const { t } = useTranslation();
   return (
      <section
       className="py-16 mx-5 px-6 text-center rounded-lg"
@@ -38,10 +40,10 @@ export default function Partners() {
     
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-5 text-gray-800">
-          Nos partenaires
+          {t('partners_title')}
         </h2>
         <p className="text-justify max-w-3xl mx-auto text-gray-700 text-lg">
-          Nous collaborons avec des partenaires stratégiques tels que l'ANAPEC, Amideast, l’OFPPT et d'autres, afin de fournir des opportunités de formation, d’orientation et d’insertion professionnelle, ce qui contribue à construire un avenir prometteur pour les jeunes et à renforcer le développement communautaire.
+           {t('partners_text')}
         </p>
           <br />
           <br />

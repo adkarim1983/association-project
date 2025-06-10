@@ -27,7 +27,7 @@ export default function PresidentMessage() {
   }, [isPaused, showFullMessage]);
 
   return (
-    <section className="bg-gray-100 py-4 px-4 mx-7 mt-25 rounded-lg">
+    <section className="bg-gray-100 py-4 px-14 mx-7 mt-25 rounded-lg">
       <div
         className="flex flex-col gap-4 overflow-hidden cursor-pointer md:flex-row md:items-center"
         onMouseEnter={() => {
@@ -39,7 +39,7 @@ export default function PresidentMessage() {
           setShowFullMessage(false);
         }}
       >
-        <h2 className="text-base md:text-lg font-bold text-blue-800 whitespace-nowrap">
+        <h2 className="text-base md:text-lg font-bold text-blue-800 whitespace-nowrap mx-10">
           {t("president_title")}
         </h2>
 

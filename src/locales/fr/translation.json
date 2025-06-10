@@ -1,12 +1,106 @@
 {
-  "menu": {
-    "accueil": "Accueil",
-    "a_propos": "À propos",
-    "axe": "Axe d'intervention",
-    "projets": "Projets",
-    "contact": "Contact"
+    "menu": {
+        "accueil": "Accueil",
+        "a_propos": "À propos",
+        "axe": "Axe d'intervention",
+        "projets": "Projets",
+        "contact": "Contact",
+        "galerie": "Galerie"
+    },
+    "president_title": "Mot du Président",
+    "president_text": "Au nom de l’ensemble des membres de l’Association Najm, je vous souhaite la bienvenue sur notre plateforme numérique. Elle reflète notre engagement envers la jeunesse, notre vision du développement communautaire et notre volonté d’agir pour l’insertion économique et professionnelle.",
+    "president_full_text": "Monsieur Hassan Rizk, président de l’Association Najm, souhaite la bienvenue sur la plateforme de l’association, qui reflète son engagement pour l’insertion économique et professionnelle des jeunes. L’association croit fermement que les jeunes sont les moteurs du changement et que leur accompagnement est essentiel pour un développement durable. Elle s'appuie sur des valeurs comme le respect, la transparence, l’égalité et la confiance, tout en nouant des partenariats locaux et internationaux. Son objectif est de devenir une plateforme de référence pour guider, former et inspirer les jeunes, afin qu’ils deviennent des acteurs du développement et des leaders du futur.",
+    "presentation_title": "Qui sommes-nous ?",
+    "presentation_text": " L’Association Najm ne organisation à but non lucratif qui vise à soutenir les jeunes, les enfants et les familles à travers des actions éducatives, culturelles et sociales. Elle s'engage activement pour promouvoir la solidarité, l'égalité des chances et le développement local. L’Association Najm est une organisation à but non lucratif qui vise à soutenir les jeunes, les enfants et les familles à travers des actions éducatives, culturelles et sociales. Elle s'engage activement pour promouvoir la solidarité, l'égalité des chances et le développement local.",
+
+"activities": {
+  "title": "Nos Activités",
+  "education": {
+    "title": "Éducation",
+    "description": "Soutien scolaire, alphabétisation et programmes éducatifs pour enfants défavorisés."
   },
-  "president_title": "Mot du Président",
-  "president_text": "Au nom de l’ensemble des membres de l’Association Najm, je vous souhaite la bienvenue sur notre plateforme numérique. Elle reflète notre engagement envers la jeunesse, notre vision du développement communautaire et notre volonté d’agir pour l’insertion économique et professionnelle.",
-  "president_full_text": "Monsieur Hassan Rizk, président de l’Association Najm, souhaite la bienvenue sur la plateforme de l’association, qui reflète son engagement pour l’insertion économique et professionnelle des jeunes. L’association croit fermement que les jeunes sont les moteurs du changement et que leur accompagnement est essentiel pour un développement durable. Elle s'appuie sur des valeurs comme le respect, la transparence, l’égalité et la confiance, tout en nouant des partenariats locaux et internationaux. Son objectif est de devenir une plateforme de référence pour guider, former et inspirer les jeunes, afin qu’ils deviennent des acteurs du développement et des leaders du futur."
+  "social": {
+    "title": "Aide sociale",
+    "description": "Distribution de nourriture, vêtements et soutien aux familles vulnérables."
+  },
+  "community": {
+    "title": "Développement communautaire",
+    "description": "Rénovation de quartiers, création d'espaces publics et projets d'inclusion sociale."
+  },
+  "training": {
+    "title": "Formation professionnelle",
+    "description": "Initiation à l'artisanat, à l'informatique, à la couture et à la cuisine."
+  },
+  "environment": {
+    "title": "Environnement",
+    "description": "Actions de reboisement, sensibilisation écologique et gestion des déchets."
+  },
+  "innovation": {
+    "title": "Innovation sociale",
+    "description": "Hackathons, idées innovantes et incubation de projets à impact social."
+  }
+},
+
+"reports": {
+  "title": "Nos Rapports",
+  "report1": "Découvrez nos activités sociales et éducatives réalisées en 2024.",
+  "report2": "Journée d’étude sur les coopératives : Promouvoir l’économie sociale et solidaire 2024",
+  "report3": "Signature d’un accord de partenariat entre la plateforme Irchad et la Faculté des Lettres et des Sciences",
+  "more": "Plus d’infos"
+},
+"stats_title": "Chiffres clés de l’association",
+"stats_1_label": "Sites géographiques",
+"stats_2_label": "Opportunités d’emploi",
+"stats_3_label": "Entreprises bénéficiaires",
+
+"partners_title": "Nos partenaires",
+"partners_text": "Nous collaborons avec des partenaires stratégiques tels que l'ANAPEC, Amideast, l’OFPPT et d'autres, afin de fournir des opportunités de formation, d’orientation et d’insertion professionnelle, ce qui contribue à construire un avenir prometteur pour les jeunes et à renforcer le développement communautaire.",
+
+"footer": {
+  "description": "L’Association Najm pour le développement culturel et éducatif œuvre à promouvoir l’engagement des jeunes à travers des actions citoyennes et éducatives.",
+  "address_title": "Adresse",
+  "address1": "Groupe 3, en face de la Faculté des Lettres et des Sciences Humaines Ben M’sik,\nCentre social et économique, Rue Rahmouni Boualam,\nCasablanca.",
+  "contact_title": "Contact",
+  "phone1": "+212 661 680 893",
+  "phone2": "Fixe : 08 08 55 86 90",
+  "address2": "Rue Mohamed Bouziane, près du Bureau d’Hygiène, Sidi Othmane",
+  "phone3": "Fixe : 08 08 69 34 45",
+  "rights": "Tous droits réservés."
+},
+"partnership_section": {
+  "title": "Signature d’un Partenariat Stratégique",
+  "subtitle": "Entre la plateforme Irchad et la Faculté des Lettres et des Sciences, pour stimuler le développement local et l’innovation.",
+  "intro_title": "Une démarche innovante",
+  "intro_text": "Dans une initiative stratégique, une convention de partenariat a été signée le jeudi 13 janvier 2022, en présence du Gouverneur de la Préfecture Moulay Rachid. Ce partenariat vise à renforcer les synergies entre les institutions académiques, économiques et sociales pour soutenir l’innovation et le développement durable dans la zone industrielle de Ben M’sik Sidi Othmane.",
+  "objectives_title": "Objectifs clés de la convention :",
+  "objectives": [
+    "Stimuler l’innovation et le développement de projets économiques locaux, notamment dans les domaines technologiques et créatifs.",
+    "Établir un écosystème intégré liant université, économie et société civile pour un impact durable.",
+    "Encourager la durabilité environnementale et sociale dans tous les projets soutenus.",
+    "Connecter la science et la société via des initiatives scientifiques et culturelles engageant les étudiants et les citoyens."
+  ],
+  "perspectives_title": "Perspectives à venir",
+  "perspectives_text": "Ce partenariat promet de transformer la zone industrielle en un pôle d’attractivité et d’innovation, stimulant l’emploi, l’investissement, et illustrant l’importance de la collaboration interinstitutionnelle pour le développement durable."
+},
+
+"coop_event_1_title": "Journée d’étude des coopératives : Renforcer l’économie sociale et solidaire",
+"coop_event_1_p1": "À l’occasion de la Journée mondiale des coopératives, la préfecture des arrondissements Moulay Rachid a organisé, en partenariat avec l’Association Najm pour l’insertion économique des jeunes, une rencontre d’étude le mardi 16 juillet 2024 sous le thème : « Les coopératives au service d’une économie sociale et solidaire durable ».",
+"coop_event_1_p2": "Cette rencontre s’est tenue à la plateforme Irchad, dédiée au soutien et au développement des capacités des jeunes.",
+"coop_event_1_p3": "Elle a connu la participation de nombreuses figures officielles du secteur public et privé, notamment M. le Gouverneur des arrondissements Moulay Rachid et son équipe, les vice-présidents des arrondissements Sidi Othmane et Moulay Rachid, les chefs de départements, des représentants du ministère de la Coopération, des impôts, de la Chambre de l’artisanat, ainsi que le délégué de la Coopération nationale.",
+
+"coop_event_2_title": "Renforcer le rôle des coopératives",
+"coop_event_2_p1": "La rencontre a mis en lumière le rôle crucial des coopératives dans la réalisation du développement durable et le renforcement de l’économie sociale et solidaire, notamment face aux défis économiques et sociaux des populations vulnérables et des jeunes.",
+"coop_event_2_p2": "Ce fut aussi une occasion d’échange entre les acteurs, incluant les coopératives soutenues par l’Initiative Nationale pour le Développement Humain et le Programme d’insertion économique des jeunes dans le cadre de l’économie sociale et solidaire.",
+
+"coop_event_3_title": "Objectifs de la rencontre",
+"coop_event_3_ul1": "Échange d’expériences : Présentation de modèles coopératifs réussis, identification des défis et des solutions potentielles.",
+"coop_event_3_ul2": "Renforcement des réseaux : Favoriser les partenariats durables entre coopératives et institutions de soutien.",
+"coop_event_3_ul3": "Encouragement à l’innovation : Stimuler l’innovation pour offrir des produits et services à forte valeur ajoutée.",
+"coop_event_3_end": "La rencontre s’est clôturée par un appel à poursuivre ces initiatives collaboratives et à renforcer les efforts conjoints pour que les coopératives deviennent des piliers essentiels du développement local."
+
+
+
+
+
 }
+

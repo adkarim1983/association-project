@@ -1,13 +1,107 @@
-
 {
   "menu": {
     "accueil": "Home",
     "a_propos": "About Us",
     "axe": "Intervention Areas",
     "projets": "Projects",
+    "galerie": "Gallery",
     "contact": "Contact"
+ 
   },
   "president_title": "President's Message",
   "president_text": "On behalf of all the members of the Najm Association, I welcome you to our digital platform. It reflects our commitment to youth, our vision for community development, and our desire to act for economic and professional inclusion.",
-  "president_full_text": "Mr. Hassan Rizk, President of the Najm Association, welcomes you to the association's platform, which reflects his commitment to the economic and professional integration of youth. The association firmly believes that young people are the drivers of change and that supporting them is essential for sustainable development. It is based on values such as respect, transparency, equality, and trust, while establishing local and international partnerships. Its goal is to become a reference platform to guide, train and inspire young people, so that they become actors of development and future leaders."
+  "president_full_text": "Mr. Hassan Rizk, President of the Najm Association, welcomes you to the association's platform, which reflects his commitment to the economic and professional integration of youth. The association firmly believes that young people are the drivers of change and that supporting them is essential for sustainable development. It is based on values such as respect, transparency, equality, and trust, while establishing local and international partnerships. Its goal is to become a reference platform to guide, train and inspire young people, so that they become actors of development and future leaders.",
+  
+  "presentation_title": "Who are we?",
+  "presentation_text": "Najm Association is a non-profit organization that aims to support young people, children, and families through educational, cultural, and social initiatives. It is actively committed to promoting solidarity, equal opportunity, and local development. Najm Association is a non-profit organization that aims to support young people, children, and families through educational, cultural, and social initiatives. It is actively committed to promoting solidarity, equal opportunity, and local development.",
+
+"activities": {
+  "title": "Our Activities",
+  "education": {
+    "title": "Education",
+    "description": "Tutoring, literacy, and educational programs for underprivileged children."
+  },
+  "social": {
+    "title": "Social Aid",
+    "description": "Food and clothing distribution, and support for vulnerable families."
+  },
+  "community": {
+    "title": "Community Development",
+    "description": "Neighborhood renovation, creation of public spaces, and social inclusion projects."
+  },
+  "training": {
+    "title": "Vocational Training",
+    "description": "Training in crafts, computing, sewing, and cooking."
+  },
+  "environment": {
+    "title": "Environment",
+    "description": "Reforestation actions, ecological awareness, and waste management."
+  },
+  "innovation": {
+    "title": "Social Innovation",
+    "description": "Hackathons, innovative ideas, and incubation of socially impactful projects."
+  }
+},
+"reports": {
+  "title": "Our Reports",
+  "report1": "Discover our social and educational activities carried out in 2024.",
+  "report2": "Study Day on Cooperatives: Promoting Social and Solidarity Economy 2024",
+  "report3": "Partnership agreement signed between the Irchad platform and the Faculty of Arts and Sciences",
+  "more": "Read more"
+},
+"stats_title": "Key Figures of the Association",
+"stats_1_label": "Geographic Sites",
+"stats_2_label": "Job Opportunities",
+"stats_3_label": "Beneficiary Businesses",
+
+"partners_title": "Our Partners",
+"partners_text": "We collaborate with strategic partners such as ANAPEC, Amideast, OFPPT, and others to provide training, guidance, and professional integration opportunities. This contributes to building a promising future for young people and strengthening community development.",
+
+"footer": {
+  "description": "Najm Association for Cultural and Educational Development works to promote youth engagement through civic and educational initiatives.",
+  "address_title": "Address",
+  "address1": "Group 3, opposite the Faculty of Arts and Humanities Ben M'sik,\nSocial and Economic Center, Rue Rahmouni Boualam,\nCasablanca.",
+  "contact_title": "Contact",
+  "phone1": "+212 661 680 893",
+  "phone2": "Landline: 08 08 55 86 90",
+  "address2": "Mohamed Bouziane Street, near the Hygiene Office, Sidi Othmane",
+  "phone3": "Landline: 08 08 69 34 45",
+  "rights": "All rights reserved."
+},
+
+"partnership_section": {
+  "title": "Signing of a Strategic Partnership",
+  "subtitle": "Between the Irchad platform and the Faculty of Arts and Sciences, to foster local development and innovation.",
+  "intro_title": "An Innovative Approach",
+  "intro_text": "As part of a strategic initiative, a partnership agreement was signed on Thursday, January 13, 2022, in the presence of the Governor of Moulay Rachid Prefecture. This partnership aims to strengthen synergies between academic, economic, and social institutions to support innovation and sustainable development in the industrial zone of Ben M’sik Sidi Othmane.",
+  "objectives_title": "Key objectives of the agreement:",
+  "objectives": [
+    "Foster innovation and the development of local economic projects, particularly in technological and creative fields.",
+    "Establish an integrated ecosystem linking university, economy, and civil society for lasting impact.",
+    "Promote environmental and social sustainability in all supported projects.",
+    "Connect science and society through scientific and cultural initiatives engaging students and citizens."
+  ],
+  "perspectives_title": "Future Outlook",
+  "perspectives_text": "This partnership promises to transform the industrial zone into a hub of innovation and attractiveness, boosting employment, investment, and highlighting the importance of interinstitutional collaboration for sustainable development."
+},
+
+"coop_event_1_title": "Study Day on Cooperatives: Strengthening the Social and Solidarity Economy",
+"coop_event_1_p1": "On the occasion of the International Day of Cooperatives, the Prefecture of Moulay Rachid districts organized, in partnership with the Najm Association for the Economic Inclusion of Youth, a study meeting on Tuesday, July 16, 2024, under the theme: 'Cooperatives Serving a Sustainable Social and Solidarity Economy'.",
+"coop_event_1_p2": "This event was held at the Irchad platform, dedicated to supporting and developing youth capacities.",
+"coop_event_1_p3": "It brought together many officials from the public and private sectors, including the Governor of Moulay Rachid districts and his team, the vice-presidents of Sidi Othmane and Moulay Rachid districts, department heads, representatives of the Ministry of Cooperation, taxes, the Chamber of Crafts, and the National Cooperation delegate.",
+
+"coop_event_2_title": "Strengthening the Role of Cooperatives",
+"coop_event_2_p1": "The meeting highlighted the crucial role of cooperatives in achieving sustainable development and strengthening the social and solidarity economy, especially in the face of economic and social challenges faced by vulnerable populations and youth.",
+"coop_event_2_p2": "It was also an opportunity for dialogue among stakeholders, including cooperatives supported by the National Initiative for Human Development and the Youth Economic Inclusion Program within the social and solidarity economy framework.",
+
+"coop_event_3_title": "Objectives of the Meeting",
+"coop_event_3_ul1": "Sharing Experiences: Presenting successful cooperative models, identifying challenges and potential solutions.",
+"coop_event_3_ul2": "Strengthening Networks: Promoting sustainable partnerships between cooperatives and support institutions.",
+"coop_event_3_ul3": "Encouraging Innovation: Stimulating innovation to offer high value-added products and services.",
+"coop_event_3_end": "The event concluded with a call to continue these collaborative initiatives and strengthen joint efforts so that cooperatives become key pillars of local development."
+
+
+
+
+
 }
