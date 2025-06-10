@@ -98,8 +98,211 @@
 "coop_event_3_ul1": "Sharing Experiences: Presenting successful cooperative models, identifying challenges and potential solutions.",
 "coop_event_3_ul2": "Strengthening Networks: Promoting sustainable partnerships between cooperatives and support institutions.",
 "coop_event_3_ul3": "Encouraging Innovation: Stimulating innovation to offer high value-added products and services.",
-"coop_event_3_end": "The event concluded with a call to continue these collaborative initiatives and strengthen joint efforts so that cooperatives become key pillars of local development."
+"coop_event_3_end": "The event concluded with a call to continue these collaborative initiatives and strengthen joint efforts so that cooperatives become key pillars of local development.",
 
+
+
+  "partnership_irchad": {
+    "main_title": "Signing of a Partnership between the Irchad Platform and the Faculty of Letters and Sciences",
+    "paragraph1": "As part of a strategic approach to establishing a sustainable cooperation system, a partnership agreement was signed on Thursday, January 13, 2022, during a ceremony presided over by the Governor of the Moulay Rachid districts. This partnership aims to strengthen collaboration between academic, economic, and social institutions to promote sustainable development and innovation in the Ben M’Sick Sidi Othmane industrial zone.",
+    "section_title": "Partnership Axes and Objectives",
+    "axis1_title": "Promoting Innovation and Economic Development",
+    "axis1_text": "This partnership aims to create an environment conducive to innovation and the development of local economic projects, particularly in technology and creative industries.",
+    "axis2_title": "Establishing an Integrated Ecosystem",
+    "axis2_text": "Developing interaction mechanisms between academic, economic, and civil society institutions to ensure synergy beneficial to all stakeholders.",
+    "axis3_title": "Sustainable Development",
+    "axis3_text": "Supporting environmentally and socially responsible projects while actively involving the local community in their implementation.",
+    "axis4_title": "Linking Education and Community",
+    "axis4_text": "Organizing cultural and scientific initiatives to raise awareness among students and citizens about the importance of integrating knowledge with action.",
+    "conclusion_title": "Future Perspectives",
+    "conclusion_text": "This partnership is expected to boost the development of the Ben M’Sick Sidi Othmane industrial zone, stimulate employment and investment, and serve as a model of successful collaboration between institutions for sustainable and innovative development."
+  },
+
+  
+  "objectifs": {
+    "titre": "Objectives of the Najm Association",
+    "p1": "Najm Association aims to make the Irchad platform a leading reference in the economic inclusion of youth, while aligning with the spirit of the National Initiative for Human Development.",
+    "p2": "The association seeks to make this platform a convergence space for various youth-targeted programs, making it a model for providing information and guidance, thus meeting the aspirations of youth and supporting their ambitions.",
+    "p3": "It focuses on creating a work environment conducive to youth economic inclusion by forming agreements and partnerships with national and international institutions from academic, economic, and civil society sectors.",
+    "p4": "The association adopts good governance based on competence, by implementing transparent and flexible decision-making mechanisms, including the development of a comprehensive procedures manual for administrative and financial operations, with the aim of obtaining public utility status and strengthening trust in its actions."
+  },
+
+  "valeurs": {
+    "titre": "Values and Principles of the Association",
+    "respect": {
+      "titre": "Respect",
+      "texte": "The association places great importance on building strong human relationships based on mutual respect. It recognizes the value of each individual, especially youth, as essential partners in development."
+    },
+    "transparence": {
+      "titre": "Transparency",
+      "texte": "Transparency ensures the clarity and credibility of our actions. The association maintains open communication with youth and partners to strengthen trust and understanding."
+    },
+    "confiance": {
+      "titre": "Trust",
+      "texte": "Trust is essential for sustainable cooperation. The association supports young people with kindness to help them achieve their goals with confidence."
+    },
+    "egalite": {
+      "titre": "Equality",
+      "texte": "Equal opportunity for all individuals is a fundamental principle in the association’s work. It is committed to providing an inclusive environment where young people, regardless of their social or cultural background, can access opportunities that help them fulfill their potential and contribute to sustainable development."
+    },
+    "dignite": {
+      "titre": "Dignity",
+      "texte": "The association places the preservation of human dignity at the heart of its action by respecting the rights of youth and valuing their participation in society in a way that respects their worth and potential. It strives to create a supportive environment that enables young people to actively participate in socio-economic development while preserving their dignity."
+    },
+    "engagement": {
+      "titre": "Commitment",
+      "texte": "Commitment to responsibility is the cornerstone of the association’s success in achieving its objectives. The association works efficiently and with integrity to design and implement initiatives aimed at the economic and social empowerment of youth, while ensuring rigorous follow-up to achieve expected results."
+    },
+    "citoyennete": {
+      "titre": "Citizenship",
+      "texte": "The association considers youth as a driving force of economic and social development. It strives to strengthen their sense of belonging by involving them in projects serving the nation, thus anchoring the values of active citizenship and promoting sustainable renewal."
+    },
+    "formation": {
+      "titre": "Training",
+      "texte": "The association considers youth as a driving force of economic and social development. It strives to strengthen their sense of belonging by involving them in projects serving the nation, thus anchoring the values of active citizenship and promoting sustainable renewal."
+    }
+  },
+
+  "vision": {
+    "titre": "Strategic Vision of the Association",
+    "intro": "The Najm Association for the Economic Inclusion of Youth aims to:",
+    "objectifs": [
+      "Empower youth: by developing their skills to facilitate their integration into the labor market.",
+      "Value talents: identify the hidden potential of youth and help it emerge.",
+      "Improve employability: provide effective training to increase employment opportunities.",
+      "Support entrepreneurship: accompany young project holders with technical and financial support.",
+      "Encourage the social economy: promote sustainable local cooperative initiatives.",
+      "Develop partnerships: create networks with the public, private, and non-profit sectors.",
+      "Strengthen citizenship: spread the values of volunteerism and community engagement.",
+      "Contribute to sustainable development: stimulate youth creativity for responsible projects."
+    ]
+  },
+
+  "organigramme": {
+    "titre": "Organizational Chart of the Association"
+  },
+
+  "equipe": {
+    "titre": "Association Team"
+  },
+
+  "faq": {
+    "titre": "Frequently Asked Questions (FAQ)",
+    "questions": [
+      {
+        "q": "How can I join the association?",
+        "r": "You can contact us via the contact form or come directly to our headquarters in Moulay Rachid – Sidi Othmane."
+      },
+      {
+        "q": "Do you support young project holders?",
+        "r": "Yes, our Irchad platforms offer personalized support to structure, fund, and launch youth projects."
+      },
+      {
+        "q": "Are the training sessions free?",
+        "r": "All our offered training sessions are free thanks to the support of our institutional partners."
+      },
+      {
+        "q": "Can I get funding for my project?",
+        "r": "Yes, some projects may receive financial support after evaluation, especially within the framework of the National Initiative for Human Development."
+      },
+      {
+        "q": "What types of projects do you support?",
+        "r": "We mainly support projects with high social or economic impact: cooperatives, self-entrepreneurship, community initiatives."
+      },
+      {
+        "q": "Who can benefit from your services?",
+        "r": "Any young person aged 18 to 35, living in the Moulay Rachid – Sidi Othmane area, with an idea or project to develop."
+      },
+      {
+        "q": "How does the support process work?",
+        "r": "After an initial meeting, we establish a support plan that includes training, coaching sessions, and personalized follow-up."
+      }
+    ]
+  
+},
+
+
+  "video": {
+    "title": "Discover our action in video",
+    "unsupported": "Your browser does not support HTML5 video playback."
+  },
+  "page": {
+    "title": "Irchad Platform – Global Overview"
+  },
+  "sections": [
+    {
+      "title": "Areas of Intervention",
+      "content": "The Irchad Youth Platform was created to support and accompany emerging cooperatives, free initiatives and self-employment at the level of the Moulay Rachid district prefecture, within the framework of the third phase of the National Initiative for Human Development (INDH).\nThis platform aims to provide material and intellectual support to young people wishing to launch economic projects or social initiatives, particularly in the fields of self-employment and cooperative creation.\nIt constitutes a space for social innovation, focusing on training and workshops designed to strengthen young people's skills in various fields such as management, marketing and project management. It also seeks to promote employment, encourage business creation and develop cooperatives, while facilitating access to information on economic opportunities and available funding sources.\nThrough this platform, the initiative aims to stimulate entrepreneurial spirit and cooperation among young people, while strengthening innovation and sustainable development in the region. It thus contributes to increasing economic and social development in the Moulay Rachid prefecture."
+    },
+    {
+      "title": "Mission of the \"Youth Platform\"",
+      "content": "The platform's mission is based on listening, guidance and counseling. It aims to provide psychological and social support to young people through several components:\nListening: The platform allows young people to express themselves freely about their ideas and feelings, thus strengthening their ability to face life's challenges.\nGuidance: It offers specialized advice in various fields such as education, employment, relationships, mental health, and other important topics for youth.\nCounseling: The platform guides young people in their decision-making, both personally and professionally, helping them build a better future.\nThrough this mission, the platform works to strengthen young people's capacities and empower them, so that they become active and influential actors within society."
+    },
+    {
+      "title": "Management of Irchad platforms in Moulay Rachid – Sidi Othmane",
+      "content": "The Najm Association for Youth Economic Inclusion manages two Irchad platforms located in the Moulay Rachid – Sidi Othmane prefecture. Through this initiative, the association supports project idea holders by welcoming them, listening to their ideas and projects, then offering them support adapted to each case.\n\nThe platforms offer a stimulating environment for young entrepreneurs, with professional, technical and financial support, thus facilitating their economic integration and the development of their ideas into concrete and successful projects."
+    },
+    {
+      "title": "Social and Solidarity Economy: Support Measures for Cooperatives",
+      "content": "Within the framework of economic development and the promotion of social innovation, specific support measures for cooperatives are implemented, covering several axes:\nCooperative Support\nIntegrated and progressive support is offered to cooperatives and project holders, from the creation phase to post-launch. This support aims to ensure their sustainability and development, with particular emphasis on projects resulting from value chain analysis.\nTechnical Support and Creation Assistance\nThis includes support in creation procedures, preparation of business plans, and structuring of cooperatives. Support also extends to identifying relevant economic activities through value chain analysis.\nBrand Identity Creation\nSupport helps develop brands that reflect the identity of cooperatives and local projects, strengthening their credibility and market positioning, locally and internationally.\nQuality Certifications\nSupport also includes obtaining certifications that guarantee the quality of products or services, thus improving the reputation of cooperatives and consumer confidence.\nPost-Creation Support\nIn addition to the launch phase, continuous follow-up is ensured: additional advice, targeted training, support for financial and administrative management, facilitating the transition to the growth stage.\nThe objective of these actions is to guarantee sustainable growth, competitiveness of cooperatives, and job creation for young people and the local population, while promoting innovation."
+    },
+    {
+      "title": "Components of a Project Incubator",
+      "content": "A project incubator is a structure dedicated to supporting individuals or teams wishing to launch a project, especially in the early stages. Its objective is to offer a favorable environment for transforming ideas into viable and scalable projects.\nTechnical Support and Guidance\nThe incubator provides advice on strategy, marketing, finance and management, so that projects are built on solid foundations and able to adapt to the market.\nFinancial Support\nSome incubators offer initial funding or facilitate access to funding sources (grants, loans, venture capital), to cover launch costs.\nTraining and Workshops\nSpecialized workshops and training are offered in areas such as digital marketing, investor presentations, team management, or financial planning.\nLogistical Support\nIncubators provide coworking spaces with everything necessary (internet, offices, meeting rooms), promoting a motivating work environment.\nNetworking and Mentoring\nThey offer opportunities to connect with investors, sector experts, other entrepreneurs, or academic institutions.\nMarket Access\nIncubators support product commercialization, by facilitating participation in fairs, exhibitions and economic events.\nContinuous Monitoring\nThey provide medium and long-term support, through project performance analysis, strategic adjustments and targeted support."
+    },
+    {
+      "title": "Objectives of a Project Incubator",
+      "content": "+ Stimulate innovation through support for innovative projects\n+ Reduce failure risks by offering support from the early stages\n+ Promote job creation\n+ Strengthen the local economy through entrepreneurship promotion"
+    },
+    {
+      "title": "Youth Capacity Development",
+      "content": "Strengthening Personal and Professional Skills\nThe platform aims to strengthen key skills such as:\n- Effective communication\n- Time management\n- Problem solving\n- Use of digital tools\n- Leadership\n- Financial management\n\nEntrepreneurship Support:\nYoung people are supported in transforming their ideas into businesses, with training in:\n- Business plan development\n- Digital marketing\n- Project management\n- Technical assistance for SMEs\n\nAccess to Employment:\nThe platform facilitates professional integration through:\n- Certified training\n- Internships and field experiences\n- Job fairs and coaching sessions\n\nStimulating Innovation and Creativity:\nPresentation and prototyping spaces are offered to encourage young people to create innovative solutions to social and economic challenges.\n\nStrengthening Social Awareness:\nThrough volunteer programs, young people are encouraged to get involved in community projects related to education, health or the environment.\n\nActivities and programs offered by the youth platform:\n\n- Professional training: in programming, design, digital marketing...\n- Life skills workshops: critical thinking, negotiation, personal organization\n- Counseling and support: to set career goals, launch a project\n- Entrepreneurship preparation: business plan, market study, management\n- Job fairs and opportunities: company meetings, CV/interview coaching\n- Community events: social and environmental actions\n\nPlatform benefits:\n- Youth empowerment: personal development and financial independence\n- Positive local impact: job creation, increased local productivity\n- Adaptation to the digital age: acquisition of digital skills\n- Strengthening entrepreneurial culture: promoting innovation"
+    }
+  ],
+  "irchad": {
+  "videoTitle": "Watch our work in video",
+  "mainTitle": "Irchad Platform – Overview",
+  "sections": [
+    {
+      "title": "Intervention Axes",
+      "content": "The Irchad Youth Platform supports cooperatives, self-employment and youth initiatives in Moulay Rachid district as part of the INDH.\nIt offers material and intellectual support, particularly in cooperative creation.\nIt promotes innovation through training and workshops in project management and marketing."
+    },
+    {
+      "title": "Mission of the Youth Platform",
+      "content": "- Listening: Free expression of ideas\n- Orientation: Specialized advice in education, jobs, health\n- Guidance: Helping youth make life and career decisions"
+    },
+    {
+      "title": "Management of Irchad Platforms – Moulay Rachid & Sidi Othmane",
+      "content": "Association Najm manages two Irchad platforms, helping young entrepreneurs shape their projects with technical, financial, and personalized support."
+    },
+    {
+      "title": "Social Economy: Support for Cooperatives",
+      "content": "- Structured support from launch to growth\n- Technical assistance and business plans\n- Brand identity creation\n- Quality certification\n- Post-launch follow-up and training"
+    },
+    {
+      "title": "Components of a Project Incubator",
+      "content": "- Technical support (strategy, marketing, finance)\n- Initial funding or financing access\n- Workshops and training\n- Shared workspaces\n- Networking and expert guidance\n- Market access and follow-up"
+    },
+    {
+      "title": "Goals of a Project Incubator",
+      "content": "+ Encourage innovation\n+ Reduce failure risks\n+ Promote job creation\n+ Strengthen local economy"
+    },
+    {
+      "title": "Youth Capacity Building",
+      "content": "- Personal & professional skill development\n- Entrepreneurship coaching\n- Access to jobs (training, internships, mentoring)\n- Innovation and creativity hubs\n- Volunteering and community service"
+    }
+  ]
+},
+
+"listing": {
+  "title": "Projects in the Sidi Othmane Area",
+  "searchTitle": "Search",
+  "searchPlaceholder": "Search for a project...",
+  "categoryLabel": "Category",
+  "locationLabel": "Location",
+  "button": "See more",
+  "categories": ["All", "Food", "Digital Marketing", "Event Management", "Design", "Audio Visual"]
+}
 
 
 

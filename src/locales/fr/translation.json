@@ -96,7 +96,179 @@
 "coop_event_3_ul1": "Échange d’expériences : Présentation de modèles coopératifs réussis, identification des défis et des solutions potentielles.",
 "coop_event_3_ul2": "Renforcement des réseaux : Favoriser les partenariats durables entre coopératives et institutions de soutien.",
 "coop_event_3_ul3": "Encouragement à l’innovation : Stimuler l’innovation pour offrir des produits et services à forte valeur ajoutée.",
-"coop_event_3_end": "La rencontre s’est clôturée par un appel à poursuivre ces initiatives collaboratives et à renforcer les efforts conjoints pour que les coopératives deviennent des piliers essentiels du développement local."
+"coop_event_3_end": "La rencontre s’est clôturée par un appel à poursuivre ces initiatives collaboratives et à renforcer les efforts conjoints pour que les coopératives deviennent des piliers essentiels du développement local.",
+
+
+  "partnership_irchad": {
+    "main_title": "Signature d’un Partenariat entre la Plateforme Irchad et la Faculté des Lettres et des Sciences",
+    "paragraph1": "Dans une démarche stratégique visant à instaurer un système de coopération durable, une convention de partenariat a été signée le jeudi 13 janvier 2022 lors d’une cérémonie présidée par le Gouverneur de la préfecture des arrondissements Moulay Rachid. Ce partenariat vise à renforcer la collaboration entre les institutions académiques, économiques et sociales pour favoriser le développement durable et l’innovation dans la zone industrielle de Ben M’Sick Sidi Othmane.",
+    "section_title": "Axes de partenariat et objectifs",
+    "axis1_title": "Promotion de l’innovation et du développement économique",
+    "axis1_text": "Ce partenariat vise à créer un environnement propice à l’innovation et au développement des projets économiques locaux, notamment dans les domaines technologiques et des industries créatives.",
+    "axis2_title": "Mise en place d’un écosystème intégré",
+    "axis2_text": "Développer des mécanismes d’interaction entre les institutions académiques, économiques et la société civile pour assurer une synergie bénéfique à tous les acteurs.",
+    "axis3_title": "Développement durable",
+    "axis3_text": "Soutien à des projets respectueux de l’environnement et du tissu social, tout en impliquant activement la communauté locale dans leur mise en œuvre.",
+    "axis4_title": "Lien entre enseignement et communauté",
+    "axis4_text": "Organisation d’initiatives culturelles et scientifiques visant à sensibiliser étudiants et citoyens à l’importance de l’intégration entre savoir et action.",
+    "conclusion_title": "Perspectives futures",
+    "conclusion_text": "Ce partenariat est appelé à renforcer le développement de la zone industrielle Ben M’Sick Sidi Othmane, à stimuler l’emploi et l’investissement, et à devenir un modèle de collaboration réussie entre institutions pour un développement durable et innovant."
+  },
+
+  
+  "objectifs": {
+    "titre": "Objectifs de l’Association Najm",
+    "p1": "L’Association Najm aspire à faire de la plateforme Irchad une référence de premier plan en matière d’inclusion économique des jeunes, tout en s’inscrivant dans l’esprit de l’Initiative Nationale pour le Développement Humain.",
+    "p2": "L’association vise à faire de cette plateforme un espace de convergence pour les différents programmes destinés à la jeunesse, en vue d’en faire un modèle offrant informations et orientation, répondant ainsi aux aspirations des jeunes et contribuant à la réalisation de leurs ambitions.",
+    "p3": "Elle se concentre sur la création d’un environnement de travail propice à l’inclusion économique des jeunes, en concluant des accords et des partenariats avec des institutions et organismes nationaux et internationaux issus des secteurs académique, économique et de la société civile.",
+    "p4": "L’association adopte une bonne gouvernance fondée sur la compétence, en mettant en place des mécanismes transparents et souples de prise de décision, incluant l’élaboration d’un manuel de procédures complet pour les opérations administratives et financières, dans le but d’obtenir le statut d’utilité publique et de renforcer la confiance dans son action."
+  },
+
+  "valeurs": {
+    "titre": "Valeurs et Principes de l’Association",
+    "respect": {
+      "titre": "Respect",
+      "texte": "L’association accorde une grande importance à l’établissement de relations humaines solides, fondées sur l’estime mutuelle. Elle reconnaît la valeur de chaque individu, notamment les jeunes, comme partenaires essentiels du développement."
+    },
+    "transparence": {
+      "titre": "Transparence",
+      "texte": "La transparence garantit la clarté et la crédibilité de nos actions. L’association maintient une communication ouverte avec les jeunes et les partenaires afin de renforcer la confiance et la compréhension."
+    },
+    "confiance": {
+      "titre": "Confiance",
+      "texte": "La confiance est essentielle pour une coopération durable. L’association accompagne les jeunes avec bienveillance afin de leur permettre d’atteindre leurs objectifs avec assurance."
+    },
+    "egalite": {
+      "titre": "Égalité",
+      "texte": "L’égalité des chances entre tous les individus est un principe fondamental dans le travail de l’association. Elle s’engage à offrir un environnement inclusif permettant aux jeunes, quels que soient leurs milieux sociaux ou culturels, d’accéder aux opportunités qui les aident à réaliser leur potentiel et à contribuer au développement durable."
+    },
+    "dignite": {
+      "titre": "Dignité",
+      "texte": "L’association place la préservation de la dignité humaine au cœur de son action en respectant les droits des jeunes et en valorisant leur participation à la société de manière respectueuse de leur valeur et de leur potentiel. Elle s’efforce de créer un environnement favorable qui permet aux jeunes de participer activement au développement socio-économique tout en préservant leur dignité."
+    },
+    "engagement": {
+      "titre": "Engagement",
+      "texte": "L’engagement envers la responsabilité est la pierre angulaire du succès de l’association dans la réalisation de ses objectifs. L’association œuvre avec efficacité et intégrité à concevoir et mettre en œuvre des initiatives visant à l’autonomisation économique et sociale des jeunes, tout en assurant un suivi rigoureux pour garantir l’atteinte des résultats escomptés."
+    },
+    "citoyennete": {
+      "titre": "Citoyenneté",
+      "texte": "L’association considère les jeunes comme une force motrice du développement économique et social. Elle s’efforce de renforcer leur sentiment d’appartenance en les impliquant dans des projets au service de la nation, contribuant ainsi à ancrer les valeurs d’une citoyenneté active et à favoriser une renaissance durable."
+    },
+    "formation": {
+      "titre": "Formation",
+      "texte": "L’association considère les jeunes comme une force motrice du développement économique et social. Elle s’efforce de renforcer leur sentiment d’appartenance en les impliquant dans des projets au service de la nation, contribuant ainsi à ancrer les valeurs d’une citoyenneté active et à favoriser une renaissance durable."
+    }
+  },
+
+  "vision": {
+    "titre": "Vision stratégique de l’Association",
+    "intro": "L’Association Najm pour l’inclusion économique des jeunes vise à :",
+    "objectifs": [
+      "Autonomiser les jeunes : en développant leurs compétences pour favoriser leur intégration dans le marché du travail.",
+      "Valoriser les talents : identifier les potentiels cachés des jeunes et les faire émerger.",
+      "Améliorer l’employabilité : offrir des formations efficaces pour augmenter les chances d’embauche.",
+      "Soutenir l’entrepreneuriat : accompagner les jeunes porteurs de projets avec appui technique et financier.",
+      "Encourager l’économie sociale : promouvoir les initiatives coopératives locales durables.",
+      "Développer les partenariats : créer des réseaux avec les secteurs public, privé et associatif.",
+      "Renforcer la citoyenneté : diffuser les valeurs de volontariat et d’engagement communautaire.",
+      "Contribuer au développement durable : stimuler la créativité des jeunes pour des projets responsables."
+    ]
+  },
+
+  "organigramme": {
+    "titre": "Organigramme de l’Association"
+  },
+
+  "equipe": {
+    "titre": "Équipe de l’Association"
+  },
+
+  "faq": {
+    "titre": "Foire aux questions (FAQ)",
+    "questions": [
+      {
+        "q": "Comment puis-je rejoindre l’association ?",
+        "r": "Vous pouvez nous contacter via le formulaire de contact ou venir directement à notre siège à Moulay Rachid – Sidi Othmane."
+      },
+      {
+        "q": "Est-ce que vous accompagnez les jeunes porteurs de projets ?",
+        "r": "Oui, nos plateformes Irchad offrent un accompagnement personnalisé pour structurer, financer et lancer les projets des jeunes."
+      },
+      {
+        "q": "Les formations sont-elles gratuites ?",
+        "r": "Toutes nos formations proposées sont gratuites grâce au soutien de nos partenaires institutionnels."
+      },
+      {
+        "q": "Puis-je bénéficier d’un financement pour mon projet ?",
+        "r": "Oui, certains projets peuvent bénéficier de soutien financier après évaluation, notamment dans le cadre de l’Initiative Nationale pour le Développement Humain."
+      },
+      {
+        "q": "Quels types de projets soutenez-vous ?",
+        "r": "Nous soutenons principalement les projets à fort impact social ou économique : coopératives, auto-entrepreneuriat, initiatives communautaires."
+      },
+      {
+        "q": "Qui peut bénéficier de vos services ?",
+        "r": "Tout jeune âgé de 18 à 35 ans, résidant dans la région de Moulay Rachid – Sidi Othmane, ayant une idée ou un projet à développer."
+      },
+      {
+        "q": "Comment se déroule l’accompagnement ?",
+        "r": "Après une première rencontre, nous établissons un plan d'accompagnement qui inclut des formations, des sessions de coaching, et un suivi personnalisé."
+      }
+    ]
+  
+},
+
+"irchad": {
+  "videoTitle": "Découvrez notre action en vidéo",
+  "mainTitle": "Plateforme Irchad – Aperçu global",
+  "sections": [
+    {
+      "title": "Axes d'intervention",
+      "content": "La Plateforme des Jeunes Irchad a été créée pour soutenir et accompagner les coopératives émergentes, les initiatives libres et l’auto-emploi au niveau de la préfecture d’arrondissements Moulay Rachid, dans le cadre de la troisième phase de l’Initiative Nationale pour le Développement Humain (INDH).\nCette plateforme vise à fournir un soutien matériel et intellectuel aux jeunes souhaitant lancer des projets économiques ou des initiatives sociales, en particulier dans les domaines de l’auto-emploi et de la création de coopératives.\nElle constitue un espace d’innovation sociale, en mettant l’accent sur des formations et des ateliers destinés à renforcer les compétences des jeunes dans divers domaines tels que la gestion, le marketing et la gestion de projets. Elle cherche également à promouvoir l’emploi, à encourager la création d’entreprises et à développer les coopératives, tout en facilitant l’accès à l’information sur les opportunités économiques et les sources de financement disponibles.\nÀ travers cette plateforme, l’initiative ambitionne de stimuler l’esprit entrepreneurial et la coopération entre les jeunes, tout en renforçant l’innovation et le développement durable dans la région. Elle contribue ainsi à accroître le développement économique et social dans la préfecture de Moulay Rachid."
+    },
+    {
+      "title": "Mission de la « Plateforme des Jeunes »",
+      "content": "La mission de la plateforme repose sur l’écoute, l’orientation et le conseil. Elle vise à fournir un accompagnement psychologique et social aux jeunes à travers plusieurs volets :\nÉcoute : permettre aux jeunes de s’exprimer librement sur leurs idées.\nOrientation : conseils spécialisés dans l’éducation, l’emploi, la santé mentale.\nConseil : accompagnement dans la prise de décisions personnelles et professionnelles."
+    },
+    {
+      "title": "Gestion des plateformes Irchad de Moulay Rachid – Sidi Othmane",
+      "content": "L’Association Najm assure la gestion de deux plateformes Irchad dans la préfecture Moulay Rachid – Sidi Othmane. Elle accompagne les porteurs de projets, les aide à concrétiser leurs idées avec un appui professionnel, technique et financier."
+    },
+    {
+      "title": "Économie sociale et solidaire : Mesures de soutien aux coopératives",
+      "content": "Mesures d’accompagnement :\n- Soutien à la création et à la structuration des coopératives\n- Aide à l’identification d’activités via l’analyse des chaînes de valeur\n- Développement de marques et d’identités propres\n- Obtention de certifications de qualité\n- Suivi post-création avec appui à la gestion et formations"
+    },
+    {
+      "title": "Composantes d’un incubateur de projets",
+      "content": "- Conseils techniques (stratégie, marketing, gestion…)\n- Soutien financier (aides, prêts, capital)\n- Ateliers spécialisés\n- Locaux et moyens logistiques\n- Réseautage avec investisseurs et experts\n- Suivi continu et accompagnement à long terme"
+    },
+    {
+      "title": "Objectifs d’un incubateur de projets",
+      "content": "+ Stimuler l’innovation\n+ Réduire les risques d’échec\n+ Créer des emplois\n+ Valoriser l’économie locale"
+    },
+    {
+      "title": "Développement des capacités des jeunes",
+      "content": "- Formations (compétences personnelles et pro)\n- Accompagnement à l’entrepreneuriat\n- Accès à l’emploi (formations, stages, coaching)\n- Incitation à l’innovation\n- Engagement social (volontariat, environnement, éducation)"
+    }
+  ],
+
+
+ "listing": {
+  "title": "Projets dans la zone Sidi Othmane",
+  "searchTitle": "Rechercher",
+  "searchPlaceholder": "Rechercher un projet...",
+  "categoryLabel": "Catégorie",
+  "locationLabel": "Localisation",
+  "button": "Voir plus",
+  "categories": ["Tous", "Restauration", "Marketing Digital", "Événementiel", "Design", "Audio Visuel"]
+}
+
+}
+
+
+
+
+
 
 
 
