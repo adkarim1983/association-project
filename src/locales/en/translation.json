@@ -403,7 +403,38 @@
       "audiovisuel": "Audiovisual"
     }
   }
-}
+},
+
+
+  "baha_happy_park": {
+    "title": "Baha Happye Park",
+    "category": "Event Planning",
+    "location": "Sidi Othmane",
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Saliha Baha, 36 years old, founder of Baha Happy Park, a project dedicated to entertaining children through games, animations, and fun party organization."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Create a safe and fun recreational space for children. Offer educational and playful activities to stimulate their imagination and develop their skills. Strengthen family bonds through activities that bring together parents and children. Create a joyful and enriching experience within a structured and professional environment."
+      },
+      {
+        "title": "Support and assistance",
+        "content": "INDH (National Initiative for Human Development): financial support of 100,000 MAD, enabling the project's launch. Youth Platform – Irchad: 3-month training, technical, economic, legal, and field support. Association Najm: moral support and continuous assistance during planning and execution."
+      },
+      {
+        "title": "Products and services",
+        "content": "Equipped play area for children. Fun and educational games and competitions. Personalized children's parties. Interactive and evolving programs to encourage creativity. Job creation for qualified profiles. Professional team in uniform to ensure discipline and a cheerful atmosphere."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH: financial support of 100,000 MAD. Youth Platform – Irchad: training and full support. Association Najm: moral and operational support throughout the project stages."
+      }
+    ]
+  }
+
+
 
 
 

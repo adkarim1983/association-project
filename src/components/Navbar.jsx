@@ -11,6 +11,8 @@ export default function Navbar() {
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     setLanguageMenuOpen(false);
   };
 

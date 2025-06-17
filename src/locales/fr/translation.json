@@ -350,7 +350,38 @@
       "audiovisuel": "Audio Visuel"
     }
   }
-}
+},
+
+
+  "baha_happy_park": {
+    "title": "Baha Happye Park",
+    "category": "Événementiel",
+    "location": "Sidi Othmane",
+    "sections": [
+      {
+        "title": "Informations sur la fondatrice",
+        "content": "Saliha Baha, 36 ans, fondatrice de Baha Happy Park, un projet dédié au divertissement des enfants à travers des jeux, des animations et l’organisation de fêtes ludiques."
+      },
+      {
+        "title": "Présentation du projet",
+        "content": "Créer un espace récréatif sécurisé et amusant pour les enfants. Proposer des activités éducatives et ludiques pour stimuler leur imagination et développer leurs compétences. Favoriser les liens familiaux à travers des activités qui réunissent parents et enfants. Créer une expérience joyeuse et enrichissante au sein d’un cadre organisé et professionnel."
+      },
+      {
+        "title": "Soutien et accompagnement",
+        "content": "INDH (Initiative Nationale pour le Développement Humain) : apport financier de 100 000 MAD, facilitant le démarrage du projet. Plateforme des Jeunes – Irchad : formation de 3 mois, accompagnement technique, économique, juridique et terrain. Association Najm : appui moral et accompagnement continu pendant la phase de planification et d’exécution."
+      },
+      {
+        "title": "Produits et services",
+        "content": "Espace de jeux équipé et aménagé pour les enfants. Animations, compétitions ludiques et éducatives. Organisation de fêtes personnalisées pour enfants. Programmes interactifs et renouvelés pour encourager la créativité. Création d’emplois pour des profils qualifiés. Équipe animatrice en tenue professionnelle pour garantir rigueur et ambiance conviviale."
+      },
+      {
+        "title": "Partenaires",
+        "content": "INDH (Initiative Nationale pour le Développement Humain) : apport financier de 100 000 MAD, facilitant le démarrage du projet. Plateforme des Jeunes – Irchad : formation de 3 mois, accompagnement technique, économique, juridique et terrain. Association Najm : appui moral et accompagnement continu pendant la phase de planification et d’exécution."
+      }
+    ]
+  }
+
+
 
 
 }

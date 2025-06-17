@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
 import presidentImg from "../assets/image2.jpg";
+import i18next from "i18next";
 
 export default function PresidentMessage() {
   const { t } = useTranslation();
@@ -26,11 +27,15 @@ export default function PresidentMessage() {
     return () => clearInterval(interval);
   }, [isPaused, showFullMessage]);
 
+const currentLanguage = i18next.language;
+console.log("Current Language:", currentLanguage);
+const isArabic = currentLanguage === "ar";
+
   return (
-    
     <section className="bg-gray-100 py-4 px-14 mx-7 mt-25 rounded-lg">
       <div
-        className="flex flex-col gap-4 overflow-hidden cursor-pointer md:flex-row md:items-center"
+        className={`flex flex-col gap-4 overflow-hidden cursor-pointer md:items-center ${isArabic ? "md:flex-row-reverse" : "md:flex-row"
+          }`}
         onMouseEnter={() => {
           setIsPaused(true);
           setShowFullMessage(true);
@@ -51,7 +56,7 @@ export default function PresidentMessage() {
             </div>
           </div>
         ) : (
-          <div className="flex flex-col sm:flex-row items-center gap-6 bg-white p-4 rounded-lg shadow-md w-full mt-2">
+          <div className={`flex flex-col sm:flex-row items-center gap-6 bg-white p-4 rounded-lg shadow-md w-full mt-2  ${isArabic ? "md:flex-row-reverse" : "md:flex-row"}`}>
             <img
               src={presidentImg}
               alt="Président"

@@ -16,11 +16,13 @@ L.Icon.Default.mergeOptions({
 });
 
 
-
+// debut changement
 
 export default function PageProjet() {
   const { id } = useParams();
   const project = projects.find((p) => p.id === parseInt(id));
+
+  
 
   if (!project) {
     return <div className="text-center py-20 text-red-600">Projet introuvable.</div>;

@@ -99,3 +99,12 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+body {
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+}
+
+html[lang="ar"] {
+    direction: rtl;
+}
