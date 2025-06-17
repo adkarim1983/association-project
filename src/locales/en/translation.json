@@ -302,6 +302,107 @@
   "locationLabel": "Location",
   "button": "See more",
   "categories": ["All", "Food", "Digital Marketing", "Event Management", "Design", "Audio Visual"]
+},
+
+
+
+  "listing": {
+    "title": "Projects in Sidi Othmane Area",
+    "category": "Category",
+    "location": "Location",
+    "viewMore": "View more",
+    "search": "Search",
+    "searchPlaceholder": "Search for a project..."
+  },
+  "categories": {
+    "all": "All",
+    "restauration": "Restaurant",
+    "marketing_digital": "Digital Marketing",
+    "evenementiel": "Events",
+    "design": "Design",
+    "audio_visuel": "Audio Visual"
+  
+},
+
+
+  "gallery": {
+    "title": "Inauguration of Professional Trainings",
+    "section1_p1": "Najm Association has officially launched three professional training courses for youth: Web Development, Graphic Design, and Digital Marketing. This initiative aims to provide a concrete opportunity for professional integration through in-demand skills.",
+    "section1_p2": "These programs are designed to meet the current needs of the digital world by focusing on practice, creativity, and innovation.",
+    "section2_p1": "Our training programs are supervised by experienced professionals and offer a project-oriented pedagogical approach. Each participant benefits from personalized support, practical work, and real-world group or individual projects.",
+    "section2_p2": "The goal is to help each participant develop technical skills, creativity, and self-confidence in a dynamic and supportive environment.",
+    "program_title": "Program Content",
+    "program_web": "Web Development: HTML, CSS, JavaScript, React, responsive site creation.",
+    "program_design": "Graphic Design: Figma, Photoshop, visual identity, visual communication.",
+    "program_marketing": "Digital Marketing: Social media, content creation, SEO, advertising campaigns.",
+    "training_title": "Training Process",
+    "training_p1": "Courses take place in a dynamic and participatory environment. Each week is structured with practical workshops, feedback sessions, inspiring talks, and group challenges.",
+    "training_p2": "Focus is placed on youth engagement, collaborative work, and tangible production of digital projects that address real-world problems.",
+    "success_title": "A Successful First Edition",
+    "success_p": "Thanks to the involvement of trainers, partners, and youth, this first edition laid the foundations for a true dynamic of learning and transformation. This program is intended as a springboard towards the digital future of our community's youth.",
+    "gallery_highlights": "General Gallery of Highlights",
+    "img1": "Teamwork on real projects",
+    "img2": "UX/UI design exercise in workshop",
+    "img3": "Individual coaching session",
+    "img4": "Exchange between participants",
+    "img5": "Presentation of a marketing strategy",
+    "img6": "Intensive learning moment",
+    "img7": "Closing with certificate ceremony"
+  
+},
+
+
+
+  "contact": {
+    "stayInTouch": "Stay in touch",
+    "title": "Contact us",
+    "paragraph": "Do you have questions or want to learn more about our activities? Feel free to contact us. We’ll be happy to help.",
+    "formTitle": "Send us a message",
+    "name": "Full name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "messagePlaceholder": "Your message",
+    "sendMessage": "Send message",
+    "infoTitle": "Contact information",
+    "address": "Address",
+    "phone": "Phone",
+    "emailLabel": "Email",
+    "hoursTitle": "Opening hours",
+    "mondayFriday": "Monday - Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed",
+    "followUs": "Follow us",
+    "socialText": "Stay connected with us on social media to follow our activities and updates.",
+    "addressDetails": "Group 3, in front of the Faculty of Letters and Human Sciences Ben M’sik"
+
+  },
+
+
+  "projects": {
+  "title": "Projects in the Sidi Othmane area",
+  "category": "Category",
+  "location": "Location",
+  "viewMore": "View more",
+  "searchTitle": "Search",
+  "searchPlaceholder": "Search for a project...",
+  "categories": {
+    "all": "All",
+    "restauration": "Food",
+    "marketing": "Digital Marketing",
+    "evenementiel": "Events",
+    "design": "Design",
+    "audiovisuel": "Audiovisual",
+    "categories": {
+      "all": "All",
+      "restauration": "Food Service",
+      "marketing": "Digital Marketing",
+      "evenementiel": "Event Planning",
+      "design": "Design",
+      "audiovisuel": "Audiovisual"
+    }
+  }
 }
 
 

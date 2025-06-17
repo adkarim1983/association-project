@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -204,6 +205,7 @@ const categories = ["Tous", "Restauration", "Marketing Digital", "Événementiel
 const itemsPerPage = 3;
 
 export default function ListingLocationPage() {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState("Tous");
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -221,7 +223,7 @@ export default function ListingLocationPage() {
   return (
     <section className="min-h-screen px-6 py-10 bg-gray-50">
       <h1 className="text-4xl font-bold text-blue-800 mb-10 text-center">
-        Projets dans la zone Sidi Othmane
+        {t("projects.title")}
       </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -239,14 +241,18 @@ export default function ListingLocationPage() {
               />
               <div className="p-5 space-y-2 flex-1">
                 <h3 className="text-xl font-semibold text-blue-700">{project.name}</h3>
-                <p className="text-sm text-gray-600">Catégorie : {project.category}</p>
-                <p className="text-sm text-gray-500">Localisation : {project.location}</p>
-                <Link
-                  to={`/projet/${project.id}`}
-                  className="inline-block text-sm text-white bg-blue-600 px-4 py-1.5 rounded hover:bg-blue-700"
-                >
-                  Voir plus
-                </Link>
+<p className="text-sm text-gray-600">
+  {t("projects.category") + " : " + t(`projects.categories.${project.category.toLowerCase()}`)}
+</p>
+<p className="text-sm text-gray-500">
+  {t("projects.location") + " : " + project.location}
+</p>
+<Link
+  to={`/projet/${project.id}`}
+  className="inline-block text-sm text-white bg-blue-600 px-4 py-1.5 rounded hover:bg-blue-700"
+>
+  {t("projects.viewMore")}
+</Link>
               </div>
             </div>
           ))}
@@ -276,7 +282,8 @@ export default function ListingLocationPage() {
             <h2 className="text-lg font-semibold mb-3 text-blue-700">Rechercher</h2>
             <input
               type="text"
-              placeholder="Rechercher un projet..."
+                placeholder={t("projects.searchPlaceholder")}
+
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"

@@ -252,7 +252,7 @@
     }
   ],
 
-
+ 
  "listing": {
   "title": "Projets dans la zone Sidi Othmane",
   "searchTitle": "Rechercher",
@@ -261,17 +261,96 @@
   "locationLabel": "Localisation",
   "button": "Voir plus",
   "categories": ["Tous", "Restauration", "Marketing Digital", "Événementiel", "Design", "Audio Visuel"]
+},
+
+  "categories": {
+    "all": "Tous",
+    "restauration": "Restauration",
+    "marketing_digital": "Marketing Digital",
+    "evenementiel": "Événementiel",
+    "design": "Design",
+    "audio_visuel": "Audio Visuel"
+  }
+  
+  
+},
+
+"gallery": {
+    "title": "Inauguration des Formations Professionnelles",
+    "section1_p1": "L'Association Najm a lancé officiellement trois formations professionnelles destinées aux jeunes : Développement Web, Design Graphique et Marketing Digital. Cette initiative vise à offrir une opportunité concrète d'insertion professionnelle à travers des compétences recherchées sur le marché.",
+    "section1_p2": "Ces programmes sont conçus pour répondre aux besoins actuels du monde numérique en mettant l’accent sur la pratique, la créativité et l’innovation.",
+    "section2_p1": "Nos formations sont encadrées par des professionnels expérimentés et offrent une approche pédagogique orientée projet. Chaque participant bénéficie d’un accompagnement personnalisé, de travaux pratiques et de projets concrets à réaliser en groupe ou individuellement.",
+    "section2_p2": "L’objectif est de permettre à chacun de développer ses compétences techniques, sa créativité, mais aussi sa confiance en soi dans un cadre dynamique et bienveillant.",
+    "program_title": "Contenu des programmes",
+    "program_web": "Développement Web : HTML, CSS, JavaScript, React, création de sites responsives.",
+    "program_design": "Design Graphique : Figma, Photoshop, identité visuelle, communication visuelle.",
+    "program_marketing": "Marketing Digital : Réseaux sociaux, création de contenu, SEO, campagnes publicitaires.",
+    "training_title": "Déroulement des formations",
+    "training_p1": "Les cours se déroulent dans un environnement dynamique et participatif. Chaque semaine est rythmée par des ateliers pratiques, des sessions de feedback, des conférences inspirantes et des challenges de groupe.",
+    "training_p2": "L'accent est mis sur l'engagement des jeunes, le travail collaboratif et la production concrète de projets digitaux qui répondent à des problématiques réelles.",
+    "success_title": "Une première édition réussie",
+    "success_p": "Grâce à l’implication des formateurs, des partenaires et des jeunes, cette première édition a posé les bases d’une véritable dynamique d’apprentissage et de transformation. Ce programme se veut un tremplin vers l’avenir numérique des jeunes de notre communauté.",
+    "gallery_highlights": "Galerie générale des moments forts",
+    "img1": "Travail en équipe sur des projets réels",
+    "img2": "Exercice de conception UX/UI en atelier",
+    "img3": "Session de coaching individuel",
+    "img4": "Échange entre participants",
+    "img5": "Présentation d'une stratégie marketing",
+    "img6": "Moment d’apprentissage intense",
+    "img7": "Clôture avec remise des certificats"
+  },
+
+  "contact": {
+  "stayInTouch": "Restons en contact",
+  "title": "Contactez-nous",
+  "paragraph": "Vous avez des questions ou souhaitez en savoir plus sur nos activités ? N'hésitez pas à nous contacter. Nous serons ravis de vous répondre.",
+  "formTitle": "Envoyez-nous un message",
+  "name": "Nom complet",
+  "email": "Email",
+  "subject": "Sujet",
+  "message": "Message",
+  "messagePlaceholder": "Votre message",
+  "sendMessage": "Envoyer le message",
+  "infoTitle": "Informations de contact",
+  "address": "Adresse",
+  "phone": "Téléphone",
+  "emailLabel": "Email",
+  "hoursTitle": "Heures d'ouverture",
+  "mondayFriday": "Lundi - Vendredi",
+  "saturday": "Samedi",
+  "sunday": "Dimanche",
+  "closed": "Fermé",
+  "followUs": "Suivez-nous",
+  "socialText": "Restez connectés avec nous sur les réseaux sociaux pour suivre nos activités et nos actualités.",
+  "image_label": "Image {{index}}",
+  "addressDetails": "Groupe 3, en face de la Faculté des Lettres et des Sciences Humaines Ben M’sik"
+
+},
+
+"projects": {
+  "title": "Projets dans la zone Sidi Othmane",
+  "category": "Catégorie",
+  "location": "Localisation",
+  "viewMore": "Voir plus",
+  "searchTitle": "Rechercher",
+  "searchPlaceholder": "Rechercher un projet...",
+  "categories": {
+    "all": "Tous",
+    "restauration": "Restauration",
+    "marketing": "Marketing Digital",
+    "evenementiel": "Événementiel",
+    "design": "Design",
+    "audiovisuel": "Audio Visuel",
+    "categories": {
+      "all": "Tous",
+      "restauration": "Restauration",
+      "marketing": "Marketing Digital",
+      "evenementiel": "Événementiel",
+      "design": "Design",
+      "audiovisuel": "Audio Visuel"
+    }
+  }
 }
-
-}
-
-
-
-
-
-
-
-
 
 
 }
