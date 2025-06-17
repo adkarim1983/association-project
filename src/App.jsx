@@ -6,7 +6,7 @@ import Contact from './pages/Contact'
 import AboutUs from './pages/AboutUs';
 import Projet from './pages/Projet';
 import ListingLocationPage from "./pages/ListingLocationPage";
-import PageProjet from "./pages/PageProjet"; // 👈 importer la page test
+import PageProjet from "./pages/PageProjet";
 import Axe from './pages/Axe';
 import RapportActivites2024 from "./pages/RapportActivites2024";
 import RapportCultureEtJeunesse from "./pages/RapportCultureEtJeunesse";
