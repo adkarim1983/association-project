@@ -34,8 +34,7 @@ const isArabic = currentLanguage === "ar";
   return (
     <section className="bg-gray-100 py-4 px-14 mx-7 mt-25 rounded-lg">
       <div
-        className={`flex flex-col gap-4 overflow-hidden cursor-pointer md:items-center ${isArabic ? "md:flex-row-reverse" : "md:flex-row"
-          }`}
+        className={`flex flex-col gap-4 overflow-hidden cursor-pointer md:items-center md:flex-row`}
         onMouseEnter={() => {
           setIsPaused(true);
           setShowFullMessage(true);
@@ -56,7 +55,7 @@ const isArabic = currentLanguage === "ar";
             </div>
           </div>
         ) : (
-          <div className={`flex flex-col sm:flex-row items-center gap-6 bg-white p-4 rounded-lg shadow-md w-full mt-2  ${isArabic ? "md:flex-row-reverse" : "md:flex-row"}`}>
+          <div className={`flex flex-col sm:flex-row items-center gap-6 bg-white p-4 rounded-lg shadow-md w-full mt-2 md:flex-row`}>
             <img
               src={presidentImg}
               alt="Président"

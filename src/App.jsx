@@ -12,8 +12,9 @@ import RapportActivites2024 from "./pages/RapportActivites2024";
 import RapportCultureEtJeunesse from "./pages/RapportCultureEtJeunesse";
 import RapportSolidariteDev from "./pages/RapportSolidariteDev";
 import GalerieImage from "./components/GalerieImage";
-import Login from './pages/Login';
-import React, { useEffect, useState } from 'react';
+import Login from './pages/admin/Login';
+import { useEffect, useState } from 'react';
+import Dashboard from './pages/admin/Dashboard';
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -33,13 +34,16 @@ function App() {
           <Route path="about-us" element={<AboutUs />} />
           <Route path="login" element={<Login />} />
           <Route path="galerie" element={<GalerieImage />} />
-          <Route path="*" element={<h1>Page not found</h1>} />
           <Route path="axe" element={<Axe />} />
           <Route path="/" element={<ListingLocationPage />} />
           <Route path="/projet/:id" element={<PageProjet />} />
           <Route path="/rapports/activites-2024" element={<RapportActivites2024 />} />
           <Route path="/rapports/culture-et-jeunesse" element={<RapportCultureEtJeunesse />} />
           <Route path="/rapports/solidarite-developpement" element={<RapportSolidariteDev />} />
+          
+          <Route path="*" element={<h1>Page not found</h1>} />
+          <Route path="/admin/dashboard" element={<Dashboard />} />
+
         </Route>
       </Routes>
     </>
