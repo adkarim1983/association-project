@@ -11,7 +11,7 @@ import Axe from './pages/Axe';
 import RapportActivites2024 from "./pages/RapportActivites2024";
 import RapportCultureEtJeunesse from "./pages/RapportCultureEtJeunesse";
 import RapportSolidariteDev from "./pages/RapportSolidariteDev";
-import GalerieImage from "./components/GalerieImage";
+import GalerieImage from "./pages/GalerieImage";
 import Login from './pages/admin/Login';
 import { useEffect, useState } from 'react';
 import Dashboard from './pages/admin/Dashboard';
