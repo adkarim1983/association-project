@@ -432,7 +432,16 @@
         "content": "INDH: financial support of 100,000 MAD. Youth Platform – Irchad: training and full support. Association Najm: moral and operational support throughout the project stages."
       }
     ]
-  }
+  },
+
+   "hero": {
+  "title1": "Najm Association",
+  "desc1": "For a better future through education, culture, and solidarity.",
+  "title2": "Education and Engagement",
+  "desc2": "Join us to build a fairer and more humane world.",
+  "title3": "Active Solidarity",
+  "desc3": "Let’s unite to make a positive impact in our society."
+}
 
 
 

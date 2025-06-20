@@ -379,8 +379,16 @@
         "content": "INDH (Initiative Nationale pour le Développement Humain) : apport financier de 100 000 MAD, facilitant le démarrage du projet. Plateforme des Jeunes – Irchad : formation de 3 mois, accompagnement technique, économique, juridique et terrain. Association Najm : appui moral et accompagnement continu pendant la phase de planification et d’exécution."
       }
     ]
-  }
+  },
 
+"hero": {
+  "title1": "Association Najm",
+  "desc1": "Pour un avenir meilleur à travers l'éducation, la culture et la solidarité.",
+  "title2": "Éducation et Engagement",
+  "desc2": "Rejoignez-nous pour construire un monde plus juste et plus humain.",
+  "title3": "Solidarité Active",
+  "desc3": "Unissons nos forces pour un impact positif dans notre société."
+}
 
 
 

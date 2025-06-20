@@ -15,6 +15,7 @@ import GalerieImage from "./pages/GalerieImage";
 import Login from './pages/admin/Login';
 import { useEffect, useState } from 'react';
 import Dashboard from './pages/admin/Dashboard';
+import { Helmet } from 'react-helmet';
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -28,22 +29,21 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="project" element={<Projet />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="login" element={<Login />} />
-          <Route path="galerie" element={<GalerieImage />} />
-          <Route path="axe" element={<Axe />} />
-          <Route path="/" element={<ListingLocationPage />} />
-          <Route path="/projet/:id" element={<PageProjet />} />
-          <Route path="/rapports/activites-2024" element={<RapportActivites2024 />} />
-          <Route path="/rapports/culture-et-jeunesse" element={<RapportCultureEtJeunesse />} />
-          <Route path="/rapports/solidarite-developpement" element={<RapportSolidariteDev />} />
+          <Route index element={<><Helmet><title>Home</title></Helmet><Home /></>} />
+          <Route path="contact" element={<><Helmet><title>Contact</title></Helmet><Contact /></>} />
+          <Route path="project" element={<><Helmet><title>Project</title></Helmet><Projet /></>} />
+          <Route path="about-us" element={<><Helmet><title>About Us</title></Helmet><AboutUs /></>} />
+          <Route path="login" element={<><Helmet><title>Login</title></Helmet><Login /></>} />
+          <Route path="galerie" element={<><Helmet><title>Galerie</title></Helmet><GalerieImage /></>} />
+          <Route path="axe" element={<><Helmet><title>Axe</title></Helmet><Axe /></>} />
+          <Route path="/" element={<><Helmet><title>Listing Location</title></Helmet><ListingLocationPage /></>} />
+          <Route path="/projet/:id" element={<><Helmet><title>Project Details</title></Helmet><PageProjet /></>} />
+          <Route path="/rapports/activites-2024" element={<><Helmet><title>Rapport Activites 2024</title></Helmet><RapportActivites2024 /></>} />
+          <Route path="/rapports/culture-et-jeunesse" element={<><Helmet><title>Rapport Culture et Jeunesse</title></Helmet><RapportCultureEtJeunesse /></>} />
+          <Route path="/rapports/solidarite-developpement" element={<><Helmet><title>Rapport Solidarite Developpement</title></Helmet><RapportSolidariteDev /></>} />
           
-          <Route path="*" element={<h1>Page not found</h1>} />
-          <Route path="/admin/dashboard" element={<Dashboard />} />
-
+          <Route path="*" element={<><Helmet><title>Page Not Found</title></Helmet><h1>Page not found</h1></>} />
+          <Route path="/admin/dashboard" element={<><Helmet><title>Dashboard</title></Helmet><Dashboard /></>} />
         </Route>
       </Routes>
     </>
