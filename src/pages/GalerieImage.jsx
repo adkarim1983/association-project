@@ -23,7 +23,7 @@ export default function GalerieImage() {
   return (
     <div className="px-6 py-16 bg-gradient-to-b from-white via-gray-100 to-white min-h-screen animate-fade-in">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-extrabold text-center  text-gray-800 mb-12">
+        <h1 className="text-3xl font-extrabold text-justify  text-gray-800 mb-12">
           {/* {t("irchad.gallery.title")} */}
           {t("gallery.title")}
 

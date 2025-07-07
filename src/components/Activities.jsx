@@ -96,28 +96,28 @@ export default function CarouselActivites() {
     </div>
 
     {/* Mobile version scrollable horizontal */}
-    <div className="md:hidden overflow-x-auto">
-      <div className="flex gap-4 w-max">
-        {activities.map((activity, i) => (
-          <div
-            key={i}
-            className="w-72 flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden"
-          >
-            <img
-              src={activity.image}
-              alt={activity.title}
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
-                {activity.title}
-              </h3>
-              <p className="text-sm text-gray-600">{activity.description}</p>
-            </div>
-          </div>
-        ))}
+    <div className="md:hidden overflow-x-auto pb-2">
+  <div className="flex gap-4 w-max px-2 scroll-smooth snap-x snap-mandatory">
+    {activities.map((activity, i) => (
+      <div
+        key={i}
+        className="w-72 flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden snap-start"
+      >
+        <img
+          src={activity.image}
+          alt={activity.title}
+          className="w-full h-40 object-cover"
+        />
+        <div className="p-4">
+          <h3 className="text-lg font-bold text-gray-800 mb-2">
+            {activity.title}
+          </h3>
+          <p className="text-sm text-gray-600">{activity.description}</p>
+        </div>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
   </div>
 </section>
 
