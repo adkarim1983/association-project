@@ -50,52 +50,76 @@ export default function CarouselActivites() {
 
   return (
     <section className="py-16 mx-6 bg-gray-100 rounded-2xl">
-      <div className="max-w-7xl mx-auto px-4 relative">
-        <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
-          {t("activities.title")}
-        </h2>
+  <div className="max-w-7xl mx-auto px-4 relative">
+    <h2 className="text-4xl font-bold text-blue-900 mb-12 text-justify">
+      {t("activities.title")}
+    </h2>
 
-        <div className="flex items-center justify-between gap-4 text-justify">
-          <button
-            onClick={prevSlide}
-            className="text-blue-600 hover:text-blue-800 p-2 rounded-full border border-blue-200 bg-white shadow"
-            disabled={index === 0}
+    {/* Desktop version avec flèches */}
+    <div className="hidden md:flex items-center justify-between gap-4">
+      <button
+        onClick={prevSlide}
+        className="text-blue-600 hover:text-blue-800 p-2 rounded-full border border-blue-200 bg-white shadow"
+        disabled={index === 0}
+      >
+        ◀
+      </button>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-1">
+        {visibleCards.map((activity, i) => (
+          <div
+            key={i}
+            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
           >
-            ◀
-          </button>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-1">
-            {visibleCards.map((activity, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
-              >
-                <img
-                  src={activity.image}
-                  alt={activity.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold text-gray-800 mb-2">
-                    {activity.title}
-                  </h3>
-                  <p className="text-base  text-gray-600">
-                    {activity.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+            <img
+              src={activity.image}
+              alt={activity.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                {activity.title}
+              </h3>
+              <p className="text-base text-gray-600">{activity.description}</p>
+            </div>
           </div>
-
-          <button
-            onClick={nextSlide}
-            className="text-blue-600 hover:text-blue-800 p-2 rounded-full border border-blue-200 bg-white shadow"
-            disabled={index + 3 >= activities.length}
-          >
-            ▶
-          </button>
-        </div>
+        ))}
       </div>
-    </section>
+
+      <button
+        onClick={nextSlide}
+        className="text-blue-600 hover:text-blue-800 p-2 rounded-full border border-blue-200 bg-white shadow"
+        disabled={index + 3 >= activities.length}
+      >
+        ▶
+      </button>
+    </div>
+
+    {/* Mobile version scrollable horizontal */}
+    <div className="md:hidden overflow-x-auto">
+      <div className="flex gap-4 w-max">
+        {activities.map((activity, i) => (
+          <div
+            key={i}
+            className="w-72 flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden"
+          >
+            <img
+              src={activity.image}
+              alt={activity.title}
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                {activity.title}
+              </h3>
+              <p className="text-sm text-gray-600">{activity.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 }
