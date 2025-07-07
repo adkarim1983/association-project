@@ -16,7 +16,7 @@ import Login from './pages/admin/Login';
 import { useEffect, useState } from 'react';
 import Dashboard from './pages/admin/Dashboard';
 import { Helmet } from 'react-helmet';
-
+import ArticleForms from './pages/admin/ArticleForms';
 function App() {
   const [language, setLanguage] = useState('en');
 
@@ -44,6 +44,7 @@ function App() {
           
           <Route path="*" element={<><Helmet><title>Page Not Found</title></Helmet><h1>Page not found</h1></>} />
           <Route path="/admin/dashboard" element={<><Helmet><title>Dashboard</title></Helmet><Dashboard /></>} />
+          <Route path="addArticle" element={<><Helmet><title>Add Article</title></Helmet><ArticleForms /></>} />
         </Route>
       </Routes>
     </>

@@ -79,7 +79,7 @@ export default function CarouselActivites() {
                   <h3 className="text-lg font-bold text-gray-800 mb-2">
                     {activity.title}
                   </h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-base text-gray-600">
                     {activity.description}
                   </p>
                 </div>

@@ -22,7 +22,7 @@ const projects = [
     id: 1,
     name: "PLANET FOOD",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative de Sidi Othmane",
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image12.jpg",
@@ -31,7 +31,7 @@ const projects = [
     id: 2,
     name: "Alphacom",
     category: "Marketing Digital",
-    location: "Sidi Othmane",
+    location: "Zone industrielle Sidi Othmane",
     lat: 33.605,
     lng: -7.525,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image9-398x530.jpg",
@@ -40,7 +40,7 @@ const projects = [
     id: 3,
     name: "Baha Happye Park",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image56-375x530.png",
@@ -49,7 +49,7 @@ const projects = [
     id: 4,
     name: "Pixel Prod",
     category: "Design",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Mabrouka",
     lat: 33.5747295,
     lng: -7.5524299,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image55.png",
@@ -58,7 +58,7 @@ const projects = [
     id: 5,
     name: "Taha ProdD",
     category: "Audio Visuel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Mabrouka",
     lat: 33.5725,
     lng: -7.5590,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image41-299x530.jpg",
@@ -67,7 +67,7 @@ const projects = [
     id: 6,
     name: "AZ Event 733",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative de Sidi Othmane",
     lat:  33.5747295,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image51.jpg",
@@ -76,7 +76,7 @@ const projects = [
     id: 7,
     name: "Pretty Events",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image35-398x530.jpg",
@@ -85,7 +85,7 @@ const projects = [
     id: 8,
     name: "ERREGYBY EVENT ",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Sadri",
     lat: 33.57472951,
     lng: -7.5524299,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image38-398x530.jpg",
@@ -94,7 +94,7 @@ const projects = [
     id: 9,
     name: "Snack",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Hay El Rajae",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image30.jpg",
@@ -103,7 +103,7 @@ const projects = [
     id: 10,
     name: "Snack Yacout",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Zone industrielle Moulay Rachid",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image28-244x530.jpg",
@@ -112,7 +112,7 @@ const projects = [
     id: 11,
     name: "Dar Miya",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image25-398x530.jpg",
@@ -121,7 +121,7 @@ const projects = [
     id: 12,
     name: "Foratino",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image19-397x530.jpg",
@@ -130,7 +130,7 @@ const projects = [
     id: 13,
     name: "La Table d’emotion",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image16-524x530.jpg",
@@ -139,7 +139,7 @@ const projects = [
     id: 14,
     name: "Om Ali Food",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative El Harouiyine",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image15.jpg",
@@ -148,7 +148,7 @@ const projects = [
     id: 15,
     name: "kitchen chaimaa",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Zone industrielle Moulay Rachid",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image14-399x530.jpg",
@@ -157,7 +157,7 @@ const projects = [
     id: 16,
     name: "Wafae El Hana",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Hay El Rajae",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image9-398x530.jpg",
@@ -166,7 +166,7 @@ const projects = [
     id: 17,
     name: "GO EVENT DIGILAB",
     category: "Marketing Digital",
-    location: "Sidi Othmane",
+    location: "Hay El Rajae",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/IMG_6635-Red-Reda-707x530.jpeg",
@@ -175,7 +175,7 @@ const projects = [
     id: 18,
     name: "Doja EVENT",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative de Sidi Othmane",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/WhatsApp-Image-2025-01-04-at-11.34.44-516x530.jpeg",
@@ -184,7 +184,7 @@ const projects = [
     id: 19,
     name: "MaMoN Food’s",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Sadri",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image23-524x530.jpg",
@@ -193,7 +193,7 @@ const projects = [
     id: 20,
     name: "Mohcin Najmi Production",
     category: "Marketing Digital",
-    location: "Sidi Othmane",
+    location: "Annexe administrative de Sidi Othmane",
     lat: 33.61,
     lng: -7.54,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2024/12/WhatsApp-Image-2024-12-03-at-23.21.32-707x530.jpeg",
@@ -201,19 +201,52 @@ const projects = [
 
 ];
 
+
+
+
+
+
+
+
 const categories = ["Tous", "Restauration", "Marketing Digital", "Événementiel", "Design", "Audio Visuel"];
-const itemsPerPage = 3;
+
+const zones = [
+  "Toutes les zones",
+  "Annexe administrative de Sidi Othmane",
+  "Zone industrielle Sidi Othmane",
+  "Annexe administrative du quartier Moulay Rachid",
+  "Annexe administrative du quartier Mabrouka",
+  "Annexe administrative du quartier Sadri",
+  "Hay El Rajae",
+  "Zone industrielle Moulay Rachid",
+  "Annexe administrative El Harouiyine"
+];
+
+const itemsPerPage = 5;
 
 export default function ListingLocationPage() {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState("Tous");
+  const [selectedZone, setSelectedZone] = useState("Toutes les zones");
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
   const filteredProjects = projects.filter((p) => {
     const matchCategory = selectedCategory === "Tous" || p.category === selectedCategory;
+    const matchZone = selectedZone === "Toutes les zones" || p.location === selectedZone;
     const matchSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase());
-    return matchCategory && matchSearch;
+
+// la partie ajoutee:
+    function normalizeCategoryKey(category) {
+  if (!category) return ""; // sécurité si category est undefined
+  return category.toLowerCase().replaceAll(" ", "_");
+}
+//fin de partie ajoutee
+
+
+
+
+    return matchCategory && matchSearch && matchZone;
   });
 
   const startIdx = (currentPage - 1) * itemsPerPage;
@@ -241,18 +274,18 @@ export default function ListingLocationPage() {
               />
               <div className="p-5 space-y-2 flex-1">
                 <h3 className="text-xl font-semibold text-blue-700">{project.name}</h3>
-<p className="text-sm text-gray-600">
-  {t("projects.category") + " : " + t(`projects.categories.${project.category.toLowerCase()}`)}
-</p>
-<p className="text-sm text-gray-500">
-  {t("projects.location") + " : " + project.location}
-</p>
-<Link
-  to={`/projet/${project.id}`}
-  className="inline-block text-sm text-white bg-blue-600 px-4 py-1.5 rounded hover:bg-blue-700"
->
-  {t("projects.viewMore")}
-</Link>
+                <p className="text-sm text-gray-600">
+                  {t("projects.category") + " : " + t(`projects.categories.${project.category.toLowerCase()}`)}
+                </p>
+                <p className="text-sm text-gray-500">
+                  {t("projects.location") + " : " + project.location}
+                </p>
+                <Link
+                  to={`/projet/${project.id}`}
+                  className="inline-block text-sm text-white bg-blue-600 px-4 py-1.5 rounded hover:bg-blue-700"
+                >
+                  {t("projects.viewMore")}
+                </Link>
               </div>
             </div>
           ))}
@@ -275,19 +308,19 @@ export default function ListingLocationPage() {
           </div>
         </div>
 
-        {/* Recherche + Carte */}
+        {/* Barre de recherche + filtres + carte */}
         <div className="space-y-8">
-          {/* Barre de recherche + filtres */}
           <div className="bg-white p-5 rounded-xl shadow border">
             <h2 className="text-lg font-semibold mb-3 text-blue-700">Rechercher</h2>
             <input
               type="text"
-                placeholder={t("projects.searchPlaceholder")}
-
+              placeholder={t("projects.searchPlaceholder")}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
             />
+
+            {/* Filtres Catégorie */}
             <div className="mt-4 flex flex-wrap gap-2">
               {categories.map((cat) => (
                 <button
@@ -303,26 +336,57 @@ export default function ListingLocationPage() {
                 </button>
               ))}
             </div>
+
+            {/* Filtres Zone */}
+            <h2 className="text-lg font-semibold mt-6 mb-2 text-blue-700">Filtrer par zone</h2>
+            <div className="flex flex-wrap gap-2">
+              {zones.map((zone) => (
+                <button
+                  key={zone}
+                  onClick={() => setSelectedZone(zone)}
+                  className={`px-4 py-1 text-sm rounded-full border transition ${
+                    selectedZone === zone
+                      ? "bg-blue-600 text-white border-blue-600"
+                      : "bg-white text-blue-600 border-blue-300 hover:bg-blue-100"
+                  }`}
+                >
+                  {zone}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Carte Leaflet */}
           <div className="h-[300px] w-full border rounded-xl overflow-hidden">
             <MapContainer
-              center={[33.61, -7.54]}
-              zoom={13}
-              scrollWheelZoom={false}
-              className="h-full w-full"
-            >
-              <TileLayer
-                attribution='© OpenStreetMap'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              {filteredProjects.map((p) => (
-                <Marker key={p.id} position={[p.lat, p.lng]}>
-                  <Popup>{p.name}</Popup>
-                </Marker>
-              ))}
-            </MapContainer>
+  center={[33.61, -7.54]}
+  zoom={13}
+  scrollWheelZoom={false}
+  className="h-full w-full"
+>
+  <TileLayer
+    attribution="© OpenStreetMap"
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  {filteredProjects.map((p) => (
+    <Marker key={p.id} position={[p.lat, p.lng]}>
+      <Popup>
+        <div className="space-y-1 text-sm">
+          <h3 className="text-blue-700 font-semibold text-base">{p.name}</h3>
+          <p><strong>📂 {t("projects.category")}:</strong> {t(`projects.categories.${p.category.toLowerCase()}`)}</p>
+          <p><strong>📍 {t("projects.location")}:</strong> {p.location}</p>
+          <Link
+            to={`/projet/${p.id}`}
+            className="inline-block mt-2 text-xs text-white bg-blue-600 px-3 py-1 rounded hover:bg-blue-700"
+          >
+            {t("projects.viewMore")}
+          </Link>
+        </div>
+      </Popup>
+    </Marker>
+  ))}
+</MapContainer>
+
           </div>
         </div>
       </div>

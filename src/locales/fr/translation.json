@@ -267,7 +267,7 @@
     "all": "Tous",
     "restauration": "Restauration",
     "marketing_digital": "Marketing Digital",
-    "evenementiel": "Événementiel",
+    "événementiel": "Événementiel",
     "design": "Design",
     "audio_visuel": "Audio Visuel"
   }
@@ -388,7 +388,22 @@
   "desc2": "Rejoignez-nous pour construire un monde plus juste et plus humain.",
   "title3": "Solidarité Active",
   "desc3": "Unissons nos forces pour un impact positif dans notre société."
+},
+
+"vision_guidelines": {
+  "title": "Les orientations qui guident notre vision",
+  "paragraph": "Le lancement de la troisième phase de l’Initiative Nationale pour le Développement Humain, à travers le renforcement de ses acquis et la redéfinition de ses programmes autour du développement du capital humain, l’amélioration des conditions des générations montantes, le soutien des catégories en situation de vulnérabilité, et le lancement d’une nouvelle génération d’initiatives génératrices de revenu et créatrices d’emplois (...).",
+  "citation": "Extrait du discours du Trône prononcé par Sa Majesté le Roi Mohammed VI, que Dieu l’assiste, le dimanche 29 juillet 2018."
+},
+
+"permanent_team": {
+  "title": "Association Najm : une équipe permanente",
+  "paragraph1": "Dans le cadre de sa stratégie pour le développement et l’autonomie, l’Association Najm s’appuie sur une équipe permanente composée d’administrateurs, de conseillers en orientation et accompagnement, de formateurs et de coachs en soft skills. Cette équipe joue un rôle essentiel dans la mise en œuvre des programmes portés par l’association et dans l’accompagnement des bénéficiaires à chaque étape de leur parcours.",
+  "paragraph2": "Afin de garantir un accompagnement de haute qualité et une adaptation continue aux évolutions économiques et technologiques, l’Association Najm investit dans le renforcement des compétences et des capacités de son équipe permanente. Des sessions de formation régulières sont ainsi organisées pour développer les compétences de ses cadres, notamment dans le domaine de la formation des formateurs, mais aussi dans les domaines de l’innovation numérique et de l’appui à l’entrepreneuriat.",
+  "paragraph3": "À travers cette dynamique continue d’évolution et d’amélioration de ses services, l’Association Najm renforce son rôle d’acteur clé dans le développement de l’inclusion économique et sociale, en assurant un encadrement efficace, innovant et de qualité pour ses bénéficiaires."
 }
+
+
 
 
 

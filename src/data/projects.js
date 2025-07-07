@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     name: "PLANET  FOOD",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative de Sidi Othmane",
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image12.jpg",
@@ -37,9 +37,9 @@ const projects = [
   },
   {
     id: 2,
-    name: "ALPHACOM",
+    name: "ALPHACOM", 
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Zone industrielle Sidi Othmane",  // zone industrielle Sidi Othmane
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image9-398x530.jpg",
@@ -76,7 +76,7 @@ const projects = [
     id: 3,
     name: "Baha Happye Park",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid", // Annexe administrative du quartier Moulay Rachid
     lat: 33.5747295,
     lng: -7.5524299,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image56-375x530.png",
@@ -112,7 +112,7 @@ const projects = [
     id: 4,
     name: "Pixel Prod",
     category: "Design",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Mabrouka", // Annexe administrative du quartier Mabrouka
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image55.png",
@@ -150,7 +150,7 @@ const projects = [
     id: 5,
     name: "Taha ProdD",
     category: "Audio Visuel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Mabrouka", // Annexe administrative du quartier Mabrouka
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image55.png",
@@ -186,7 +186,7 @@ const projects = [
     id: 6,
     name: "AZ Event 733",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative de Sidi Othmane", //Annexe administrative de Sidi Othmane
     lat: 33.5573031,
     lng: -7.5552762,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image51.jpg",
@@ -223,7 +223,7 @@ const projects = [
     id: 7,
     name: "Pretty Events",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid", // Annexe administrative du quartier Moulay Rachid
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image35-398x530.jpg",
@@ -258,9 +258,9 @@ const projects = [
 
   {
     id: 8,
-    name: "ERREVENTEGYBY",
+    name: "ERREGYBY EVENT",
     category: "Événementiel",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Sadri",  ////////// Annexe administrative du quartier Sadri
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image38-398x530.jpg",
@@ -297,7 +297,7 @@ const projects = [
     id: 9,
     name: "Snack",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Hay El Rajae",    ////////// Hay El Rajae
     lat: 33.5651,
     lng: -7.5858,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image30.jpg",
@@ -332,9 +332,9 @@ const projects = [
 
   {
     id: 10,
-    name: "Snack Yacout",
+    name: "Snack Yacout",  
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Zone industrielle Moulay Rachid",  //  Zone industrielle Moulay Rachid
      lat: 33.6102,
   lng: -7.5401,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image30.jpg",
@@ -370,7 +370,7 @@ const projects = [
     id: 11,
     name: "Dar Miya",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid",  // Annexe administrative du quartier Moulay Rachid
     lat: 33.5651,
     lng: -7.5858,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image25-398x530.jpg",
@@ -407,7 +407,7 @@ const projects = [
     id: 12,
     name: "Foratino",
     category: "Restauration",
-    location: "Sidi Othmane",
+    location: "Annexe administrative du quartier Moulay Rachid",  // Annexe administrative du quartier Moulay Rachid
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image19-397x530.jpg",
@@ -444,7 +444,7 @@ const projects = [
   id: 13,
   name: "LA TABLE D’MOTIONS",
   category: "Restauration",
-  location: "Hay Al Baraka",
+  location: "Annexe administrative du quartier Moulay Rachid", // Annexe administrative du quartier Moulay Rachid
   lat: 33.5651,
   lng: -7.5858,
   image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image16-524x530.jpg",
@@ -481,7 +481,7 @@ const projects = [
   id: 14,
   name: "Om Ali Food",
   category: "Restauration",
-  location: "Hay Al Idmaj, Moulay Rachid",
+  location: "Annexe administrative El Harouiyine", // Annexe administrative El Harouiyine
   lat: 33.6040,
   lng: -7.5352,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image15.jpg",
@@ -518,7 +518,7 @@ const projects = [
   id: 15,
   name: "Kitchen Chaimaa",
   category: "Restauration",
-  location: "Moulay Rachid",
+  location: "Zone industrielle Moulay Rachid",  // Zone industrielle Moulay Rachid
   lat: 33.6052,
   lng: -7.5360,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image14-399x530.jpg",
@@ -555,7 +555,7 @@ const projects = [
   id: 16,
   name: "Delicesl Hanae",
   category: "Événementiel & Restauration",
-  location: "Moulay Rachid",
+  location: "Hay El Rajae",  ////////// Hay El Rajae
   lat: 33.585073,
   lng: -7.592831,
   image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image9-398x530.jpg",
@@ -592,7 +592,7 @@ const projects = [
   id: 17,
   name: "GO EVENT DIGILAB",
   category: "Création de contenu & Événementiel",
-  location: "Moulay Rachid",
+  location: "Hay El Rajae",  ////////// Hay El Rajae
   lat: 33.6058,
   lng: -7.5330,
   image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image35-398x530.jpg",
@@ -629,8 +629,8 @@ const projects = [
   id: 18,
   name: "Doja EVENT",
   category: "Organisation d’événements",
-  location: "Rue An-Nil",
-  lat: 33.6069,
+  location: "Annexe administrative de Sidi Othmane",   // Annexe administrative de Sidi Othmane.
+  lat: 33.6069, 
   lng: -7.5292,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/WhatsApp-Image-2025-01-04-at-11.34.44-516x530.jpeg",
   descriptionSections: [
@@ -666,7 +666,7 @@ const projects = [
   id: 19,
   name: "MaMoN Food’s",
   category: "Restauration",
-  location: "Quartier Essadri, Moulay Rachid",
+  location: "Annexe administrative du quartier Sadri",  //  Annexe administrative du quartier Sadri.
   lat: 33.5728,
   lng: -7.5532,
   image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image23-524x530.jpg",
@@ -703,7 +703,7 @@ const projects = [
   id: 20,
   name: "Social Media Marketing Agency Keghat",
   category: "Marketing Digital",
-  location: "Casablanca",
+  location: "Hay El Rajae",    // ////////// Hay El Rajae
   lat: 33.5731,
   lng: -7.5898,
   image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image38-398x530.jpg",
