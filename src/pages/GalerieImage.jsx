@@ -23,7 +23,7 @@ export default function GalerieImage() {
   return (
     <div className="px-6 py-16 bg-gradient-to-b from-white via-gray-100 to-white min-h-screen animate-fade-in">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-extrabold text-center text-gray-800 mb-12">
+        <h1 className="text-5xl font-extrabold text-center  text-gray-800 mb-12">
           {/* {t("irchad.gallery.title")} */}
           {t("gallery.title")}
 
@@ -32,10 +32,10 @@ export default function GalerieImage() {
 
         <div className="grid md:grid-cols-2 gap-10 items-center mb-16 animate-fade-up">
           <div className="text-gray-700 text-lg leading-relaxed">
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               {t("gallery.section1_p1")}
             </p>
-            <p>
+            <p className="text-justify">
               {t("gallery.section1_p2")}
             </p>
           </div>
@@ -50,10 +50,10 @@ export default function GalerieImage() {
             <img src={image4a} alt="Présentation" className="rounded-xl shadow-lg w-full h-auto" />
           </div>
           <div className="text-gray-700 text-lg leading-relaxed">
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               {t("gallery.section2_p1")}
-            </p>
-            <p>
+            </p> 
+            <p className="text-justify">
               {t("gallery.section2_p2")}
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function GalerieImage() {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-16 animate-fade-up">
           <div className="text-gray-700 text-lg leading-relaxed">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800">Contenu des programmes</h2>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-disc list-inside space-y-2 text-justify">
               <li>{t("gallery.program_web")}</li>
               <li>{t("gallery.program_design")}</li>
               <li>{t("gallery.program_marketing")}</li>
@@ -81,10 +81,10 @@ export default function GalerieImage() {
           </div>
           <div className="text-gray-700 text-lg leading-relaxed">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800">{t("gallery.training_title")}</h2>
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               {t("gallery.training_p1")}
             </p>
-            <p>
+            <p className="text-justify">
               {t("gallery.training_p2")}
             </p>
           </div>
@@ -94,7 +94,7 @@ export default function GalerieImage() {
         <div className="grid md:grid-cols-2 gap-10 items-center animate-fade-up">
           <div className="text-gray-700 text-lg leading-relaxed">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800">{t("gallery.success_title")}</h2>
-            <p>
+            <p className="text-justify">
               {t("gallery.success_p")}
             </p>
           </div>

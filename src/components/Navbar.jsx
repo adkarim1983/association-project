@@ -116,6 +116,9 @@ export default function Navbar() {
     setIsMenuOpen(false); // ferme le menu mobile aussi
   };
 
+  // get the current language from i18n
+  const currentLanguage = i18n.language || 'fr';
+
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="mx-auto px-4 py-3 flex items-center justify-between max-w-7xl" style={{ direction: 'ltr' }}>
@@ -129,7 +132,7 @@ export default function Navbar() {
         </Link>
 
         {/* Menu Desktop */}
-        <ul className="hidden lg:flex items-center space-x-6 font-medium text-gray-700">
+        <ul className={`hidden lg:flex ${currentLanguage === 'ar' ? 'flex-row-reverse' : ''} items-center space-x-6 font-medium text-gray-700`}>
           <li><Link to="/">{t("menu.accueil")}</Link></li>
           <li><Link to="/about-us">{t("menu.a_propos")}</Link></li>
           <li><Link to="/Axe">{t("menu.axe")}</Link></li>
@@ -138,7 +141,7 @@ export default function Navbar() {
           <li><Link to="/contact">{t("menu.contact")}</Link></li>
 
           {/* Langue Desktop */}
-          <li className="relative">
+          <li className="absolute right-10 top-1/2 transform -translate-y-1/2">
             <button
               onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
               className="w-10 h-10 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center hover:bg-blue-100 transition duration-300 shadow-sm"

@@ -55,7 +55,7 @@ export default function CarouselActivites() {
           {t("activities.title")}
         </h2>
 
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-4 text-justify">
           <button
             onClick={prevSlide}
             className="text-blue-600 hover:text-blue-800 p-2 rounded-full border border-blue-200 bg-white shadow"
@@ -79,7 +79,7 @@ export default function CarouselActivites() {
                   <h3 className="text-lg font-bold text-gray-800 mb-2">
                     {activity.title}
                   </h3>
-                  <p className="text-base text-gray-600">
+                  <p className="text-base  text-gray-600">
                     {activity.description}
                   </p>
                 </div>

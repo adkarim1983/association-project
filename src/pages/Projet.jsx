@@ -224,6 +224,14 @@ const zones = [
 
 const itemsPerPage = 5;
 
+const categoryKeyMap = {
+  "Restauration": "restauration",
+  "Marketing Digital": "marketing",
+  "Événementiel": "evenementiel",
+  "Design": "design",
+  "Audio Visuel": "audiovisuel"
+};
+
 export default function ListingLocationPage() {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState("Tous");
@@ -275,7 +283,7 @@ export default function ListingLocationPage() {
               <div className="p-5 space-y-2 flex-1">
                 <h3 className="text-xl font-semibold text-blue-700">{project.name}</h3>
                 <p className="text-sm text-gray-600">
-                  {t("projects.category") + " : " + t(`projects.categories.${project.category.toLowerCase()}`)}
+                  {t("projects.category") + " : " + t(`projects.categories.${categoryKeyMap[project.category] || project.category}`)}
                 </p>
                 <p className="text-sm text-gray-500">
                   {t("projects.location") + " : " + project.location}

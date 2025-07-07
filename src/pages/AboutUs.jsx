@@ -18,7 +18,8 @@ import image32 from '../assets/image32.jpg';
 import image33 from '../assets/image3.jpg';
 import image34 from '../assets/image34.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { useRef } from 'react';
 
 import confiance from "../assets/confiance.png";
 import affichage from "../assets/affichage.png";
@@ -126,6 +127,9 @@ const membres = [
     },
 
 ];
+
+
+
 export default function ValeursEtPrincipes() {
     const { t } = useTranslation();
     const valeurs = [
@@ -186,6 +190,19 @@ export default function ValeursEtPrincipes() {
             image: citoyennete,
         },
     ];
+
+     const containerRef = useRef(null);
+
+  const scrollLeft = () => {
+    containerRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+  };
+
+  const scrollRight = () => {
+    containerRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+  };
+
+
+
 
     return (
     <>
@@ -271,7 +288,7 @@ export default function ValeursEtPrincipes() {
       </section>
 
       {/* Équipe (statique ici sauf si tu veux l’internationaliser aussi) */}
-      <section className="bg-gray-100 py-12 px-6">
+      {/* <section className="bg-gray-100 py-12 px-6">
                 <div className="max-w-7xl mx-auto text-center mb-12">
                     <h2 className="text-3xl font-bold text-blue-800">Équipe de l’Association</h2>
                 </div>
@@ -304,7 +321,61 @@ export default function ValeursEtPrincipes() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
+             <section className="bg-gray-100 py-12 px-4">
+      <div className="max-w-7xl mx-auto text-center mb-10">
+        <h2 className="text-3xl font-bold text-blue-800">Équipe de l’Association</h2>
+      </div>
+
+      <div className="relative">
+        {/* Flèche gauche */}
+        <button
+          onClick={scrollLeft}
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-blue-700 shadow-md p-2 rounded-full z-10 hover:bg-blue-100"
+        >
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+
+        {/* Liste membres */}
+        <div
+          ref={containerRef}
+          className="flex gap-6 overflow-x-auto scroll-smooth px-6 py-4"
+        >
+          {membres.map((membre, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-72 bg-white rounded-lg border shadow-md overflow-hidden hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src={membre.image}
+                alt={membre.nom}
+                className="w-full h-52 object-cover"
+              />
+              <div className="p-4 text-left space-y-2">
+                <h3 className="text-xl font-semibold text-gray-800">{membre.nom}</h3>
+                <p className="text-blue-600 font-medium">{membre.statut}</p>
+                <p className="text-sm text-gray-600">
+                  <FontAwesomeIcon icon={faPhone} className="text-blue-500 mr-2" />
+                  {membre.telephone}
+                </p>
+                <p className="text-sm text-gray-600">
+                  <FontAwesomeIcon icon={faEnvelope} className="text-blue-500 mr-2" />
+                  {membre.email}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Flèche droite */}
+        <button
+          onClick={scrollRight}
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-blue-700 shadow-md p-2 rounded-full z-10 hover:bg-blue-100"
+        >
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+      </div>
+    </section>
       
 
       {/* FAQ */}
