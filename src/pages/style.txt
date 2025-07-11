@@ -122,3 +122,155 @@ export default function PageProjet() {
 );
 
 }
+
+///////////// pour la section Academie Najm, voici le code ok//////
+
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.jpg";
+import image3 from "../assets/image3.jpg";
+import image4 from "../assets/image4.jpg";
+import image5 from "../assets/image5.png";
+import image6 from "../assets/image6.png";
+import imagenum from "../assets/imagenum.jpg"
+
+const sections = [
+  {
+    image: image1,
+    title: "Pour une transformation numérique inclusive au Maroc",
+    text: `L’Association Najm pour l’inclusion économique croit que la transformation numérique représente à la fois un défi et une opportunité prometteuse pour le Maroc.
+
+La faible accessibilité aux technologies modernes, le manque de formations adaptées et l’élargissement de la fracture numérique constituent parmi les principaux obstacles qui freinent l’intégration des jeunes dans l’économie numérique.
+
+Pourtant, la numérisation offre de grandes possibilités pour stimuler l’entrepreneuriat, créer des opportunités d’emploi et dynamiser le tissu socio-économique, notamment au profit des jeunes non scolarisés, sans emploi et non bénéficiaires de formation, qui rencontrent de réelles difficultés d’insertion professionnelle.
+
+Consciente de cette réalité, l’Association Najm s’engage à accompagner les jeunes dans l’acquisition des compétences numériques, à poursuivre la numérisation des entreprises et à encourager l’innovation technologique. En concentrant ses efforts sur ces axes fondamentaux, l’association aspire à contribuer à la construction d’un modèle de développement plus inclusif.`,
+  },
+  {
+    image: image2,
+    title: "Objectifs du programme 'Promotion sociale par la numérisation'",
+    text: `✔️ Renforcer l’employabilité des jeunes en leur fournissant les compétences numériques demandées sur le marché.
+✔️ Sensibiliser à l’entrepreneuriat et doter les jeunes des outils nécessaires pour démarrer leurs projets numériques.
+✔️ Encourager l’autonomisation économique grâce à l’acquisition de savoirs adaptés à la transition numérique au Maroc.`,
+  },
+  {
+    image: image3,
+    title: "Accompagnement et coopératives numériques",
+    text: `L'Association Najm agit avec des entreprises et acteurs du secteur numérique pour connecter les jeunes aux opportunités d’emploi via des ateliers, stages, et formations spécifiques.
+
+Le programme comprend également :
+- Des conseils en entrepreneuriat,
+- Un accompagnement dans la rédaction de business plans,
+- L’accès au financement,
+- Et la création de coopératives numériques, favorisant les échanges de compétences, l’accès à de nouveaux marchés, et la croissance collective durable.`,
+  },
+  {
+    image: image4,
+    title: "Une académie au service de l’avenir numérique du Maroc",
+    text: `À travers cette Académie, l’Association Najm offre aux jeunes des opportunités d’insertion économique dans un secteur d’avenir : les métiers du numérique, parfaitement alignés avec le chantier royal de la transition digitale.`,
+  },
+  {
+    image: image5,
+    title: "Vision stratégique de l’association",
+    text: `Depuis sa création, l’Association Najm poursuit son développement pour renforcer l’insertion professionnelle et l’entrepreneuriat des jeunes.
+
+Avec une gouvernance rigoureuse, une équipe structurée et des outils de suivi performants, elle diversifie ses actions et adapte ses programmes aux mutations économiques et numériques.
+
+Elle place la formation continue, les partenariats et l’accompagnement post-formation au cœur de sa stratégie durable.`,
+  },
+  {
+    image: image6,
+    title: "Reconnaissance et ambition nationale",
+    text: `Dans le but de renforcer son impact, l’association œuvre à l’obtention du statut d’utilité publique pour élargir ses partenariats, ses financements et sa présence nationale.
+
+Fidèle à sa mission, l’Association Najm continue à s’adapter aux défis économiques et sociaux et s’engage pour un Maroc inclusif, numérique et durable.`,
+  },
+
+  
+];
+
+export default function AcademieNajm() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-200 font-sans">
+      {/* Header modernisé */}
+      <header className="relative flex items-center justify-center h-[340px] md:h-[400px] bg-blue-900 mb-16 shadow-2xl rounded-b-3xl overflow-hidden">
+        <img
+          src={imagenum}
+          alt="Bannière Najm"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-blue-700/60" />
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4 drop-shadow-xl">
+            Académie Najm pour les Métiers du Numérique
+          </h1>
+          <p className="text-2xl md:text-3xl font-light italic drop-shadow">
+            Promotion sociale par la numérisation
+          </p>
+        </div>
+      </header>
+
+      {/* Layout principal : contenu + colonne d'articles */}
+      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto gap-10 px-4">
+        {/* Contenu principal */}
+        <main className="flex-1 space-y-16">
+          {sections.map((section, idx) => (
+            <section
+              key={idx}
+              className={`flex flex-col md:flex-row items-center gap-10 rounded-3xl overflow-hidden shadow-2xl bg-white/95 border border-blue-100 transition-transform duration-300 hover:scale-[1.015] ${
+                idx % 2 !== 0 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              <div className="md:w-1/2 w-full h-64 md:h-80 flex-shrink-0">
+                <img
+                  src={section.image}
+                  alt={section.title}
+                  className="w-full h-full object-cover object-center rounded-none md:rounded-l-3xl"
+                />
+              </div>
+              <div className="md:w-1/2 w-full p-8">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4 leading-tight tracking-tight">
+                  {section.title}
+                </h2>
+                <p className="text-gray-700 whitespace-pre-line leading-relaxed text-lg">
+                  {section.text}
+                </p>
+              </div>
+            </section>
+          ))}
+        </main>
+
+        {/* Colonne d'articles à droite */}
+        <aside className="hidden lg:flex flex-col gap-8 w-full max-w-xs pt-2 sticky top-10 h-fit">
+          <article className="bg-white/95 border-l-4 border-blue-300 rounded-2xl shadow-xl p-6">
+            <h3 className="text-xl font-bold text-blue-800 mb-2">À la une</h3>
+            <p className="text-gray-700 text-sm mb-4">
+              Découvrez nos dernières initiatives pour l’inclusion numérique au Maroc.
+            </p>
+            <a href="#" className="text-blue-600 hover:underline font-semibold">Lire plus</a>
+          </article>
+          <article className="bg-white/95 border-l-4 border-blue-300 rounded-2xl shadow-xl p-6">
+            <h3 className="text-xl font-bold text-blue-800 mb-2">Contact & Réseaux</h3>
+            <p className="text-gray-700 text-sm mb-4">
+              Suivez-nous sur les réseaux sociaux et contactez notre équipe pour toute question.
+            </p>
+            <div className="flex gap-3 mt-2">
+              <a href="#" className="text-blue-500 hover:text-blue-700">Facebook</a>
+              <a href="#" className="text-blue-400 hover:text-blue-600">Twitter</a>
+              <a href="#" className="text-pink-500 hover:text-pink-700">Instagram</a>
+            </div>
+          </article>
+          <article className="bg-white/95 border-l-4 border-blue-300 rounded-2xl shadow-xl p-6">
+            <h3 className="text-xl font-bold text-blue-800 mb-2">À la une</h3>
+            <p className="text-gray-700 text-sm mb-4">
+              Découvrez nos dernières initiatives pour l’inclusion numérique au Maroc.
+            </p>
+            <a href="#" className="text-blue-600 hover:underline font-semibold">Lire plus</a>
+          </article>
+          
+        </aside>
+      </div>
+
+      
+    </div>
+  );
+}

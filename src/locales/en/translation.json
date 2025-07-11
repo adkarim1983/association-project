@@ -327,30 +327,35 @@
 
   "gallery": {
     "title": "Inauguration of Professional Trainings",
-    "section1_p1": "Najm Association has officially launched three professional training courses for youth: Web Development, Graphic Design, and Digital Marketing. This initiative aims to provide a concrete opportunity for professional integration through in-demand skills.",
-    "section1_p2": "These programs are designed to meet the current needs of the digital world by focusing on practice, creativity, and innovation.",
-    "section2_p1": "Our training programs are supervised by experienced professionals and offer a project-oriented pedagogical approach. Each participant benefits from personalized support, practical work, and real-world group or individual projects.",
-    "section2_p2": "The goal is to help each participant develop technical skills, creativity, and self-confidence in a dynamic and supportive environment.",
+    "section1_p1": "The Najm Association officially launched three vocational training programs for youth: web development, graphic design, and digital marketing. This initiative aims to provide a real opportunity for professional integration through in-demand skills.",
+    "section1_p2": "These programs are designed to meet the demands of the current digital world, with a focus on practical application, creativity, and innovation.",
+    "section2_p1": "These training programs are led by experienced professionals who adopt a project-based pedagogical approach. Each participant benefits from individualized support, practical workshops, and real-world individual or group projects.",
+    "section2_p2": "The goal is to enable each young person to develop their technical skills and creativity, as well as strengthen their self-confidence in a dynamic and stimulating environment.",
     "program_title": "Program Content",
-    "program_web": "Web Development: HTML, CSS, JavaScript, React, responsive site creation.",
+    "program_web": "Web Development: HTML, CSS, JavaScript, React, responsive website creation.",
     "program_design": "Graphic Design: Figma, Photoshop, visual identity, visual communication.",
-    "program_marketing": "Digital Marketing: Social media, content creation, SEO, advertising campaigns.",
-    "training_title": "Training Process",
-    "training_p1": "Courses take place in a dynamic and participatory environment. Each week is structured with practical workshops, feedback sessions, inspiring talks, and group challenges.",
-    "training_p2": "Focus is placed on youth engagement, collaborative work, and tangible production of digital projects that address real-world problems.",
-    "success_title": "A Successful First Edition",
-    "success_p": "Thanks to the involvement of trainers, partners, and youth, this first edition laid the foundations for a true dynamic of learning and transformation. This program is intended as a springboard towards the digital future of our community's youth.",
+    "program_marketing": "Digital Marketing: social media, content creation, SEO, advertising campaigns.",
+    "training_title": "Training Progress",
+    "training_p1": "Classes take place in a dynamic and participatory environment, with each week featuring practical workshops, feedback sessions, inspiring lectures, and group challenges.",
+    "training_p2": "Emphasis is placed on youth participation, collaborative work, and the realization of digital projects that respond to real issues.",
+    "success_title": "A Successful First Session",
+    "success_p": "Thanks to the commitment of trainers, partners, and young people, this first session laid the foundations for a true dynamic of learning and transformation. This program is seen as a launchpad for a bright digital future for our youth.",
     "gallery_highlights": "General Gallery of Highlights",
-    "img1": "Teamwork on real projects",
-    "img2": "UX/UI design exercise in workshop",
-    "img3": "Individual coaching session",
-    "img4": "Exchange between participants",
-    "img5": "Presentation of a marketing strategy",
-    "img6": "Intensive learning moment",
-    "img7": "Closing with certificate ceremony"
-  
-},
-
+    "image_inauguration": "Inauguration",
+    "image_presentation": "Presentation",
+    "image_training_content": "Training Content",
+    "image_course_progress": "Course Progress",
+    "image_end_of_training": "End of Training",
+    "image_share_exchange": "Sharing and exchange at the heart of our sessions",
+    "image_youth_discovering_digital": "Youth discovering digital",
+    "image_intensive_training": "Intensive and collaborative training",
+    "image_group_work": "Teamwork and problem solving",
+    "image_pedagogical_team": "The pedagogical team at work",
+    "image_final_projects": "Presentation of final projects",
+    "image_certificates": "Certificate Award Ceremony",
+    "image_digital_marketing_workshop": "Interactive Digital Marketing Workshop",
+    "image_tech_trends_discussion": "Discussion on Technological Trends"
+  },
 
 
   "contact": {
@@ -375,7 +380,7 @@
     "closed": "Closed",
     "followUs": "Follow us",
     "socialText": "Stay connected with us on social media to follow our activities and updates.",
-    "addressDetails": "Group 3, in front of the Faculty of Letters and Human Sciences Ben M’sik"
+    "addressDetails": "Group 3, in front of the Faculty of Letters and Human Sciences Ben M'sik"
 
   },
 

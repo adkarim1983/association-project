@@ -17,6 +17,11 @@ import { useEffect, useState } from 'react';
 import Dashboard from './pages/admin/Dashboard';
 import { Helmet } from 'react-helmet';
 import ArticleForms from './pages/admin/ArticleForms';
+import AcademieNajm from "./components/AcademieNajm";
+
+
+
+
 function App() {
   const [language, setLanguage] = useState('en');
 
@@ -42,6 +47,10 @@ function App() {
           <Route path="/rapports/culture-et-jeunesse" element={<><Helmet><title>Rapport Culture et Jeunesse</title></Helmet><RapportCultureEtJeunesse /></>} />
           <Route path="/rapports/solidarite-developpement" element={<><Helmet><title>Rapport Solidarite Developpement</title></Helmet><RapportSolidariteDev /></>} />
           
+          
+          <Route path="academie-najm" element={<><Helmet><title>Académie Najm</title></Helmet><AcademieNajm /></>} />
+
+
           <Route path="*" element={<><Helmet><title>Page Not Found</title></Helmet><h1>Page not found</h1></>} />
           <Route path="/admin/dashboard" element={<><Helmet><title>Dashboard</title></Helmet><Dashboard /></>} />
           <Route path="addArticle" element={<><Helmet><title>Add Article</title></Helmet><ArticleForms /></>} />

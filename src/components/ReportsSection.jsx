@@ -29,7 +29,7 @@ export default function ReportsSection() {
   return (
     <section className="bg-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-slate-800 mb-10">
+        <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">
           {t('reports.title')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

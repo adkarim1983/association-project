@@ -93,7 +93,7 @@ export default function Partners() {
       }}
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-5 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-5 text-blue-900">
           {t('partners_title')}
         </h2>
         <p className="text-justify max-w-3xl mx-auto text-gray-700 text-lg">

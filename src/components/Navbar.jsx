@@ -133,13 +133,65 @@ export default function Navbar() {
 
         {/* Menu Desktop */}
         <ul className={`hidden lg:flex ${currentLanguage === 'ar' ? 'flex-row-reverse' : ''} items-center space-x-6 font-medium text-gray-700`}>
-          <li><Link to="/">{t("menu.accueil")}</Link></li>
-          <li><Link to="/about-us">{t("menu.a_propos")}</Link></li>
-          <li><Link to="/Axe">{t("menu.axe")}</Link></li>
-          <li><Link to="/project">{t("menu.projets")}</Link></li>
-          <li><Link to="/galerie">{t("menu.galerie")}</Link></li>
-          <li><Link to="/contact">{t("menu.contact")}</Link></li>
+          <li>
+            <Link to="/" className="relative group text-gray-800 ">
+              {t("menu.accueil")}
+              <span
+                className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
+                style={{ backgroundColor: "#1B7CC1" }}
+              ></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/about-us" className="relative group text-gray-800 ">
+              {t("menu.a_propos")}
+              <span className="absolute left-0 -bottom-1 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              style={{ backgroundColor: "#1B7CC1" }}
+              ></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/Axe" className="relative group text-gray-800 ">
+              {t("menu.axe")}
+              <span className="absolute left-0 -bottom-1 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              style={{ backgroundColor: "#1B7CC1" }}
+              ></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/project" className="relative group text-gray-800 ">
+              {t("menu.projets")}
+              <span className="absolute left-0 -bottom-1 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              style={{ backgroundColor: "#1B7CC1" }}
+              ></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/academie-najm" className="relative group text-gray-800 ">
+              Académie Najm
+              <span className="absolute left-0 -bottom-1 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              style={{ backgroundColor: "#1B7CC1" }}
+              ></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/galerie" className="relative group text-gray-800 ">
+              {t("menu.galerie")}
+              <span className="absolute left-0 -bottom-1 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              style={{ backgroundColor: "#1B7CC1" }}
+              ></span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="relative group text-gray-800 ">
+              {t("menu.contact")}
+              <span className="absolute left-0 -bottom-1 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              style={{ backgroundColor: "#1B7CC1" }}
+              ></span>
+            </Link>
+          </li>
 
+          {/* Académie Najm */}
           {/* Langue Desktop */}
           <li className="absolute right-10 top-1/2 transform -translate-y-1/2">
             <button
@@ -210,6 +262,8 @@ export default function Navbar() {
             <li><Link to="/project" onClick={() => setIsMenuOpen(false)}>{t("menu.projets")}</Link></li>
             <li><Link to="/galerie" onClick={() => setIsMenuOpen(false)}>{t("menu.galerie")}</Link></li>
             <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>{t("menu.contact")}</Link></li>
+            <li><Link to="/academie">Académie Najm</Link></li>
+
 
             <li className="pt-2 border-t">
               <p className="mb-2">Langue :</p>
