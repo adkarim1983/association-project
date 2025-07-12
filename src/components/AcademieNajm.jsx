@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState } from "react";
 import image1 from "../assets/image1.jpg";
 import image2 from "../assets/image2.jpg";
 import image3 from "../assets/image3.jpg";
@@ -31,47 +31,16 @@ const sections = [
   },
 ];
 
-function useScrollReveal() {
-  const ref = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-revealed");
-          observer.unobserve(entry.target);
-        }
-      },
-      {
-        rootMargin: "-100px 0px",
-        threshold: 0.1
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
-  return ref;
-}
-
 export default function AcademieNajm() {
   const [showTop, setShowTop] = React.useState(false);
-  useEffect(() => {
+  React.useEffect(() => {
     const onScroll = () => setShowTop(window.scrollY > 300);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans relative overflow-hidden">
+    <div className="bg-gray-50 text-gray-800 font-sans relative">
       {/* Header */}
       <header className="relative flex flex-col items-center justify-center h-64 sm:h-80 md:h-[450px] bg-white mb-0 shadow-md overflow-hidden px-4">
         <img
@@ -93,11 +62,9 @@ export default function AcademieNajm() {
       {/* Sections */}
       <main className="max-w-7xl mx-auto px-6 py-8 space-y-4">
         {sections.map((section, idx) => {
-          const sectionRef = useScrollReveal();
           return (
             <section
               key={idx}
-              ref={sectionRef}
               className={`relative flex flex-col md:flex-row items-center gap-4 p-4 rounded-2xl shadow-xl bg-blue-950 text-gray-200 ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
             >
               <div className="md:w-1/2 w-full flex-shrink-0 relative group rounded-xl overflow-hidden shadow-2xl border border-gray-700">
@@ -555,16 +522,6 @@ export default function AcademieNajm() {
 
       {/* Styles pour animations */}
       <style>{`
-        .is-revealed { animation: slideInUp 1s ease-out forwards; }
-        @keyframes slideInUp {
-          from { opacity: 0; transform: translateY(80px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in-up { animation: fadeInUp 0.7s ease-out; }
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
       `}</style>
     </div>
   );
