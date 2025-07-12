@@ -168,7 +168,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/academie-najm" className="relative group text-gray-800 ">
-              Académie Najm
+              {t("menu.academie_najm")}
               <span className="absolute left-0 -bottom-1 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full"
               style={{ backgroundColor: "#1B7CC1" }}
               ></span>
@@ -260,7 +260,7 @@ export default function Navbar() {
             <li><Link to="/about-us" onClick={() => setIsMenuOpen(false)}>{t("menu.a_propos")}</Link></li>
             <li><Link to="/Axe" onClick={() => setIsMenuOpen(false)}>{t("menu.axe")}</Link></li>
             <li><Link to="/project" onClick={() => setIsMenuOpen(false)}>{t("menu.projets")}</Link></li>
-            <li><Link to="/academie-najm" onClick={() => setIsMenuOpen(false)}>Académie Najm</Link></li>
+            <li><Link to="/academie-najm" onClick={() => setIsMenuOpen(false)}>{t("menu.academie_najm")}</Link></li>
              
              
             <li><Link to="/galerie" onClick={() => setIsMenuOpen(false)}>{t("menu.galerie")}</Link></li>
