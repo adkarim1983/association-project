@@ -260,8 +260,9 @@ export default function Navbar() {
             <li><Link to="/about-us" onClick={() => setIsMenuOpen(false)}>{t("menu.a_propos")}</Link></li>
             <li><Link to="/Axe" onClick={() => setIsMenuOpen(false)}>{t("menu.axe")}</Link></li>
             <li><Link to="/project" onClick={() => setIsMenuOpen(false)}>{t("menu.projets")}</Link></li>
-            <li><Link to="/academie" onClick={() => setIsMenuOpen(false)}>Académie Najm</Link></li>
-
+            <li><Link to="/academie-najm" onClick={() => setIsMenuOpen(false)}>Académie Najm</Link></li>
+             
+             
             <li><Link to="/galerie" onClick={() => setIsMenuOpen(false)}>{t("menu.galerie")}</Link></li>
             <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>{t("menu.contact")}</Link></li>
             
