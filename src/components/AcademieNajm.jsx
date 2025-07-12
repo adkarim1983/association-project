@@ -73,7 +73,7 @@ export default function AcademieNajm() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans relative overflow-hidden">
       {/* Header */}
-      <header className="relative flex flex-col items-center justify-center h-[450px] bg-white mb-0 shadow-md overflow-hidden px-4">
+      <header className="relative flex flex-col items-center justify-center h-64 sm:h-80 md:h-[450px] bg-white mb-0 shadow-md overflow-hidden px-4">
         <img
           src={imagenum}
           alt="Bannière Najm, jeunes et numérique"
@@ -131,7 +131,7 @@ export default function AcademieNajm() {
         })}
 
         {/* Section: Gestion et Administration des Plateformes d'Orientation */}
-        <section className="mt-30 py-4 px-6 bg-gray-50 mt-0 text-gray-800 shadow-inner-xl">
+        <section className="py-4 px-6 bg-gray-50 mt-0 text-gray-800 shadow-inner-xl">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-5xl sm:text-6xl font-extrabold mb-8 text-gray-900">
               Gestion et Administration des Plateformes d'Orientation
