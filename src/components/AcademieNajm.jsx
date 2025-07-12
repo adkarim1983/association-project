@@ -98,8 +98,7 @@ export default function AcademieNajm() {
             <section
               key={idx}
               ref={sectionRef}
-              className={`relative flex flex-col md:flex-row items-center gap-4 p-4 rounded-2xl shadow-xl bg-blue-950 text-gray-200 transform translate-y-20 opacity-0 transition-all duration-1000 ease-out is-revealed:translate-y-0 is-revealed:opacity-100
-                ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
+              className={`relative flex flex-col md:flex-row items-center gap-4 p-4 rounded-2xl shadow-xl bg-blue-950 text-gray-200 ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
             >
               <div className="md:w-1/2 w-full flex-shrink-0 relative group rounded-xl overflow-hidden shadow-2xl border border-gray-700">
                 <img
@@ -132,7 +131,7 @@ export default function AcademieNajm() {
 
         {/* Section: Gestion et Administration des Plateformes d'Orientation */}
         <section className="py-4 px-6 bg-gray-50 mt-0 text-gray-800 shadow-inner-xl">
-          <div className="max-w-7xl mx-auto text-center">
+          <div className="mt-20 max-w-7xl mx-auto text-center">
             <h2 className="text-5xl sm:text-6xl font-extrabold mb-8 text-gray-900">
               Gestion et Administration des Plateformes d'Orientation
               <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
