@@ -1,14 +1,15 @@
-import { useParams } from "react-router-dom";
+import React from "react";
+import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import projects from "../data/projects";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-
+import L from "leaflet";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import { projects as projectsData } from "../data/projects";
 
+// Fix icônes Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
@@ -16,161 +17,169 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
-
-// debut changement
-
 export default function PageProjet() {
   const { t } = useTranslation();
   const { id } = useParams();
-  const project = projects.find((p) => p.id === parseInt(id));
-
-  
+  const project = projectsData.find((p) => p.id === parseInt(id));
 
   if (!project) {
-    return <div className="text-center py-20 text-red-600">{t("projects.project_not_found")}</div>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-red-600 mb-4">{t("projects.project_not_found", "Projet non trouvé")}</h2>
+          <Link to="/projects" className="text-blue-600 hover:underline">
+            {t("projects.back_to_list", "Retour à la liste des projets")}
+          </Link>
+        </div>
+      </div>
+    );
   }
 
-  // Obtenir les détails traduits du projet
-  const getProjectDetails = () => {
-    // Vérifier si les traductions existent pour ce projet
-    const projectDetails = t(`project_details.${id}`, { returnObjects: true, defaultValue: null });
-    
-    // Si les traductions existent, les utiliser, sinon utiliser les données par défaut
-    if (projectDetails && projectDetails.sections) {
-      return projectDetails.sections;
-    }
-    
-    // Fallback vers les données hard-codées si pas de traduction
-    return project.descriptionSections || [];
-  };
+  // Créer la clé de base pour ce projet
+  const projectKey = project.name.replace('projects.list.', '').replace('.name', '');
 
  return (
-  <section className="py-16 px-6 max-w-7xl mx-auto">
-    {/* ✅ Titre centré */}
-    <h1 className="text-4xl font-bold text-blue-800 text-center mb-12">
-      {t(`projects.project_titles.${id}`) || project.name}
+    <div className="min-h-screen bg-white">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* Titre centré */}
+        <h1 className="text-4xl font-bold text-blue-600 text-center mb-8 tracking-wider">
+          {t(project.name)}
     </h1>
 
-    {/* ✅ Image principale */}
+        {/* Bande d'images du projet */}
+        <div className="mb-8">
+          <div className="bg-black rounded-lg p-4 flex justify-center items-center min-h-[200px]">
+            <div className="flex space-x-4 overflow-x-auto">
+              {/* Images circulaires - on utilise l'image principale du projet */}
+              {[1,2,3,4,5,6].map((index) => (
+                <div key={index} className="flex-shrink-0">
     <img
       src={project.image}
-      alt={project.name}
-      className="w-full h-64 object-cover rounded-xl shadow mb-12"
-    />
-
-    {/* ✅ 2 colonnes équilibrées */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-      {/* 📝 Texte scrollable à gauche */}
-      <div className="space-y-6 text-gray-800 leading-relaxed max-h-[500px] overflow-y-auto pr-2">
-        {getProjectDetails().map((section, index) => (
-          <div key={index}>
-            <h2 className="text-2xl font-semibold text-blue-700 mb-2">
-              {section.title}
-            </h2>
-            <p className="text-justify text-base">{section.content}</p>
+                    alt={`${t(project.name)} ${index}`}
+                    className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-yellow-400"
+                  />
           </div>
         ))}
       </div>
+          </div>
+        </div>
 
-      {/* 🗺️ Carte fixe à droite */}
-      <div className="w-full h-[350px] rounded-xl overflow-hidden border border-blue-300 shadow-md">
+        {/* Contenu principal en deux colonnes */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Colonne de gauche - Informations détaillées */}
+          <div className="space-y-8">
+            {/* Section Informations sur la fondatrice */}
+            <div>
+              <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                <span className="mr-2">📋</span>
+                {t('projects.founder_info_title', 'Informations sur la fondatrice')}
+              </h2>
+              <div className="text-gray-800 leading-relaxed text-justify bg-gray-50 p-4 rounded-lg">
+                <p>
+                  {t(`projects.list.${projectKey}.founder_info`, t(project.description))}
+                </p>
+              </div>
+            </div>
+
+            {/* Section Présentation du projet */}
+            <div>
+              <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                <span className="mr-2">📈</span>
+                {t('projects.presentation_title', 'Présentation du projet')}
+              </h2>
+              <div className="text-gray-800 leading-relaxed text-justify bg-gray-50 p-4 rounded-lg">
+                <p>
+                  {t(`projects.list.${projectKey}.presentation`, t(project.description))}
+                </p>
+              </div>
+            </div>
+
+            {/* Section Soutien et accompagnement */}
+            <div>
+              <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                <span className="mr-2">🤝</span>
+                {t('projects.support_title', 'Soutien et accompagnement')}
+              </h2>
+              <div className="text-gray-800 leading-relaxed text-justify bg-gray-50 p-4 rounded-lg">
+                <p>
+                  {t(`projects.list.${projectKey}.support`, 'Information sur le soutien disponible bientôt.')}
+                </p>
+              </div>
+            </div>
+
+            {/* Section Produits et services */}
+            <div>
+              <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                <span className="mr-2">🛍️</span>
+                {t('projects.products_title', 'Produits et services')}
+              </h2>
+              <div className="text-gray-800 leading-relaxed text-justify bg-gray-50 p-4 rounded-lg">
+                <p>
+                  {t(`projects.list.${projectKey}.products`, 'Information sur les produits et services disponible bientôt.')}
+                </p>
+              </div>
+            </div>
+
+            {/* Section Partenaires */}
+            <div>
+              <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                <span className="mr-2">🤝</span>
+                {t('projects.partners_title', 'Partenaires')}
+              </h2>
+              <div className="text-gray-800 leading-relaxed text-justify bg-gray-50 p-4 rounded-lg">
+                <p>
+                  {t(`projects.list.${projectKey}.partners`, 'Information sur les partenaires disponible bientôt.')}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Colonne de droite - Informations de contact et Carte */}
+          <div className="space-y-8">
+            {/* Informations de contact */}
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold text-blue-600 mb-4">{t('projects.contact_info_title', 'Informations de contact')}</h3>
+              <div className="space-y-2 text-gray-800">
+                <p><strong>{t('projects.category_label', 'Catégorie')}:</strong> {t(project.category)}</p>
+                <p><strong>{t('projects.location_label', 'Lieu')}:</strong> {t(project.location)}</p>
+                <p><strong>{t('projects.address_label', 'Adresse')}:</strong> {t(project.address)}</p>
+                <p><strong>{t('projects.phone_label', 'Téléphone')}:</strong> {project.phone}</p>
+                <p><strong>{t('projects.email_label', 'Email')}:</strong> {project.email}</p>
+                <p><strong>{t('projects.website_label', 'Site Web')}:</strong> 
+                  <a href={project.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline ml-1">
+                    {project.website}
+                  </a>
+                </p>
+                <p><strong>{t('projects.hours_label', 'Horaires')}:</strong> {project.hours}</p>
+              </div>
+            </div>
+
+            {/* Carte */}
+            <div className="h-96 w-full rounded-lg overflow-hidden shadow-lg border-2 border-gray-200 relative z-0">
         <MapContainer
           center={[project.lat, project.lng]}
-          zoom={14}
+                zoom={15}
           scrollWheelZoom={false}
           className="h-full w-full z-0"
         >
           <TileLayer
-            attribution="© OpenStreetMap"
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
           <Marker position={[project.lat, project.lng]}>
-            <Popup maxWidth={320} className="custom-popup-detailed">
-              <div className="space-y-3 text-xs max-w-xs">
-                {/* Header with image */}
-                <div className="flex items-center space-x-2">
-                  <img 
-                    src={project.image} 
-                    alt={project.name}
-                    className="w-16 h-16 object-cover rounded-lg shadow-md"
-                  />
-                  <div className="flex-1">
-                    <h3 className="text-blue-700 font-bold text-sm leading-tight">
-                      {t(`projects.project_titles.${id}`) || project.name}
-                    </h3>
-                    <p className="text-gray-600 text-xs">
-                      {project.category}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Contact Information */}
-                <div className="bg-gray-50 rounded-lg p-2 space-y-1">
-                  <h4 className="font-semibold text-gray-800 text-xs mb-1">📋 {t("projects.popup.contact")}</h4>
-                  
-                  {project.phone && (
-                    <div className="flex items-center space-x-1">
-                      <span className="text-green-600 text-xs">📞</span>
-                      <a href={`tel:${project.phone}`} className="text-green-600 hover:text-green-800 text-xs font-medium">
-                        {project.phone}
-                      </a>
+                  <Popup>
+                    <div className="text-center">
+                      <h3 className="font-bold text-blue-600">{t(project.name)}</h3>
+                      <p className="text-sm">{t(project.address)}</p>
+                      <p className="text-xs text-gray-600 mt-1">{project.phone}</p>
                     </div>
-                  )}
-                  
-                  {project.email && (
-                    <div className="flex items-center space-x-1">
-                      <span className="text-blue-600 text-xs">📧</span>
-                      <a href={`mailto:${project.email}`} className="text-blue-600 hover:text-blue-800 text-xs font-medium break-all">
-                        {project.email}
-                      </a>
-                    </div>
-                  )}
-                  
-                  {project.address && (
-                    <div className="flex items-start space-x-1">
-                      <span className="text-red-600 text-xs">📍</span>
-                      <p className="text-gray-700 text-xs leading-tight">{project.address}</p>
-                    </div>
-                  )}
-                  
-                  {project.hours && (
-                    <div className="flex items-center space-x-1">
-                      <span className="text-purple-600 text-xs">🕒</span>
-                      <p className="text-gray-700 text-xs font-medium">{project.hours}</p>
-                    </div>
-                  )}
-                  
-                  {project.website && (
-                    <div className="flex items-center space-x-1">
-                      <span className="text-indigo-600 text-xs">🌐</span>
-                      <a href={`https://${project.website}`} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 text-xs font-medium">
-                        {project.website}
-                      </a>
-                    </div>
-                  )}
-                </div>
-
-                {/* Description Preview */}
-                <div className="bg-blue-50 rounded-lg p-2">
-                  <h4 className="font-semibold text-blue-800 text-xs mb-1">ℹ️ {t("projects.popup.about")}</h4>
-                  <p className="text-gray-700 text-xs leading-relaxed">
-                    {getProjectDetails()[0]?.content.substring(0, 100)}...
-                  </p>
-                </div>
-
-                {/* CTA - Already on the project page */}
-                <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-2 text-center">
-                  <p className="text-white text-xs font-medium">
-                    📍 {t("projects.popup.current_page")}
-                  </p>
-                </div>
-              </div>
-            </Popup>
+                  </Popup>
           </Marker>
         </MapContainer>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
 );
-
 }

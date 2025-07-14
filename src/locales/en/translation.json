@@ -1,53 +1,51 @@
 {
   "menu": {
     "accueil": "Home",
-    "a_propos": "About Us",
-    "axe": "Intervention Areas",
+        "a_propos": "About",
+        "axe": "Areas of intervention",
     "projets": "Projects",
+        "contact": "Contact",
     "galerie": "Gallery",
-    "contact": "Contact",
     "academie_najm": "Najm Academy"
   },
-  "president_title": "President's Message",
-  "president_text": "On behalf of all the members of the Najm Association, I welcome you to our digital platform. It reflects our commitment to youth, our vision for community development, and our desire to act for economic and professional inclusion.",
-  "president_full_text": "Mr. Hassan Rizk, President of the Najm Association, welcomes you to the association's platform, which reflects his commitment to the economic and professional integration of youth. The association firmly believes that young people are the drivers of change and that supporting them is essential for sustainable development. It is based on values such as respect, transparency, equality, and trust, while establishing local and international partnerships. Its goal is to become a reference platform to guide, train and inspire young people, so that they become actors of development and future leaders.",
-  
+    "president_title": "A Word from the President",
+    "president_text": "On behalf of all the members of the Najm Association, I welcome you to our digital platform. It reflects our commitment to youth, our vision of community development, and our desire to act for economic and professional integration.",
+    "president_full_text": "Mr. Hassan Rizk, President of the Najm Association, welcomes you to the association's platform, which reflects its commitment to the economic and professional integration of young people. The association firmly believes that young people are the drivers of change and that their support is essential for sustainable development. It is based on values such as respect, transparency, equality, and trust, while building local and international partnerships. Its goal is to become a reference platform to guide, train, and inspire young people, so that they become actors of development and leaders of the future.",
   "presentation_title": "Who are we?",
-  "presentation_text": "Najm Association is a non-profit organization that aims to support young people, children, and families through educational, cultural, and social initiatives. It is actively committed to promoting solidarity, equal opportunity, and local development. Najm Association is a non-profit organization that aims to support young people, children, and families through educational, cultural, and social initiatives. It is actively committed to promoting solidarity, equal opportunity, and local development.",
-
+    "presentation_text": "The Najm Association is a non-profit organization that aims to support young people, children, and families through educational, cultural, and social actions. It is actively committed to promoting solidarity, equal opportunities, and local development. The Najm Association is a non-profit organization that aims to support young people, children, and families through educational, cultural, and social actions. It is actively committed to promoting solidarity, equal opportunities, and local development.",
 "activities": {
   "title": "Our Activities",
   "education": {
     "title": "Education",
-    "description": "Tutoring, literacy, and educational programs for underprivileged children."
+            "description": "Tutoring, literacy and educational programs for disadvantaged children."
   },
   "social": {
-    "title": "Social Aid",
-    "description": "Food and clothing distribution, and support for vulnerable families."
+            "title": "Social aid",
+            "description": "Distribution of food, clothing and support to vulnerable families."
   },
   "community": {
-    "title": "Community Development",
-    "description": "Neighborhood renovation, creation of public spaces, and social inclusion projects."
+            "title": "Community development",
+            "description": "Neighborhood renovation, creation of public spaces and social inclusion projects."
   },
   "training": {
-    "title": "Vocational Training",
-    "description": "Training in crafts, computing, sewing, and cooking."
+            "title": "Vocational training",
+            "description": "Initiation to crafts, IT, sewing and cooking."
   },
   "environment": {
     "title": "Environment",
-    "description": "Reforestation actions, ecological awareness, and waste management."
+            "description": "Reforestation actions, ecological awareness and waste management."
   },
   "innovation": {
-    "title": "Social Innovation",
-    "description": "Hackathons, innovative ideas, and incubation of socially impactful projects."
+            "title": "Social innovation",
+            "description": "Hackathons, innovative ideas and incubation of projects with social impact."
   }
 },
 "reports": {
   "title": "Our Reports",
   "report1": "Discover our social and educational activities carried out in 2024.",
-  "report2": "Study Day on Cooperatives: Promoting Social and Solidarity Economy 2024",
-  "report3": "Partnership agreement signed between the Irchad platform and the Faculty of Arts and Sciences",
-  "more": "Read more"
+        "report2": "Study day on cooperatives: Promoting the social and solidarity economy 2024",
+        "report3": "Signature of a partnership agreement between the Irchad platform and the Faculty of Letters and Sciences",
+        "more": "More info"
 },
 "hero": {
   "slide1": {
@@ -55,151 +53,185 @@
     "description": "For a better future through education, culture and solidarity."
   },
   "slide2": {
-    "title": "Education and Engagement",
+            "title": "Education and Commitment",
     "description": "Join us to build a more just and humane world."
   },
   "slide3": {
     "title": "Active Solidarity",
-    "description": "Let's unite our forces for a positive impact in our society."
-  }
-},
-"stats_title": "Key Figures of the Association",
-"stats_1_label": "Geographic Sites",
-"stats_2_label": "Job Opportunities",
-"stats_3_label": "Beneficiary Businesses",
-
-"partners_title": "Our Partners",
-"partners_text": "We collaborate with strategic partners such as ANAPEC, Amideast, OFPPT, and others to provide training, guidance, and professional integration opportunities. This contributes to building a promising future for young people and strengthening community development.",
-
+            "description": "Let's join forces for a positive impact in our society."
+        }
+    },
+    "stats_title": "Key figures of the association",
+    "stats_1_label": "Geographical sites",
+    "stats_2_label": "Job opportunities",
+    "stats_3_label": "Beneficiary companies",
+    "partners_title": "Our partners",
+    "partners_text": "We collaborate with strategic partners such as ANAPEC, Amideast, OFPPT and others, in order to provide training, guidance and professional integration opportunities, which contributes to building a promising future for young people and strengthening community development.",
 "footer": {
-  "description": "Najm Association for Cultural and Educational Development works to promote youth engagement through civic and educational initiatives.",
+        "description": "The Najm Association for cultural and educational development works to promote the commitment of young people through citizen and educational actions.",
   "address_title": "Address",
-  "address1": "Group 3, opposite the Faculty of Arts and Humanities Ben M'sik,\nSocial and Economic Center, Rue Rahmouni Boualam,\nCasablanca.",
+        "address1": "Group 3, opposite the Faculty of Letters and Human Sciences Ben M'sik, Social and Economic Center, Rue Rahmouni Boualam, Casablanca.",
   "contact_title": "Contact",
   "phone1": "+212 661 680 893",
   "phone2": "Landline: 08 08 55 86 90",
-  "address2": "Mohamed Bouziane Street, near the Hygiene Office, Sidi Othmane",
+        "address2": "Rue Mohamed Bouziane, near the Hygiene Office, Sidi Othmane",
   "phone3": "Landline: 08 08 69 34 45",
   "rights": "All rights reserved."
 },
-
 "partnership_section": {
-  "title": "Signing of a Strategic Partnership",
-  "subtitle": "Between the Irchad platform and the Faculty of Arts and Sciences, to foster local development and innovation.",
-  "intro_title": "An Innovative Approach",
-  "intro_text": "As part of a strategic initiative, a partnership agreement was signed on Thursday, January 13, 2022, in the presence of the Governor of Moulay Rachid Prefecture. This partnership aims to strengthen synergies between academic, economic, and social institutions to support innovation and sustainable development in the industrial zone of Ben M’sik Sidi Othmane.",
+        "title": "Signature of a Strategic Partnership",
+        "subtitle": "Between the Irchad platform and the Faculty of Letters and Sciences, to stimulate local development and innovation.",
+        "intro_title": "An innovative approach",
+        "intro_text": "In a strategic initiative, a partnership agreement was signed on Thursday, January 13, 2022, in the presence of the Governor of the Moulay Rachid Prefecture. This partnership aims to strengthen synergies between academic, economic and social institutions to support innovation and sustainable development in the industrial zone of Ben M'sik Sidi Othmane.",
   "objectives_title": "Key objectives of the agreement:",
   "objectives": [
-    "Foster innovation and the development of local economic projects, particularly in technological and creative fields.",
-    "Establish an integrated ecosystem linking university, economy, and civil society for lasting impact.",
-    "Promote environmental and social sustainability in all supported projects.",
-    "Connect science and society through scientific and cultural initiatives engaging students and citizens."
-  ],
-  "perspectives_title": "Future Outlook",
-  "perspectives_text": "This partnership promises to transform the industrial zone into a hub of innovation and attractiveness, boosting employment, investment, and highlighting the importance of interinstitutional collaboration for sustainable development."
-},
-
-"coop_event_1_title": "Study Day on Cooperatives: Strengthening the Social and Solidarity Economy",
-"coop_event_1_p1": "On the occasion of the International Day of Cooperatives, the Prefecture of Moulay Rachid districts organized, in partnership with the Najm Association for the Economic Inclusion of Youth, a study meeting on Tuesday, July 16, 2024, under the theme: 'Cooperatives Serving a Sustainable Social and Solidarity Economy'.",
-"coop_event_1_p2": "This event was held at the Irchad platform, dedicated to supporting and developing youth capacities.",
-"coop_event_1_p3": "It brought together many officials from the public and private sectors, including the Governor of Moulay Rachid districts and his team, the vice-presidents of Sidi Othmane and Moulay Rachid districts, department heads, representatives of the Ministry of Cooperation, taxes, the Chamber of Crafts, and the National Cooperation delegate.",
-
-"coop_event_2_title": "Strengthening the Role of Cooperatives",
-"coop_event_2_p1": "The meeting highlighted the crucial role of cooperatives in achieving sustainable development and strengthening the social and solidarity economy, especially in the face of economic and social challenges faced by vulnerable populations and youth.",
-"coop_event_2_p2": "It was also an opportunity for dialogue among stakeholders, including cooperatives supported by the National Initiative for Human Development and the Youth Economic Inclusion Program within the social and solidarity economy framework.",
-
-"coop_event_3_title": "Objectives of the Meeting",
-"coop_event_3_ul1": "Sharing Experiences: Presenting successful cooperative models, identifying challenges and potential solutions.",
-"coop_event_3_ul2": "Strengthening Networks: Promoting sustainable partnerships between cooperatives and support institutions.",
-"coop_event_3_ul3": "Encouraging Innovation: Stimulating innovation to offer high value-added products and services.",
-"coop_event_3_end": "The event concluded with a call to continue these collaborative initiatives and strengthen joint efforts so that cooperatives become key pillars of local development.",
-
-
-
+            "Stimulate innovation and the development of local economic projects, particularly in the technological and creative fields.",
+            "Establish an integrated ecosystem linking university, economy and civil society for a lasting impact.",
+            "Encourage environmental and social sustainability in all supported projects.",
+            "Connect science and society through scientific and cultural initiatives involving students and citizens."
+        ],
+        "perspectives_title": "Future prospects",
+        "perspectives_text": "This partnership promises to transform the industrial zone into a hub of attractiveness and innovation, stimulating employment, investment, and illustrating the importance of inter-institutional collaboration for sustainable development."
+    },
+    "coop_event_1_title": "Cooperatives study day: Strengthening the social and solidarity economy",
+    "coop_event_1_p1": "On the occasion of the World Day of Cooperatives, the prefecture of Moulay Rachid districts organized, in partnership with the Najm Association for the economic integration of young people, a study meeting on Tuesday, July 16, 2024 under the theme: 'Cooperatives at the service of a sustainable social and solidarity economy'.",
+    "coop_event_1_p2": "This meeting was held at the Irchad platform, dedicated to supporting and developing the capacities of young people.",
+    "coop_event_1_p3": "It was attended by many official figures from the public and private sectors, including the Governor of Moulay Rachid districts and his team, the vice-presidents of the Sidi Othmane and Moulay Rachid districts, heads of departments, representatives of the Ministry of Cooperation, taxes, the Chamber of Crafts, as well as the delegate of National Cooperation.",
+    "coop_event_2_title": "Strengthening the role of cooperatives",
+    "coop_event_2_p1": "The meeting highlighted the crucial role of cooperatives in achieving sustainable development and strengthening the social and solidarity economy, particularly in the face of the economic and social challenges of vulnerable populations and young people.",
+    "coop_event_2_p2": "It was also an opportunity for exchange between the actors, including the cooperatives supported by the National Initiative for Human Development and the Program for the economic integration of young people within the framework of the social and solidarity economy.",
+    "coop_event_3_title": "Objectives of the meeting",
+    "coop_event_3_ul1": "Exchange of experiences: Presentation of successful cooperative models, identification of challenges and potential solutions.",
+    "coop_event_3_ul2": "Strengthening networks: Fostering sustainable partnerships between cooperatives and support institutions.",
+    "coop_event_3_ul3": "Encouraging innovation: Stimulating innovation to offer products and services with high added value.",
+    "coop_event_3_end": "The meeting ended with a call to continue these collaborative initiatives and to strengthen joint efforts so that cooperatives become essential pillars of local development.",
   "partnership_irchad": {
-    "main_title": "Signing of a Partnership between the Irchad Platform and the Faculty of Letters and Sciences",
-    "paragraph1": "As part of a strategic approach to establishing a sustainable cooperation system, a partnership agreement was signed on Thursday, January 13, 2022, during a ceremony presided over by the Governor of the Moulay Rachid districts. This partnership aims to strengthen collaboration between academic, economic, and social institutions to promote sustainable development and innovation in the Ben M’Sick Sidi Othmane industrial zone.",
-    "section_title": "Partnership Axes and Objectives",
-    "axis1_title": "Promoting Innovation and Economic Development",
-    "axis1_text": "This partnership aims to create an environment conducive to innovation and the development of local economic projects, particularly in technology and creative industries.",
-    "axis2_title": "Establishing an Integrated Ecosystem",
-    "axis2_text": "Developing interaction mechanisms between academic, economic, and civil society institutions to ensure synergy beneficial to all stakeholders.",
-    "axis3_title": "Sustainable Development",
-    "axis3_text": "Supporting environmentally and socially responsible projects while actively involving the local community in their implementation.",
-    "axis4_title": "Linking Education and Community",
-    "axis4_text": "Organizing cultural and scientific initiatives to raise awareness among students and citizens about the importance of integrating knowledge with action.",
-    "conclusion_title": "Future Perspectives",
-    "conclusion_text": "This partnership is expected to boost the development of the Ben M’Sick Sidi Othmane industrial zone, stimulate employment and investment, and serve as a model of successful collaboration between institutions for sustainable and innovative development."
-  },
-
-  
+        "main_title": "Signature of a Partnership between the Irchad Platform and the Faculty of Letters and Sciences",
+        "paragraph1": "In a strategic approach aimed at establishing a sustainable cooperation system, a partnership agreement was signed on Thursday, January 13, 2022 during a ceremony chaired by the Governor of the Moulay Rachid district prefecture. This partnership aims to strengthen collaboration between academic, economic and social institutions to promote sustainable development and innovation in the industrial zone of Ben M'Sick Sidi Othmane.",
+        "section_title": "Partnership axes and objectives",
+        "axis1_title": "Promotion of innovation and economic development",
+        "axis1_text": "This partnership aims to create an environment conducive to innovation and the development of local economic projects, particularly in the technological and creative industries fields.",
+        "axis2_title": "Establishment of an integrated ecosystem",
+        "axis2_text": "Develop interaction mechanisms between academic, economic and civil society institutions to ensure a beneficial synergy for all actors.",
+        "axis3_title": "Sustainable development",
+        "axis3_text": "Support for projects that respect the environment and the social fabric, while actively involving the local community in their implementation.",
+        "axis4_title": "Link between education and community",
+        "axis4_text": "Organization of cultural and scientific initiatives aimed at raising awareness among students and citizens of the importance of the integration between knowledge and action.",
+        "conclusion_title": "Future prospects",
+        "conclusion_text": "This partnership is intended to strengthen the development of the Ben M'Sick Sidi Othmane industrial zone, to stimulate employment and investment, and to become a model of successful collaboration between institutions for sustainable and innovative development."
+    },
   "objectifs": {
     "titre": "Objectives of the Najm Association",
-    "p1": "Najm Association aims to make the Irchad platform a leading reference in the economic inclusion of youth, while aligning with the spirit of the National Initiative for Human Development.",
-    "p2": "The association seeks to make this platform a convergence space for various youth-targeted programs, making it a model for providing information and guidance, thus meeting the aspirations of youth and supporting their ambitions.",
-    "p3": "It focuses on creating a work environment conducive to youth economic inclusion by forming agreements and partnerships with national and international institutions from academic, economic, and civil society sectors.",
-    "p4": "The association adopts good governance based on competence, by implementing transparent and flexible decision-making mechanisms, including the development of a comprehensive procedures manual for administrative and financial operations, with the aim of obtaining public utility status and strengthening trust in its actions."
-  },
-
+        "p1": "The Najm Association aims to make the Irchad platform a leading reference in terms of economic inclusion of young people, while being in line with the spirit of the National Initiative for Human Development.",
+        "p2": "The association aims to make this platform a convergence space for the various programs intended for youth, with a view to making it a model offering information and guidance, thus meeting the aspirations of young people and contributing to the achievement of their ambitions.",
+        "p3": "It focuses on creating a work environment conducive to the economic inclusion of young people, by concluding agreements and partnerships with national and international institutions and organizations from the academic, economic and civil society sectors.",
+        "p4": "The association adopts good governance based on competence, by setting up transparent and flexible decision-making mechanisms, including the development of a complete procedures manual for administrative and financial operations, with the aim of obtaining public utility status and strengthening confidence in its action."
+    },
   "valeurs": {
     "titre": "Values and Principles of the Association",
     "respect": {
       "titre": "Respect",
-      "texte": "The association places great importance on building strong human relationships based on mutual respect. It recognizes the value of each individual, especially youth, as essential partners in development."
+            "texte": "The association attaches great importance to the establishment of solid human relationships, based on mutual esteem. It recognizes the value of each individual, especially young people, as essential partners in development."
     },
     "transparence": {
       "titre": "Transparency",
-      "texte": "Transparency ensures the clarity and credibility of our actions. The association maintains open communication with youth and partners to strengthen trust and understanding."
+            "texte": "Transparency guarantees the clarity and credibility of our actions. The association maintains open communication with young people and partners in order to strengthen trust and understanding."
     },
     "confiance": {
       "titre": "Trust",
-      "texte": "Trust is essential for sustainable cooperation. The association supports young people with kindness to help them achieve their goals with confidence."
+            "texte": "Trust is essential for sustainable cooperation. The association supports young people with kindness in order to allow them to achieve their objectives with confidence."
     },
     "egalite": {
       "titre": "Equality",
-      "texte": "Equal opportunity for all individuals is a fundamental principle in the association’s work. It is committed to providing an inclusive environment where young people, regardless of their social or cultural background, can access opportunities that help them fulfill their potential and contribute to sustainable development."
+            "texte": "Equal opportunities for all individuals is a fundamental principle in the work of the association. It is committed to offering an inclusive environment allowing young people, regardless of their social or cultural backgrounds, to access opportunities that help them realize their potential and contribute to sustainable development."
     },
     "dignite": {
       "titre": "Dignity",
-      "texte": "The association places the preservation of human dignity at the heart of its action by respecting the rights of youth and valuing their participation in society in a way that respects their worth and potential. It strives to create a supportive environment that enables young people to actively participate in socio-economic development while preserving their dignity."
+            "texte": "The association places the preservation of human dignity at the heart of its action by respecting the rights of young people and valuing their participation in society in a way that respects their worth and potential. It strives to create a favorable environment that allows young people to actively participate in socio-economic development while preserving their dignity."
     },
     "engagement": {
       "titre": "Commitment",
-      "texte": "Commitment to responsibility is the cornerstone of the association’s success in achieving its objectives. The association works efficiently and with integrity to design and implement initiatives aimed at the economic and social empowerment of youth, while ensuring rigorous follow-up to achieve expected results."
+            "texte": "Commitment to responsibility is the cornerstone of the association's success in achieving its objectives. The association works with efficiency and integrity to design and implement initiatives aimed at the economic and social empowerment of young people, while ensuring rigorous monitoring to guarantee the achievement of the expected results."
     },
     "citoyennete": {
       "titre": "Citizenship",
-      "texte": "The association considers youth as a driving force of economic and social development. It strives to strengthen their sense of belonging by involving them in projects serving the nation, thus anchoring the values of active citizenship and promoting sustainable renewal."
+            "texte": "The association considers young people as a driving force for economic and social development. It strives to strengthen their sense of belonging by involving them in projects at the service of the nation, thus contributing to anchoring the values of active citizenship and promoting a sustainable renaissance."
     },
     "formation": {
       "titre": "Training",
-      "texte": "The association considers youth as a driving force of economic and social development. It strives to strengthen their sense of belonging by involving them in projects serving the nation, thus anchoring the values of active citizenship and promoting sustainable renewal."
+            "texte": "The association considers young people as a driving force for economic and social development. It strives to strengthen their sense of belonging by involving them in projects at the service of the nation, thus contributing to anchoring the values of active citizenship and promoting a sustainable renaissance."
     }
   },
-
   "vision": {
     "titre": "Strategic Vision of the Association",
-    "intro": "The Najm Association for the Economic Inclusion of Youth aims to:",
+        "intro": "The Najm Association for the economic inclusion of young people aims to:",
     "objectifs": [
-      "Empower youth: by developing their skills to facilitate their integration into the labor market.",
-      "Value talents: identify the hidden potential of youth and help it emerge.",
-      "Improve employability: provide effective training to increase employment opportunities.",
-      "Support entrepreneurship: accompany young project holders with technical and financial support.",
+            "Empower young people: by developing their skills to promote their integration into the labor market.",
+            "Value talents: identify the hidden potential of young people and bring them to the fore.",
+            "Improve employability: offer effective training to increase hiring chances.",
+            "Support entrepreneurship: support young project leaders with technical and financial support.",
       "Encourage the social economy: promote sustainable local cooperative initiatives.",
-      "Develop partnerships: create networks with the public, private, and non-profit sectors.",
-      "Strengthen citizenship: spread the values of volunteerism and community engagement.",
-      "Contribute to sustainable development: stimulate youth creativity for responsible projects."
-    ]
-  },
-
+            "Develop partnerships: create networks with the public, private and associative sectors.",
+            "Strengthen citizenship: disseminate the values of volunteering and community engagement.",
+            "Contribute to sustainable development: stimulate the creativity of young people for responsible projects."
+        ]
+    },
   "organigramme": {
-    "titre": "Organizational Chart of the Association"
+        "titre": "Organizational chart of the Association"
   },
-
   "equipe": {
-    "titre": "Association Team"
+        "titre": "Team of the Association",
+        "membres": {
+            "amineMoutassim": {
+                "nom": "Amine Moutassim",
+                "statut": "Operational Director"
+            },
+            "sanaaBouadel": {
+                "nom": "Sanaa Bouadel",
+                "statut": "Administrative Assistant"
+            },
+            "khadijaKurdawi": {
+                "nom": "Khadija Kurdawi",
+                "statut": "Administrative Assistant"
+            },
+            "abdulRazzaqArbah": {
+                "nom": "Abdul Razzaq Arbah",
+                "statut": "Administrative Employee"
+            },
+            "zahraBalasi": {
+                "nom": "Zahra Balasi",
+                "statut": "Project Coordinator"
+            },
+            "sihamGhazali": {
+                "nom": "Siham Ghazali",
+                "statut": "Project Coordinator"
+            },
+            "shaimaAttar": {
+                "nom": "Shaima Attar",
+                "statut": "Guidance and Counseling Consultant"
+            },
+            "ayyoubLaghlali": {
+                "nom": "Ayyoub Laghlali",
+                "statut": "Soft Skills Trainer and Supervisor"
+            },
+            "muhammadAminAbiAlSurur": {
+                "nom": "Muhammad Amin Abi Al-Surur",
+                "statut": "Field Monitoring Manager"
+            },
+            "hanaDahman": {
+                "nom": "Hana Dahman",
+                "statut": "Entrepreneurship Trainer"
+            },
+            "yousraHashoum": {
+                "nom": "Yousra Hashoum",
+                "statut": "Administrative Monitoring Manager"
+            },
+            "mohsenHaimoud": {
+                "nom": "Mohsen Haimoud",
+                "statut": "Guidance Counselor"
+            }
+        }
   },
-
   "faq": {
     "titre": "Frequently Asked Questions (FAQ)",
     "questions": [
@@ -208,823 +240,548 @@
         "r": "You can contact us via the contact form or come directly to our headquarters in Moulay Rachid – Sidi Othmane."
       },
       {
-        "q": "Do you support young project holders?",
-        "r": "Yes, our Irchad platforms offer personalized support to structure, fund, and launch youth projects."
+                "q": "Do you support young project leaders?",
+                "r": "Yes, our Irchad platforms offer personalized support to structure, finance and launch youth projects."
       },
       {
-        "q": "Are the training sessions free?",
-        "r": "All our offered training sessions are free thanks to the support of our institutional partners."
+                "q": "Are the trainings free?",
+                "r": "All our proposed trainings are free thanks to the support of our institutional partners."
       },
       {
         "q": "Can I get funding for my project?",
-        "r": "Yes, some projects may receive financial support after evaluation, especially within the framework of the National Initiative for Human Development."
+                "r": "Yes, some projects can benefit from financial support after evaluation, particularly within the framework of the National Initiative for Human Development."
       },
       {
         "q": "What types of projects do you support?",
-        "r": "We mainly support projects with high social or economic impact: cooperatives, self-entrepreneurship, community initiatives."
+                "r": "We mainly support projects with a high social or economic impact: cooperatives, self-employment, community initiatives."
       },
       {
         "q": "Who can benefit from your services?",
-        "r": "Any young person aged 18 to 35, living in the Moulay Rachid – Sidi Othmane area, with an idea or project to develop."
-      },
-      {
-        "q": "How does the support process work?",
-        "r": "After an initial meeting, we establish a support plan that includes training, coaching sessions, and personalized follow-up."
-      }
-    ]
-  
-},
-
-
-  "video": {
-    "title": "Discover our action in video",
-    "unsupported": "Your browser does not support HTML5 video playback."
-  },
-  "page": {
-    "title": "Irchad Platform – Global Overview"
-  },
+                "r": "Any young person aged 18 to 35, residing in the Moulay Rachid – Sidi Othmane region, with an idea or a project to develop."
+            },
+            {
+                "q": "How does the support work?",
+                "r": "After a first meeting, we establish a support plan that includes training, coaching sessions, and personalized follow-up."
+            }
+        ]
+    },
+    "irchad": {
+        "videoTitle": "Discover our action in video",
+        "mainTitle": "Irchad Platform – Global Overview",
   "sections": [
     {
-      "title": "Areas of Intervention",
-      "content": "The Irchad Youth Platform was created to support and accompany emerging cooperatives, free initiatives and self-employment at the level of the Moulay Rachid district prefecture, within the framework of the third phase of the National Initiative for Human Development (INDH).\nThis platform aims to provide material and intellectual support to young people wishing to launch economic projects or social initiatives, particularly in the fields of self-employment and cooperative creation.\nIt constitutes a space for social innovation, focusing on training and workshops designed to strengthen young people's skills in various fields such as management, marketing and project management. It also seeks to promote employment, encourage business creation and develop cooperatives, while facilitating access to information on economic opportunities and available funding sources.\nThrough this platform, the initiative aims to stimulate entrepreneurial spirit and cooperation among young people, while strengthening innovation and sustainable development in the region. It thus contributes to increasing economic and social development in the Moulay Rachid prefecture."
+                "title": "Areas of intervention",
+                "content": "The Irchad Youth Platform was created to support and accompany emerging cooperatives, free initiatives and self-employment at the level of the Moulay Rachid district prefecture, within the framework of the third phase of the National Initiative for Human Development (INDH).\nThis platform aims to provide material and intellectual support to young people wishing to launch economic projects or social initiatives, particularly in the fields of self-employment and the creation of cooperatives.\nIt constitutes a space for social innovation, by focusing on training and workshops aimed at strengthening the skills of young people in various fields such as management, marketing and project management. It also seeks to promote employment, encourage business creation and develop cooperatives, while facilitating access to information on economic opportunities and available funding sources.\nThrough this platform, the initiative aims to stimulate the entrepreneurial spirit and cooperation between young people, while strengthening innovation and sustainable development in the region. It thus contributes to increasing economic and social development in the Moulay Rachid prefecture."
+            },
+            {
+                "title": "Mission of the 'Youth Platform'",
+                "content": "The platform's mission is based on listening, guidance and advice. It aims to provide psychological and social support to young people through several components:\nListening: allowing young people to express themselves freely about their ideas.\nGuidance: specialized advice in education, employment, mental health.\nAdvice: support in making personal and professional decisions."
+            },
+            {
+                "title": "Management of the Irchad platforms of Moulay Rachid – Sidi Othmane",
+                "content": "The Najm Association manages two Irchad platforms in the Moulay Rachid – Sidi Othmane prefecture. It supports project leaders, helping them to concretize their ideas with professional, technical and financial support."
+            },
+            {
+                "title": "Social and solidarity economy: Support measures for cooperatives",
+                "content": "Support measures:\n- Support for the creation and structuring of cooperatives\n- Help in identifying activities through the analysis of value chains\n- Development of own brands and identities\n- Obtaining quality certifications\n- Post-creation follow-up with management support and training"
+            },
+            {
+                "title": "Components of a project incubator",
+                "content": "- Technical advice (strategy, marketing, management…)\n- Financial support (grants, loans, capital)\n- Specialized workshops\n- Premises and logistical means\n- Networking with investors and experts\n- Continuous monitoring and long-term support"
+            },
+            {
+                "title": "Objectives of a project incubator",
+                "content": "+ Stimulate innovation\n+ Reduce the risk of failure\n+ Create jobs\n+ Enhance the local economy"
+            },
+            {
+                "title": "Development of youth capacities",
+                "content": "- Training (personal and professional skills)\n- Support for entrepreneurship\n- Access to employment (training, internships, coaching)\n- Incentive for innovation\n- Social commitment (volunteering, environment, education)"
+            }
+        ],
+        "contactTitle": "Contact us",
+        "contactInfo": "For more information, contact us at 05 22 70 04 04 or at contact@association-najm.ma."
     },
-    {
-      "title": "Mission of the \"Youth Platform\"",
-      "content": "The platform's mission is based on listening, guidance and counseling. It aims to provide psychological and social support to young people through several components:\nListening: The platform allows young people to express themselves freely about their ideas and feelings, thus strengthening their ability to face life's challenges.\nGuidance: It offers specialized advice in various fields such as education, employment, relationships, mental health, and other important topics for youth.\nCounseling: The platform guides young people in their decision-making, both personally and professionally, helping them build a better future.\nThrough this mission, the platform works to strengthen young people's capacities and empower them, so that they become active and influential actors within society."
+    "gallery": {
+        "title": "Inauguration of Vocational Training",
+        "section1_p1": "The Najm Association has officially launched three vocational training courses for young people: web development, graphic design and digital marketing. This initiative aims to offer a real opportunity for professional integration through the acquisition of skills sought on the market.",
+        "section1_p2": "These programs are designed to meet the requirements of the current digital world by focusing on practice, creativity and innovation.",
+        "section2_p1": "These trainings are supervised by experienced professionals who adopt a project-based pedagogical approach. Each participant benefits from individualized support, practical work and concrete projects, individual or collective.",
+        "section2_p2": "The objective is to allow each young person to develop their technical skills and creativity, as well as to strengthen their self-confidence in a dynamic and stimulating environment.",
+        "program_title": "Program content",
+        "program_web": "Web Development: HTML, CSS, JavaScript, React, creation of responsive sites.",
+        "program_design": "Graphic Design: Photoshop, Illustrator, InDesign, creation of logos and visual media.",
+        "program_marketing": "Digital Marketing: SEO, social networks, e-mailing, online advertising.",
+        "training_title": "Training progress",
+        "training_p1": "The courses take place in a dynamic and participatory environment, with weekly practical workshops, feedback sessions, inspiring conferences and collective challenges.",
+        "training_p2": "The emphasis is on the participation of young people, collaborative work and the realization of digital projects that respond to real problems.",
+        "success_title": "A successful first promotion",
+        "success_p": "Thanks to the commitment of the trainers, partners and young people, this first promotion laid the foundations for a real dynamic of learning and transformation. This program is intended as a springboard towards a promising digital future for our young people.",
+        "gallery_highlights": "General gallery of highlights",
+        "image_inauguration": "Inauguration",
+        "image_presentation": "Presentation of the trainings",
+        "image_training_content": "Training content",
+        "image_course_progress": "Course progress",
+        "image_end_of_training": "End of training",
+        "image_share_exchange": "Sharing and exchange",
+        "image_youth_discovering_digital": "Youth discovering digital",
+        "image_intensive_training": "Intensive training",
+        "image_group_work": "Group work",
+        "image_pedagogical_team": "Pedagogical team",
+        "image_final_projects": "Final projects",
+        "image_certificates": "Certificates award",
+        "image_digital_marketing_workshop": "Digital marketing workshop",
+        "image_tech_trends_discussion": "Discussion on tech trends",
+        "image_group": "Group photo",
+        "image_workshop": "Practical workshop",
+        "image_certification": "Awarding of certificates",
+        "image_team": "Training team",
+        "contact_section_title": "Contact and Registration",
+        "contact_section_text": "For more information on our next sessions, contact us by email or phone.",
+        "social_section_title": "Follow us",
+        "socialText": "Stay connected with us on social networks to follow our activities and news.",
+        "image_label": "Image {{index}}",
+        "addressDetails": "Group 3, opposite the Faculty of Letters and Human Sciences Ben M'sik"
     },
-    {
-      "title": "Management of Irchad platforms in Moulay Rachid – Sidi Othmane",
-      "content": "The Najm Association for Youth Economic Inclusion manages two Irchad platforms located in the Moulay Rachid – Sidi Othmane prefecture. Through this initiative, the association supports project idea holders by welcoming them, listening to their ideas and projects, then offering them support adapted to each case.\n\nThe platforms offer a stimulating environment for young entrepreneurs, with professional, technical and financial support, thus facilitating their economic integration and the development of their ideas into concrete and successful projects."
+    "projects": {
+        "title": "Our Projects",
+        "all": "All",
+        "all_categories": "All Categories",
+        "all_zones": "All Zones",
+        "category_label": "Category",
+        "location_label": "Location",
+        "project_not_found": "Project not found",
+        "back_to_list": "Back to projects list",
+        "details_title": "Details",
+        "founder_info_title": "Information about the founder",
+        "presentation_title": "Project presentation",
+        "support_title": "Support and assistance",
+        "products_title": "Products and services",
+        "partners_title": "Partners",
+        "contact_info_title": "Contact information",
+        "founder_description_prefix": "young female entrepreneur passionate about",
+        "founder_description_experience": "She has more than 5 years of experience in this field.",
+        "founder_description_mission": "She chose the fast food sector because of her passion for cooking and her knowledge of a growing demand for quality food at reasonable prices.",
+        "project_description_innovation": "The project seeks to meet the food needs of all social categories, favoring healthy and safe products, thanks to rigorous hygiene, appropriate preparation and storage in accordance with standards.",
+        "project_description_quality": "Through this project, the entrepreneur wants to offer a fast food experience that is tasty, accessible at any time and in any place, while respecting strict hygiene and quality standards.",
+        "phone_label": "Phone",
+        "email_label": "Email",
+        "address_label": "Address",
+        "hours_label": "Hours",
+        "website_label": "Website",
+        "restauration": "Catering",
+        "marketing_digital": "Digital Marketing",
+        "evenementiel": "Event management",
+        "design": "Design",
+        "audio_visuel": "Audiovisual",
+        "informatique": "IT",
+        "paramedicaux": "Paramedical services",
+        "education": "Education",
+        "search_placeholder": "Search by name...",
+        "popup": {
+            "contact": "Contact",
+            "about": "About",
+            "view_details": "View details",
+            "current_page": "Current page"
+        },
+        "categories": {
+            "restauration": "Catering",
+            "marketing_digital": "Digital Marketing",
+            "evenementiel": "Event management",
+            "design": "Design",
+            "audio_visuel": "Audiovisual"
+        },
+        "locations": {
+            "sidi_othmane_admin": "Sidi Othmane administrative annex",
+            "sidi_othmane_industrial": "Sidi Othmane industrial zone",
+            "moulay_rachid_admin": "Moulay Rachid district administrative annex",
+            "mabrouka_admin": "Mabrouka district administrative annex",
+            "sadri_admin": "Sadri district administrative annex",
+            "hay_el_rajae": "Hay El Rajae",
+            "moulay_rachid_industrial": "Moulay Rachid industrial zone",
+            "el_harouiyine_admin": "El Harouiyine administrative annex"
+        },
+        "list": {
+          "planet_food": {
+            "name": "PLANET FOOD",
+            "address": "123 Food Street, Casablanca",
+            "description": "The best street food in a friendly atmosphere.",
+            "founder_info": "Hanan Aghriwi, founder of the Planet Food project, is a 28-year-old young woman with a diploma in culinary arts. She has more than 5 years of experience in this field. She began her professional career at home, preparing meals for events and parties, with a constant concern to offer impeccable quality at affordable prices. This allowed her to build a good reputation with her clients. She chose the fast food sector because of her passion for cooking and her observation of a growing demand for quality food at reasonable prices. For her, quality and accessibility are the two pillars that guarantee the success of a project in this field. Through Planet Food, Hanan wants to offer a fast food experience that is tasty, accessible at any time and anywhere, while respecting strict hygiene and quality standards.",
+            "presentation": "Planet Food is an innovative project in the fast food field. It aims to offer light and quick meals to prepare, combining excellent quality and affordable prices. The project seeks to meet the food needs of all social categories, favoring healthy and safe products, thanks to rigorous hygiene, adequate preparation, and compliant storage that preserves the quality and safety of the ingredients used. The project is located in the Moulay Rachid – Sidi Othmane prefecture, precisely at Ahmed Rgoub street, with the objective of providing fast and high-quality service to consumers in this area. Furthermore, the project aims to create four local jobs, thus participating in the economic stability of employees and supporting the local economy. Planet Food is not just about selling food: it is a desire to offer a fast, pleasant culinary experience that respects the highest standards.",
+            "support": "The National Human Development Initiative (INDH) of the Moulay Rachid prefecture is the main support for the Planet Food project. It played a key role by providing financial support to gather the resources necessary for the creation and launch of the project. In parallel, the Youth Platform also played an essential role. It allowed Hanan to have access to support opportunities, offering prior training and continuous support throughout the planning and execution phases. Thanks to the support of qualified professionals via this platform, Hanan and other young people benefited from specialized training in various fields, strengthening their skills and preparation for entrepreneurship. This comprehensive support was decisive in obtaining INDH funding and greatly contributed to propelling the Planet Food project towards success.",
+            "products": "Planet Food specializes in fast food and offers a variety of light meals, including pizzas, tacos, coussamia, sandwiches and juices. The objective is to satisfy all tastes and meet the needs of all age groups. Quality is the main added value of the project. Hanan ensures to use fresh ingredients and healthy bases to guarantee tasty and safe meals with each order. In addition to dishes, the project also offers refreshing and healthy natural juices, such as lemon, carrot, beetroot and lime juice, all prepared daily with 100% natural ingredients, enriching the customer experience. Thanks to this offer, Planet Food aims to provide meals that are both fast and nutritious, while respecting the highest quality standards, making it a preferred choice for consumers looking for a unique culinary experience.",
+            "partners": "INDH, Irchad Youth Platform, Najm Association for Youth Economic Inclusion"
+          },
+            "alphacom": {
+                "name": "Alphacom",
+                "address": "456 Digital Avenue, Casablanca",
+                "description": "Digital marketing agency to boost your online presence.",
+                "founder_info": "The Alphacom team consists of young professionals passionate about digital marketing and new technologies. With more than 3 years of experience in the field, they have chosen to specialize in supporting local businesses to develop their digital presence. Their mission is to offer innovative and accessible marketing solutions to all types of businesses.",
+                "presentation": "Alphacom is an agency specialized in digital marketing that aims to support businesses in their digital transformation. The project offers comprehensive services including website creation, social media management, SEO optimization and online advertising campaigns. The objective is to enable local businesses to develop their visibility and reach new customers through digital tools.",
+                "support": "The Alphacom project benefits from the support of the National Human Development Initiative (INDH) and the Irchad Youth Platform. This support includes specialized training in digital marketing, financial support for the acquisition of computer equipment and personalized coaching for commercial development.",
+                "products": "Alphacom offers a complete range of digital services: website creation and development, social media management (Facebook, Instagram, LinkedIn), Google Ads and Facebook Ads advertising campaigns, SEO optimization, visual and editorial content creation, team training in digital tools.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association for Youth Economic Inclusion, Local Chambers of Commerce"
+              },
+              "baha_happye_park": {
+                "name": "Baha Happye Park",
+                "address": "789 Event Boulevard, Casablanca",
+                "description": "Amusement park and event organization for the whole family.",
+                "founder_info": "Baha, founder of Baha Happye Park, is a 30-year-old young entrepreneur passionate about events and family entertainment. With his experience in animation and event organization, he created this project to offer a unique leisure space in the region. His goal is to create moments of joy and sharing for families.",
+                "presentation": "Baha Happye Park is an innovative project that combines amusement park and event organization. The project aims to create a family entertainment space offering attractions for all ages, children's play areas, and private event organization services such as birthdays, weddings and corporate parties. The objective is to become a reference in family leisure in the region.",
+                "support": "The project benefits from INDH financial support and technical assistance from the Youth Platform. This support includes assistance with space development, training in event management and support in administrative and safety procedures.",
+                "products": "The park offers inflatable attractions, children's games, catering areas, party rooms for private events, entertainment services (clowns, magicians), event equipment rental and all-inclusive packages for celebrations.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Attraction suppliers, Entertainment companies"
+              },
+              "pixel_prod": {
+                "name": "Pixel Prod",
+                "address": "321 Design Street, Casablanca",
+                "description": "Graphic design studio and visual production.",
+                "founder_info": "The Pixel Prod team consists of creative and passionate graphic designers, specialized in visual communication. With training in applied arts and several years of experience in design, they launched this project to offer creative solutions to businesses and individuals in the region.",
+                "presentation": "Pixel Prod is a graphic design studio that offers visual creation services for all types of media. The project aims to support businesses in their visual communication by creating graphic identities, communication materials and impactful visual content. The objective is to democratize access to quality design for small and medium enterprises.",
+                "support": "The studio benefits from INDH support for the acquisition of professional equipment and design software. The Youth Platform also provided training in creative business management and support in developing the client portfolio.",
+                "products": "Pixel Prod offers logo and visual identity creation, print media design (flyers, brochures, business cards), web and digital design, custom illustration creation, professional photo retouching and product packaging design.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Local printing companies, Communication agencies"
+              },
+              "taha_prodd": {
+                "name": "Taha ProdD",
+                "address": "654 Audiovisual Avenue, Casablanca",
+                "description": "Audiovisual production, films and reports.",
+                "founder_info": "Taha, founder of Taha ProdD, is a 26-year-old young director and audiovisual producer. Graduate in cinema and audiovisual, he has a passion for visual storytelling and the art of filming. His objective is to democratize audiovisual production and offer professional quality services at accessible rates.",
+                "presentation": "Taha ProdD is an audiovisual production company specialized in creating video content for businesses, events and personal projects. The project aims to provide complete production services, from conception to post-production, using modern equipment and innovative creative techniques.",
+                "support": "The project benefits from INDH financial support for the acquisition of professional audiovisual equipment. The Youth Platform provided training in creative entrepreneurship and support in the studio's commercial development.",
+                "products": "Taha ProdD offers corporate film production, event filming (weddings, conferences), video clip creation, documentary production, editing and post-production services, and audiovisual equipment rental.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Audiovisual equipment distributors"
+              },
+              "az_event_733": {
+                "name": "AZ Event 733",
+                "address": "987 Party Square, Casablanca",
+                "description": "Custom event organization for professionals and individuals.",
+                "founder_info": "The AZ Event 733 team consists of experienced event organizers, passionate about creating memorable experiences. With several years of experience in events, they have specialized in organizing high-quality corporate and private events.",
+                "presentation": "AZ Event 733 is a complete event agency that offers custom event organization services. The project aims to support individual clients and companies in designing and implementing their events, offering a personalized approach and premium quality service.",
+                "support": "The agency benefits from INDH and Youth Platform support for developing its supplier network and acquiring event equipment. Support in commercial management and marketing has also been provided.",
+                "products": "AZ Event 733 offers wedding organization, corporate seminars, product launches, conferences, gala evenings, birthdays, and provides equipment rental, decoration, catering, entertainment and coordination services on the day.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Caterers, Decorators, Reception halls"
+              },
+            "pretty_events": {
+                "name": "Pretty Events",
+                "address": "456 Party Avenue, Casablanca",
+                "description": "Event agency specialized in weddings and private events.",
+                "founder_info": "Fatima, founder of Pretty Events, is a 29-year-old young woman with a degree in event management. She has more than 4 years of experience in this field. She began her career organizing family events and private celebrations, with a constant concern to offer exceptional quality services. Her expertise has allowed her to develop a loyal clientele who appreciates her attention to detail and creativity.",
+                "presentation": "Pretty Events is an event agency specialized in organizing weddings and private events. The project aims to offer complete organization services, from conception to realization, emphasizing personalization and elegance. The objective is to create memorable events that reflect the personality and desires of each client, while respecting their budget.",
+                "support": "Pretty Events benefits from the support of the National Human Development Initiative (INDH) and the assistance of the Irchad Youth Platform. This support includes training in event business management, financing for equipment acquisition and coaching to develop a reliable partner network.",
+                "products": "Pretty Events offers complete wedding organization, engagement ceremonies, baby showers, wedding anniversaries, corporate events, as well as day-of coordination services, floral decoration, equipment rental, and event protocol advice.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Specialized caterers, Florists, Wedding photographers"
+              },
+            "erregyby_event": {
+                "name": "ERREGYBY EVENT",
+                "address": "789 Celebration Boulevard, Casablanca",
+                "description": "Corporate event organization and product launches.",
+                "founder_info": "Rachid, founder of ERREGYBY EVENT, is a 32-year-old entrepreneur specialized in corporate events. With his experience in corporate communication and event marketing, he created this agency to meet the specific needs of companies in terms of professional event organization and corporate communication.",
+                "presentation": "ERREGYBY EVENT is an agency specialized in organizing corporate events and product launches. The project aims to support companies in event communication by creating unique experiences that strengthen their brand image and build customer loyalty. The objective is to become the preferred partner for companies for all their event needs.",
+                "support": "The agency benefits from INDH financial support for the acquisition of audiovisual equipment and event materials. The Youth Platform provided training in corporate communication and support in developing strategic partnerships.",
+                "products": "ERREGYBY EVENT offers product launch organization, corporate seminars, conferences, team building, gala evenings, networking events, as well as event communication services, equipment rental and technical coordination.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Conference centers, Communication companies"
+              },
+              "snack": {
+                "name": "Snack",
+                "address": "321 Gourmet Street, Casablanca",
+                "description": "Snack offering Moroccan and international specialties.",
+                "founder_info": "Ahmed, founder of the Snack, is a 27-year-old young chef passionate about traditional Moroccan and international cuisine. Graduate of a hotel school, he has several years of experience in catering. His objective is to offer quality cuisine in a relaxed setting, promoting authentic Moroccan flavors while offering appreciated international dishes.",
+                "presentation": "The Snack is a fast food establishment that offers varied cuisine combining traditional Moroccan specialties and international dishes. The project aims to offer quality meals in a friendly and accessible environment, using fresh ingredients and authentic recipes to satisfy a diverse clientele.",
+                "support": "The project benefits from INDH support for kitchen development and acquisition of catering equipment. The Youth Platform provided training in restaurant management and support in hygiene and food safety procedures.",
+                "products": "The Snack offers traditional tagines, couscous, grills, varied sandwiches, fresh salads, daily specials, Moroccan pastries, hot and cold drinks, as well as takeaway menus and delivery service.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Local fresh product suppliers"
+              },
+              "snack_yacout": {
+                "name": "Snack Yacout",
+                "address": "654 Industrial Avenue, Casablanca",
+                "description": "Fast food for industrial zone workers.",
+                "founder_info": "Yacout, founder of Snack Yacout, is a 35-year-old entrepreneur who identified a need for quality catering in the industrial zone. With his experience in catering and knowledge of workers' needs, he created this concept to offer fast, nutritious and affordable meals to industrial zone employees.",
+                "presentation": "Snack Yacout is a fast food establishment strategically located in the industrial zone to serve workers and employees in the sector. The project aims to provide balanced, fast and affordable meals, adapting to the schedules and constraints of industrial workers while maintaining consistent quality.",
+                "support": "The project benefits from INDH support for kitchen equipment and catering space development. Specialized support has been provided to meet hygiene standards specific to collective and industrial catering.",
+                "products": "Snack Yacout offers balanced worker menus, hearty sandwiches, daily specials, hot soups, salads, energy drinks, coffees and teas, with fast food service adapted to work schedules and preferential rates for groups.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Industrial zone companies"
+              },
+              "dar_miya": {
+                "name": "Dar Miya",
+                "address": "987 Tradition Square, Casablanca",
+                "description": "Authentic Moroccan cuisine in a traditional setting.",
+                "founder_info": "Miya, founder of Dar Miya, is a passionate traditional Moroccan cuisine enthusiast aged 31. Heir to family recipes passed down from generation to generation, she has unique expertise in preparing authentic Moroccan dishes. Her objective is to preserve and share Moroccan culinary richness in a warm and authentic setting.",
+                "presentation": "Dar Miya is a traditional Moroccan restaurant that offers authentic cuisine in a typically Moroccan decor. The project aims to offer a complete culinary experience, highlighting traditional Moroccan flavors and Moroccan lifestyle, while creating a space for conviviality and cultural sharing.",
+                "support": "Dar Miya benefits from INDH support for restaurant development in traditional Moroccan style and acquisition of kitchen equipment adapted to traditional dish preparation. Support in hotel management and culinary heritage promotion has also been provided.",
+                "products": "Dar Miya offers varied tagines, royal couscous, traditional pastillas, mechoui, authentic harira, oriental pastries, mint tea, as well as discovery menus and Moroccan cultural themed evenings.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Moroccan decoration artisans, Local product producers"
+              },
+              "foratino": {
+                "name": "Foratino",
+                "address": "123 Italy Street, Casablanca",
+                "description": "Pizzeria and Italian restaurant.",
+                "founder_info": "Antonio, founder of Foratino, is a 34-year-old Italian chef passionate about authentic Mediterranean cuisine. Trained in Italy's best culinary schools, he immigrated to Morocco with the dream of sharing the authentic flavors of his homeland. His expertise in traditional Italian cuisine and passion for quality products make Foratino a reference in Italian cuisine in Morocco.",
+                "presentation": "Foratino is an Italian pizzeria-restaurant that offers authentic Mediterranean cuisine in a warm atmosphere. The project aims to offer a complete Italian culinary experience, from wood-fired pizzas to fresh pasta, using ingredients imported from Italy and traditional preparation techniques.",
+                "support": "Foratino benefits from INDH support for acquiring a traditional pizza oven and restaurant development in Italian style. Specialized support in food product importation and thematic restaurant management has also been provided.",
+                "products": "Foratino offers artisanal wood-fired pizzas, fresh homemade pasta, risottos, Italian antipasti, tiramisu and artisanal gelato, selected Italian wines, as well as tasting menus and Italian themed evenings.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Italian product importers, Italian-Moroccan Chamber of Commerce"
+              },
+              "la_table_demotion": {
+                "name": "La Table d'emotion",
+                "address": "456 Gastronomy Avenue, Casablanca",
+                "description": "Gourmet restaurant for a unique culinary experience.",
+                "founder_info": "Sophia, founder of La Table d'émotion, is a 33-year-old gourmet chef graduated from the most prestigious French culinary schools. With her experience in international haute cuisine, she created this concept to offer an exceptional culinary experience, blending French techniques and local flavors in innovative and refined creations.",
+                "presentation": "La Table d'émotion is a gourmet restaurant that offers creative and refined cuisine in an elegant setting. The project aims to create a unique culinary experience combining innovation, quality and lifestyle, offering an evolving menu that highlights seasonal products and avant-garde culinary techniques.",
+                "support": "The restaurant benefits from INDH support for equipping a high-end professional kitchen and continuous training of the culinary team. Specialized support in gourmet restaurant management and luxury marketing has also been provided.",
+                "products": "La Table d'émotion offers creative tasting menus, Franco-Moroccan fusion cuisine, fine wine selection, signature desserts, gourmet brunches, as well as cooking workshops and private culinary events.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Luxury product suppliers, Professional sommeliers"
+              },
+              "om_ali_food": {
+                "name": "Om Ali Food",
+                "address": "789 El Harouiyine Boulevard, Casablanca",
+                "description": "Oriental specialties and home cooking.",
+                "founder_info": "Aïcha, known as Om Ali, is a 45-year-old traditional cook recognized in her neighborhood for her authentic oriental specialties. Heir to family culinary secrets, she transformed her passion for traditional cuisine into a business, offering homemade dishes with love and authenticity, thus perpetuating oriental culinary traditions.",
+                "presentation": "Om Ali Food is an establishment specialized in traditional oriental cuisine and homemade dishes. The project aims to preserve and transmit authentic oriental culinary art, offering dishes prepared according to ancestral recipes in respect of traditions and with quality natural ingredients.",
+                "support": "Om Ali Food benefits from INDH support for traditional kitchen equipment and training in small food business management. Specialized support in food hygiene and culinary heritage promotion has also been provided.",
+                "products": "Om Ali Food offers traditional oriental dishes, seasonal vegetable couscous, family tagines, traditional soups, homemade oriental pastries, artisanal preserves and jams, as well as meal platters for family events.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Rural women's cooperatives, Local producers"
+              },
+              "kitchen_chaimaa": {
+                "name": "kitchen chaimaa",
+                "address": "321 Industry Street, Casablanca",
+                "description": "Catering service for businesses and events.",
+                "founder_info": "Chaimaa, founder of Kitchen Chaimaa, is a 28-year-old entrepreneur specialized in catering services. Graduate in culinary arts and hotel management, she has developed expertise in collective and event catering. Her objective is to offer quality catering services adapted to the needs of businesses and private events.",
+                "presentation": "Kitchen Chaimaa is a catering service specialized in corporate and event catering. The project aims to offer flexible and quality catering solutions, adapted to the specific needs of each client, whether for daily corporate deliveries or special event services.",
+                "support": "Kitchen Chaimaa benefits from INDH support for acquiring industrial kitchen equipment and delivery vehicles. Support in logistics management and B2B commercial development has also been provided.",
+                "products": "Kitchen Chaimaa offers corporate meal platters, event buffets, cocktail dinners, coffee breaks and snacks, personalized dietary menus, as well as delivery and on-site setup services.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Local businesses, Event organizers"
+              },
+              "wafae_el_hana": {
+                "name": "Wafae El Hana",
+                "address": "654 El Rajae Avenue, Casablanca",
+                "description": "Moroccan and oriental pastry.",
+                "founder_info": "Wafae, founder of Wafae El Hana, is a 38-year-old traditional pastry chef specialized in Moroccan and oriental sweets. Trained by the best traditional pastry chefs and enriched by modern training, she masters the delicate art of oriental pastry. Her passion for traditional sweets and creative talent make her pastry shop a reference in the neighborhood.",
+                "presentation": "Wafae El Hana is a pastry shop specialized in traditional Moroccan and oriental sweets. The project aims to preserve the art of authentic oriental pastry while offering modern creations, using quality ingredients and artisanal techniques to create moments of taste happiness.",
+                "support": "The pastry shop benefits from INDH support for acquiring professional pastry equipment and production laboratory development. Support in preservation techniques and product line development has also been provided.",
+                "products": "Wafae El Hana offers traditional Moroccan pastries (chebakia, makroudh, gazelle horns), varied baklawas, ma'amoul and stuffed dates, personalized celebration cakes, as well as modern creations inspired by tradition and gift boxes.",
+                "partners": "INDH, Irchad Youth Platform, Najm Association, Honey and dried fruit production cooperatives"
+              }
+        }
     },
-    {
-      "title": "Social and Solidarity Economy: Support Measures for Cooperatives",
-      "content": "Within the framework of economic development and the promotion of social innovation, specific support measures for cooperatives are implemented, covering several axes:\nCooperative Support\nIntegrated and progressive support is offered to cooperatives and project holders, from the creation phase to post-launch. This support aims to ensure their sustainability and development, with particular emphasis on projects resulting from value chain analysis.\nTechnical Support and Creation Assistance\nThis includes support in creation procedures, preparation of business plans, and structuring of cooperatives. Support also extends to identifying relevant economic activities through value chain analysis.\nBrand Identity Creation\nSupport helps develop brands that reflect the identity of cooperatives and local projects, strengthening their credibility and market positioning, locally and internationally.\nQuality Certifications\nSupport also includes obtaining certifications that guarantee the quality of products or services, thus improving the reputation of cooperatives and consumer confidence.\nPost-Creation Support\nIn addition to the launch phase, continuous follow-up is ensured: additional advice, targeted training, support for financial and administrative management, facilitating the transition to the growth stage.\nThe objective of these actions is to guarantee sustainable growth, competitiveness of cooperatives, and job creation for young people and the local population, while promoting innovation."
+    "academieNajm": {
+        "header": {
+            "title": "Najm Academy for Digital Professions",
+            "subtitle": "Social promotion through digitalization"
+        },
+        "sections": [
+            {
+                "title": "For an inclusive digital transformation in Morocco",
+                "text": "The Najm Association for Economic Inclusion believes that digital transformation represents both a challenge and a promising opportunity for Morocco.\\n\\nThe low accessibility to modern technologies, the lack of adapted training, and the widening of the digital divide are among the main obstacles hindering the integration of young people into the digital economy.\\n\\nHowever, digitalization offers great possibilities to stimulate entrepreneurship, create job opportunities, and boost the socio-economic fabric, especially for young people who are not in school, unemployed, and not receiving training, who face real difficulties in professional integration.\\n\\nAware of this reality, the Najm Association is committed to supporting young people in acquiring digital skills, pursuing the digitalization of businesses, and encouraging technological innovation. By focusing its efforts on these fundamental axes, the association aims to contribute to building a more inclusive development model.",
+                "alt": "Young Moroccans using digital tools",
+                "buttonText": "Discover our programs"
+            },
+            {
+                "title": "An academy serving the digital future of Morocco",
+                "text": "Through this Academy, the Najm Association offers young people opportunities for economic integration in a promising sector: digital professions, perfectly aligned with the royal project of digital transition.",
+                "alt": "Najm Academy for the digital future"
+            },
+            {
+                "title": "Strategic vision of the association",
+                "text": "Since its creation, the Najm Association has continued its development to strengthen the professional integration and entrepreneurship of young people.\\n\\nWith rigorous governance, a structured team, and effective monitoring tools, it diversifies its actions and adapts its programs to economic and digital changes.\\n\\nIt places continuous training, partnerships, and post-training support at the heart of its sustainable strategy.",
+                "alt": "Strategic vision of the Najm association"
+            }
+        ],
+        "platformManagement": {
+            "title": "Management and Administration of Orientation Platforms",
+            "text": "The Najm Association has been managing youth orientation and employment platforms in the Moulay Rachid districts since 2020, spaces dedicated to the support and economic integration of young people within the framework of Program 3 of the third phase of the National Initiative for Human Development (INDH).<br/><br/>The orientation platform, thanks to its management model developed by the Najm Association, has become a reference in the economic integration of young people, with a total commitment to the spirit of the INDH. It stands out as a dynamic space that brings together various institutions, organizations, and programs dedicated to young people.<br/><br/>The Najm Association relies on an effective and transparent governance methodology, based on clear and fluid decision-making mechanisms. The association has developed a procedures guide covering all management operations, and it aims to obtain quality certification for its administrative processes and recognition as a public utility association.",
+            "cards": [
+                {
+                    "title": "Welcome Area",
+                    "text": "This is the first point of contact with young people, whose mission is to verify their eligibility and present them with the various programs and services offered by the platform."
+                },
+                {
+                    "title": "Listening Area",
+                    "text": "Dedicated to listening to young people and analyzing their needs, this space aims to identify their ambitions and assess their skills through an individual diagnosis, allowing for a better understanding of their professional and personal expectations."
+                },
+                {
+                    "title": "Orientation Area",
+                    "text": "After the skills assessment, young people are directed to the program best suited to their future ambitions, either to a service provider within the platform or to another external partner institution corresponding to their needs."
+                }
+            ],
+            "statsTitle": "Key Statistics (as of April 30, 2025)",
+            "stats": [
+                "Young people welcomed on the platform",
+                "Young people oriented towards the social and solidarity economy",
+                "Young people oriented towards entrepreneurship",
+                "Young people oriented towards strengthening employability",
+                "Young people oriented towards external programs/partners",
+                "Total young beneficiaries of the platform's services"
+            ],
+            "statsValues": [
+                "5580",
+                "2872",
+                "98",
+                "610",
+                "277",
+                "4826"
+            ]
+        },
+        "skillReinforcement": {
+            "title": "Reinforcement of Parallel Skills for Young People",
+            "text": "The Najm Association has developed a series of parallel training programs aimed at strengthening the professional integration opportunities for young people. These trainings are theoretical and practical workshops intended to equip young people with concrete skills for their professional integration into the job market.",
+            "cards": [
+                {
+                    "title": "Development of Personal Skills",
+                    "text": "Strengthening skills in communication, leadership, and stress management to improve employment opportunities."
+                },
+                {
+                    "title": "Job Search Techniques",
+                    "text": "How to write a CV, techniques for successful job interviews, and how to develop one's professional network."
+                },
+                {
+                    "title": "Entrepreneurship Awareness",
+                    "text": "Fundamental concepts for business creation, project management, and innovation."
+                },
+                {
+                    "title": "Awareness of the Importance of Creating Cooperatives",
+                    "text": "Support for the creation of cooperatives subject to law 112/12, and promotion of cooperative and solidarity work."
+                }
+            ]
+        },
+        "entrepreneurship": {
+            "title": "Strengthening Entrepreneurship among Young People",
+            "text": "Thanks to the competence of its members and the constant commitment of its organizational structure, the Najm Association contributed to the call for expressions of interest launched by the prefecture of Moulay Rachid in November 2023, concerning the implementation of the axis of support for youth entrepreneurship.<br/><br/>The excellence of the application file presented by the Association won the trust of the selection committee and the Governor, this trust was concretized by the attribution of this strategic mission to the Najm Association. The Association thus signed two partnership agreements for the year 2024, in the territory of the prefecture of Moulay Rachid.<br/><br/>These two agreements aim to train 200 young people in the pre-creation phase of a business and to support 115 entrepreneurs in the post-creation phase during the year 2024.",
+            "methodologyTitle": "Methodology and Pedagogical Approach",
+            "cards": [
+                {
+                    "title": "Working Methodology",
+                    "text": "The association has adopted a working methodology based on the organization of pre-defined training cycles (each quarter), interspersed with a set of continuous monitoring and evaluation mechanisms. These cycles conclude with periodic meetings of the Provincial Committee for Human Development (CPDH), to allow the governance structures of the INDH to monitor the level of achievement and the attainment of the set objectives."
+                },
+                {
+                    "title": "Pedagogical Approach",
+                    "text": "The Najm Association adopts a modern pedagogical approach focused on andragogy, specially designed to meet the learning needs of adults. This approach is reinforced by applied and interactive training based on the treatment of real cases, according to the principle of 'Learning by doing'. This course is supervised by a permanent pedagogical team, which ensures precise support and quality of training, thanks to continuous communication with experts and professionals, which reinforces the effectiveness of learning and guarantees the achievement of concrete results."
+                }
+            ],
+            "resultsTitle": "Key Results (Year 2024)",
+            "stats": [
+                "Young people trained in the pre-creation phase (131% of the target)",
+                "Projects accepted by the CPDH",
+                "Projects implemented (67% of accepted projects)",
+                "Exceeding business dynamization objectives"
+            ],
+            "statsValues": [
+                "261",
+                "240",
+                "161",
+                "130%"
+            ],
+            "renewalText": "Given these positive results, the Provincial Committee for Human Development has renewed its confidence in the Najm Association by signing a new agreement for the implementation of the 'Support for Youth Entrepreneurship' axis at the level of the Moulay Rachid prefecture for the year 2025."
+        },
+        "socialEconomy": {
+            "title": "Support Axis for the Social and Solidarity Economy",
+            "text": "Since 2021, the Najm Association has been in charge of implementing the 'Support for the Social and Solidarity Economy' axis at the level of the Moulay Rachid prefecture. This axis aims to support and strengthen the capacities of the actors of the social and solidarity economy, with a particular focus on cooperatives subject to law 112.12, as well as on the various economic actors active in this field.<br/><br/>Thanks to this initiative, the Najm Association offers comprehensive support to cooperatives and social entrepreneurs by offering them administrative and management training, strengthening technical and artisanal skills, and financing opportunities. The objective is to strengthen their development opportunities, increase their competitiveness, and promote their economic integration for sustainable and inclusive development.",
+            "cards": [
+                {
+                    "title": "Key Role of the Association",
+                    "text": "The Najm Association plays a central role in supporting project leaders and economic actors in the social and solidarity economy. It regularly organizes calls for project proposals, receives and studies the files of candidate organizations, and supports entrepreneurs throughout the preparation and development stages of financial aid applications."
+                },
+                {
+                    "title": "Business Plan Support",
+                    "text": "As part of its commitment to supporting economic development, the Najm Association supports project leaders in the development of their Business Plans. It provides them with tools and advice to structure their ideas, improve their business model, and prepare effective presentations before the Provincial Committee for Economic Development (CPDE), which evaluates the feasibility and relevance of the projects."
+                },
+                {
+                    "title": "Post-Validation and Financing Monitoring",
+                    "text": "After validation of the project by the CPDE, the Najm Association continues to provide its support by assisting project leaders in the administrative procedures necessary to obtain financial aid. It ensures compliance with the conditions required by the subsidized organizations and helps them to prepare and submit the necessary documents within the given deadlines, thus ensuring a smooth and rapid receipt of funds."
+                },
+                {
+                    "title": "Post-Financing Monitoring",
+                    "text": "The role of the Najm Association is not limited to granting financing, but extends to careful monitoring after financing, where it continues to support project leaders during the implementation phase. This support includes advice on management, marketing, and business development, helping to ensure the sustainability and growth of businesses. The objective is to guide these projects towards long-term success and to strengthen their economic and social impact within the community."
+                }
+            ],
+            "statsTitle": "The Social and Solidarity Economy in Figures",
+            "stats": [
+                "Calls for project proposals organized",
+                "Projects submitted after the calls for projects",
+                "Projects meeting the initial criteria",
+                "Projects accepted by the CPDH",
+                "Projects financed and in progress"
+            ],
+            "statsValues": [
+                "10",
+                "62",
+                "48",
+                "36",
+                "27"
+            ],
+            "renewalText": "On the basis of these also positive results, the Provincial Committee for Human Development has renewed its confidence in the Najm Association by signing a new agreement for the implementation of the 'Support for the Social and Solidarity Economy' axis in the districts of Moulay Rachid for the year 2025."
+        },
+        "digitalAcademyStats": {
+            "title": "Najm Academy Statistics",
+            "text": "The Najm Academy aims to offer young people opportunities for economic integration through digital professions, a promising sector in line with the royal project of digital transition.",
+            "stats": [
+                "Young people in training in digital marketing and e-commerce",
+                "Young people in training in programming and web design",
+                "Young people in training in graphics and multimedia",
+                "Total young beneficiaries of the training"
+            ],
+            "statsValues": [
+                "31",
+                "25",
+                "26",
+                "82"
+            ]
+        },
+        "objectives": {
+            "title": "Objectives of the Najm Academy",
+            "text": "Through the development of this 'Social promotion through digitalization' program, the Najm Association aims for the following objectives:",
+            "list": [
+                "Reduce the digital divide by democratizing access to technological skills.",
+                "Strengthen the employability of young people by providing them with the digital skills required in the job market.",
+                "Raise awareness of entrepreneurship and equip young people with the necessary tools to launch their own digital projects.",
+                "Encourage economic empowerment through the acquisition of skills adapted to the digital transition in Morocco."
+            ]
+        },
+        "support": {
+            "title": "Support and digital cooperatives",
+            "text": "The Najm Association works with companies and actors in the digital sector to connect young people to employment opportunities through workshops, internships, and specific training.",
+            "programIncludes": "The program also includes:",
+            "list": [
+                "Advice on entrepreneurship",
+                "Support in writing business plans",
+                "Access to financing",
+                "The creation of digital cooperatives, promoting the exchange of skills, access to new markets, and sustainable collective growth"
+            ],
+            "imageText": "Support"
+        },
+        "recognition": {
+            "title": "Recognition and national ambition",
+            "text": "In order to strengthen its impact, the association is working to obtain public utility status to expand its partnerships, its funding, and its national presence.",
+            "quote": "Faithful to its mission, the Najm Association continues to adapt to economic and social challenges and is committed to an inclusive, digital, and sustainable Morocco."
+        },
+        "backToTop": "Back to top"
     },
-    {
-      "title": "Components of a Project Incubator",
-      "content": "A project incubator is a structure dedicated to supporting individuals or teams wishing to launch a project, especially in the early stages. Its objective is to offer a favorable environment for transforming ideas into viable and scalable projects.\nTechnical Support and Guidance\nThe incubator provides advice on strategy, marketing, finance and management, so that projects are built on solid foundations and able to adapt to the market.\nFinancial Support\nSome incubators offer initial funding or facilitate access to funding sources (grants, loans, venture capital), to cover launch costs.\nTraining and Workshops\nSpecialized workshops and training are offered in areas such as digital marketing, investor presentations, team management, or financial planning.\nLogistical Support\nIncubators provide coworking spaces with everything necessary (internet, offices, meeting rooms), promoting a motivating work environment.\nNetworking and Mentoring\nThey offer opportunities to connect with investors, sector experts, other entrepreneurs, or academic institutions.\nMarket Access\nIncubators support product commercialization, by facilitating participation in fairs, exhibitions and economic events.\nContinuous Monitoring\nThey provide medium and long-term support, through project performance analysis, strategic adjustments and targeted support."
+    "contact": {
+        "stayInTouch": "Stay in touch",
+        "title": "Contact us",
+        "paragraph": "Do you have a question, a suggestion or would you simply like to know more about our actions? Do not hesitate to contact us. Our team is at your disposal to answer you as soon as possible.",
+        "formTitle": "Send us a message",
+        "name": "Your name",
+        "email": "Your email",
+        "subject": "Subject",
+        "message": "Your message",
+        "messagePlaceholder": "Write your message here...",
+        "sendMessage": "Send message",
+        "infoTitle": "Our contact details",
+        "address": "Address",
+        "addressDetails": "Group 3, opposite the Faculty of Letters and Human Sciences Ben M'sik, Social and Economic Center, Rue Rahmouni Boualam, Casablanca.",
+        "phone": "Phone",
+        "emailLabel": "Email",
+        "hoursTitle": "Opening hours",
+        "mondayFriday": "Monday - Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "closed": "Closed",
+        "followUs": "Follow us",
+        "socialText": "Stay connected with us on social networks to not miss anything of our news and events."
     },
-    {
-      "title": "Objectives of a Project Incubator",
-      "content": "+ Stimulate innovation through support for innovative projects\n+ Reduce failure risks by offering support from the early stages\n+ Promote job creation\n+ Strengthen the local economy through entrepreneurship promotion"
-    },
-    {
-      "title": "Youth Capacity Development",
-      "content": "Strengthening Personal and Professional Skills\nThe platform aims to strengthen key skills such as:\n- Effective communication\n- Time management\n- Problem solving\n- Use of digital tools\n- Leadership\n- Financial management\n\nEntrepreneurship Support:\nYoung people are supported in transforming their ideas into businesses, with training in:\n- Business plan development\n- Digital marketing\n- Project management\n- Technical assistance for SMEs\n\nAccess to Employment:\nThe platform facilitates professional integration through:\n- Certified training\n- Internships and field experiences\n- Job fairs and coaching sessions\n\nStimulating Innovation and Creativity:\nPresentation and prototyping spaces are offered to encourage young people to create innovative solutions to social and economic challenges.\n\nStrengthening Social Awareness:\nThrough volunteer programs, young people are encouraged to get involved in community projects related to education, health or the environment.\n\nActivities and programs offered by the youth platform:\n\n- Professional training: in programming, design, digital marketing...\n- Life skills workshops: critical thinking, negotiation, personal organization\n- Counseling and support: to set career goals, launch a project\n- Entrepreneurship preparation: business plan, market study, management\n- Job fairs and opportunities: company meetings, CV/interview coaching\n- Community events: social and environmental actions\n\nPlatform benefits:\n- Youth empowerment: personal development and financial independence\n- Positive local impact: job creation, increased local productivity\n- Adaptation to the digital age: acquisition of digital skills\n- Strengthening entrepreneurial culture: promoting innovation"
-    }
-  ],
-  "irchad": {
-  "videoTitle": "Watch our work in video",
-  "mainTitle": "Irchad Platform – Overview",
-  "sections": [
-    {
-      "title": "Intervention Axes",
-      "content": "The Irchad Youth Platform supports cooperatives, self-employment and youth initiatives in Moulay Rachid district as part of the INDH.\nIt offers material and intellectual support, particularly in cooperative creation.\nIt promotes innovation through training and workshops in project management and marketing."
-    },
-    {
-      "title": "Mission of the Youth Platform",
-      "content": "- Listening: Free expression of ideas\n- Orientation: Specialized advice in education, jobs, health\n- Guidance: Helping youth make life and career decisions"
-    },
-    {
-      "title": "Management of Irchad Platforms – Moulay Rachid & Sidi Othmane",
-      "content": "Association Najm manages two Irchad platforms, helping young entrepreneurs shape their projects with technical, financial, and personalized support."
-    },
-    {
-      "title": "Social Economy: Support for Cooperatives",
-      "content": "- Structured support from launch to growth\n- Technical assistance and business plans\n- Brand identity creation\n- Quality certification\n- Post-launch follow-up and training"
-    },
-    {
-      "title": "Components of a Project Incubator",
-      "content": "- Technical support (strategy, marketing, finance)\n- Initial funding or financing access\n- Workshops and training\n- Shared workspaces\n- Networking and expert guidance\n- Market access and follow-up"
-    },
-    {
-      "title": "Goals of a Project Incubator",
-      "content": "+ Encourage innovation\n+ Reduce failure risks\n+ Promote job creation\n+ Strengthen local economy"
-    },
-    {
-      "title": "Youth Capacity Building",
-      "content": "- Personal & professional skill development\n- Entrepreneurship coaching\n- Access to jobs (training, internships, mentoring)\n- Innovation and creativity hubs\n- Volunteering and community service"
-    }
-  ]
-},
-
-"listing": {
-  "title": "Projects in the Sidi Othmane Area",
-  "searchTitle": "Search",
-  "searchPlaceholder": "Search for a project...",
-  "categoryLabel": "Category",
-  "locationLabel": "Location",
-  "button": "See more",
-  "categories": ["All", "Food", "Digital Marketing", "Event Management", "Design", "Audio Visual"]
-},
-
-
-
-  "listing": {
-    "title": "Projects in Sidi Othmane Area",
-    "category": "Category",
-    "location": "Location",
-    "viewMore": "View more",
-    "search": "Search",
-    "searchPlaceholder": "Search for a project..."
-  },
-  "categories": {
-    "all": "All",
-    "restauration": "Restaurant",
-    "marketing_digital": "Digital Marketing",
-    "evenementiel": "Events",
-    "design": "Design",
-    "audio_visuel": "Audio Visual"
-  
-},
-
-
-  "gallery": {
-    "title": "Inauguration of Professional Trainings",
-    "section1_p1": "The Najm Association officially launched three vocational training programs for youth: web development, graphic design, and digital marketing. This initiative aims to provide a real opportunity for professional integration through in-demand skills.",
-    "section1_p2": "These programs are designed to meet the demands of the current digital world, with a focus on practical application, creativity, and innovation.",
-    "section2_p1": "These training programs are led by experienced professionals who adopt a project-based pedagogical approach. Each participant benefits from individualized support, practical workshops, and real-world individual or group projects.",
-    "section2_p2": "The goal is to enable each young person to develop their technical skills and creativity, as well as strengthen their self-confidence in a dynamic and stimulating environment.",
-    "program_title": "Program Content",
-    "program_web": "Web Development: HTML, CSS, JavaScript, React, responsive website creation.",
-    "program_design": "Graphic Design: Figma, Photoshop, visual identity, visual communication.",
-    "program_marketing": "Digital Marketing: social media, content creation, SEO, advertising campaigns.",
-    "training_title": "Training Progress",
-    "training_p1": "Classes take place in a dynamic and participatory environment, with each week featuring practical workshops, feedback sessions, inspiring lectures, and group challenges.",
-    "training_p2": "Emphasis is placed on youth participation, collaborative work, and the realization of digital projects that respond to real issues.",
-    "success_title": "A Successful First Session",
-    "success_p": "Thanks to the commitment of trainers, partners, and young people, this first session laid the foundations for a true dynamic of learning and transformation. This program is seen as a launchpad for a bright digital future for our youth.",
-    "gallery_highlights": "General Gallery of Highlights",
-    "image_inauguration": "Inauguration",
-    "image_presentation": "Presentation",
-    "image_training_content": "Training Content",
-    "image_course_progress": "Course Progress",
-    "image_end_of_training": "End of Training",
-    "image_share_exchange": "Sharing and exchange at the heart of our sessions",
-    "image_youth_discovering_digital": "Youth discovering digital",
-    "image_intensive_training": "Intensive and collaborative training",
-    "image_group_work": "Teamwork and problem solving",
-    "image_pedagogical_team": "The pedagogical team at work",
-    "image_final_projects": "Presentation of final projects",
-    "image_certificates": "Certificate Award Ceremony",
-    "image_digital_marketing_workshop": "Interactive Digital Marketing Workshop",
-    "image_tech_trends_discussion": "Discussion on Technological Trends"
-  },
-
-
-  "contact": {
-    "stayInTouch": "Stay in touch",
-    "title": "Contact us",
-    "paragraph": "Do you have questions or want to learn more about our activities? Feel free to contact us. We’ll be happy to help.",
-    "formTitle": "Send us a message",
-    "name": "Full name",
-    "email": "Email",
-    "subject": "Subject",
-    "message": "Message",
-    "messagePlaceholder": "Your message",
-    "sendMessage": "Send message",
-    "infoTitle": "Contact information",
-    "address": "Address",
-    "phone": "Phone",
-    "emailLabel": "Email",
-    "hoursTitle": "Opening hours",
-    "mondayFriday": "Monday - Friday",
-    "saturday": "Saturday",
-    "sunday": "Sunday",
-    "closed": "Closed",
-    "followUs": "Follow us",
-    "socialText": "Stay connected with us on social media to follow our activities and updates.",
-    "addressDetails": "Group 3, in front of the Faculty of Letters and Human Sciences Ben M'sik"
-
-  },
-
-
-  "projects": {
-  "title": "Projects in the Sidi Othmane area",
-  "category": "Category",
-  "location": "Location",
-  "viewMore": "View more",
-  "searchTitle": "Search",
-  "searchPlaceholder": "Search for a project...",
-  "categories": {
-    "all": "All",
-    "restauration": "Food",
-    "marketing": "Digital Marketing",
-    "evenementiel": "Events",
-    "design": "Design",
-    "audiovisuel": "Audiovisual",
-    "categories": {
-      "all": "All",
-      "restauration": "Food Service",
-      "marketing": "Digital Marketing",
-      "evenementiel": "Event Planning",
-      "design": "Design",
-      "audiovisuel": "Audiovisual"
-    }
+  "vision_guidelines": {
+    "title": "Vision and General Guidelines",
+    "paragraph": "In accordance with the High Royal Guidelines, aiming to give special attention to young people, considered the true wealth of the Nation, and in application of the recommendations of the New Development Model, which emphasizes the need to strengthen the economic and social inclusion of young people, by ensuring the convergence of the different programs and initiatives intended for them, a platform for young people has been set up at the level of the prefecture of Moulay Rachid. This platform's mission is to become a meeting point for the different institutional actors and civil society involved in supporting young people, in order to offer them concrete, pragmatic and effective solutions, in response to their aspirations and expectations.",
+    "citation": "It is therefore necessary to continue to support young people, by placing their issues at the heart of the New Development Model."
   }
-},
-
-
-  "baha_happy_park": {
-    "title": "Baha Happye Park",
-    "category": "Event Planning",
-    "location": "Sidi Othmane",
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Saliha Baha, 36 years old, founder of Baha Happy Park, a project dedicated to entertaining children through games, animations, and fun party organization."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Create a safe and fun recreational space for children. Offer educational and playful activities to stimulate their imagination and develop their skills. Strengthen family bonds through activities that bring together parents and children. Create a joyful and enriching experience within a structured and professional environment."
-      },
-      {
-        "title": "Support and assistance",
-        "content": "INDH (National Initiative for Human Development): financial support of 100,000 MAD, enabling the project's launch. Youth Platform – Irchad: 3-month training, technical, economic, legal, and field support. Association Najm: moral support and continuous assistance during planning and execution."
-      },
-      {
-        "title": "Products and services",
-        "content": "Equipped play area for children. Fun and educational games and competitions. Personalized children's parties. Interactive and evolving programs to encourage creativity. Job creation for qualified profiles. Professional team in uniform to ensure discipline and a cheerful atmosphere."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH: financial support of 100,000 MAD. Youth Platform – Irchad: training and full support. Association Najm: moral and operational support throughout the project stages."
-      }
-    ]
-  },
-
-   "hero": {
-  "title1": "Najm Association",
-  "desc1": "For a better future through education, culture, and solidarity.",
-  "title2": "Education and Engagement",
-  "desc2": "Join us to build a fairer and more humane world.",
-  "title3": "Active Solidarity",
-  "desc3": "Let’s unite to make a positive impact in our society."
-},
-
-"vision_guidelines": {
-  "title": "The guidelines that lead our vision",
-  "paragraph": "The launch of the third phase of the National Initiative for Human Development, through the strengthening of its achievements and the refocusing of its programs on the development of human capital, the improvement of the conditions of rising generations, the support of vulnerable groups, and the launch of a new generation of income-generating and job-creating initiatives (...).",
-  "citation": "Excerpt from the Throne Speech delivered by His Majesty King Mohammed VI, may God assist him, on Sunday, July 29, 2018."
-},
-
-"permanent_team": {
-  "title": "Najm Association: A Permanent Team",
-  "paragraph1": "As part of its strategy for development and autonomy, Najm Association relies on a permanent team composed of administrators, guidance and counseling advisors, trainers, and soft skills coaches. This team plays a key role in the implementation of the programs overseen by the association and in supporting the beneficiaries at every stage of their journey.",
-  "paragraph2": "To ensure high-quality support and continuous adaptation to economic and technological developments, Najm Association invests in strengthening the skills and capacities of its permanent team. Regular training sessions are organized to enhance the competencies of its staff, particularly in the area of trainer training, as well as in digital innovation and entrepreneurship support.",
-  "paragraph3": "Through this ongoing dynamic of development and service improvement, Najm Association reinforces its role as a key player in the advancement of economic and social inclusion by ensuring effective, innovative, and high-quality supervision for its beneficiaries."
-},
-
-"projects": {
-  "title": "Our Projects",
-  "category": "Category",
-  "location": "Location",
-  "viewMore": "View more",
-  "searchPlaceholder": "Search for a project...",
-  "searchTitle": "Search",
-  "categories": {
-    "all": "All",
-    "restauration": "Food & Catering",
-    "marketing_digital": "Digital Marketing",
-    "evenementiel": "Event Management",
-    "design": "Design",
-    "audio_visuel": "Audio Visual"
-  },
-  "zones": {
-    "all_zones": "All zones",
-    "sidi_othmane_admin": "Sidi Othmane Administrative Annex",
-    "sidi_othmane_industrial": "Sidi Othmane Industrial Zone",
-    "moulay_rachid_admin": "Moulay Rachid District Administrative Annex",
-    "mabrouka_admin": "Mabrouka District Administrative Annex",
-    "sadri_admin": "Sadri District Administrative Annex",
-    "hay_el_rajae": "Hay El Rajae",
-    "moulay_rachid_industrial": "Moulay Rachid Industrial Zone",
-    "el_harouiyine_admin": "El Harouiyine Administrative Annex"
-  },
-  "filters": {
-    "search": "Search",
-    "filter_by_zone": "Filter by zone"
-  },
-  "project_not_found": "Project not found.",
-  "visit_site": "Visit website",
-  "popup": {
-    "contact": "Contact",
-    "about": "About",
-    "view_details": "View details",
-    "current_page": "Current page"
-  },
-  "project_titles": {
-    "1": "PLANET FOOD",
-    "2": "ALPHACOM",
-    "3": "Baha Happye Park",
-    "4": "Pixel Prod",
-    "5": "Taha ProdD",
-    "6": "AZ Event 733",
-    "7": "Pretty Events",
-    "8": "ERREGYBY EVENT",
-    "9": "Snack",
-    "10": "Snack Yacout",
-    "11": "Dar Miya",
-    "12": "Foratino",
-    "13": "La Table d'emotion",
-    "14": "Om Ali Food",
-    "15": "Kitchen Chaimaa",
-    "16": "Delicesl Hanae",
-    "17": "GO EVENT DIGILAB",
-    "18": "Doja EVENT",
-    "19": "MaMoN Food's",
-    "20": "Social Media Marketing Agency Keghat"
-  }
-},
-
-"project_details": {
-  "1": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Hanan Aghriwi, founder of Planet Food project, is a 28-year-old young woman with a degree in culinary arts. She has over 5 years of experience in this field. She started her professional career at home, preparing meals for events and parties, with a constant concern to offer impeccable quality at affordable prices. This allowed her to build a good reputation with her clients. She chose the fast food sector due to her passion for cooking and the observation of a growing demand for quality food at reasonable prices. For her, quality and accessibility are the two pillars that guarantee the success of a project in this field. Through Planet Food, Hanan wants to offer a fast food experience that is tasty, accessible at any time and place, while respecting strict hygiene and quality standards."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Planet Food is an innovative project in the fast food industry. It aims to offer light and quick meals to prepare, combining excellent quality and affordable prices. The project seeks to meet the nutritional needs of all social categories, favoring healthy and safe products, thanks to rigorous hygiene, adequate preparation, and compliant storage that preserves the quality and safety of the ingredients used. The project is located in the Moulay Rachid – Sidi Othmane prefecture, precisely on Ahmed Rgoub street, with the objective of providing fast and high-quality service to consumers in this area. Furthermore, the project aims to create four local jobs, thus participating in the economic stability of employees and supporting the local economy. Planet Food is not just about selling food: it's a desire to offer a fast, pleasant culinary experience that respects the highest standards."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "The National Initiative for Human Development (INDH) of the Moulay Rachid prefecture is the main support for the Planet Food project. It played a key role by providing financial support to gather the necessary resources for creating and launching the project. In parallel, the Youth Platform also played an essential role. It allowed Hanan to have access to support opportunities, offering prior training and continuous accompaniment throughout the planning and execution phases. Thanks to the support of qualified professionals via this platform, Hanan and other young people benefited from specialized training in various fields, strengthening their skills and preparation for entrepreneurship. This comprehensive accompaniment was decisive for obtaining INDH funding and greatly contributed to propelling the Planet Food project towards success."
-      },
-      {
-        "title": "Products and services",
-        "content": "Planet Food specializes in fast food and offers a variety of light meals, including pizzas, tacos, coussamia, sandwiches and juices. The objective is to satisfy all tastes and meet the needs of all age groups. Quality is the main added value of the project. Hanan ensures to use fresh ingredients and healthy bases to guarantee tasty and safe meals with each order. In addition to dishes, the project also offers refreshing and healthy natural juices, such as lemon, carrot, beetroot and lime juice, all prepared daily with 100% natural ingredients, enriching the customer experience. Thanks to this offer, Planet Food aims to provide meals that are both fast and nutritious, while respecting the highest quality standards, making it a preferred choice for consumers looking for a unique culinary experience."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH, Irchad Youth Platform, Najm Association for Economic Inclusion of Youth."
-      }
-    ]
-  },
-  "3": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Saliha Baha, 36 years old, founder of Baha Happy Park, a project dedicated to children's entertainment through games, animations and organizing fun parties."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Create a secure and fun recreational space for children. Offer educational and fun activities to stimulate their imagination and develop their skills. Foster family bonds through activities that bring parents and children together. Create a joyful and enriching experience within an organized and professional framework."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "INDH (National Initiative for Human Development): financial contribution of 100,000 MAD, facilitating the project startup. Youth Platform – Irchad: 3-month training, technical, economic, legal and field accompaniment. Najm Association: moral support and continuous accompaniment during the planning and execution phase."
-      },
-      {
-        "title": "Products and services",
-        "content": "Equipped and arranged play space for children. Animations, fun and educational competitions. Organization of personalized parties for children. Interactive and renewed programs to encourage creativity. Job creation for qualified profiles. Animation team in professional attire to guarantee rigor and friendly atmosphere."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH (National Initiative for Human Development): financial contribution of 100,000 MAD, facilitating the project startup. Youth Platform – Irchad: 3-month training, technical, economic, legal and field accompaniment. Najm Association: moral support and continuous accompaniment during the planning and execution phase."
-      }
-    ]
-  },
-  "2": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Yahya Sbaroui, 25 years old, founder of Alphacom. He is a digital marketing consultant, advertising creator, photographer and web developer. Since 2020, he has worked with several companies in Morocco and internationally, which allowed him to acquire solid expertise in the digital field and content creation."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Alphacom is an innovative digital agency that offers comprehensive services in digital marketing, video production, professional photography and web development. The objective is to respond to the challenges faced by companies and entrepreneurs, particularly in terms of digital visibility, quality content and effective marketing strategy."
-      },
-      {
-        "title": "Objectives",
-        "content": "Offer professional and personalized services. Strengthen the digital presence of companies. Create a positive and lasting impact in the digital ecosystem."
-      },
-      {
-        "title": "Products and services",
-        "content": "Digital marketing: strategy creation, sponsored campaign management. Video production: advertising videos, professional editing. Photography: commercial and product photo sessions. Web development: creation of modern, responsive and SEO-optimized sites."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH (National Initiative for Human Development): funding of 100,000 MAD. Irchad Youth Platform: 3-month training, legal, administrative and technical support. Najm Association for economic inclusion of youth."
-      }
-    ]
-  },
-  "4": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Adam El Fadil, 24 years old, founder of Pixel Prod, a company specialized in audiovisual and digital design. With over 5 years of experience in graphic design, motion design and video production, he developed his skills working as a freelancer with several agencies and companies."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Propose complete creative solutions for start-ups and project holders. Offer quality audiovisual services, accessible at competitive prices. Stimulate the local economy and encourage youth employment in the creative field."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "INDH (National Initiative for Human Development): financial and logistical support. Youth Platform – Irchad: prior training, administrative, economic and legal accompaniment. Najm Association: continuous accompaniment and strategic advice."
-      },
-      {
-        "title": "Products and services",
-        "content": "Video production: advertisements, promotional films, short films. Graphic design: logos, visual identities, advertising visuals. 2D/3D motion design: animations and 3D modeling. Professional photography: product and commercial photos. Project management platform: interactive interface to follow production stages."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH, Irchad Youth Platform, Najm Association, family and entourage."
-      }
-    ]
-  },
-  "5": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Wael Fikri, 22 years old, self-entrepreneur specialized in audiovisual production with over 3 years of experience in the field. Thanks to his passion and expertise, he joined the Youth Platform – Irchad program to benefit from both financial and training support."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Offer complete audiovisual production services (cinema, television, events). Create jobs for young professionals in the audiovisual sector. Stimulate local skills in the media and image field. Ensure sustainable production, relying on long-term contracts with loyal clients."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "The project benefited from support from INDH, the Irchad Youth Platform, and the Najm Association for economic inclusion."
-      },
-      {
-        "title": "Products and services",
-        "content": "Professional filming for any type of project. Editing, post-production and video realization. Modern technical equipment adapted to market needs. Customized solutions for companies and individuals wanting high-quality audiovisual content."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH, Irchad Youth Platform, Najm Association."
-      }
-    ]
-  },
-  "6": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Zakaria Anbari, 33 years old, founder of a company specialized in event organization with sound and lighting. He has 8 years of experience in this field in Morocco, where he acquired solid skills in professional services related to sound and light for various types of events."
-      },
-      {
-        "title": "Project presentation",
-        "content": "AZ Event 733 is based in Sidi Othmane and specialized in technical support for events in sound and lighting. The company focuses on festivals and large gatherings, ensuring clear lighting and well-calibrated sound, through professional organization guaranteeing the success of each event."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "The project benefited from financial support of 100,000 dirhams from the National Initiative for Human Development. Support and complete training through the Youth Platform under supervision of Najm Association."
-      },
-      {
-        "title": "Products and services",
-        "content": "Specialized services in event organization and large events. Integrated solutions in sound and lighting. Modern lighting equipment and advanced audio systems to guarantee clear and homogeneous sound quality."
-      },
-      {
-        "title": "Partners",
-        "content": "National Initiative for Human Development, Najm Association."
-      }
-    ]
-  },
-  "7": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Pretty Events is an agency specialized in party decoration, offering services according to the highest standards of quality and creativity. The agency stands out by creating unique decorations, adapted to each type of event."
-      },
-      {
-        "title": "Project presentation",
-        "content": "At Pretty Events, we offer a wide range of decoration services for events: birthdays, graduation parties, baby showers, engagements, weddings, and business openings. The added value of the project lies in the design of innovative decorations, thought out to the smallest detail."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Funding of 96,000 dirhams from the National Initiative for Human Development (INDH). Moral support and continuous guidance through the Irchad platform, with complete 3-month training."
-      },
-      {
-        "title": "Products and services",
-        "content": "Decoration services for various events with innovative decoration design. Use of the latest technologies in design to offer an exceptional experience. Flexible prices adapted to all budgets."
-      },
-      {
-        "title": "Partners",
-        "content": "National Initiative for Human Development (INDH), Irchad Platform, Najm Association."
-      }
-    ]
-  },
-  "8": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Zakaria Anbari, 33 years old, founder of a company specialized in event organization with sound and lighting. He has 8 years of experience in this field in Morocco."
-      },
-      {
-        "title": "Project presentation",
-        "content": "ERREGYBY EVENT is specialized in technical support for events in sound and lighting. The company focuses on festivals and large gatherings, ensuring clear lighting and well-calibrated sound."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Financial support of 100,000 dirhams from the National Initiative for Human Development. Three-month training with continuous field monitoring alongside Irchad platform supervisors."
-      },
-      {
-        "title": "Products and services",
-        "content": "Specialized services in event organization and large events. Integrated solutions in sound and lighting for festivals, conferences, concerts and other events."
-      },
-      {
-        "title": "Partners",
-        "content": "National Initiative for Human Development, Najm Association."
-      }
-    ]
-  },
-  "9": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Ibtessem Khalil, 36 years old, founder of the Seafood Snack project. With training in the restaurant field and over 10 years of experience in this sector."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Snack specialized in seafood, aiming to provide healthy and varied food options, accessible to all age groups. The project aims to create employment opportunities for local youth."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Support from the National Initiative for Human Development (INDH) of Moulay Rachid prefecture. Support from the Irchad Youth Platform with training and financial support."
-      },
-      {
-        "title": "Products and services",
-        "content": "Fried seafood, salads, soups and varied sandwiches. Commitment to providing fresh, varied and high-quality dishes, with particular attention paid to the healthy and nutritious aspect."
-      },
-      {
-        "title": "Partners",
-        "content": "National Initiative for Human Development, Najm Association."
-      }
-    ]
-  },
-  "10": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Zineb Badi, passionate entrepreneur, chose the field of traditional catering. Having grown up in a family environment that valued cooking, she inherited her passion from her mother."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Snack Yaqout offers traditional Moroccan dishes: chicken with onions, rfissa, couscous, Moroccan tagine, fish balls, teklia, calf's head with chickpeas, white beans, lentils, and various fried dishes."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Funding of 100,000 dirhams from the National Initiative for Human Development (INDH). Support from the Youth Platform – Irchad with 3-month training and financial support."
-      },
-      {
-        "title": "Products and services",
-        "content": "Rich and authentic menu of Moroccan culinary heritage. Featured dishes including chicken with onions, rfissa, tagine, vegetable couscous, teklia, sardine balls, loubia and lentils. Prices between 10 and 30 dirhams."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH, Irchad Platform, Najm Association, local suppliers, neighborhood customers."
-      }
-    ]
-  },
-  "11": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Fatima Zahra Chajari, 32 years old, founder of Dar Miya company, specialized in catering. She has 4 years of professional experience, supplemented by 3 years of home practice."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Dar Miya is an establishment specialized in Brunch Coffee, aiming to promote a balanced diet with particular emphasis on the importance of breakfast. The project offers tasty and nutritious options."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Significant support from the National Initiative for Human Development (INDH), covering 90% of financing needs. Intensive support via the Irchad Youth Platform with 3-month training."
-      },
-      {
-        "title": "Products and services",
-        "content": "Catering service based on a flexible and personalized offer. Menu including the option 'Compose your breakfast to your taste'. 'Dish of the day' program with varied Moroccan and oriental dishes."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH (90% funding), Irchad Youth Platform, Najm Association, founder's family."
-      }
-    ]
-  },
-  "12": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Othman Chafi, 30 years old, founder of Foratino company, specialized in fast food. He has about 8 years of experience in this field, including 4 years spent in 5-star hotels."
-      },
-      {
-        "title": "Project presentation",
-        "content": "The Foratino project was born from great enthusiasm for fast food and growing market demand. The project aims to offer innovative dishes at affordable prices while maintaining an excellent level of service."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Support from the National Initiative for Human Development (INDH) with financial aid of 99,000 dirhams. Training and market study by the Youth Platform – Irchad. Moral support by Najm Association."
-      },
-      {
-        "title": "Products and services",
-        "content": "Variety of original dishes in fast food: chicken roulade, baked potatoes, minced meat balls. Special promotions on large orders and family entertainment."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH (99,000 MAD), Youth Platform – Irchad, Najm Association."
-      }
-    ]
-  },
-  "13": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Najate El Haffa, 40 years old, founder of LA TABLE D'MOTIONS SARLAU company. She has 8 years of experience in event catering. What started as a passion became a professional activity."
-      },
-      {
-        "title": "Project presentation",
-        "content": "The project consists of offering a catering service for special occasions: weddings, private parties, conferences or corporate events. LA TABLE D'MOTIONS facilitates clients' lives by taking charge of complete meal preparation."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Financial support of 90,000 dirhams from the National Initiative for Human Development (INDH). Support by the Youth Platform and Najm Association. 3-month training to acquire necessary skills."
-      },
-      {
-        "title": "Products and services",
-        "content": "Personalized catering service for weddings, parties and various events. Carefully prepared traditional Moroccan meals, ready to serve. Use of fresh and local ingredients to enhance authenticity."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH (90,000 MAD), Youth Platform, Najm Association."
-      }
-    ]
-  },
-  "14": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Loubna Laakari, 39 years old, founder of Om Ali Food company. She has 3 years of experience in developing her project, which she designed with the will to contribute to the economic and social development of the neighborhood."
-      },
-      {
-        "title": "Project presentation",
-        "content": "The Om Ali Food project aims to strengthen the economic and social environment of the neighborhood by creating jobs, training young people in cooking and management professions, and using fresh products from local agriculture."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Support from the National Initiative for Human Development (INDH) and the Irchad Youth Platform. Prior training allowing to acquire solid skills in project management and understanding of the local market."
-      },
-      {
-        "title": "Products and services",
-        "content": "Varied range of light meals, combining traditional Moroccan specialties (baghrir, maqroud) and international options (various sandwiches, quick snacks). Healthy alternatives like natural juices, low-fat sandwiches, organic salads."
-      },
-      {
-        "title": "Partners",
-        "content": "National Initiative for Human Development (INDH), Irchad Youth Platform."
-      }
-    ]
-  },
-  "15": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Chaimaa Majdoub, 29 years old, founder of Kitchen Chaimaa project. With 10 years of experience in cooking, she decided to launch this project in response to strong demand in the Moroccan market."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Kitchen Chaimaa is a Moroccan snack offering light, balanced and healthy meals, adapted to different moments and needs of the day. The project focuses on quality, use of natural ingredients and product accessibility."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Support from the National Initiative for Human Development (INDH) in Moulay Rachid prefecture with valuable funding. Support by the Irchad Youth Platform with entrepreneurship training."
-      },
-      {
-        "title": "Products and services",
-        "content": "Wide range of healthy and tasty products: varied sandwiches, organic salads, hot and cold drinks, soups, light snacks and quick breakfasts. Regular promotions and loyalty programs."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH, Irchad Youth Platform, Najm Association for economic inclusion of youth."
-      }
-    ]
-  },
-  "16": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Wafae El Hana, 35 years old, founder of Delicesl Hanae company, specialized in event organization and cooking. With 10 years of experience in this field, she launched this project to make use of her skills."
-      },
-      {
-        "title": "Project presentation",
-        "content": "The choice to launch Delicesl Hanae stems from a decade of experience in event organization and gastronomy. Wafae wanted to modernize the sector by introducing innovative and personalized services for events such as weddings, birthdays, conferences."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Funding of 100,000 dirhams from the National Initiative for Human Development (INDH). Support by the Irchad platform and Najm Association. 3-month training provided by Irchad."
-      },
-      {
-        "title": "Products and services",
-        "content": "Superior quality event catering services. Complete event organization (decoration, coordination). Live cooking demonstrations. Private chef service. Consulting for companies and individuals."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH (100,000 DH), Irchad platform, Najm Association."
-      }
-    ]
-  },
-  "17": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Reda Qadda, 34 years old, studied applied arts, then specialized in audiovisual by obtaining diplomas in digital editing and digital content creation."
-      },
-      {
-        "title": "Project presentation",
-        "content": "GO EVENT DIGILAB is a company specialized in audiovisual content production, advertising creation and event organization. The project aims to create more than 20 direct and indirect jobs in the medium term."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Complete support from the pre-launch phase. In-depth entrepreneurship training via the Irchad platform and Najm Association. Funding of 100,000 dirhams from the National Initiative for Human Development (INDH)."
-      },
-      {
-        "title": "Products and services",
-        "content": "Audiovisual content production (institutional videos, social capsules, documentaries). Advertising creation (posters, spots, branding). Event organization (corporate, cultural, social)."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH, Irchad platform, Najm Association."
-      }
-    ]
-  },
-  "18": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Khadija Siri, young 22-year-old entrepreneur passionate about event organization. Her journey began with a one-year experience with a party organizer, which allowed her to acquire valuable expertise."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Driven by my passion, I launched my own project: a micro-enterprise dedicated to organizing family and festive events. Located on An-Nil Street, a dynamic and well-served neighborhood, my project aims to offer quality, personalized and accessible service."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Valuable support from the National Initiative for Human Development (INDH). Support by the Irchad platform and Najm Association through a complete training program: market study, understanding client needs, developing concrete action plans."
-      },
-      {
-        "title": "Proposed services",
-        "content": "Personal event coordination: birthdays, engagements, graduation ceremonies. Decoration: personalized atmosphere (romantic, classic, modern), floral decoration and carefully arranged furniture. Table services: buffets, drinks, personalized cakes."
-      },
-      {
-        "title": "Partners",
-        "content": "INDH, Irchad platform, Najm Association for economic inclusion of youth."
-      }
-    ]
-  },
-  "19": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Mustapha Flahi, founder of 'MaMoN Food's' brand, is an entrepreneur passionate about fast food combining tradition and innovation. His project is rooted in culinary know-how inherited from several generations."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Located in Essadri (Moulay Rachid district), 'MaMoN Food's' is an innovative fast food project that mixes local recipes (shawarma, sandwiches) with international inspirations (burritos, pizzas, tacos)."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Support from the National Initiative for Human Development (INDH) with technical and psychological support provided by qualified trainers via Najm Association. Rigorous training combined with valuable financial aid."
-      },
-      {
-        "title": "Proposed products and services",
-        "content": "Varied range of fast food: all types of sandwiches, burgers, international pizzas, tacos, burritos, as well as the signature dish 'Monte Cristo'. 'Happy Hour' formula: weekly time slot where all dishes are offered at reduced rates."
-      },
-      {
-        "title": "Partners",
-        "content": "National Initiative for Human Development (INDH), Najm Association, Irchad platform."
-      }
-    ]
-  },
-  "20": {
-    "sections": [
-      {
-        "title": "Information about the founder",
-        "content": "Tarek Keghat, 30 years old, founder of the agency specialized in digital marketing, has 12 years of experience in e-commerce and 3 years in website creation and digital advertising campaigns."
-      },
-      {
-        "title": "Project presentation",
-        "content": "Social Media Marketing Agency Keghat is an agency specialized in digital marketing. It offers innovative solutions to promote products and services online, aiming to improve visibility and sales of artisans, SMEs and service providers."
-      },
-      {
-        "title": "Support and accompaniment",
-        "content": "Financial support of 100,000 dirhams from the National Initiative for Human Development (INDH). 3-month training in project management by the 'Irchad' platform. This support allowed to legally structure the project."
-      },
-      {
-        "title": "Proposed products and services",
-        "content": "Startup Package at 3999 DHS for young companies: professional Landing Page creation, social media page configuration, short training in social media management, Google Maps account creation, design of 5 advertising visuals, one-month advertising campaign, visual goodies."
-      },
-      {
-        "title": "Partners",
-        "content": "National Initiative for Human Development (INDH): funding of 100,000 DHS. The 'Irchad' platform: intensive 3-month training. Najm Association: moral and strategic support."
-      }
-    ]
-  }
-}
-
-
-
-
-
-
-
-
-}
+} 

@@ -135,12 +135,14 @@ const { t } = useTranslation();
   <p className="text-gray-800 leading-relaxed whitespace-pre-line text-justify">
     {t("vision_guidelines.paragraph")}
     {"\n\n"}
-    {t("vision_guidelines.citation")}
+    <span className="font-semibold italic">
+      {t("vision_guidelines.citation")}
+    </span>
   </p>
 </div>
 
       {/* Vidéo */}
-      
+
       <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden p-6 mb-5">
         <h3 className="text-2xl font-bold text-blue-800 mb-6 text-center">
           {t("irchad.videoTitle")}

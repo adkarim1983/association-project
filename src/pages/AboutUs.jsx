@@ -40,98 +40,90 @@ const valeursData = [
   { key: "formation", image: citoyennete }
 ];
 
-const membres = [
+const membresData = [
     {
-        nom: "Amine Moutassim",
-        statut: "Directieur Operationnel",
+        id: "amineMoutassim",
         image: image16,
         telephone: "0671 710 091",
         email: "fatima.bennani@example.com",
     },
     {
-        nom: "Sanaa Bouadel",
-        statut: "Assistante administrative",
+        id: "sanaaBouadel",
         image: image17,
         telephone: "0671 711 080",
         email: "contact@eerchad.ma",
     },
     {
-        nom: "Khadija Kurdawi",
-        statut: " Adjointe administrative",
+        id: "khadijaKurdawi",
         image: image18,
         telephone: "0671 711 940",
         email: "assistante.eerchad@gmail.com",
     },
     {
-        nom: "Abdul Razzaq Arbah",
-        statut: "Employé administratif",
+        id: "abdulRazzaqArbah",
         image: image19,
         telephone: "0671 710 091",
         email: "assistant.eerchad@gmail.com",
     },
     {
-        nom: "Zahra Balasi",
-        statut: "Coordinatrice du projet",
+        id: "zahraBalasi",
         image: image20,
         telephone: "0671 710 091",
         email: "Coordination.eerchad@gmail.com",
     },
     {
-        nom: "Siham Ghazali",
-        statut: "Coordinatrice du projet",
+        id: "sihamGhazali",
         image: image21,
         telephone: "0671 710 098",
         email: "coordinatrice.eerchad@example.com",
     },
     {
-        nom: "Shaima Attar",
-        statut: "Consultante en orientation et en conseil",
+        id: "shaimaAttar",
         image: image22,
         telephone: "0671 710 052",
         email: "Conseillère.eerchad@example.com",
     },
     {
-        nom: "Ayyoub Laghlali",
-        statut: " formateur et superviseur en soft skills",
+        id: "ayyoubLaghlali",
         image: image23,
         telephone: "0671 710 000",
         email: "formateur.eerchad@example.com",
     },
     {
-        nom: "Muhammad Amin Abi Al-Surur",
-        statut: "responsable du suivi sur le terrain",
+        id: "muhammadAminAbiAlSurur",
         image: image24,
         telephone: "0671 464 664",
         email: "accompagnateur.eerchad@example.com",
     },
     {
-        nom: "Hana Dahman",
-        statut: "Formatrice dans le domaine de l'entrepreneuriat",
+        id: "hanaDahman",
         image: image25,
         telephone: "0671 710 093",
         email: "Formateuse.eerchad@example.com",
     },
     {
-        nom: "Yousra Hashoum",
-        statut: " responsable du suivi Administratif.",
+        id: "yousraHashoum",
         image: image26,
         telephone: "0671 710 058",
         email: "Accompagnatrice.eerchad@example.com",
     },
     {
-        nom: "Mohsen Haimoud",
-        statut: "conseiller en orientation",
+        id: "mohsenHaimoud",
         image: image27,
         telephone: "0671 707 272",
         email: "Conseiller.eerchad@example.com",
     },
-
 ];
 
 
 
 export default function ValeursEtPrincipes() {
     const { t } = useTranslation();
+        const membres = membresData.map(member => ({
+        ...member,
+        nom: t(`equipe.membres.${member.id}.nom`),
+        statut: t(`equipe.membres.${member.id}.statut`)
+    }));
     const valeurs = [
         {
             titre: "Respect",
@@ -324,7 +316,7 @@ export default function ValeursEtPrincipes() {
             </section> */}
              <section className="bg-gray-100 py-12 px-4">
       <div className="max-w-7xl mx-auto text-center mb-10">
-        <h2 className="text-3xl font-bold text-blue-800">Équipe de l’Association</h2>
+        <h2 className="text-3xl font-bold text-blue-800">{t("equipe.titre")}</h2>
       </div>
 
       <div className="relative">
