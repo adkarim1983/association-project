@@ -7,6 +7,7 @@ import L from "leaflet";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import projectsData from "../data/projects";
 
 // Fix icônes Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -208,40 +209,46 @@ const projects = [
 
 
 
-const categories = ["Tous", "Restauration", "Marketing Digital", "Événementiel", "Design", "Audio Visuel"];
+const categoryKeyMap = {
+  "Restauration": "restauration",
+  "Marketing Digital": "marketing_digital",
+  "Événementiel": "evenementiel",
+  "Design": "design",
+  "Audio Visuel": "audio_visuel"
+};
 
-const zones = [
-  "Toutes les zones",
-  "Annexe administrative de Sidi Othmane",
-  "Zone industrielle Sidi Othmane",
-  "Annexe administrative du quartier Moulay Rachid",
-  "Annexe administrative du quartier Mabrouka",
-  "Annexe administrative du quartier Sadri",
-  "Hay El Rajae",
-  "Zone industrielle Moulay Rachid",
-  "Annexe administrative El Harouiyine"
-];
+const zoneKeyMap = {
+  "Annexe administrative de Sidi Othmane": "sidi_othmane_admin",
+  "Zone industrielle Sidi Othmane": "sidi_othmane_industrial",
+  "Annexe administrative du quartier Moulay Rachid": "moulay_rachid_admin",
+  "Annexe administrative du quartier Mabrouka": "mabrouka_admin",
+  "Annexe administrative du quartier Sadri": "sadri_admin",
+  "Hay El Rajae": "hay_el_rajae",
+  "Zone industrielle Moulay Rachid": "moulay_rachid_industrial",
+  "Annexe administrative El Harouiyine": "el_harouiyine_admin"
+};
 
 const itemsPerPage = 5;
 
-const categoryKeyMap = {
-  "Restauration": "restauration",
-  "Marketing Digital": "marketing",
-  "Événementiel": "evenementiel",
-  "Design": "design",
-  "Audio Visuel": "audiovisuel"
-};
-
 export default function ListingLocationPage() {
   const { t } = useTranslation();
-  const [selectedCategory, setSelectedCategory] = useState("Tous");
-  const [selectedZone, setSelectedZone] = useState("Toutes les zones");
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedZone, setSelectedZone] = useState("all_zones");
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
+  // Fonctions pour obtenir les catégories et zones traduites
+  const getCategories = () => {
+    return ["all", "restauration", "marketing_digital", "evenementiel", "design", "audio_visuel"];
+  };
+
+  const getZones = () => {
+    return ["all_zones", "sidi_othmane_admin", "sidi_othmane_industrial", "moulay_rachid_admin", "mabrouka_admin", "sadri_admin", "hay_el_rajae", "moulay_rachid_industrial", "el_harouiyine_admin"];
+  };
+
   const filteredProjects = projects.filter((p) => {
-    const matchCategory = selectedCategory === "Tous" || p.category === selectedCategory;
-    const matchZone = selectedZone === "Toutes les zones" || p.location === selectedZone;
+    const matchCategory = selectedCategory === "all" || categoryKeyMap[p.category] === selectedCategory;
+    const matchZone = selectedZone === "all_zones" || zoneKeyMap[p.location] === selectedZone;
     const matchSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase());
 
 // la partie ajoutee:
@@ -281,12 +288,12 @@ export default function ListingLocationPage() {
                 className="w-40 h-40 object-cover"
               />
               <div className="p-5 space-y-2 flex-1">
-                <h3 className="text-xl font-semibold text-blue-700">{project.name}</h3>
+                <h3 className="text-xl font-semibold text-blue-700">{t(`projects.project_titles.${project.id}`) || project.name}</h3>
                 <p className="text-sm text-gray-600">
-                  {t("projects.category") + " : " + t(`projects.categories.${categoryKeyMap[project.category] || project.category}`)}
+                  {t("projects.category") + " : " + t(`projects.categories.${categoryKeyMap[project.category] || "restauration"}`)}
                 </p>
                 <p className="text-sm text-gray-500">
-                  {t("projects.location") + " : " + project.location}
+                  {t("projects.location") + " : " + (zoneKeyMap[project.location] ? t(`projects.zones.${zoneKeyMap[project.location]}`) : project.location)}
                 </p>
                 <Link
                   to={`/projet/${project.id}`}
@@ -319,7 +326,7 @@ export default function ListingLocationPage() {
         {/* Barre de recherche + filtres + carte */}
         <div className="space-y-8">
           <div className="bg-white p-5 rounded-xl shadow border">
-            <h2 className="text-lg font-semibold mb-3 text-blue-700">Rechercher</h2>
+            <h2 className="text-lg font-semibold mb-3 text-blue-700">{t("projects.searchTitle")}</h2>
             <input
               type="text"
               placeholder={t("projects.searchPlaceholder")}
@@ -330,7 +337,7 @@ export default function ListingLocationPage() {
 
             {/* Filtres Catégorie */}
             <div className="mt-4 flex flex-wrap gap-2">
-              {categories.map((cat) => (
+              {getCategories().map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
@@ -340,15 +347,15 @@ export default function ListingLocationPage() {
                       : "bg-white text-blue-600 border-blue-300 hover:bg-blue-100"
                   }`}
                 >
-                  {cat}
+                  {t(`projects.categories.${cat}`)}
                 </button>
               ))}
             </div>
 
             {/* Filtres Zone */}
-            <h2 className="text-lg font-semibold mt-6 mb-2 text-blue-700">Filtrer par zone</h2>
+            <h2 className="text-lg font-semibold mt-6 mb-2 text-blue-700">{t("projects.filters.filter_by_zone")}</h2>
             <div className="flex flex-wrap gap-2">
-              {zones.map((zone) => (
+              {getZones().map((zone) => (
                 <button
                   key={zone}
                   onClick={() => setSelectedZone(zone)}
@@ -358,14 +365,14 @@ export default function ListingLocationPage() {
                       : "bg-white text-blue-600 border-blue-300 hover:bg-blue-100"
                   }`}
                 >
-                  {zone}
+                  {t(`projects.zones.${zone}`)}
                 </button>
               ))}
             </div>
           </div>
 
           {/* Carte Leaflet */}
-          <div className="h-[300px] w-full border rounded-xl overflow-hidden">
+          <div className="h-[350px] w-full border rounded-xl overflow-hidden">
             <MapContainer
   center={[33.61, -7.54]}
   zoom={13}
@@ -376,23 +383,101 @@ export default function ListingLocationPage() {
     attribution="© OpenStreetMap"
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
   />
-  {filteredProjects.map((p) => (
-    <Marker key={p.id} position={[p.lat, p.lng]}>
-      <Popup>
-        <div className="space-y-1 text-sm">
-          <h3 className="text-blue-700 font-semibold text-base">{p.name}</h3>
-          <p><strong>📂 {t("projects.category")}:</strong> {t(`projects.categories.${p.category.toLowerCase()}`)}</p>
-          <p><strong>📍 {t("projects.location")}:</strong> {p.location}</p>
-          <Link
-            to={`/projet/${p.id}`}
-            className="inline-block mt-2 text-xs text-white bg-blue-600 px-3 py-1 rounded hover:bg-blue-700"
-          >
-            {t("projects.viewMore")}
-          </Link>
-        </div>
-      </Popup>
-    </Marker>
-  ))}
+  {filteredProjects.map((p) => {
+    // Find project details from the imported data
+    const projectDetails = projectsData.find(proj => proj.id === p.id) || p;
+    
+    return (
+      <Marker key={p.id} position={[p.lat, p.lng]}>
+        <Popup maxWidth={320} className="custom-popup-detailed">
+          <div className="space-y-3 text-xs max-w-xs">
+            {/* Header with image */}
+            <div className="flex items-center space-x-2">
+              <img 
+                src={p.image} 
+                alt={projectDetails.name}
+                className="w-16 h-16 object-cover rounded-lg shadow-md"
+              />
+              <div className="flex-1">
+                <h3 className="text-blue-700 font-bold text-sm leading-tight">
+                  {t(`projects.project_titles.${p.id}`) || p.name}
+                </h3>
+                <p className="text-gray-600 text-xs">
+                  {t(`projects.categories.${categoryKeyMap[p.category] || "restauration"}`)}
+                </p>
+              </div>
+            </div>
+
+            {/* Contact Information */}
+            <div className="bg-gray-50 rounded-lg p-2 space-y-1">
+              <h4 className="font-semibold text-gray-800 text-xs mb-1">📋 {t("projects.popup.contact")}</h4>
+              
+              {projectDetails.phone && (
+                <div className="flex items-center space-x-1">
+                  <span className="text-green-600 text-xs">📞</span>
+                  <a href={`tel:${projectDetails.phone}`} className="text-green-600 hover:text-green-800 text-xs font-medium">
+                    {projectDetails.phone}
+                  </a>
+                </div>
+              )}
+              
+              {projectDetails.email && (
+                <div className="flex items-center space-x-1">
+                  <span className="text-blue-600 text-xs">📧</span>
+                  <a href={`mailto:${projectDetails.email}`} className="text-blue-600 hover:text-blue-800 text-xs font-medium break-all">
+                    {projectDetails.email}
+                  </a>
+                </div>
+              )}
+              
+              {projectDetails.address && (
+                <div className="flex items-start space-x-1">
+                  <span className="text-red-600 text-xs">📍</span>
+                  <p className="text-gray-700 text-xs leading-tight">{projectDetails.address}</p>
+                </div>
+              )}
+              
+              {projectDetails.hours && (
+                <div className="flex items-center space-x-1">
+                  <span className="text-purple-600 text-xs">🕒</span>
+                  <p className="text-gray-700 text-xs font-medium">{projectDetails.hours}</p>
+                </div>
+              )}
+              
+              {projectDetails.website && (
+                <div className="flex items-center space-x-1">
+                  <span className="text-indigo-600 text-xs">🌐</span>
+                  <a href={`https://${projectDetails.website}`} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 text-xs font-medium">
+                    {projectDetails.website}
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Description Preview */}
+            {projectDetails.descriptionSections && projectDetails.descriptionSections[0] && (
+              <div className="bg-blue-50 rounded-lg p-2">
+                <h4 className="font-semibold text-blue-800 text-xs mb-1">ℹ️ {t("projects.popup.about")}</h4>
+                <p className="text-gray-700 text-xs leading-relaxed">
+                  {projectDetails.descriptionSections[0].content.substring(0, 100)}...
+                </p>
+              </div>
+            )}
+
+            {/* Action Button */}
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg p-2 text-center">
+              <Link
+                to={`/projet/${p.id}`}
+                className="text-white text-xs font-medium hover:text-blue-100 transition-colors"
+              >
+                📍 {t("projects.popup.view_details")} →
+              </Link>
+            </div>
+          </div>
+        </Popup>
+      </Marker>
+    )
+  })}
 </MapContainer>
 
           </div>

@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import image2 from "../assets/image13.jpg";
 import image12 from "../assets/image14.jpg";
 import image13 from "../assets/image15.jpg";
 
-const images = [
-  {
-    src: image2,
-    title: "Association Najm",
-    description: "Pour un avenir meilleur à travers l'éducation, la culture et la solidarité.",
-  },
-  {
-    src: image12,
-    title: "Éducation et Engagement",
-    description: "Rejoignez-nous pour construire un monde plus juste et plus humain.",
-  },
-  {
-    src: image13,
-    title: "Solidarité Active",
-    description: "Unissons nos forces pour un impact positif dans notre société.",
-  },
-];
-
 export default function Hero() {
+  const { t, ready } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const images = [
+    {
+      src: image2,
+      title: t("hero.slide1.title", "Association Najm"),
+      description: t("hero.slide1.description", "Pour un avenir meilleur à travers l'éducation, la culture et la solidarité."),
+    },
+    {
+      src: image12,
+      title: t("hero.slide2.title", "Éducation et Engagement"),
+      description: t("hero.slide2.description", "Rejoignez-nous pour construire un monde plus juste et plus humain."),
+    },
+    {
+      src: image13,
+      title: t("hero.slide3.title", "Solidarité Active"),
+      description: t("hero.slide3.description", "Unissons nos forces pour un impact positif dans notre société."),
+    },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {

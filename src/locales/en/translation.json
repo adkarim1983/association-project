@@ -49,6 +49,20 @@
   "report3": "Partnership agreement signed between the Irchad platform and the Faculty of Arts and Sciences",
   "more": "Read more"
 },
+"hero": {
+  "slide1": {
+    "title": "Najm Association",
+    "description": "For a better future through education, culture and solidarity."
+  },
+  "slide2": {
+    "title": "Education and Engagement",
+    "description": "Join us to build a more just and humane world."
+  },
+  "slide3": {
+    "title": "Active Solidarity",
+    "description": "Let's unite our forces for a positive impact in our society."
+  }
+},
 "stats_title": "Key Figures of the Association",
 "stats_1_label": "Geographic Sites",
 "stats_2_label": "Job Opportunities",
@@ -459,6 +473,551 @@
   "paragraph1": "As part of its strategy for development and autonomy, Najm Association relies on a permanent team composed of administrators, guidance and counseling advisors, trainers, and soft skills coaches. This team plays a key role in the implementation of the programs overseen by the association and in supporting the beneficiaries at every stage of their journey.",
   "paragraph2": "To ensure high-quality support and continuous adaptation to economic and technological developments, Najm Association invests in strengthening the skills and capacities of its permanent team. Regular training sessions are organized to enhance the competencies of its staff, particularly in the area of trainer training, as well as in digital innovation and entrepreneurship support.",
   "paragraph3": "Through this ongoing dynamic of development and service improvement, Najm Association reinforces its role as a key player in the advancement of economic and social inclusion by ensuring effective, innovative, and high-quality supervision for its beneficiaries."
+},
+
+"projects": {
+  "title": "Our Projects",
+  "category": "Category",
+  "location": "Location",
+  "viewMore": "View more",
+  "searchPlaceholder": "Search for a project...",
+  "searchTitle": "Search",
+  "categories": {
+    "all": "All",
+    "restauration": "Food & Catering",
+    "marketing_digital": "Digital Marketing",
+    "evenementiel": "Event Management",
+    "design": "Design",
+    "audio_visuel": "Audio Visual"
+  },
+  "zones": {
+    "all_zones": "All zones",
+    "sidi_othmane_admin": "Sidi Othmane Administrative Annex",
+    "sidi_othmane_industrial": "Sidi Othmane Industrial Zone",
+    "moulay_rachid_admin": "Moulay Rachid District Administrative Annex",
+    "mabrouka_admin": "Mabrouka District Administrative Annex",
+    "sadri_admin": "Sadri District Administrative Annex",
+    "hay_el_rajae": "Hay El Rajae",
+    "moulay_rachid_industrial": "Moulay Rachid Industrial Zone",
+    "el_harouiyine_admin": "El Harouiyine Administrative Annex"
+  },
+  "filters": {
+    "search": "Search",
+    "filter_by_zone": "Filter by zone"
+  },
+  "project_not_found": "Project not found.",
+  "visit_site": "Visit website",
+  "popup": {
+    "contact": "Contact",
+    "about": "About",
+    "view_details": "View details",
+    "current_page": "Current page"
+  },
+  "project_titles": {
+    "1": "PLANET FOOD",
+    "2": "ALPHACOM",
+    "3": "Baha Happye Park",
+    "4": "Pixel Prod",
+    "5": "Taha ProdD",
+    "6": "AZ Event 733",
+    "7": "Pretty Events",
+    "8": "ERREGYBY EVENT",
+    "9": "Snack",
+    "10": "Snack Yacout",
+    "11": "Dar Miya",
+    "12": "Foratino",
+    "13": "La Table d'emotion",
+    "14": "Om Ali Food",
+    "15": "Kitchen Chaimaa",
+    "16": "Delicesl Hanae",
+    "17": "GO EVENT DIGILAB",
+    "18": "Doja EVENT",
+    "19": "MaMoN Food's",
+    "20": "Social Media Marketing Agency Keghat"
+  }
+},
+
+"project_details": {
+  "1": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Hanan Aghriwi, founder of Planet Food project, is a 28-year-old young woman with a degree in culinary arts. She has over 5 years of experience in this field. She started her professional career at home, preparing meals for events and parties, with a constant concern to offer impeccable quality at affordable prices. This allowed her to build a good reputation with her clients. She chose the fast food sector due to her passion for cooking and the observation of a growing demand for quality food at reasonable prices. For her, quality and accessibility are the two pillars that guarantee the success of a project in this field. Through Planet Food, Hanan wants to offer a fast food experience that is tasty, accessible at any time and place, while respecting strict hygiene and quality standards."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Planet Food is an innovative project in the fast food industry. It aims to offer light and quick meals to prepare, combining excellent quality and affordable prices. The project seeks to meet the nutritional needs of all social categories, favoring healthy and safe products, thanks to rigorous hygiene, adequate preparation, and compliant storage that preserves the quality and safety of the ingredients used. The project is located in the Moulay Rachid – Sidi Othmane prefecture, precisely on Ahmed Rgoub street, with the objective of providing fast and high-quality service to consumers in this area. Furthermore, the project aims to create four local jobs, thus participating in the economic stability of employees and supporting the local economy. Planet Food is not just about selling food: it's a desire to offer a fast, pleasant culinary experience that respects the highest standards."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "The National Initiative for Human Development (INDH) of the Moulay Rachid prefecture is the main support for the Planet Food project. It played a key role by providing financial support to gather the necessary resources for creating and launching the project. In parallel, the Youth Platform also played an essential role. It allowed Hanan to have access to support opportunities, offering prior training and continuous accompaniment throughout the planning and execution phases. Thanks to the support of qualified professionals via this platform, Hanan and other young people benefited from specialized training in various fields, strengthening their skills and preparation for entrepreneurship. This comprehensive accompaniment was decisive for obtaining INDH funding and greatly contributed to propelling the Planet Food project towards success."
+      },
+      {
+        "title": "Products and services",
+        "content": "Planet Food specializes in fast food and offers a variety of light meals, including pizzas, tacos, coussamia, sandwiches and juices. The objective is to satisfy all tastes and meet the needs of all age groups. Quality is the main added value of the project. Hanan ensures to use fresh ingredients and healthy bases to guarantee tasty and safe meals with each order. In addition to dishes, the project also offers refreshing and healthy natural juices, such as lemon, carrot, beetroot and lime juice, all prepared daily with 100% natural ingredients, enriching the customer experience. Thanks to this offer, Planet Food aims to provide meals that are both fast and nutritious, while respecting the highest quality standards, making it a preferred choice for consumers looking for a unique culinary experience."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH, Irchad Youth Platform, Najm Association for Economic Inclusion of Youth."
+      }
+    ]
+  },
+  "3": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Saliha Baha, 36 years old, founder of Baha Happy Park, a project dedicated to children's entertainment through games, animations and organizing fun parties."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Create a secure and fun recreational space for children. Offer educational and fun activities to stimulate their imagination and develop their skills. Foster family bonds through activities that bring parents and children together. Create a joyful and enriching experience within an organized and professional framework."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "INDH (National Initiative for Human Development): financial contribution of 100,000 MAD, facilitating the project startup. Youth Platform – Irchad: 3-month training, technical, economic, legal and field accompaniment. Najm Association: moral support and continuous accompaniment during the planning and execution phase."
+      },
+      {
+        "title": "Products and services",
+        "content": "Equipped and arranged play space for children. Animations, fun and educational competitions. Organization of personalized parties for children. Interactive and renewed programs to encourage creativity. Job creation for qualified profiles. Animation team in professional attire to guarantee rigor and friendly atmosphere."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH (National Initiative for Human Development): financial contribution of 100,000 MAD, facilitating the project startup. Youth Platform – Irchad: 3-month training, technical, economic, legal and field accompaniment. Najm Association: moral support and continuous accompaniment during the planning and execution phase."
+      }
+    ]
+  },
+  "2": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Yahya Sbaroui, 25 years old, founder of Alphacom. He is a digital marketing consultant, advertising creator, photographer and web developer. Since 2020, he has worked with several companies in Morocco and internationally, which allowed him to acquire solid expertise in the digital field and content creation."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Alphacom is an innovative digital agency that offers comprehensive services in digital marketing, video production, professional photography and web development. The objective is to respond to the challenges faced by companies and entrepreneurs, particularly in terms of digital visibility, quality content and effective marketing strategy."
+      },
+      {
+        "title": "Objectives",
+        "content": "Offer professional and personalized services. Strengthen the digital presence of companies. Create a positive and lasting impact in the digital ecosystem."
+      },
+      {
+        "title": "Products and services",
+        "content": "Digital marketing: strategy creation, sponsored campaign management. Video production: advertising videos, professional editing. Photography: commercial and product photo sessions. Web development: creation of modern, responsive and SEO-optimized sites."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH (National Initiative for Human Development): funding of 100,000 MAD. Irchad Youth Platform: 3-month training, legal, administrative and technical support. Najm Association for economic inclusion of youth."
+      }
+    ]
+  },
+  "4": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Adam El Fadil, 24 years old, founder of Pixel Prod, a company specialized in audiovisual and digital design. With over 5 years of experience in graphic design, motion design and video production, he developed his skills working as a freelancer with several agencies and companies."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Propose complete creative solutions for start-ups and project holders. Offer quality audiovisual services, accessible at competitive prices. Stimulate the local economy and encourage youth employment in the creative field."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "INDH (National Initiative for Human Development): financial and logistical support. Youth Platform – Irchad: prior training, administrative, economic and legal accompaniment. Najm Association: continuous accompaniment and strategic advice."
+      },
+      {
+        "title": "Products and services",
+        "content": "Video production: advertisements, promotional films, short films. Graphic design: logos, visual identities, advertising visuals. 2D/3D motion design: animations and 3D modeling. Professional photography: product and commercial photos. Project management platform: interactive interface to follow production stages."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH, Irchad Youth Platform, Najm Association, family and entourage."
+      }
+    ]
+  },
+  "5": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Wael Fikri, 22 years old, self-entrepreneur specialized in audiovisual production with over 3 years of experience in the field. Thanks to his passion and expertise, he joined the Youth Platform – Irchad program to benefit from both financial and training support."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Offer complete audiovisual production services (cinema, television, events). Create jobs for young professionals in the audiovisual sector. Stimulate local skills in the media and image field. Ensure sustainable production, relying on long-term contracts with loyal clients."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "The project benefited from support from INDH, the Irchad Youth Platform, and the Najm Association for economic inclusion."
+      },
+      {
+        "title": "Products and services",
+        "content": "Professional filming for any type of project. Editing, post-production and video realization. Modern technical equipment adapted to market needs. Customized solutions for companies and individuals wanting high-quality audiovisual content."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH, Irchad Youth Platform, Najm Association."
+      }
+    ]
+  },
+  "6": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Zakaria Anbari, 33 years old, founder of a company specialized in event organization with sound and lighting. He has 8 years of experience in this field in Morocco, where he acquired solid skills in professional services related to sound and light for various types of events."
+      },
+      {
+        "title": "Project presentation",
+        "content": "AZ Event 733 is based in Sidi Othmane and specialized in technical support for events in sound and lighting. The company focuses on festivals and large gatherings, ensuring clear lighting and well-calibrated sound, through professional organization guaranteeing the success of each event."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "The project benefited from financial support of 100,000 dirhams from the National Initiative for Human Development. Support and complete training through the Youth Platform under supervision of Najm Association."
+      },
+      {
+        "title": "Products and services",
+        "content": "Specialized services in event organization and large events. Integrated solutions in sound and lighting. Modern lighting equipment and advanced audio systems to guarantee clear and homogeneous sound quality."
+      },
+      {
+        "title": "Partners",
+        "content": "National Initiative for Human Development, Najm Association."
+      }
+    ]
+  },
+  "7": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Pretty Events is an agency specialized in party decoration, offering services according to the highest standards of quality and creativity. The agency stands out by creating unique decorations, adapted to each type of event."
+      },
+      {
+        "title": "Project presentation",
+        "content": "At Pretty Events, we offer a wide range of decoration services for events: birthdays, graduation parties, baby showers, engagements, weddings, and business openings. The added value of the project lies in the design of innovative decorations, thought out to the smallest detail."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Funding of 96,000 dirhams from the National Initiative for Human Development (INDH). Moral support and continuous guidance through the Irchad platform, with complete 3-month training."
+      },
+      {
+        "title": "Products and services",
+        "content": "Decoration services for various events with innovative decoration design. Use of the latest technologies in design to offer an exceptional experience. Flexible prices adapted to all budgets."
+      },
+      {
+        "title": "Partners",
+        "content": "National Initiative for Human Development (INDH), Irchad Platform, Najm Association."
+      }
+    ]
+  },
+  "8": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Zakaria Anbari, 33 years old, founder of a company specialized in event organization with sound and lighting. He has 8 years of experience in this field in Morocco."
+      },
+      {
+        "title": "Project presentation",
+        "content": "ERREGYBY EVENT is specialized in technical support for events in sound and lighting. The company focuses on festivals and large gatherings, ensuring clear lighting and well-calibrated sound."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Financial support of 100,000 dirhams from the National Initiative for Human Development. Three-month training with continuous field monitoring alongside Irchad platform supervisors."
+      },
+      {
+        "title": "Products and services",
+        "content": "Specialized services in event organization and large events. Integrated solutions in sound and lighting for festivals, conferences, concerts and other events."
+      },
+      {
+        "title": "Partners",
+        "content": "National Initiative for Human Development, Najm Association."
+      }
+    ]
+  },
+  "9": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Ibtessem Khalil, 36 years old, founder of the Seafood Snack project. With training in the restaurant field and over 10 years of experience in this sector."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Snack specialized in seafood, aiming to provide healthy and varied food options, accessible to all age groups. The project aims to create employment opportunities for local youth."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Support from the National Initiative for Human Development (INDH) of Moulay Rachid prefecture. Support from the Irchad Youth Platform with training and financial support."
+      },
+      {
+        "title": "Products and services",
+        "content": "Fried seafood, salads, soups and varied sandwiches. Commitment to providing fresh, varied and high-quality dishes, with particular attention paid to the healthy and nutritious aspect."
+      },
+      {
+        "title": "Partners",
+        "content": "National Initiative for Human Development, Najm Association."
+      }
+    ]
+  },
+  "10": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Zineb Badi, passionate entrepreneur, chose the field of traditional catering. Having grown up in a family environment that valued cooking, she inherited her passion from her mother."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Snack Yaqout offers traditional Moroccan dishes: chicken with onions, rfissa, couscous, Moroccan tagine, fish balls, teklia, calf's head with chickpeas, white beans, lentils, and various fried dishes."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Funding of 100,000 dirhams from the National Initiative for Human Development (INDH). Support from the Youth Platform – Irchad with 3-month training and financial support."
+      },
+      {
+        "title": "Products and services",
+        "content": "Rich and authentic menu of Moroccan culinary heritage. Featured dishes including chicken with onions, rfissa, tagine, vegetable couscous, teklia, sardine balls, loubia and lentils. Prices between 10 and 30 dirhams."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH, Irchad Platform, Najm Association, local suppliers, neighborhood customers."
+      }
+    ]
+  },
+  "11": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Fatima Zahra Chajari, 32 years old, founder of Dar Miya company, specialized in catering. She has 4 years of professional experience, supplemented by 3 years of home practice."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Dar Miya is an establishment specialized in Brunch Coffee, aiming to promote a balanced diet with particular emphasis on the importance of breakfast. The project offers tasty and nutritious options."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Significant support from the National Initiative for Human Development (INDH), covering 90% of financing needs. Intensive support via the Irchad Youth Platform with 3-month training."
+      },
+      {
+        "title": "Products and services",
+        "content": "Catering service based on a flexible and personalized offer. Menu including the option 'Compose your breakfast to your taste'. 'Dish of the day' program with varied Moroccan and oriental dishes."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH (90% funding), Irchad Youth Platform, Najm Association, founder's family."
+      }
+    ]
+  },
+  "12": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Othman Chafi, 30 years old, founder of Foratino company, specialized in fast food. He has about 8 years of experience in this field, including 4 years spent in 5-star hotels."
+      },
+      {
+        "title": "Project presentation",
+        "content": "The Foratino project was born from great enthusiasm for fast food and growing market demand. The project aims to offer innovative dishes at affordable prices while maintaining an excellent level of service."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Support from the National Initiative for Human Development (INDH) with financial aid of 99,000 dirhams. Training and market study by the Youth Platform – Irchad. Moral support by Najm Association."
+      },
+      {
+        "title": "Products and services",
+        "content": "Variety of original dishes in fast food: chicken roulade, baked potatoes, minced meat balls. Special promotions on large orders and family entertainment."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH (99,000 MAD), Youth Platform – Irchad, Najm Association."
+      }
+    ]
+  },
+  "13": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Najate El Haffa, 40 years old, founder of LA TABLE D'MOTIONS SARLAU company. She has 8 years of experience in event catering. What started as a passion became a professional activity."
+      },
+      {
+        "title": "Project presentation",
+        "content": "The project consists of offering a catering service for special occasions: weddings, private parties, conferences or corporate events. LA TABLE D'MOTIONS facilitates clients' lives by taking charge of complete meal preparation."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Financial support of 90,000 dirhams from the National Initiative for Human Development (INDH). Support by the Youth Platform and Najm Association. 3-month training to acquire necessary skills."
+      },
+      {
+        "title": "Products and services",
+        "content": "Personalized catering service for weddings, parties and various events. Carefully prepared traditional Moroccan meals, ready to serve. Use of fresh and local ingredients to enhance authenticity."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH (90,000 MAD), Youth Platform, Najm Association."
+      }
+    ]
+  },
+  "14": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Loubna Laakari, 39 years old, founder of Om Ali Food company. She has 3 years of experience in developing her project, which she designed with the will to contribute to the economic and social development of the neighborhood."
+      },
+      {
+        "title": "Project presentation",
+        "content": "The Om Ali Food project aims to strengthen the economic and social environment of the neighborhood by creating jobs, training young people in cooking and management professions, and using fresh products from local agriculture."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Support from the National Initiative for Human Development (INDH) and the Irchad Youth Platform. Prior training allowing to acquire solid skills in project management and understanding of the local market."
+      },
+      {
+        "title": "Products and services",
+        "content": "Varied range of light meals, combining traditional Moroccan specialties (baghrir, maqroud) and international options (various sandwiches, quick snacks). Healthy alternatives like natural juices, low-fat sandwiches, organic salads."
+      },
+      {
+        "title": "Partners",
+        "content": "National Initiative for Human Development (INDH), Irchad Youth Platform."
+      }
+    ]
+  },
+  "15": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Chaimaa Majdoub, 29 years old, founder of Kitchen Chaimaa project. With 10 years of experience in cooking, she decided to launch this project in response to strong demand in the Moroccan market."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Kitchen Chaimaa is a Moroccan snack offering light, balanced and healthy meals, adapted to different moments and needs of the day. The project focuses on quality, use of natural ingredients and product accessibility."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Support from the National Initiative for Human Development (INDH) in Moulay Rachid prefecture with valuable funding. Support by the Irchad Youth Platform with entrepreneurship training."
+      },
+      {
+        "title": "Products and services",
+        "content": "Wide range of healthy and tasty products: varied sandwiches, organic salads, hot and cold drinks, soups, light snacks and quick breakfasts. Regular promotions and loyalty programs."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH, Irchad Youth Platform, Najm Association for economic inclusion of youth."
+      }
+    ]
+  },
+  "16": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Wafae El Hana, 35 years old, founder of Delicesl Hanae company, specialized in event organization and cooking. With 10 years of experience in this field, she launched this project to make use of her skills."
+      },
+      {
+        "title": "Project presentation",
+        "content": "The choice to launch Delicesl Hanae stems from a decade of experience in event organization and gastronomy. Wafae wanted to modernize the sector by introducing innovative and personalized services for events such as weddings, birthdays, conferences."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Funding of 100,000 dirhams from the National Initiative for Human Development (INDH). Support by the Irchad platform and Najm Association. 3-month training provided by Irchad."
+      },
+      {
+        "title": "Products and services",
+        "content": "Superior quality event catering services. Complete event organization (decoration, coordination). Live cooking demonstrations. Private chef service. Consulting for companies and individuals."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH (100,000 DH), Irchad platform, Najm Association."
+      }
+    ]
+  },
+  "17": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Reda Qadda, 34 years old, studied applied arts, then specialized in audiovisual by obtaining diplomas in digital editing and digital content creation."
+      },
+      {
+        "title": "Project presentation",
+        "content": "GO EVENT DIGILAB is a company specialized in audiovisual content production, advertising creation and event organization. The project aims to create more than 20 direct and indirect jobs in the medium term."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Complete support from the pre-launch phase. In-depth entrepreneurship training via the Irchad platform and Najm Association. Funding of 100,000 dirhams from the National Initiative for Human Development (INDH)."
+      },
+      {
+        "title": "Products and services",
+        "content": "Audiovisual content production (institutional videos, social capsules, documentaries). Advertising creation (posters, spots, branding). Event organization (corporate, cultural, social)."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH, Irchad platform, Najm Association."
+      }
+    ]
+  },
+  "18": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Khadija Siri, young 22-year-old entrepreneur passionate about event organization. Her journey began with a one-year experience with a party organizer, which allowed her to acquire valuable expertise."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Driven by my passion, I launched my own project: a micro-enterprise dedicated to organizing family and festive events. Located on An-Nil Street, a dynamic and well-served neighborhood, my project aims to offer quality, personalized and accessible service."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Valuable support from the National Initiative for Human Development (INDH). Support by the Irchad platform and Najm Association through a complete training program: market study, understanding client needs, developing concrete action plans."
+      },
+      {
+        "title": "Proposed services",
+        "content": "Personal event coordination: birthdays, engagements, graduation ceremonies. Decoration: personalized atmosphere (romantic, classic, modern), floral decoration and carefully arranged furniture. Table services: buffets, drinks, personalized cakes."
+      },
+      {
+        "title": "Partners",
+        "content": "INDH, Irchad platform, Najm Association for economic inclusion of youth."
+      }
+    ]
+  },
+  "19": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Mustapha Flahi, founder of 'MaMoN Food's' brand, is an entrepreneur passionate about fast food combining tradition and innovation. His project is rooted in culinary know-how inherited from several generations."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Located in Essadri (Moulay Rachid district), 'MaMoN Food's' is an innovative fast food project that mixes local recipes (shawarma, sandwiches) with international inspirations (burritos, pizzas, tacos)."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Support from the National Initiative for Human Development (INDH) with technical and psychological support provided by qualified trainers via Najm Association. Rigorous training combined with valuable financial aid."
+      },
+      {
+        "title": "Proposed products and services",
+        "content": "Varied range of fast food: all types of sandwiches, burgers, international pizzas, tacos, burritos, as well as the signature dish 'Monte Cristo'. 'Happy Hour' formula: weekly time slot where all dishes are offered at reduced rates."
+      },
+      {
+        "title": "Partners",
+        "content": "National Initiative for Human Development (INDH), Najm Association, Irchad platform."
+      }
+    ]
+  },
+  "20": {
+    "sections": [
+      {
+        "title": "Information about the founder",
+        "content": "Tarek Keghat, 30 years old, founder of the agency specialized in digital marketing, has 12 years of experience in e-commerce and 3 years in website creation and digital advertising campaigns."
+      },
+      {
+        "title": "Project presentation",
+        "content": "Social Media Marketing Agency Keghat is an agency specialized in digital marketing. It offers innovative solutions to promote products and services online, aiming to improve visibility and sales of artisans, SMEs and service providers."
+      },
+      {
+        "title": "Support and accompaniment",
+        "content": "Financial support of 100,000 dirhams from the National Initiative for Human Development (INDH). 3-month training in project management by the 'Irchad' platform. This support allowed to legally structure the project."
+      },
+      {
+        "title": "Proposed products and services",
+        "content": "Startup Package at 3999 DHS for young companies: professional Landing Page creation, social media page configuration, short training in social media management, Google Maps account creation, design of 5 advertising visuals, one-month advertising campaign, visual goodies."
+      },
+      {
+        "title": "Partners",
+        "content": "National Initiative for Human Development (INDH): funding of 100,000 DHS. The 'Irchad' platform: intensive 3-month training. Najm Association: moral and strategic support."
+      }
+    ]
+  }
 }
 
 

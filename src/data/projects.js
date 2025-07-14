@@ -7,6 +7,11 @@ const projects = [
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image12.jpg",
+    phone: "+212 661 245 789",
+    email: "contact@planetfood.ma",
+    address: "Rue Ahmed Rgoub, Annexe administrative de Sidi Othmane, Casablanca",
+    hours: "Lun-Dim: 9h00 - 22h00",
+    website: "www.planetfood.ma",
     descriptionSections: [
       {
         title: "Informations sur la fondatrice",
@@ -38,11 +43,16 @@ const projects = [
   {
     id: 2,
     name: "ALPHACOM", 
-    category: "Restauration",
+    category: "Marketing Digital",
     location: "Zone industrielle Sidi Othmane",  // zone industrielle Sidi Othmane
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image9-398x530.jpg",
+    phone: "+212 662 789 456",
+    email: "info@alphacom.ma",
+    address: "Zone industrielle Sidi Othmane, Casablanca",
+    hours: "Lun-Ven: 9h00 - 18h00",
+    website: "www.alphacom.ma",
     descriptionSections: [
       {
         title: "Informations sur la fondateur",
@@ -80,6 +90,11 @@ const projects = [
     lat: 33.5747295,
     lng: -7.5524299,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image56-375x530.png",
+    phone: "+212 663 321 654",
+    email: "contact@bahahappypark.ma",
+    address: "Annexe administrative du quartier Moulay Rachid, Casablanca",
+    hours: "Mer-Dim: 10h00 - 19h00",
+    website: "www.bahahappypark.ma",
     descriptionSections: [
       {
         title: "Informations sur la fondatrice",
@@ -116,6 +131,11 @@ const projects = [
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image55.png",
+    phone: "+212 664 987 123",
+    email: "contact@pixelprod.ma",
+    address: "Annexe administrative du quartier Mabrouka, Casablanca",
+    hours: "Lun-Ven: 8h30 - 17h30",
+    website: "www.pixelprod.ma",
     descriptionSections: [
       {
         title: "Informations sur le fondateur",
@@ -154,6 +174,11 @@ const projects = [
     lat: 33.6005,
     lng: -7.5306,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image55.png",
+    phone: "+212 665 456 789",
+    email: "contact@tahaprodd.ma",
+    address: "Annexe administrative du quartier Mabrouka, Casablanca",
+    hours: "Lun-Sam: 9h00 - 19h00",
+    website: "www.tahaprodd.ma",
     descriptionSections: [
       {
         title: "Informations sur le fondateur",
@@ -190,6 +215,11 @@ const projects = [
     lat: 33.5573031,
     lng: -7.5552762,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image51.jpg",
+    phone: "+212 666 789 321",
+    email: "info@azevent733.ma",
+    address: "Annexe administrative de Sidi Othmane, Casablanca",
+    hours: "Lun-Dim: Sur rendez-vous",
+    website: "www.azevent733.ma",
     "descriptionSections": [
       {
         title: "Informations sur le fondateur",
@@ -338,6 +368,10 @@ const projects = [
      lat: 33.6102,
   lng: -7.5401,
     image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image30.jpg",
+    phone: "+212 667 123 456",
+    email: "contact@snackyacout.ma",
+    address: "Zone industrielle Moulay Rachid, Casablanca",
+    hours: "Lun-Sam: 7h00 - 20h00",
     "descriptionSections": [
       {
         title: "Informations sur la fondatrice",
