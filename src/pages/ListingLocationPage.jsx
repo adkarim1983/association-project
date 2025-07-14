@@ -5,7 +5,7 @@ export default function ListingLocationPage() {
   
   return (
     <section className="py-20 px-6 text-center">
-      <h1 className="text-4xl font-bold text-blue-700 mb-6">
+      <h1 className="text-4xl font-bold text-blue-700 mb-6 whitespace-pre-line">
         {t("projects.title")}
       </h1>
       <p className="text-lg text-gray-600">

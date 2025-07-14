@@ -273,7 +273,7 @@
       },
       {
         "q": "Qui peut bénéficier de vos services ?",
-        "r": "Tout jeune âgé de 18 à 35 ans, résidant dans la région de Moulay Rachid – Sidi Othmane, ayant une idée ou un projet à développer."
+        "r": "Tout jeune âgé de 18 à 45 ans, résidant dans la région de Moulay Rachid – Sidi Othmane, ayant une idée ou un projet à développer."
       },
       {
         "q": "Comment se déroule l'accompagnement ?",
@@ -362,7 +362,7 @@
 
 },
 "projects": {
-    "title": "Nos Projets",
+    "title": "Projets réalisés à la Préfecture\ndes Arrondissements Moulay Rachid",
     "all": "Tous",
     "all_categories": "Toutes les catégories",
     "all_zones": "Toutes les zones",
@@ -590,7 +590,7 @@
     "sections": [
       {
         "title": "Pour une transformation numérique inclusive au Maroc",
-        "text": "L'Association Najm pour l'inclusion économique croit que la transformation numérique représente à la fois un défi et une opportunité prometteuse pour le Maroc.\\n\\nLa faible accessibilité aux technologies modernes, le manque de formations adaptées et l'élargissement de la fracture numérique constituent parmi les principaux obstacles qui freinent l'intégration des jeunes dans l'économie numérique.\\n\\nPourtant, la numérisation offre de grandes possibilités pour stimuler l'entrepreneuriat, créer des opportunités d'emploi et dynamiser le tissu socio-économique, notamment au profit des jeunes non scolarisés, sans emploi et non bénéficiaires de formation, qui rencontrent de réelles difficultés d'insertion professionnelle.\\n\\nConsciente de cette réalité, l'Association Najm s'engage à accompagner les jeunes dans l'acquisition des compétences numériques, à poursuivre la numérisation des entreprises et à encourager l'innovation technologique. En concentrant ses efforts sur ces axes fondamentaux, l'association aspire à contribuer à la construction d'un modèle de développement plus inclusif.",
+        "text": "L'Association Najm pour l'inclusion économique croit que la transformation numérique représente à la fois un défi et une opportunité prometteuse pour le Maroc. La faible accessibilité aux technologies modernes, le manque de formations adaptées et l'élargissement de la fracture numérique constituent parmi les principaux obstacles qui freinent l'intégration des jeunes dans l'économie numérique. Pourtant, la numérisation offre de grandes possibilités pour stimuler l'entrepreneuriat, créer des opportunités d'emploi et dynamiser le tissu socio-économique, notamment au profit des jeunes non scolarisés, sans emploi et non bénéficiaires de formation, qui rencontrent de réelles difficultés d'insertion professionnelle. Consciente de cette réalité, l'Association Najm s'engage à accompagner les jeunes dans l'acquisition des compétences numériques, à poursuivre la numérisation des entreprises et à encourager l'innovation technologique. En concentrant ses efforts sur ces axes fondamentaux, l'association aspire à contribuer à la construction d'un modèle de développement plus inclusif.",
         "alt": "Jeunes marocains utilisant des outils numériques",
         "buttonText": "Découvrir nos programmes"
       },
@@ -601,7 +601,7 @@
       },
       {
         "title": "Vision stratégique de l'association",
-        "text": "Depuis sa création, l'Association Najm poursuit son développement pour renforcer l'insertion professionnelle et l'entrepreneuriat des jeunes.\\n\\nAvec une gouvernance rigoureuse, une équipe structurée et des outils de suivi performants, elle diversifie ses actions et adapte ses programmes aux mutations économiques et numériques.\\n\\nElle place la formation continue, les partenariats et l'accompagnement post-formation au cœur de sa stratégie durable.",
+        "text": "Depuis sa création, l'Association Najm poursuit son développement pour renforcer l'insertion professionnelle et l'entrepreneuriat des jeunes.\\n\\nAvec une gouvernance rigoureuse, une équipe structurée et des outils de suivi performants, elle diversifie ses actions et adapte ses programmes aux mutations économiques et numériques. Elle place la formation continue, les partenariats et l'accompagnement post-formation au cœur de sa stratégie durable.",
         "alt": "Vision stratégique de l'association Najm"
       }
     ],

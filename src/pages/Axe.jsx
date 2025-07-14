@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import videoSrc from "../assets/video.mp4";
+import image2a from "../assets/image2a.jpg";
 import { useTranslation } from "react-i18next";
 const sections = [
     {
@@ -172,9 +173,27 @@ const { t } = useTranslation();
               </button>
               {openIndex === index && (
                 <div className="text-gray-700 bg-white p-4 rounded-lg shadow">
-                  <p className="leading-relaxed whitespace-pre-line text-justify">
-                    {section.content}
-                  </p>
+                  {/* Section spéciale pour "Mission de la « Plateforme des Jeunes »" avec image */}
+                  {section.title === "Mission de la « Plateforme des Jeunes »" ? (
+                    <div className="flex flex-col lg:flex-row gap-6 items-start">
+                      <div className="flex-1">
+                        <p className="leading-relaxed whitespace-pre-line text-justify">
+                          {section.content}
+                        </p>
+                      </div>
+                      <div className="flex-shrink-0 lg:w-1/3">
+                        <img 
+                          src={image2a} 
+                          alt="Mission de la Plateforme des Jeunes" 
+                          className="w-full h-auto rounded-lg shadow-md"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <p className="leading-relaxed whitespace-pre-line text-justify">
+                      {section.content}
+                    </p>
+                  )}
                 </div>
               )}
             </div>

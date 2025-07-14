@@ -50,7 +50,7 @@ export default function Projet() {
 
   return (
     <section className="min-h-screen px-6 py-10 bg-gray-50">
-      <h1 className="text-4xl font-bold text-blue-800 mb-10 text-center">
+      <h1 className="text-4xl font-bold text-blue-800 mb-10 text-center whitespace-pre-line">
         {t("projects.title")}
       </h1>
 
