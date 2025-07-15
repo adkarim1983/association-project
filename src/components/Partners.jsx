@@ -83,7 +83,7 @@ export default function Partners() {
 
   return (
     <section
-      className="py-16 mx-5 px-6 text-center rounded-lg"
+      className="py-16 mx-5 px-2 sm:px-4 md:px-6 text-center rounded-lg"
       style={{
         backgroundImage: `url(${logo2})`,
         backgroundColor: "rgba(255, 255, 255, 0.9)",
@@ -92,7 +92,7 @@ export default function Partners() {
         backgroundPosition: "center",
       }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 sm:px-3 md:px-4">
         <h2 className="text-3xl font-bold text-center mb-5 text-blue-900">
           {t('partners_title')}
         </h2>

@@ -49,77 +49,76 @@ export default function CarouselActivites() {
   const visibleCards = activities.slice(index, index + 3);
 
   return (
-    <section className="py-16 mx-6 bg-gray-100 rounded-2xl">
-  <div className="max-w-7xl mx-auto px-4 relative">
-    <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center">
-      {t("activities.title")}
-    </h2>
+    <section className="py-16 mx-1 sm:mx-2 md:mx-4 rounded-2xl" style={{ backgroundColor: '#EFF6FF' }}>
+      <div className="max-w-7xl mx-auto px-4 relative">
+        <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center">
+          {t("activities.title")}
+        </h2>
 
-    {/* Desktop version avec flèches */}
-    <div className="hidden md:flex items-center justify-between gap-4">
-      <button
-        onClick={prevSlide}
-        className="text-blue-600 hover:text-blue-800 p-2 rounded-full border border-blue-200 bg-white shadow"
-        disabled={index === 0}
-      >
-        ◀
-      </button>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-1">
-        {visibleCards.map((activity, i) => (
-          <div
-            key={i}
-            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+        {/* Desktop version avec flèches */}
+        <div className="hidden md:flex items-center justify-between gap-6">
+          <button
+            onClick={prevSlide}
+            className="text-blue-600 hover:text-blue-800 p-3 rounded-full border border-blue-200 bg-white shadow-lg hover:shadow-xl transition-all duration-300 flex-shrink-0"
+            disabled={index === 0}
           >
-            <img
-              src={activity.image}
-              alt={activity.title}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-bold text-blue-900 mb-2 text-center">
-                {activity.title}
-              </h3>
-              <p className="text-base text-gray-600 text-justify">{activity.description}</p>
-            </div>
+            ◀
+          </button>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 flex-1 mx-4">
+            {visibleCards.map((activity, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              >
+                <img
+                  src={activity.image}
+                  alt={activity.title}
+                  className="w-full h-72 object-cover"
+                />
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4 text-center">
+                    {activity.title}
+                  </h3>
+                  <p className="text-lg text-gray-600 text-justify leading-relaxed">{activity.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      <button
-        onClick={nextSlide}
-        className="text-blue-600 hover:text-blue-800 p-2 rounded-full border border-blue-200 bg-white shadow"
-        disabled={index + 3 >= activities.length}
-      >
-        ▶
-      </button>
-    </div>
+          <button
+            onClick={nextSlide}
+            className="text-blue-600 hover:text-blue-800 p-3 rounded-full border border-blue-200 bg-white shadow-lg hover:shadow-xl transition-all duration-300 flex-shrink-0"
+            disabled={index + 3 >= activities.length}
+          >
+            ▶
+          </button>
+        </div>
 
-    {/* Mobile version scrollable horizontal */}
-    <div className="md:hidden overflow-x-auto pb-2">
-  <div className="flex gap-4 w-max px-2 scroll-smooth snap-x snap-mandatory">
-    {activities.map((activity, i) => (
-      <div
-        key={i}
-        className="w-72 flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden snap-start"
-      >
-        <img
-          src={activity.image}
-          alt={activity.title}
-          className="w-full h-40 object-cover"
-        />
-        <div className="p-4">
-          <h3 className="text-lg font-bold text-gray-800 mb-2">
-            {activity.title}
-          </h3>
-          <p className="text-sm text-gray-600">{activity.description}</p>
+        {/* Mobile version scrollable horizontal */}
+        <div className="md:hidden overflow-x-auto pb-2">
+          <div className="flex gap-10 w-max px-2 scroll-smooth snap-x snap-mandatory">
+            {activities.map((activity, i) => (
+              <div
+                key={i}
+                className="w-96 flex-shrink-0 bg-white rounded-xl shadow-lg overflow-hidden snap-start hover:shadow-xl transition-all duration-300"
+              >
+                <img
+                  src={activity.image}
+                  alt={activity.title}
+                  className="w-full h-56 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">
+                    {activity.title}
+                  </h3>
+                  <p className="text-base text-gray-600 leading-relaxed">{activity.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    ))}
-  </div>
-</div>
-  </div>
-</section>
-
+    </section>
   );
 }

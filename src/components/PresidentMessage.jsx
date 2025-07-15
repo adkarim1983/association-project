@@ -27,12 +27,16 @@ export default function PresidentMessage() {
     return () => clearInterval(interval);
   }, [isPaused, showFullMessage]);
 
-const currentLanguage = i18next.language;
-console.log("Current Language:", currentLanguage);
-const isArabic = currentLanguage === "ar";
+  const currentLanguage = i18next.language;
+  const isArabic = currentLanguage === "ar";
+
+  const handleToggleMessage = () => {
+    setIsPaused(!isPaused);
+    setShowFullMessage(!showFullMessage);
+  };
 
   return (
-    <section className="bg-gray-100 py-4 px-14 mx-7 mt-25 rounded-lg">
+    <section className="bg-gray-100 py-4 px-3 sm:px-6 md:px-14 mx-2 sm:mx-4 md:mx-7 mt-32 rounded-lg">
       <div
         className={`flex flex-col gap-4 overflow-hidden cursor-pointer md:items-center md:flex-row`}
         onMouseEnter={() => {
@@ -43,8 +47,9 @@ const isArabic = currentLanguage === "ar";
           setIsPaused(false);
           setShowFullMessage(false);
         }}
+        onClick={handleToggleMessage} // Ajout pour mobile
       >
-        <h2 className="text-base md:text-lg font-bold text-blue-800 whitespace-nowrap mx-10">
+        <h2 className="text-base md:text-lg font-bold text-blue-800 whitespace-nowrap mx-2 sm:mx-4 md:mx-10 text-center md:text-left">
           {t("president_title")}
         </h2>
 
@@ -55,15 +60,25 @@ const isArabic = currentLanguage === "ar";
             </div>
           </div>
         ) : (
-          <div className={`flex flex-col sm:flex-row items-center gap-6 bg-white p-4 rounded-lg shadow-md w-full mt-2 md:flex-row`}>
+          <div className={`flex flex-col sm:flex-row items-center gap-4 sm:gap-6 bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-md w-full mt-2`}>
             <img
               src={presidentImg}
               alt="Président"
-              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow"
+              className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg flex-shrink-0"
             />
-            <p className="text-gray-700 text-sm sm:text-base text-justify sm:max-w-2xl">
-              {t("president_full_text")}
-            </p>
+            <div className="flex-1">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base text-justify leading-relaxed">
+                {t("president_full_text")}
+              </p>
+              <div className="mt-3 sm:hidden">
+                <button 
+                  onClick={handleToggleMessage}
+                  className="text-blue-600 text-sm font-medium hover:text-blue-800 transition-colors"
+                >
+                  Fermer
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </div>
