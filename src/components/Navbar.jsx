@@ -256,15 +256,48 @@ export default function Navbar() {
             className="absolute top-1/2 left-1/2 w-72 opacity-10 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
           />
           <ul className="flex flex-col space-y-4 mt-4 text-white font-medium">
-            <li><Link to="/" onClick={() => setIsMenuOpen(false)} className="transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} onMouseLeave={(e) => e.target.style.color = 'white'}>{t("menu.accueil")}</Link></li>
-            <li><Link to="/about-us" onClick={() => setIsMenuOpen(false)} className="transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>{t("menu.a_propos")}</Link></li>
-            <li><Link to="/Axe" onClick={() => setIsMenuOpen(false)} className="transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#673D98'} onMouseLeave={(e) => e.target.style.color = 'white'}>{t("menu.axe")}</Link></li>
-            <li><Link to="/project" onClick={() => setIsMenuOpen(false)} className="transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>{t("menu.projets")}</Link></li>
-            <li><Link to="/academie-najm" onClick={() => setIsMenuOpen(false)} className="transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#56B04A'} onMouseLeave={(e) => e.target.style.color = 'white'}>{t("menu.academie_najm")}</Link></li>
-             
-             
-            <li><Link to="/galerie" onClick={() => setIsMenuOpen(false)} className="transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#2D7FC1'} onMouseLeave={(e) => e.target.style.color = 'white'}>{t("menu.galerie")}</Link></li>
-            <li><Link to="/contact" onClick={() => setIsMenuOpen(false)} className="transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>{t("menu.contact")}</Link></li>
+            <li>
+              <Link to="/" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+                {t("menu.accueil")}
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#1B7CC1' }}></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/about-us" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+                {t("menu.a_propos")}
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/Axe" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#673D98'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+                {t("menu.axe")}
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#673D98' }}></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/project" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+                {t("menu.projets")}
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/academie-najm" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#56B04A'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+                {t("menu.academie_najm")}
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#56B04A' }}></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/galerie" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#2D7FC1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+                {t("menu.galerie")}
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#2D7FC1' }}></span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+                {t("menu.contact")}
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
+              </Link>
+            </li>
             
             
             
