@@ -257,45 +257,101 @@ export default function Navbar() {
           />
           <ul className="flex flex-col space-y-4 mt-4 text-white font-medium">
             <li>
-              <Link to="/" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+              <Link 
+                to="/" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="relative group transition-colors duration-300 block py-2" 
+                onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} 
+                onMouseLeave={(e) => e.target.style.color = 'white'}
+                onTouchStart={(e) => e.target.style.color = '#1B7CC1'}
+                onTouchEnd={(e) => setTimeout(() => e.target.style.color = 'white', 150)}
+              >
                 {t("menu.accueil")}
-                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#1B7CC1' }}></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full group-active:w-full" style={{ backgroundColor: '#1B7CC1' }}></span>
               </Link>
             </li>
             <li>
-              <Link to="/about-us" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+              <Link 
+                to="/about-us" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="relative group transition-colors duration-300 block py-2" 
+                onMouseEnter={(e) => e.target.style.color = '#FCBD18'} 
+                onMouseLeave={(e) => e.target.style.color = 'white'}
+                onTouchStart={(e) => e.target.style.color = '#FCBD18'}
+                onTouchEnd={(e) => setTimeout(() => e.target.style.color = 'white', 150)}
+              >
                 {t("menu.a_propos")}
-                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full group-active:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
               </Link>
             </li>
             <li>
-              <Link to="/Axe" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#673D98'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+              <Link 
+                to="/Axe" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="relative group transition-colors duration-300 block py-2" 
+                onMouseEnter={(e) => e.target.style.color = '#673D98'} 
+                onMouseLeave={(e) => e.target.style.color = 'white'}
+                onTouchStart={(e) => e.target.style.color = '#673D98'}
+                onTouchEnd={(e) => setTimeout(() => e.target.style.color = 'white', 150)}
+              >
                 {t("menu.axe")}
-                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#673D98' }}></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full group-active:w-full" style={{ backgroundColor: '#673D98' }}></span>
               </Link>
             </li>
             <li>
-              <Link to="/project" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+              <Link 
+                to="/project" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="relative group transition-colors duration-300 block py-2" 
+                onMouseEnter={(e) => e.target.style.color = '#FCBD18'} 
+                onMouseLeave={(e) => e.target.style.color = 'white'}
+                onTouchStart={(e) => e.target.style.color = '#FCBD18'}
+                onTouchEnd={(e) => setTimeout(() => e.target.style.color = 'white', 150)}
+              >
                 {t("menu.projets")}
-                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full group-active:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
               </Link>
             </li>
             <li>
-              <Link to="/academie-najm" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#56B04A'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+              <Link 
+                to="/academie-najm" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="relative group transition-colors duration-300 block py-2" 
+                onMouseEnter={(e) => e.target.style.color = '#56B04A'} 
+                onMouseLeave={(e) => e.target.style.color = 'white'}
+                onTouchStart={(e) => e.target.style.color = '#56B04A'}
+                onTouchEnd={(e) => setTimeout(() => e.target.style.color = 'white', 150)}
+              >
                 {t("menu.academie_najm")}
-                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#56B04A' }}></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full group-active:w-full" style={{ backgroundColor: '#56B04A' }}></span>
               </Link>
             </li>
             <li>
-              <Link to="/galerie" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#2D7FC1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+              <Link 
+                to="/galerie" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="relative group transition-colors duration-300 block py-2" 
+                onMouseEnter={(e) => e.target.style.color = '#2D7FC1'} 
+                onMouseLeave={(e) => e.target.style.color = 'white'}
+                onTouchStart={(e) => e.target.style.color = '#2D7FC1'}
+                onTouchEnd={(e) => setTimeout(() => e.target.style.color = 'white', 150)}
+              >
                 {t("menu.galerie")}
-                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#2D7FC1' }}></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full group-active:w-full" style={{ backgroundColor: '#2D7FC1' }}></span>
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="relative group transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+              <Link 
+                to="/contact" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="relative group transition-colors duration-300 block py-2" 
+                onMouseEnter={(e) => e.target.style.color = '#FCBD18'} 
+                onMouseLeave={(e) => e.target.style.color = 'white'}
+                onTouchStart={(e) => e.target.style.color = '#FCBD18'}
+                onTouchEnd={(e) => setTimeout(() => e.target.style.color = 'white', 150)}
+              >
                 {t("menu.contact")}
-                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full group-active:w-full" style={{ backgroundColor: '#FCBD18' }}></span>
               </Link>
             </li>
             
