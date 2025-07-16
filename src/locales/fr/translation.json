@@ -581,6 +581,46 @@
         "support": "La pâtisserie bénéficie du soutien de l'INDH pour l'acquisition d'équipements de pâtisserie professionnels et l'aménagement du laboratoire de production. Un accompagnement en techniques de conservation et en développement de gammes de produits a également été fourni.",
         "products": "Wafae El Hana propose des pâtisseries marocaines traditionnelles (chebakia, makroudh, cornes de gazelle), baklawas variés, ma'amoul et dattes fourrées, gâteaux de fête personnalisés, ainsi que des créations modernes inspirées de la tradition et des coffrets cadeaux.",
         "partners": "INDH, Plateforme des jeunes Irchad, Association Najm, Coopératives de production de miel et fruits secs"
+      },
+      "go_event_digilab": {
+        "name": "GO Event DigiLab",
+        "address": "Avenue Hay El Rajae, Casablanca",
+        "description": "Agence événementielle spécialisée dans les solutions digitales.",
+        "founder_info": "L'équipe de GO Event DigiLab est composée de jeunes spécialistes en événementiel et marketing digital, passionnés par l'innovation technologique appliquée aux événements. Avec une expérience dans l'organisation d'événements modernes, ils se spécialisent dans l'intégration de solutions digitales pour créer des expériences événementielles uniques et interactives.",
+        "presentation": "GO Event DigiLab est une agence événementielle innovante qui combine organisation d'événements traditionnels et solutions digitales avancées. Le projet vise à révolutionner l'expérience événementielle en intégrant des technologies modernes comme la réalité virtuelle, les applications mobiles interactives et les outils de streaming pour créer des événements hybrides et immersifs.",
+        "support": "Le projet bénéficie du soutien de l'INDH pour l'acquisition d'équipements technologiques et de matériel événementiel. Un accompagnement en marketing digital et en gestion de projet événementiel a également été fourni par la Plateforme des Jeunes.",
+        "products": "GO Event DigiLab propose l'organisation d'événements corporate, salons virtuels et hybrides, conférences interactives avec streaming, solutions de réalité virtuelle pour événements, applications mobiles événementielles, et services de marketing digital événementiel.",
+        "partners": "INDH, Plateforme des jeunes Irchad, Association Najm, Fournisseurs de technologies événementielles"
+      },
+      "doja_event": {
+        "name": "Doja Event",
+        "address": "Sidi Othmane, Casablanca",
+        "description": "Organisation d'événements créatifs et personnalisés.",
+        "founder_info": "L'équipe de Doja Event est composée d'organisateurs d'événements créatifs et expérimentés, spécialisés dans la création d'expériences événementielles uniques et mémorables. Avec une passion pour l'innovation et l'art événementiel, ils s'attachent à transformer chaque événement en une expérience extraordinaire adaptée aux besoins spécifiques de chaque client.",
+        "presentation": "Doja Event est une agence événementielle créative qui se spécialise dans l'organisation d'événements personnalisés et innovants. Le projet vise à offrir des services événementiels complets, allant de la conception créative à l'exécution parfaite, en mettant l'accent sur l'originalité et l'attention aux détails pour créer des moments inoubliables.",
+        "support": "Doja Event bénéficie du soutien de l'INDH pour l'acquisition de matériel événementiel et l'aménagement des espaces de travail. Un accompagnement en gestion événementielle et en développement commercial a été fourni par la Plateforme des Jeunes.",
+        "products": "Doja Event propose l'organisation de mariages sur mesure, événements corporate créatifs, fêtes d'anniversaire thématiques, baby showers et gender reveals, événements culturels et artistiques, ainsi que des services de décoration et de mise en scène événementielle.",
+        "partners": "INDH, Plateforme des jeunes Irchad, Association Najm, Prestataires événementiels, Décorateurs"
+      },
+      "mamon_foods": {
+        "name": "Mamon Foods",
+        "address": "Sadri, Casablanca",
+        "description": "Cuisine authentique et livraison de plats familiaux.",
+        "founder_info": "L'équipe de Mamon Foods est composée de cuisiniers passionnés par la gastronomie familiale et traditionnelle. Avec une expertise dans la préparation de plats authentiques et faits maison, ils se sont spécialisés dans la création de repas qui évoquent les saveurs de la cuisine familiale, en utilisant des recettes traditionnelles et des ingrédients frais de qualité.",
+        "presentation": "Mamon Foods est un service de restauration familiale qui propose des plats authentiques préparés avec amour et tradition. Le projet vise à offrir une alternative saine et savoureuse aux repas industriels, en proposant des plats familiaux traditionnels avec un service de livraison pour apporter le goût de la maison directement chez les clients.",
+        "support": "Mamon Foods bénéficie du soutien de l'INDH pour l'acquisition d'équipements de cuisine professionnelle et de véhicules de livraison. Un accompagnement en sécurité alimentaire et en gestion logistique a été fourni par la Plateforme des Jeunes.",
+        "products": "Mamon Foods propose des plats familiaux traditionnels, tajines et couscous authentiques, soupes et potages maison, plateaux repas équilibrés, desserts traditionnels, ainsi que des services de livraison à domicile et de traiteur pour petits événements familiaux.",
+        "partners": "INDH, Plateforme des jeunes Irchad, Association Najm, Fournisseurs locaux de produits frais"
+      },
+      "mohcin_najmi_production": {
+        "name": "Mohcin Najmi Production",
+        "address": "Sidi Othmane, Casablanca",
+        "description": "Production de contenu digital et marketing créatif.",
+        "founder_info": "Mohcin Najmi est un jeune créateur de contenu et spécialiste en marketing digital, passionné par la production audiovisuelle et la communication créative. Avec une formation en communication et une expérience dans la création de contenu digital, il s'est spécialisé dans la production de contenus visuels impactants pour les réseaux sociaux et les campagnes marketing.",
+        "presentation": "Mohcin Najmi Production est un studio de création de contenu digital spécialisé dans la production de contenu visuel et marketing créatif. Le projet vise à accompagner les entreprises et les particuliers dans leur communication digitale en créant des contenus visuels engageants, des campagnes publicitaires créatives et des stratégies de communication sur mesure.",
+        "support": "Le studio bénéficie du soutien de l'INDH pour l'acquisition d'équipements de production et de logiciels professionnels. Un accompagnement en marketing digital et en gestion de studio créatif a été fourni par la Plateforme des Jeunes.",
+        "products": "Mohcin Najmi Production propose la création de contenus pour réseaux sociaux, production de vidéos publicitaires, photographie professionnelle, création de campagnes marketing digitales, montage vidéo et motion design, ainsi que des services de conseil en stratégie de communication digitale.",
+        "partners": "INDH, Plateforme des jeunes Irchad, Association Najm, Agences de communication, Influenceurs locaux"
       }
     }
   },

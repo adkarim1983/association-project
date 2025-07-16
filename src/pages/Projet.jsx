@@ -282,22 +282,51 @@ export default function Projet() {
 
           {/* Contenu principal - Liste des projets */}
           <div className="xl:col-span-3">
-            {/* Barre de statistiques */}
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 mb-8">
+            {/* Barre de statistiques améliorée */}
+            <div className="bg-gradient-to-r from-white/90 to-blue-50/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/30 mb-8">
               <div className="flex flex-wrap items-center justify-between gap-4">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-lg">
-                    <span className="font-semibold">{filteredProjects.length}</span>
-                    <span className="ml-1 text-blue-100">projets trouvés</span>
+                <div className="flex flex-wrap items-center gap-12">
+                  {/* Nombre de projets */}
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-slate-800">{filteredProjects.length}</div>
+                      <div className="text-sm text-slate-600">Projets disponibles</div>
+                    </div>
                   </div>
-                  <div className="text-slate-600">
-                    Page {currentPage} sur {totalPages}
+
+                  {/* Pagination */}
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 4v10a1 1 0 001 1h8a1 1 0 001-1V8M7 8h10M7 8L5 6m2 2l2-2" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-lg font-semibold text-slate-800">Page {currentPage}</div>
+                      <div className="text-sm text-slate-600">sur {totalPages} pages</div>
+                    </div>
+                  </div>
+
+                  {/* Total des projets */}
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-lg font-semibold text-slate-800">{projectsData.length}</div>
+                      <div className="text-sm text-slate-600">Total projets</div>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm text-slate-600">Mis à jour en temps réel</span>
-                </div>
+
+
               </div>
             </div>
 
