@@ -341,7 +341,7 @@ export default function ValeursEtPrincipes() {
               <img
                 src={membre.image}
                 alt={membre.nom}
-                className="w-full h-52 object-cover"
+                className="w-full object-cover"
               />
               <div className="p-4 text-left space-y-2">
                 <h3 className="text-xl font-semibold text-gray-800">{membre.nom}</h3>

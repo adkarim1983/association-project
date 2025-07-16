@@ -36,7 +36,7 @@ export default function PresidentMessage() {
   };
 
   return (
-    <section className="bg-gray-100 py-4 px-3 sm:px-6 md:px-14 mx-2 sm:mx-4 md:mx-7 mt-32 rounded-lg">
+    <section className="mt-10 bg-gray-100 py-4 px-3 sm:px-6 md:px-14 mx-2 sm:mx-4 md:mx-7 mt-32 rounded-lg">
       <div
         className={`flex flex-col gap-4 overflow-hidden cursor-pointer md:items-center md:flex-row`}
         onMouseEnter={() => {
