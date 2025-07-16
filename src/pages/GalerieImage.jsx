@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 
 import image2a from "../assets/image2a.jpg";
@@ -15,9 +15,65 @@ import { useTranslation } from "react-i18next";
 
 
 export default function GalerieImage() {
-  const [activeIndex, setActiveIndex] = useState(null);
-  //  const { t } = useTranslation();
+  const [currentSlide, setCurrentSlide] = useState(0);
   const { t } = useTranslation();
+
+  const galleryImages = [
+    { src: image3a, text: t("gallery.image_share_exchange") },
+    { src: image5a, text: t("gallery.image_youth_discovering_digital") },
+    { src: image6a, text: t("gallery.image_intensive_training") },
+    { src: image7a, text: t("gallery.image_group_work") },
+    { src: md1, text: t("gallery.image_pedagogical_team") },
+    { src: p1, text: t("gallery.image_final_projects") },
+    { src: p2, text: t("gallery.image_certificates") },
+    { src: image2a, text: t("gallery.image_digital_marketing_workshop") },
+    { src: image4a, text: t("gallery.image_tech_trends_discussion") },
+  ];
+
+  const [itemsPerSlide, setItemsPerSlide] = useState(3);
+
+  const getItemsPerSlide = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth >= 1024) return 3; // lg screens
+      if (window.innerWidth >= 640) return 2; // sm screens
+      return 1; // mobile
+    }
+    return 3; // default fallback
+  };
+
+  const totalSlides = Math.ceil(galleryImages.length / itemsPerSlide);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newItemsPerSlide = getItemsPerSlide();
+      setItemsPerSlide(newItemsPerSlide);
+      
+      // Recalculate currentSlide to stay within bounds
+      const newTotalSlides = Math.ceil(galleryImages.length / newItemsPerSlide);
+      if (currentSlide >= newTotalSlides) {
+        setCurrentSlide(Math.max(0, newTotalSlides - 1));
+      }
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [currentSlide, galleryImages.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
 
 
   return (
@@ -122,39 +178,76 @@ export default function GalerieImage() {
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-blue-600 rounded-full"></span>
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {[
-            { src: image3a, text: t("gallery.image_share_exchange") },
-            { src: image5a, text: t("gallery.image_youth_discovering_digital") },
-            { src: image6a, text: t("gallery.image_intensive_training") },
-            { src: image7a, text: t("gallery.image_group_work") },
-            { src: md1, text: t("gallery.image_pedagogical_team") },
-            { src: p1, text: t("gallery.image_final_projects") },
-            { src: p2, text: t("gallery.image_certificates") },
-            { src: image2a, text: t("gallery.image_digital_marketing_workshop") },
-            { src: image4a, text: t("gallery.image_tech_trends_discussion") },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="relative rounded-2xl shadow-lg overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
-              onClick={() => setActiveIndex(index)}
+        {/* Carousel Container */}
+        <div className="relative max-w-7xl mx-auto mb-20">
+          {/* Main carousel */}
+          <div className="relative overflow-hidden rounded-2xl">
+            <div 
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              <img
-                src={item.src}
-                alt={`galerie-${index}`}
-                className="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute bottom-0 w-full bg-blue-700/80 text-white text-center py-3 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-sm px-2">{item.text}</p>
-              </div>
-              {/* Hide the default overlay as we have a new hover effect */}
-              {activeIndex === index && (
-                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white text-base text-center px-6 transition-opacity duration-300 opacity-100">
-                  <p className="animate-fade-in-text">{item.text}</p>
+              {Array.from({ length: totalSlides }, (_, slideIndex) => (
+                <div key={slideIndex} className="w-full flex-shrink-0">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                    {galleryImages
+                      .slice(slideIndex * itemsPerSlide, (slideIndex + 1) * itemsPerSlide)
+                      .map((item, index) => {
+                        const globalIndex = slideIndex * itemsPerSlide + index;
+                        return (
+                          <div
+                            key={globalIndex}
+                            className="relative rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group"
+                          >
+                            <img
+                              src={item.src}
+                              alt={`galerie-${globalIndex}`}
+                              className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div className="absolute bottom-0 w-full bg-blue-700/80 text-white text-center py-3 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                              <p className="text-sm px-2">{item.text}</p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                  </div>
                 </div>
-              )}
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Navigation Buttons */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl z-10"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl z-10"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          {/* Dots Navigation */}
+          <div className="flex justify-center mt-8 space-x-2">
+            {Array.from({ length: totalSlides }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  currentSlide === index 
+                    ? 'bg-blue-600 w-8' 
+                    : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+              />
+            ))}
+          </div>
         </div>
 
       </div>
@@ -183,8 +276,6 @@ style.innerHTML = `
     animation: fade-up 1s ease forwards;
   }
 
-  .animate-fade-in-text {
-    animation: fade-in 0.5s ease-in-out forwards;
-  }
+
 `;
 document.head.appendChild(style);
