@@ -1,6 +1,6 @@
 import React from "react";
-import image2 from "../assets/image13.jpg";
-import image3 from "../assets/image14.jpg";
+import qsn2 from "../assets/imgs/qsn2.jpg";
+import qsn from "../assets/imgs/qsn.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function Presentation() {
@@ -13,7 +13,7 @@ export default function Presentation() {
         {/* Image gauche */}
         <div className="w-full">
           <img
-            src={image2}
+            src={qsn2}
             alt="Image gauche"
             className="rounded-xl shadow-md object-cover w-full h-full"
           />
@@ -34,7 +34,7 @@ export default function Presentation() {
         {/* Image droite */}
         <div className="w-full">
           <img
-            src={image3}
+            src={qsn}
             alt="Image droite"
             className="rounded-xl shadow-md object-cover w-full h-full"
           />

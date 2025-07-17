@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import image1 from "../assets/image1.jpg";
-import image2 from "../assets/image2.jpg";
+// import image1 from "../assets/image1.jpg";
+
 import image3 from "../assets/image3.jpg";
-import image4 from "../assets/image4.jpg";
-import image5 from "../assets/image5.png";
-import image6 from "../assets/image6.png";
+// import image4 from "../assets/image4.jpg";
+import qsn from "../assets/imgs/qsn.jpg";
+// import image5 from "../assets/image5.png";
+
 import imagenum from "../assets/imagenum.jpg";
-import logo from "../assets/logo.png";
+import num1 from "../assets/imgs/num1.jpg";
+import num2 from "../assets/imgs/num2.jpg";
+
+
+
+
+
+
+
 
 export default function AcademieNajm() {
   const { t } = useTranslation();
@@ -45,6 +54,7 @@ export default function AcademieNajm() {
           alt={t("academieNajm.header.title")}
           className="absolute inset-0 w-full h-full object-cover opacity-100"
         />
+        
         <div className="absolute inset-0 bg-blue-900/50" />
         <div className="relative z-10 text-center px-4 max-w-5xl">
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 drop-shadow-sm leading-tight text-white">
@@ -59,19 +69,31 @@ export default function AcademieNajm() {
       {/* Sections */}
       <main className="max-w-7xl mx-auto px-6 py-8 space-y-4">
         {sections.map((section, idx) => {
-          const imageMap = [image1, image4, image5];
+          const imageMap = [num2, qsn, num1];
           return (
             <section
               key={idx}
               className={`relative flex flex-col md:flex-row items-center gap-4 p-4 rounded-2xl shadow-xl bg-blue-950 text-gray-200 ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
             >
-              <div className="md:w-1/2 w-full flex-shrink-0 relative group rounded-xl overflow-hidden shadow-2xl border border-gray-700">
-                <img
-                  src={imageMap[idx]}
-                  alt={section.alt}
-                  className="w-full h-80 object-cover rounded-xl transform transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent rounded-xl"></div>
+              <div className="md:w-1/2 w-full flex-shrink-0 space-y-4">
+                <div className="relative group rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+                  <img
+                    src={imageMap[idx]}
+                    alt={section.alt}
+                    className="w-full h-80 object-cover rounded-xl transform transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent rounded-xl"></div>
+                </div>
+                {idx === 0 && (
+                  <div className="relative group rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+                    <img
+                      src={num1}
+                      alt="Transformation numérique - Image complémentaire"
+                      className="w-full h-80 object-cover rounded-xl transform transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent rounded-xl"></div>
+                  </div>
+                )}
               </div>
               <div className="md:w-1/2 w-full flex flex-col justify-center text-left">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight relative">

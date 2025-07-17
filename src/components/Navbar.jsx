@@ -99,12 +99,13 @@
 // }
 import { Link } from 'react-router-dom';
 import logo2 from '../assets/logo2.png';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
 
   const { t, i18n } = useTranslation();
 
@@ -112,9 +113,57 @@ export default function Navbar() {
     i18n.changeLanguage(lang);
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    setLanguageMenuOpen(false);
-    setIsMenuOpen(false); // ferme le menu mobile aussi
+    closeMobileMenu(); // ferme tous les menus
   };
+
+  // Fonction pour fermer le menu mobile
+  const closeMobileMenu = () => {
+    setIsMenuOpen(false);
+    setLanguageMenuOpen(false);
+  };
+
+  // Effect pour fermer le menu mobile avec diverses interactions
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        closeMobileMenu();
+      }
+    };
+
+    const handleEscapeKey = (event) => {
+      if (event.key === 'Escape') {
+        closeMobileMenu();
+      }
+    };
+
+    const handleScroll = () => {
+      if (isMenuOpen) {
+        closeMobileMenu();
+      }
+    };
+
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) { // lg breakpoint
+        closeMobileMenu();
+      }
+    };
+
+    // Ajouter les event listeners
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleEscapeKey);
+      document.addEventListener('scroll', handleScroll);
+      window.addEventListener('resize', handleResize);
+    }
+
+    // Nettoyer les event listeners
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscapeKey);
+      document.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isMenuOpen]);
 
   // get the current language from i18n
   const currentLanguage = i18n.language || 'fr';
@@ -232,21 +281,45 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Burger Button (mobile) */}
+        {/* Burger Button (mobile) avec animation croix */}
         <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden text-white"
+          onClick={() => {
+            if (isMenuOpen) {
+              closeMobileMenu();
+            } else {
+              setIsMenuOpen(true);
+            }
+          }}
+          className="lg:hidden text-white p-2 relative w-10 h-10 focus:outline-none hover:bg-white/10 rounded-lg transition-all duration-200 z-50"
+          aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+          <div className="w-6 h-6 relative flex flex-col justify-center items-center pointer-events-none">
+            {/* Ligne du haut */}
+            <span
+              className={`block h-0.5 w-6 bg-current rounded-full transform transition-all duration-300 ease-in-out ${
+                isMenuOpen ? 'rotate-45 translate-y-1.5' : '-translate-y-1.5'
+              }`}
+            />
+            {/* Ligne du milieu */}
+            <span
+              className={`block h-0.5 w-6 bg-current rounded-full transform transition-all duration-300 ease-in-out ${
+                isMenuOpen ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
+              }`}
+            />
+            {/* Ligne du bas */}
+            <span
+              className={`block h-0.5 w-6 bg-current rounded-full transform transition-all duration-300 ease-in-out ${
+                isMenuOpen ? '-rotate-45 -translate-y-1.5' : 'translate-y-1.5'
+              }`}
+            />
+          </div>
         </button>
       </div>
 
       {/* Menu Mobile */}
       {isMenuOpen && (
         <div
+          ref={mobileMenuRef}
           className="lg:hidden relative bg-black border-t border-gray-700 px-6 pb-4 overflow-hidden"
         >
           {/* ✅ Image en arrière-plan (logo2) */}
@@ -259,7 +332,7 @@ export default function Navbar() {
             <li>
               <Link 
                 to="/" 
-                onClick={() => setIsMenuOpen(false)} 
+                onClick={closeMobileMenu} 
                 className="relative group transition-colors duration-300 block py-2" 
                 onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'}
@@ -273,7 +346,7 @@ export default function Navbar() {
             <li>
               <Link 
                 to="/about-us" 
-                onClick={() => setIsMenuOpen(false)} 
+                onClick={closeMobileMenu} 
                 className="relative group transition-colors duration-300 block py-2" 
                 onMouseEnter={(e) => e.target.style.color = '#FCBD18'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'}
@@ -287,7 +360,7 @@ export default function Navbar() {
             <li>
               <Link 
                 to="/Axe" 
-                onClick={() => setIsMenuOpen(false)} 
+                onClick={closeMobileMenu} 
                 className="relative group transition-colors duration-300 block py-2" 
                 onMouseEnter={(e) => e.target.style.color = '#673D98'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'}
@@ -301,7 +374,7 @@ export default function Navbar() {
             <li>
               <Link 
                 to="/project" 
-                onClick={() => setIsMenuOpen(false)} 
+                onClick={closeMobileMenu} 
                 className="relative group transition-colors duration-300 block py-2" 
                 onMouseEnter={(e) => e.target.style.color = '#FCBD18'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'}
@@ -315,7 +388,7 @@ export default function Navbar() {
             <li>
               <Link 
                 to="/academie-najm" 
-                onClick={() => setIsMenuOpen(false)} 
+                onClick={closeMobileMenu} 
                 className="relative group transition-colors duration-300 block py-2" 
                 onMouseEnter={(e) => e.target.style.color = '#56B04A'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'}
@@ -329,7 +402,7 @@ export default function Navbar() {
             <li>
               <Link 
                 to="/galerie" 
-                onClick={() => setIsMenuOpen(false)} 
+                onClick={closeMobileMenu} 
                 className="relative group transition-colors duration-300 block py-2" 
                 onMouseEnter={(e) => e.target.style.color = '#2D7FC1'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'}
@@ -343,7 +416,7 @@ export default function Navbar() {
             <li>
               <Link 
                 to="/contact" 
-                onClick={() => setIsMenuOpen(false)} 
+                onClick={closeMobileMenu} 
                 className="relative group transition-colors duration-300 block py-2" 
                 onMouseEnter={(e) => e.target.style.color = '#FCBD18'} 
                 onMouseLeave={(e) => e.target.style.color = 'white'}
