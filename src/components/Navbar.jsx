@@ -118,6 +118,7 @@ export default function Navbar() {
 
   // Fonction pour fermer le menu mobile
   const closeMobileMenu = () => {
+    console.log('closeMobileMenu called'); // Debug
     setIsMenuOpen(false);
     setLanguageMenuOpen(false);
   };
@@ -125,7 +126,13 @@ export default function Navbar() {
   // Effect pour fermer le menu mobile avec diverses interactions
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+      // Vérifier si le clic est en dehors du menu ET ne vient pas du bouton burger
+      const burgerButton = document.querySelector('[data-burger-button]');
+      const isClickOnBurger = burgerButton && burgerButton.contains(event.target);
+      
+      if (mobileMenuRef.current && 
+          !mobileMenuRef.current.contains(event.target) && 
+          !isClickOnBurger) {
         closeMobileMenu();
       }
     };
@@ -283,12 +290,12 @@ export default function Navbar() {
 
         {/* Burger Button (mobile) avec animation croix */}
         <button
-          onClick={() => {
-            if (isMenuOpen) {
-              closeMobileMenu();
-            } else {
-              setIsMenuOpen(true);
-            }
+          data-burger-button
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Burger clicked, isMenuOpen:', isMenuOpen); // Debug
+            setIsMenuOpen(!isMenuOpen);
           }}
           className="lg:hidden text-white p-2 relative w-10 h-10 focus:outline-none hover:bg-white/10 rounded-lg transition-all duration-200 z-50"
           aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
