@@ -379,6 +379,8 @@
         "paramedicaux": "Paramedical services",
         "education": "Education",
         "search_placeholder": "Search by name...",
+        "available_projects": "Available projects",
+        "page_of": "of {{totalPages}} pages",
         "popup": {
             "contact": "Contact",
             "about": "About",

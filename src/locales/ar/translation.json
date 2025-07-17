@@ -373,6 +373,8 @@
         "paramedicaux": "خدمات شبه طبية",
         "education": "التعليم",
         "search_placeholder": "البحث بالاسم...",
+        "available_projects": "المشاريع المتاحة",
+        "page_of": "من {{totalPages}} صفحات",
         "popup": {
             "contact": "اتصال",
             "about": "حول",

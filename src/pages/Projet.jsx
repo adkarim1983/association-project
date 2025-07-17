@@ -68,32 +68,9 @@ export default function Projet() {
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 xl:grid-cols-4 gap-8">
-          {/* Sidebar - Filtres et recherche */}
+          {/* Sidebar - Filtres */}
           <div className="xl:col-span-1 space-y-6">
-            {/* Barre de recherche */}
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </div>
-                <h2 className="text-lg font-semibold text-slate-800 ml-3" dir="auto">Rechercher</h2>
-              </div>
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder={t("projects.search_placeholder")}
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-4 py-3 pl-10 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/70 backdrop-blur-sm"
-                  dir="auto"
-                />
-                <svg className="absolute left-3 top-3.5 h-5 w-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-            </div>
+
 
             {/* Filtres Catégorie */}
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20">
@@ -174,110 +151,7 @@ export default function Projet() {
               </div>
             </div>
 
-            {/* Carte compacte */}
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                  </svg>
-                </div>
-                <h2 className="text-lg font-semibold text-slate-800 ml-3">Localisation</h2>
-              </div>
-              <div className="h-64 w-full rounded-xl overflow-hidden border border-slate-200 relative z-0">
-                <MapContainer
-                  center={[33.589886, -7.534892]}
-                  zoom={13}
-                  scrollWheelZoom={false}
-                  className="h-full w-full z-0"
-                >
-                  <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                  />
-                  {projectsData.map((project, index) => {
-                    const offset = 0.001;
-                    const adjustedLat = project.lat + (index % 3) * offset;
-                    const adjustedLng = project.lng + (Math.floor(index / 3) % 3) * offset;
-                    
-                    return (
-                      <Marker key={project.id} position={[adjustedLat, adjustedLng]}>
-                        <Popup maxWidth={380} className="custom-popup">
-                          <div className="space-y-2 text-sm max-w-sm" dir="auto">
-                            <div className="flex items-center space-x-2" dir="auto">
-                              <img 
-                                src={project.image} 
-                                alt={t(project.name)}
-                                className="w-14 h-14 object-cover rounded-lg shadow-sm"
-                              />
-                              <div className="flex-1">
-                                <h3 className="text-blue-700 font-bold text-sm leading-tight" dir="auto">
-                                  {t(project.name)}
-                                </h3>
-                                <p className="text-gray-600 text-xs" dir="auto">
-                                  {t(project.category)}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-2 space-y-1" dir="auto">
-                              <h4 className="font-semibold text-gray-800 text-xs mb-1 flex items-center" dir="auto">
-                                <span className="mr-1">📋</span> {t("projects.popup.contact", "Contact")}
-                              </h4>
-                              
-                              {project.phone && (
-                                <div className="flex items-center space-x-1" dir="auto">
-                                  <span className="text-green-600 text-sm">📞</span>
-                                  <span className="text-gray-700 text-xs">{t("projects.phone_label", "Téléphone")}:</span>
-                                  <a href={`tel:${project.phone}`} className="text-green-600 hover:text-green-800 text-xs font-medium" dir="ltr">
-                                    {project.phone}
-                                  </a>
-                                </div>
-                              )}
-                              
-                              {project.email && (
-                                <div className="flex items-center space-x-1" dir="auto">
-                                  <span className="text-blue-600 text-sm">📧</span>
-                                  <span className="text-gray-700 text-xs">{t("projects.email_label", "Email")}:</span>
-                                  <a href={`mailto:${project.email}`} className="text-blue-600 hover:text-blue-800 text-xs font-medium break-all" dir="ltr">
-                                    {project.email}
-                                  </a>
-                                </div>
-                              )}
-                              
-                              {project.address && (
-                                <div className="flex items-start space-x-1" dir="auto">
-                                  <span className="text-red-600 text-sm">📍</span>
-                                  <span className="text-gray-700 text-xs">{t("projects.address_label", "Adresse")}:</span>
-                                  <p className="text-gray-700 text-xs leading-tight flex-1">{t(project.address)}</p>
-                                </div>
-                              )}
-                              
-                              {project.hours && (
-                                <div className="flex items-center space-x-1" dir="auto">
-                                  <span className="text-purple-600 text-sm">🕒</span>
-                                  <span className="text-gray-700 text-xs">{t("projects.hours_label", "Horaires")}:</span>
-                                  <p className="text-gray-700 text-xs">{project.hours}</p>
-                                </div>
-                              )}
-                              
-                              {project.website && (
-                                <div className="flex items-center space-x-1" dir="auto">
-                                  <span className="text-indigo-600 text-sm">🌐</span>
-                                  <span className="text-gray-700 text-xs">{t("projects.website_label", "Site Web")}:</span>
-                                  <a href={project.website} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 text-xs font-medium" dir="ltr">
-                                    {project.website}
-                                  </a>
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                        </Popup>
-                      </Marker>
-                    );
-                  })}
-                </MapContainer>
-              </div>
-            </div>
+
           </div>
 
           {/* Contenu principal - Liste des projets */}
@@ -285,48 +159,48 @@ export default function Projet() {
             {/* Barre de statistiques améliorée */}
             <div className="bg-gradient-to-r from-white/90 to-blue-50/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/30 mb-8">
               <div className="flex flex-wrap items-center justify-between gap-4">
-                <div className="flex flex-wrap items-center gap-12">
-                  {/* Nombre de projets */}
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-slate-800">{filteredProjects.length}</div>
-                      <div className="text-sm text-slate-600">Projets disponibles</div>
-                    </div>
+                {/* Nombre de projets - à gauche */}
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
                   </div>
-
-                  {/* Pagination */}
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 4v10a1 1 0 001 1h8a1 1 0 001-1V8M7 8h10M7 8L5 6m2 2l2-2" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-lg font-semibold text-slate-800">Page {currentPage}</div>
-                      <div className="text-sm text-slate-600">sur {totalPages} pages</div>
-                    </div>
-                  </div>
-
-                  {/* Total des projets */}
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-lg font-semibold text-slate-800">{projectsData.length}</div>
-                      <div className="text-sm text-slate-600">Total projets</div>
-                    </div>
+                  <div>
+                    <div className="text-2xl font-bold text-slate-800">{filteredProjects.length}</div>
+                    <div className="text-sm text-slate-600">{t("projects.available_projects", "Projets disponibles")}</div>
                   </div>
                 </div>
 
+                {/* Barre de recherche - au milieu */}
+                <div className="flex-1 max-w-md mx-4">
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder={t("projects.search_placeholder")}
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full px-4 py-2 pl-10 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/70 backdrop-blur-sm"
+                      dir="auto"
+                    />
+                    <svg className="absolute left-3 top-2.5 h-5 w-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                </div>
 
+                {/* Pagination - à droite */}
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 4v10a1 1 0 001 1h8a1 1 0 001-1V8M7 8h10M7 8L5 6m2 2l2-2" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="text-lg font-semibold text-slate-800">Page {currentPage}</div>
+                    <div className="text-sm text-slate-600">{t("projects.page_of", "sur {{totalPages}} pages", {totalPages})}</div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -368,13 +242,13 @@ export default function Projet() {
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                         <span className="text-sm text-slate-600" dir="auto">
-                          <span className="font-medium">Catégorie:</span> {t(p.category)}
+                          <span className="font-medium">{t("projects.category_label", "Catégorie")}:</span> {t(p.category)}
                         </span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
                         <span className="text-sm text-slate-600" dir="auto">
-                          <span className="font-medium">Localisation:</span> {t(p.location)}
+                          <span className="font-medium">{t("projects.location_label", "Localisation")}:</span> {t(p.location)}
                         </span>
                       </div>
                     </div>
@@ -476,6 +350,112 @@ export default function Projet() {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+
+        {/* Section Carte Large en bas */}
+        <div className="mt-16 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20">
+          <div className="flex items-center mb-6">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#56B04A' }}>
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-bold text-slate-800 ml-4">Localisation des projets</h2>
+          </div>
+          
+          <div className="h-[500px] w-full rounded-xl overflow-hidden border border-slate-200 relative z-0">
+            <MapContainer
+              center={[33.589886, -7.534892]}
+              zoom={13}
+              scrollWheelZoom={true}
+              className="h-full w-full z-0"
+            >
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              />
+              {projectsData.map((project, index) => {
+                const offset = 0.001;
+                const adjustedLat = project.lat + (index % 3) * offset;
+                const adjustedLng = project.lng + (Math.floor(index / 3) % 3) * offset;
+                
+                return (
+                  <Marker key={project.id} position={[adjustedLat, adjustedLng]}>
+                    <Popup maxWidth={400} className="custom-popup">
+                      <div className="space-y-3 text-sm max-w-sm" dir="auto">
+                        <div className="flex items-center space-x-3" dir="auto">
+                          <img 
+                            src={project.image} 
+                            alt={t(project.name)}
+                            className="w-16 h-16 object-cover rounded-lg shadow-sm"
+                          />
+                          <div className="flex-1">
+                            <h3 className="text-blue-700 font-bold text-base leading-tight" dir="auto">
+                              {t(project.name)}
+                            </h3>
+                            <p className="text-gray-600 text-sm" dir="auto">
+                              {t(project.category)}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-3 space-y-2" dir="auto">
+                          <h4 className="font-semibold text-gray-800 text-sm mb-2 flex items-center" dir="auto">
+                            <span className="mr-2">📋</span> {t("projects.popup.contact", "Contact")}
+                          </h4>
+                          
+                          {project.phone && (
+                            <div className="flex items-center space-x-2" dir="auto">
+                              <span className="text-green-600 text-lg">📞</span>
+                              <span className="text-gray-700 text-sm">{t("projects.phone_label", "Téléphone")}:</span>
+                              <a href={`tel:${project.phone}`} className="text-green-600 hover:text-green-800 text-sm font-medium" dir="ltr">
+                                {project.phone}
+                              </a>
+                            </div>
+                          )}
+                          
+                          {project.email && (
+                            <div className="flex items-center space-x-2" dir="auto">
+                              <span className="text-blue-600 text-lg">📧</span>
+                              <span className="text-gray-700 text-sm">{t("projects.email_label", "Email")}:</span>
+                              <a href={`mailto:${project.email}`} className="text-blue-600 hover:text-blue-800 text-sm font-medium break-all" dir="ltr">
+                                {project.email}
+                              </a>
+                            </div>
+                          )}
+                          
+                          {project.address && (
+                            <div className="flex items-start space-x-2" dir="auto">
+                              <span className="text-red-600 text-lg">📍</span>
+                              <span className="text-gray-700 text-sm">{t("projects.address_label", "Adresse")}:</span>
+                              <p className="text-gray-700 text-sm leading-tight flex-1">{t(project.address)}</p>
+                            </div>
+                          )}
+                          
+                          {project.hours && (
+                            <div className="flex items-center space-x-2" dir="auto">
+                              <span className="text-purple-600 text-lg">🕒</span>
+                              <span className="text-gray-700 text-sm">{t("projects.hours_label", "Horaires")}:</span>
+                              <p className="text-gray-700 text-sm">{project.hours}</p>
+                            </div>
+                          )}
+                          
+                          {project.website && (
+                            <div className="flex items-center space-x-2" dir="auto">
+                              <span className="text-indigo-600 text-lg">🌐</span>
+                              <span className="text-gray-700 text-sm">{t("projects.website_label", "Site Web")}:</span>
+                              <a href={project.website} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 text-sm font-medium" dir="ltr">
+                                {project.website}
+                              </a>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </Popup>
+                  </Marker>
+                );
+              })}
+            </MapContainer>
           </div>
         </div>
       </div>

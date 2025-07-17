@@ -368,7 +368,7 @@
     "all_categories": "Toutes les catégories",
     "all_zones": "Toutes les zones",
     "category_label": "Catégorie",
-    "location_label": "Lieu",
+    "location_label": "Localisation",
     "project_not_found": "Projet non trouvé",
     "back_to_list": "Retour à la liste des projets",
     "details_title": "Détails",
@@ -398,6 +398,8 @@
     "paramedicaux": "Services paramédicaux",
     "education": "Éducation",
     "search_placeholder": "Rechercher par nom...",
+    "available_projects": "Projets disponibles",
+    "page_of": "sur {{totalPages}} pages",
     "popup": {
       "contact": "Contact",
       "about": "À propos",
