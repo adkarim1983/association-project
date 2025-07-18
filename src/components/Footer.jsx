@@ -24,7 +24,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h3 className="text-xl font-semibold mb-3">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-3 text-center md:text-left leading-tight">
                         <FontAwesomeIcon icon={faLocationDot} className="text-red-500 mr-2" />
                         {t('footer.address_title')}
                     </h3>
@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h3 className="text-xl font-semibold mb-3">{t('footer.contact_title')}</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold mb-3 text-center md:text-left leading-tight">{t('footer.contact_title')}</h3>
                     <p className="text-base text-white">
                         <FontAwesomeIcon icon={faPhoneVolume} className="text-green-500 mr-2" />
                         <span dir="ltr">{t('footer.phone1')}</span>

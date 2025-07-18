@@ -19,7 +19,7 @@ export default function PlatformObjectives() {
     return (
         <section className="bg-white py-16 px-6">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold text-center text-slate-800 mb-10">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-slate-800 mb-10 leading-tight">
                     Objectifs et composantes de la plateforme
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -28,7 +28,7 @@ export default function PlatformObjectives() {
                             key={index}
                             className="bg-blue-50 rounded-xl p-6 shadow hover:shadow-lg transition-shadow"
                         >
-                            <h3 className="text-xl font-semibold text-blue-700 mb-2">{item.title}</h3>
+                            <h3 className="text-lg sm:text-xl font-semibold text-blue-700 mb-2 text-center md:text-left leading-tight">{item.title}</h3>
                             <p className="text-gray-700">{item.description}</p>
                         </div>
                     ))}

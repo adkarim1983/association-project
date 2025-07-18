@@ -51,7 +51,7 @@ export default function CarouselActivites() {
   return (
     <section className="py-16 mx-1 sm:mx-2 md:mx-4 rounded-2xl" style={{ backgroundColor: '#EFF6FF' }}>
       <div className="max-w-7xl mx-auto px-4 relative">
-        <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center">
+        <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-blue-900 mb-12 text-center leading-tight">
           {t("activities.title")}
         </h2>
 
@@ -77,7 +77,7 @@ export default function CarouselActivites() {
                   className="w-full h-72 object-cover"
                 />
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-blue-900 mb-4 text-center">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-900 mb-4 text-center leading-tight">
                     {activity.title}
                   </h3>
                   <p className="text-lg text-gray-600 text-justify leading-relaxed">{activity.description}</p>
@@ -109,7 +109,7 @@ export default function CarouselActivites() {
                   className="w-full h-56 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-4 text-center md:text-left leading-tight">
                     {activity.title}
                   </h3>
                   <p className="text-base text-gray-600 leading-relaxed">{activity.description}</p>

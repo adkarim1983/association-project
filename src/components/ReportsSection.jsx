@@ -29,7 +29,7 @@ export default function ReportsSection() {
   return (
     <section className="py-16 mx-2 sm:mx-4 md:mx-6 lg:m-[25px] rounded-2xl" style={{ backgroundColor: '#EFF6FF' }}>
       <div className="max-w-7xl mx-auto px-2 sm:px-4 relative">
-        <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
+        <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-center text-blue-900 mb-12 leading-tight">
           {t('reports.title')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

@@ -202,7 +202,7 @@ export default function ValeursEtPrincipes() {
       <section className="bg-white py-16 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2 text-gray-800">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-blue-800 mb-6 text-left">
+            <h2 className="text-lg sm:text-xl md:text-4xl font-extrabold text-blue-800 mb-6 text-center md:text-left leading-tight">
               {t("objectifs.titre")}
             </h2>
             <div className="text-lg leading-relaxed space-y-5 text-justify">
@@ -220,7 +220,7 @@ export default function ValeursEtPrincipes() {
 
       {/* Valeurs */}
       <section className="py-5 px-6 bg-gray-100 mx-6 rounded-lg">
-        <h2 className="text-center text-3xl font-bold text-blue-800 mb-6">
+                      <h2 className="text-center text-lg sm:text-xl md:text-3xl font-bold text-blue-800 mb-6 leading-tight">
           {t("valeurs.titre")}
         </h2>
         <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -252,7 +252,7 @@ export default function ValeursEtPrincipes() {
       <section className="bg-white py-16 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
           <div className="flex flex-col justify-between text-gray-800">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-blue-800 mb-6 text-left">
+            <h2 className="text-lg sm:text-xl md:text-4xl font-extrabold text-blue-800 mb-6 text-center md:text-left leading-tight">
               {t("vision.titre")}
             </h2>
             <div className="text-lg leading-relaxed space-y-4 text-justify">
@@ -272,7 +272,7 @@ export default function ValeursEtPrincipes() {
       {/* Organigramme */}
       <section className="bg-white pb-10 px-6 mt-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-blue-800 mb-10">
+                        <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-blue-800 mb-10 text-center md:text-left leading-tight">
             {t("organigramme.titre")}
           </h2>
           <img src={organigramme} alt="Organigramme" className="mx-auto max-w-full h-auto rounded shadow" />

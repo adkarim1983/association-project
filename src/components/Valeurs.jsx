@@ -10,7 +10,7 @@ function Valeurs() {
 
   return (
     <section className="bg-gray-100 py-16 mx-6 px-6 text-center rounded-2xl">
-      <h2 className="text-3xl font-bold mb-12 text-gray-800">Nos Valeurs</h2>
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-12 text-gray-800 text-center md:text-left leading-tight">Nos Valeurs</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {valeurs.map((valeur, index) => (
           <div
@@ -18,7 +18,7 @@ function Valeurs() {
             className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-500 transform hover:-translate-y-2"
           >
             <div className="text-4xl mb-4">{valeur.emoji}</div>
-            <h3 className="text-xl font-semibold mb-2">{valeur.titre}</h3>
+                          <h3 className="text-lg sm:text-xl font-semibold mb-2 text-center md:text-left leading-tight">{valeur.titre}</h3>
             <p className="text-gray-600 text-sm">{valeur.texte}</p>
           </div>
         ))}

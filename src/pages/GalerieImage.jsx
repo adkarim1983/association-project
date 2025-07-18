@@ -79,7 +79,7 @@ export default function GalerieImage() {
   return (
     <div className="px-8 py-12 bg-white min-h-screen font-sans text-gray-800 animate-fade-in">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-center text-gray-900 mb-16 relative pb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-6xl font-extrabold text-center text-gray-900 mb-16 relative pb-4 leading-tight">
           {t("gallery.title")}
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-blue-600 rounded-full"></span>
         </h1>
@@ -123,7 +123,7 @@ export default function GalerieImage() {
         {/* Troisième section - Programme + image */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16 animate-fade-up border-b pb-12 border-gray-200">
           <div className="text-gray-700 text-lg leading-relaxed text-justify">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">{t("gallery.program_title")}</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-gray-900 text-center md:text-left leading-tight">{t("gallery.program_title")}</h2>
             <ul className="list-disc list-inside space-y-3 text-justify">
               <li>{t("gallery.program_web")}</li>
               <li>{t("gallery.program_design")}</li>
@@ -147,7 +147,7 @@ export default function GalerieImage() {
             </div>
           </div>
           <div className="text-gray-700 text-lg leading-relaxed text-justify order-1 md:order-2">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">{t("gallery.training_title")}</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-gray-900 text-center md:text-left leading-tight">{t("gallery.training_title")}</h2>
             <p className="mb-6">
               {t("gallery.training_p1")}
             </p>
@@ -160,7 +160,7 @@ export default function GalerieImage() {
         {/* Cinquième section - Image finale + résumé */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20 animate-fade-up">
           <div className="text-gray-700 text-lg leading-relaxed text-justify">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">{t("gallery.success_title")}</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-gray-900 text-center md:text-left leading-tight">{t("gallery.success_title")}</h2>
             <p>
               {t("gallery.success_p")}
             </p>
@@ -173,7 +173,7 @@ export default function GalerieImage() {
           </div>
         </div>
         {/* Section Galerie interactive finale */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mt-24 mb-12 relative pb-4">
+        <h2 className="text-xl sm:text-2xl md:text-5xl font-extrabold text-center text-gray-900 mt-24 mb-12 relative pb-4 leading-tight">
           {t("gallery.gallery_highlights")}
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-blue-600 rounded-full"></span>
         </h2>

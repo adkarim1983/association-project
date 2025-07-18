@@ -57,7 +57,7 @@ export default function Projet() {
           <div className="w-full h-full bg-gradient-to-br from-white/5 via-transparent to-white/5"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent" dir="auto">
+          <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent text-center md:text-left leading-tight" dir="auto">
             {t("projects.title")}
           </h1>
           <p className="text-xl md:text-2xl text-blue-200 font-light max-w-3xl mx-auto leading-relaxed">
@@ -228,7 +228,7 @@ export default function Projet() {
                   
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors line-clamp-2" dir="auto">
+                      <h3 className="text-lg sm:text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors line-clamp-2 text-center md:text-left leading-tight" dir="auto">
                         {t(p.name)}
                       </h3>
                       <div className="flex-shrink-0 ml-2">
@@ -361,7 +361,7 @@ export default function Projet() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
               </svg>
             </div>
-            <h2 className="text-2xl font-bold text-slate-800 ml-4">Localisation des projets</h2>
+                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 ml-4 text-center md:text-left leading-tight">Localisation des projets</h2>
           </div>
           
           <div className="h-[500px] w-full rounded-xl overflow-hidden border border-slate-200 relative z-0">

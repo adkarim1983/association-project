@@ -70,7 +70,7 @@ export default function Hero() {
 
         {/* Texte */}
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 md:p-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-2 text-white">
+                          <h2 className="text-lg sm:text-xl md:text-4xl lg:text-5xl font-extrabold mb-2 text-white text-center md:text-left leading-tight">
             {title}
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-white drop-shadow-md">

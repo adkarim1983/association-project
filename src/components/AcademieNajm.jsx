@@ -57,7 +57,7 @@ export default function AcademieNajm() {
         
         <div className="absolute inset-0 bg-blue-900/50" />
         <div className="relative z-10 text-center px-4 max-w-5xl">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 drop-shadow-sm leading-tight text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-7xl font-extrabold tracking-tight mb-6 drop-shadow-sm leading-tight text-white text-center md:text-left">
             {t("academieNajm.header.title")}
           </h1>
           <p className="text-xl md:text-2xl font-light italic drop-shadow-sm opacity-90 text-white">
@@ -95,10 +95,10 @@ export default function AcademieNajm() {
                   </div>
                 )}
               </div>
-              <div className="md:w-1/2 w-full flex flex-col justify-center text-left">
-                <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight relative">
+              <div className="md:w-1/2 w-full flex flex-col justify-center text-center md:text-left">
+                <h2 className="text-xl sm:text-2xl md:text-5xl font-extrabold text-white mb-6 leading-tight relative">
                   {section.title}
-                  <span className="absolute left-0 -bottom-3 w-20 h-1 bg-blue-700 rounded-full"></span>
+                  <span className="absolute left-1/2 md:left-0 -bottom-3 w-20 h-1 bg-blue-700 rounded-full transform -translate-x-1/2 md:translate-x-0"></span>
                 </h2>
                 <p className="text-gray-300 whitespace-pre-line leading-relaxed text-base mb-6 text-justify">
                   {section.text}
@@ -119,7 +119,7 @@ export default function AcademieNajm() {
         {/* Section: Gestion et Administration des Plateformes d'Orientation */}
         <section className="py-4 px-6 bg-gray-50 mt-0 text-gray-800 shadow-inner-xl">
           <div className="mt-20 max-w-7xl mx-auto text-center">
-            <h2 className="text-5xl sm:text-6xl font-extrabold mb-8 text-gray-900">
+            <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
               {t("academieNajm.platformManagement.title")}
               <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
             </h2>
@@ -133,7 +133,7 @@ export default function AcademieNajm() {
                 <div className="text-5xl text-blue-700 mb-4">
                     <i className={index === 0 ? "fas fa-handshake" : index === 1 ? "fas fa-comments" : "fas fa-route"}></i>
                 </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">{card.title}</h3>
+                  <h3 className="text-base sm:text-lg md:text-2xl font-semibold mb-4 text-gray-900 text-center leading-tight">{card.title}</h3>
                 <p className="text-lg text-center leading-relaxed text-gray-700 text-justify">
                     {card.text}
                 </p>
@@ -141,7 +141,7 @@ export default function AcademieNajm() {
               ))}
             </div>
 
-            <h3 className="text-4xl font-bold mb-8 text-gray-900">{t("academieNajm.platformManagement.statsTitle")}</h3>
+                         <h3 className="text-lg sm:text-xl md:text-4xl font-bold mb-8 text-gray-900 text-center leading-tight">{t("academieNajm.platformManagement.statsTitle")}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {platformManagementStats.map((stat, index) => (
                 <div key={index} className="bg-blue-700 text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
@@ -156,7 +156,7 @@ export default function AcademieNajm() {
         {/* Section: Renforcement des Compétences Parallèles des Jeunes */}
         <section className="py-4 px-6 bg-gray-100 mt-4 text-gray-800 shadow-inner-xl">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-5xl sm:text-6xl font-extrabold mb-8 text-gray-900">
+            <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
               {t("academieNajm.skillReinforcement.title")}
               <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
             </h2>
@@ -170,7 +170,7 @@ export default function AcademieNajm() {
                 <div className="text-5xl text-blue-700 mb-4">
                     <i className={index === 0 ? "fas fa-brain" : index === 1 ? "fas fa-search" : index === 2 ? "fas fa-lightbulb" : "fas fa-users-cog"}></i>
                 </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">{card.title}</h3>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-gray-900 text-center">{card.title}</h3>
                 <p className="text-sm text-center leading-relaxed text-gray-700 text-justify">
                     {card.text}
                 </p>
@@ -183,7 +183,7 @@ export default function AcademieNajm() {
         {/* Section: Renforcement de l'Entrepreneuriat chez les Jeunes */}
         <section className="py-4 px-6 bg-gray-50 mt-4 text-gray-800 shadow-inner-xl">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-5xl sm:text-6xl font-extrabold mb-8 text-gray-900">
+            <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
               {t("academieNajm.entrepreneurship.title")}
               <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
             </h2>
@@ -191,14 +191,14 @@ export default function AcademieNajm() {
               dangerouslySetInnerHTML={{ __html: t("academieNajm.entrepreneurship.text") }}
             />
 
-            <h3 className="text-4xl font-bold mb-8 text-gray-900">{t("academieNajm.entrepreneurship.methodologyTitle")}</h3>
+                         <h3 className="text-lg sm:text-xl md:text-4xl font-bold mb-8 text-gray-900 text-center leading-tight">{t("academieNajm.entrepreneurship.methodologyTitle")}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
               {entrepreneurshipCards.map((card, index) => (
                 <div key={index} className="flex flex-col items-center bg-white text-gray-800 shadow-lg rounded-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-200">
                 <div className="text-5xl text-blue-700 mb-4">
                     <i className={index === 0 ? "fas fa-cogs" : "fas fa-chalkboard-teacher"}></i>
                 </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">{card.title}</h3>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-gray-900 text-center">{card.title}</h3>
                 <p className="text-base text-center leading-relaxed text-gray-700 text-justify">
                     {card.text}
                 </p>
@@ -206,7 +206,7 @@ export default function AcademieNajm() {
               ))}
             </div>
 
-            <h3 className="text-4xl font-bold mb-8 text-gray-900">{t("academieNajm.entrepreneurship.resultsTitle")}</h3>
+                         <h3 className="text-lg sm:text-xl md:text-4xl font-bold mb-8 text-gray-900 text-center leading-tight">{t("academieNajm.entrepreneurship.resultsTitle")}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
               {entrepreneurshipStats.map((stat, index) => (
               <div key={index} className="bg-blue-700 text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
@@ -224,7 +224,7 @@ export default function AcademieNajm() {
         {/* Section: Axe de Soutien à l'Économie Sociale et Solidaire */}
         <section className="py-4 px-6 bg-gray-100 mt-4 text-gray-800 shadow-inner-xl">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-5xl sm:text-6xl font-extrabold mb-8 text-gray-900">
+            <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
               {t("academieNajm.socialEconomy.title")}
               <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
             </h2>
@@ -238,7 +238,7 @@ export default function AcademieNajm() {
                 <div className="text-5xl text-blue-700 mb-4">
                     <i className={index === 0 ? "fas fa-hands-helping" : index === 1 ? "fas fa-chart-line" : index === 2 ? "fas fa-money-bill-wave" : "fas fa-sync-alt"}></i>
                 </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">{card.title}</h3>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-gray-900 text-center">{card.title}</h3>
                 <p className="text-base text-center leading-relaxed text-gray-700 text-justify">
                     {card.text}
                 </p>
@@ -246,7 +246,7 @@ export default function AcademieNajm() {
               ))}
             </div>
 
-            <h3 className="text-4xl font-bold mb-8 text-gray-900">{t("academieNajm.socialEconomy.statsTitle")}</h3>
+                         <h3 className="text-lg sm:text-xl md:text-4xl font-bold mb-8 text-gray-900 text-center leading-tight">{t("academieNajm.socialEconomy.statsTitle")}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {socialEconomyStats.map((stat, index) => (
               <div key={index} className="bg-blue-700 text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
@@ -264,7 +264,7 @@ export default function AcademieNajm() {
         {/* Section: Statistiques de l'Académie Najm pour les Métiers du Numérique */}
         <section className="py-4 px-6 bg-gray-50 mt-4 text-gray-800 shadow-inner-xl">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-5xl sm:text-6xl font-extrabold mb-8 text-gray-900">
+            <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
               {t("academieNajm.digitalAcademyStats.title")}
               <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
             </h2>
@@ -288,7 +288,7 @@ export default function AcademieNajm() {
       {/* Section des objectifs */}
       <section id="programmes" className="bg-gray-50 py-4 mt-4 px-6 sm:px-8 lg:px-10 text-gray-800 shadow-inner-xl">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-5xl sm:text-6xl font-extrabold mb-8 text-gray-900">
+            <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
               {t("academieNajm.objectives.title")}
               <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
             </h2>
@@ -318,15 +318,15 @@ export default function AcademieNajm() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div className="text-gray-800">
-              <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight relative">
-                {t("academieNajm.support.title")}
-                <span className="absolute left-0 -bottom-3 w-20 h-1 bg-blue-700 rounded-full"></span>
-              </h2>
+                             <h2 className="text-lg sm:text-xl md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight relative text-center md:text-left">
+                 {t("academieNajm.support.title")}
+                 <span className="absolute left-1/2 md:left-0 -bottom-3 w-20 h-1 bg-blue-700 rounded-full transform -translate-x-1/2 md:translate-x-0"></span>
+               </h2>
               <p className="mb-8 text-base text-gray-700 leading-relaxed text-justify">
                 {t("academieNajm.support.text")}
               </p>
               <div className="bg-white p-10 rounded-xl shadow-xl border border-gray-200">
-                <h3 className="text-2xl font-semibold mb-6 text-gray-900">{t("academieNajm.support.programIncludes")}</h3>
+                                 <h3 className="text-base sm:text-lg md:text-2xl font-semibold mb-6 text-gray-900 text-center md:text-left leading-tight">{t("academieNajm.support.programIncludes")}</h3>
                 <ul className="space-y-5 text-gray-700">
                   {supportList.map((item, index) => (
                     <li key={index} className="flex items-start">
@@ -356,10 +356,10 @@ export default function AcademieNajm() {
       {/* Section Reconnaissance et ambition nationale */}
       <section className="py-4 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto text-center text-gray-800">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-8">
-            {t("academieNajm.recognition.title")}
-            <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
-          </h2>
+                     <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-8 text-center leading-tight">
+             {t("academieNajm.recognition.title")}
+             <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
+           </h2>
           
           <div className="max-w-5xl mx-auto">
             <p className="text-base text-gray-700 leading-relaxed mb-8 text-justify">
@@ -385,8 +385,28 @@ export default function AcademieNajm() {
         </button>
       )}
 
-      {/* Styles pour animations */}
+      {/* Styles pour animations et limitation des titres */}
       <style>{`
+        .max-2-lines {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        
+        .title-2-lines {
+          max-height: 2.5em;
+          overflow: hidden;
+          line-height: 1.25;
+        }
+        
+        @media (max-width: 640px) {
+          .title-2-lines {
+            max-height: 2.8em;
+            line-height: 1.4;
+          }
+        }
       `}</style>
     </div>
   );

@@ -130,7 +130,7 @@ const { t } = useTranslation();
 
     return (
     <>  <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-xl p-6 mt-25 mb-10">
-  <h2 className="text-2xl font-bold text-indigo-800 mb-4 text-center">
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-indigo-800 mb-4 text-center leading-tight">
     {t("vision_guidelines.title")}
   </h2>
   <p className="text-gray-800 leading-relaxed whitespace-pre-line text-justify">
@@ -145,7 +145,7 @@ const { t } = useTranslation();
       {/* Vidéo */}
 
       <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden p-6 mb-5">
-        <h3 className="text-2xl font-bold text-blue-800 mb-6 text-center">
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-800 mb-6 text-center leading-tight">
           {t("irchad.videoTitle")}
         </h3>
         <div className="rounded-lg overflow-hidden">
@@ -158,7 +158,7 @@ const { t } = useTranslation();
 
       {/* Titre principal et accordéon */}
       <div className="max-w-5xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-center text-indigo-700 mb-10">
+                      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-indigo-700 mb-10 leading-tight">
           {t("irchad.mainTitle")}
         </h1>
 

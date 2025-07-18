@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center ">
             <span className="text-[#155DFC] font-semibold uppercase tracking-wider">{t("contact.stayInTouch")}</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mt-2 mb-4">{t("contact.title")}</h2>
+            <h2 className="text-lg sm:text-xl md:text-5xl font-bold text-slate-800 mt-2 mb-4 text-center md:text-left leading-tight">{t("contact.title")}</h2>
             <div className="w-24 h-1.5 bg-[#155DFC] mx-auto rounded-full mb-6"></div>
             <p className="text-slate-600 max-w-3xl mx-auto text-lg">{t("contact.paragraph")}</p>
           </div>
@@ -22,7 +22,7 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12 mt-12">
             {/* Formulaire */}
             <div className="bg-white p-8 rounded-2xl shadow-xl">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">{t("contact.formTitle")}</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-6 text-center md:text-left leading-tight">{t("contact.formTitle")}</h3>
               <form>
                 {["name", "email", "subject"].map((field) => (
                   <div className="mb-6" key={field}>
@@ -61,7 +61,7 @@ export default function Contact() {
             <div className="space-y-8">
               {/* Informations de contact */}
               <div className="bg-white p-8 rounded-2xl shadow-xl">
-                <h3 className="text-2xl font-bold text-slate-800 mb-6">{t("contact.infoTitle")}</h3>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-6 text-center md:text-left leading-tight">{t("contact.infoTitle")}</h3>
                 <div className="space-y-6">
                   {[
                     {
@@ -97,7 +97,7 @@ export default function Contact() {
 
               {/* Heures d'ouverture */}
               <div className="bg-white p-8 rounded-2xl shadow-xl">
-                <h3 className="text-2xl font-bold text-slate-800 mb-6">{t("contact.hoursTitle")}</h3>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-6 text-center md:text-left leading-tight">{t("contact.hoursTitle")}</h3>
                 <ul className="space-y-4">
                   <li className="flex justify-between items-center pb-4 border-b border-slate-100">
                     <span className="text-slate-600 font-medium">{t("contact.mondayFriday")}:</span>
@@ -116,7 +116,7 @@ export default function Contact() {
 
               {/* Réseaux sociaux */}
               <div className="bg-[#155DFC] p-8 rounded-2xl shadow-xl text-white">
-                <h3 className="text-2xl font-bold mb-4">{t("contact.followUs")}</h3>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-center md:text-left leading-tight">{t("contact.followUs")}</h3>
                 <p className="mb-6">{t("contact.socialText")}</p>
                 {/* Tes icônes sont déjà parfaites */}
                 {/* ... */}
