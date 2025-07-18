@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route } from 'react-router';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
@@ -23,11 +23,16 @@ import AcademieNajm from "./components/AcademieNajm";
 
 function App() {
   const [language, setLanguage] = useState('en');
+  const location = useLocation();
 
   useEffect(() => {
     document.documentElement.lang = language;
     document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
   }, [language]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <>

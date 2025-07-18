@@ -255,8 +255,7 @@ export default function GalerieImage() {
     </div>
 
   );
-}
-const style = document.createElement("style");
+}const style = document.createElement("style");
 style.innerHTML = `
   @keyframes fade-in {
     from { opacity: 0; transform: translateY(20px); }
@@ -276,6 +275,6 @@ style.innerHTML = `
     animation: fade-up 1s ease forwards;
   }
 
-
 `;
 document.head.appendChild(style);
+
