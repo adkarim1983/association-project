@@ -1,0 +1,137 @@
+{
+    "menu": {
+        "accueil": "Accueil",
+        "a_propos": "À propos",
+        "axe": "Axe d'intervention",
+        "projets": "Projets",
+        "contact": "Contact",
+        "galerie": "Galerie",
+        "academie_najm": "Académie Najm"
+    },
+    "projects": {
+        "title": "Projets réalisés à la Préfecture des Arrondissements Moulay Rachid",
+        "subtitle": "Découvrez nos projets d'inclusion économique et d'autonomisation des jeunes",
+        "categories": {
+            "restauration": "Restauration",
+            "marketing_digital": "Marketing Digital",
+            "evenementiel": "Événementiel",
+            "design": "Design Graphique",
+            "patisserie": "Pâtisserie",
+            "production_digitale": "Production Digitale",
+            "audio_visuel": "Audio Visuel"
+        },
+        "locations": {
+            "sidi_othmane_admin": "Sidi Othmane - Administratif",
+            "sidi_othmane_industrial": "Sidi Othmane - Zone Industrielle",
+            "moulay_rachid_admin": "Moulay Rachid - Administratif",
+            "moulay_rachid_industrial": "Moulay Rachid - Industriel",
+            "el_harouiyine_admin": "El Harouiyine - Administratif",
+            "el_rajae_admin": "El Rajae - Administratif",
+            "mabrouka_admin": "Mabrouka - Administratif",
+            "sadri_admin": "Sadri - Administratif",
+            "hay_el_rajae": "Hay El Rajae"
+        },
+        "list": {
+            "planet_food": {
+                "name": "PLANET FOOD",
+                "address": "123 Rue de la Food, Casablanca",
+                "description": "Le meilleur de la street food dans un cadre convivial."
+            },
+            "alphacom": {
+                "name": "Alphacom",
+                "address": "456 Avenue du Digital, Casablanca",
+                "description": "Agence de marketing digital pour booster votre présence en ligne."
+            },
+            "baha_happye_park": {
+                "name": "Baha Happye Park",
+                "address": "789 Boulevard des Loisirs, Casablanca",
+                "description": "Parc de loisirs familial avec activités pour tous les âges."
+            },
+            "pixel_prod": {
+                "name": "Pixel Prod",
+                "address": "321 Rue du Design, Casablanca",
+                "description": "Studio de design graphique et production visuelle."
+            },
+            "az_event_733": {
+                "name": "AZ Event 733",
+                "address": "987 Place de la Fête, Casablanca",
+                "description": "Organisation d'événements sur mesure pour professionnels et particuliers."
+            },
+            "erregyby_event": {
+                "name": "ERREGYBY EVENT",
+                "address": "789 Boulevard des Célébrations, Casablanca",
+                "description": "Organisation d'événements d'entreprise et de lancements de produits."
+            },
+            "snack_yacout": {
+                "name": "Snack Yacout",
+                "address": "654 Avenue Industrielle, Casablanca",
+                "description": "Restauration rapide pour les travailleurs de la zone industrielle."
+            },
+            "foratino": {
+                "name": "Foratino",
+                "address": "123 Rue de l'Italie, Casablanca",
+                "description": "Pizzeria et restaurant italien."
+            },
+            "om_ali_food": {
+                "name": "Om Ali Food",
+                "address": "789 Boulevard El Harouiyine, Casablanca",
+                "description": "Spécialités orientales et cuisine maison."
+            },
+            "wafae_el_hana": {
+                "name": "Wafae El Hana",
+                "address": "654 Avenue El Rajae, Casablanca",
+                "description": "Pâtisserie marocaine et orientale."
+            },
+            "doja_event": {
+                "name": "Doja Event",
+                "address": "Sidi Othmane, Casablanca",
+                "description": "Organisation d'événements créatifs et personnalisés."
+            },
+            "taha_prodd": {
+                "name": "Taha Prod",
+                "address": "456 Avenue Média, Casablanca",
+                "description": "Production audiovisuelle et création de contenu multimédia."
+            },
+            "pretty_events": {
+                "name": "Pretty Events",
+                "address": "654 Avenue des Célébrations, Casablanca",
+                "description": "Services de planification d'événements créatifs et élégants."
+            },
+            "snack": {
+                "name": "Snack Rajae",
+                "address": "123 Rue Rajae, Casablanca",
+                "description": "Repas rapides et délicieux dans le quartier Rajae."
+            },
+            "dar_miya": {
+                "name": "Dar Miya",
+                "address": "321 Rue Traditionnelle, Casablanca",
+                "description": "Cuisine marocaine traditionnelle dans une atmosphère chaleureuse."
+            },
+            "la_table_demotion": {
+                "name": "La Table d'Émotion",
+                "address": "456 Avenue Gourmet, Casablanca",
+                "description": "Restaurant gastronomique avec une cuisine émotionnelle."
+            },
+            "kitchen_chaimaa": {
+                "name": "Kitchen Chaimaa",
+                "address": "123 Rue Culinaire, Casablanca",
+                "description": "Cuisine moderne aux saveurs traditionnelles."
+            },
+            "go_event_digilab": {
+                "name": "Go Event DigiLab",
+                "address": "789 Boulevard Innovation, Casablanca",
+                "description": "Marketing digital et solutions événementielles innovantes."
+            },
+            "mamon_foods": {
+                "name": "Mamon Foods",
+                "address": "456 Avenue du Goût, Casablanca",
+                "description": "Produits alimentaires de qualité et services de restauration."
+            },
+            "mohcin_najmi_production": {
+                "name": "Mohcin Najmi Production",
+                "address": "Sidi Othmane, Casablanca",
+                "description": "Production de contenu digital et marketing créatif."
+            }
+        }
+    }
+}

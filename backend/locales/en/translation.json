@@ -1,0 +1,137 @@
+{
+    "menu": {
+        "accueil": "Home",
+        "a_propos": "About",
+        "axe": "Intervention Areas",
+        "projets": "Projects",
+        "contact": "Contact",
+        "galerie": "Gallery",
+        "academie_najm": "Najm Academy"
+    },
+    "projects": {
+        "title": "Projects Implemented in Moulay Rachid Prefecture",
+        "subtitle": "Discover our economic inclusion and youth empowerment projects",
+        "categories": {
+            "restauration": "Restaurant",
+            "marketing_digital": "Digital Marketing",
+            "evenementiel": "Event Management",
+            "design": "Graphic Design",
+            "patisserie": "Pastry",
+            "production_digitale": "Digital Production",
+            "audio_visuel": "Audio Visual"
+        },
+        "locations": {
+            "sidi_othmane_admin": "Sidi Othmane - Administrative",
+            "sidi_othmane_industrial": "Sidi Othmane - Industrial Zone",
+            "moulay_rachid_admin": "Moulay Rachid - Administrative",
+            "moulay_rachid_industrial": "Moulay Rachid - Industrial",
+            "el_harouiyine_admin": "El Harouiyine - Administrative",
+            "el_rajae_admin": "El Rajae - Administrative",
+            "mabrouka_admin": "Mabrouka - Administrative",
+            "sadri_admin": "Sadri - Administrative",
+            "hay_el_rajae": "Hay El Rajae"
+        },
+        "list": {
+            "planet_food": {
+                "name": "PLANET FOOD",
+                "address": "123 Food Street, Casablanca",
+                "description": "The best street food in a friendly atmosphere."
+            },
+            "alphacom": {
+                "name": "Alphacom",
+                "address": "456 Digital Avenue, Casablanca",
+                "description": "Digital marketing agency to boost your online presence."
+            },
+            "baha_happye_park": {
+                "name": "Baha Happye Park",
+                "address": "789 Leisure Boulevard, Casablanca",
+                "description": "Family leisure park with activities for all ages."
+            },
+            "pixel_prod": {
+                "name": "Pixel Prod",
+                "address": "321 Design Street, Casablanca",
+                "description": "Graphic design studio and visual production."
+            },
+            "taha_prodd": {
+                "name": "Taha Prod",
+                "address": "456 Media Avenue, Casablanca",
+                "description": "Audio-visual production and multimedia content creation."
+            },
+            "az_event_733": {
+                "name": "AZ Event 733",
+                "address": "987 Party Place, Casablanca",
+                "description": "Custom event organization for professionals and individuals."
+            },
+            "pretty_events": {
+                "name": "Pretty Events",
+                "address": "654 Celebration Avenue, Casablanca",
+                "description": "Creative and elegant event planning services."
+            },
+            "erregyby_event": {
+                "name": "ERREGYBY EVENT",
+                "address": "789 Celebration Boulevard, Casablanca",
+                "description": "Corporate event organization and product launches."
+            },
+            "snack": {
+                "name": "Snack Rajae",
+                "address": "123 Rajae Street, Casablanca",
+                "description": "Quick and delicious meals in Rajae neighborhood."
+            },
+            "snack_yacout": {
+                "name": "Snack Yacout",
+                "address": "654 Industrial Avenue, Casablanca",
+                "description": "Fast food for industrial zone workers."
+            },
+            "dar_miya": {
+                "name": "Dar Miya",
+                "address": "321 Traditional Street, Casablanca",
+                "description": "Traditional Moroccan cuisine in a warm atmosphere."
+            },
+            "foratino": {
+                "name": "Foratino",
+                "address": "123 Italy Street, Casablanca",
+                "description": "Italian pizzeria and restaurant."
+            },
+            "la_table_demotion": {
+                "name": "La Table d'Emotion",
+                "address": "456 Gourmet Avenue, Casablanca",
+                "description": "Fine dining restaurant with emotional cuisine."
+            },
+            "om_ali_food": {
+                "name": "Om Ali Food",
+                "address": "789 El Harouiyine Boulevard, Casablanca",
+                "description": "Oriental specialties and home cooking."
+            },
+            "kitchen_chaimaa": {
+                "name": "Kitchen Chaimaa",
+                "address": "123 Culinary Street, Casablanca",
+                "description": "Modern kitchen with traditional flavors."
+            },
+            "wafae_el_hana": {
+                "name": "Wafae El Hana",
+                "address": "654 El Rajae Avenue, Casablanca",
+                "description": "Moroccan and oriental pastry."
+            },
+            "go_event_digilab": {
+                "name": "Go Event DigiLab",
+                "address": "789 Innovation Boulevard, Casablanca",
+                "description": "Digital marketing and innovative event solutions."
+            },
+            "doja_event": {
+                "name": "Doja Event",
+                "address": "Sidi Othmane, Casablanca",
+                "description": "Creative and personalized event organization."
+            },
+            "mamon_foods": {
+                "name": "Mamon Foods",
+                "address": "456 Taste Avenue, Casablanca",
+                "description": "Quality food products and catering services."
+            },
+            "mohcin_najmi_production": {
+                "name": "Mohcin Najmi Production",
+                "address": "Sidi Othmane, Casablanca",
+                "description": "Digital content production and creative marketing."
+            }
+        }
+    }
+}

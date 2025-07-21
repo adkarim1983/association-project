@@ -1,0 +1,390 @@
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import Project from '../models/Project.js';
+
+// Load environment variables
+dotenv.config();
+
+// Complete project data from the frontend (all 20 projects)
+const projectsData = [
+  {
+    id: 1,
+    name: "projects.list.planet_food.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.sidi_othmane_admin",
+    lat: 33.6005,
+    lng: -7.5306,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image12.jpg",
+    phone: "+212 6 12 34 56 78",
+    email: "contact@planetfood.ma",
+    address: "projects.list.planet_food.address",
+    hours: "12:00 - 23:00",
+    website: "https://planetfood.ma",
+    description: "projects.list.planet_food.description"
+  },
+  {
+    id: 2,
+    name: "projects.list.alphacom.name",
+    category: "projects.categories.marketing_digital",
+    location: "projects.locations.sidi_othmane_industrial",
+    lat: 33.605,
+    lng: -7.525,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image9-398x530.jpg",
+    phone: "+212 6 98 76 54 32",
+    email: "info@alphacom.agency",
+    address: "projects.list.alphacom.address",
+    hours: "09:00 - 18:00",
+    website: "https://alphacom.agency",
+    description: "projects.list.alphacom.description"
+  },
+  {
+    id: 3,
+    name: "projects.list.baha_happye_park.name",
+    category: "projects.categories.evenementiel",
+    location: "projects.locations.moulay_rachid_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image56-375x530.png",
+    phone: "+212 6 11 22 33 44",
+    email: "contact@bahapark.com",
+    address: "projects.list.baha_happye_park.address",
+    hours: "10:00 - 20:00",
+    website: "https://bahapark.com",
+    description: "projects.list.baha_happye_park.description"
+  },
+  {
+    id: 4,
+    name: "projects.list.pixel_prod.name",
+    category: "projects.categories.design",
+    location: "projects.locations.mabrouka_admin",
+    lat: 33.5747295,
+    lng: -7.5524299,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image55.png",
+    phone: "+212 6 55 66 77 88",
+    email: "studio@pixelprod.ma",
+    address: "projects.list.pixel_prod.address",
+    hours: "09:30 - 19:00",
+    website: "https://pixelprod.ma",
+    description: "projects.list.pixel_prod.description"
+  },
+  {
+    id: 5,
+    name: "projects.list.taha_prodd.name",
+    category: "projects.categories.audio_visuel",
+    location: "projects.locations.mabrouka_admin",
+    lat: 33.5725,
+    lng: -7.5590,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image41-299x530.jpg",
+    phone: "+212 6 33 44 55 66",
+    email: "contact@tahaprod.com",
+    address: "projects.list.taha_prodd.address",
+    hours: "09:00 - 18:30",
+    website: "https://tahaprod.com",
+    description: "projects.list.taha_prodd.description"
+  },
+  {
+    id: 6,
+    name: "projects.list.az_event_733.name",
+    category: "projects.categories.evenementiel",
+    location: "projects.locations.sidi_othmane_admin",
+    lat: 33.5747295,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image51.jpg",
+    phone: "+212 6 77 88 99 00",
+    email: "contact@azevent.ma",
+    address: "projects.list.az_event_733.address",
+    hours: "10:00 - 19:00",
+    website: "https://azevent.ma",
+    description: "projects.list.az_event_733.description"
+  },
+  {
+    id: 7,
+    name: "projects.list.pretty_events.name",
+    category: "projects.categories.evenementiel",
+    location: "projects.locations.moulay_rachid_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image35-398x530.jpg",
+    phone: "+212 6 12 34 56 78",
+    email: "contact@prettyevents.ma",
+    address: "projects.list.pretty_events.address",
+    hours: "09:00 - 18:00",
+    website: "https://prettyevents.ma",
+    description: "projects.list.pretty_events.description"
+  },
+  {
+    id: 8,
+    name: "projects.list.erregyby_event.name",
+    category: "projects.categories.evenementiel",
+    location: "projects.locations.sadri_admin",
+    lat: 33.57472951,
+    lng: -7.5524299,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image38-398x530.jpg",
+    phone: "+212 6 98 76 54 32",
+    email: "info@erregybyevent.com",
+    address: "projects.list.erregyby_event.address",
+    hours: "10:00 - 20:00",
+    website: "https://erregybyevent.com",
+    description: "projects.list.erregyby_event.description"
+  },
+  {
+    id: 9,
+    name: "projects.list.snack.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.hay_el_rajae",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image30.jpg",
+    phone: "+212 6 11 22 33 44",
+    email: "contact@snackrajae.ma",
+    address: "projects.list.snack.address",
+    hours: "11:00 - 22:00",
+    website: "https://snackrajae.ma",
+    description: "projects.list.snack.description"
+  },
+  {
+    id: 10,
+    name: "projects.list.snack_yacout.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.moulay_rachid_industrial",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image28-244x530.jpg",
+    phone: "+212 6 55 66 77 88",
+    email: "yacout@snackyacout.ma",
+    address: "projects.list.snack_yacout.address",
+    hours: "08:00 - 19:00",
+    website: "https://snackyacout.ma",
+    description: "projects.list.snack_yacout.description"
+  },
+  {
+    id: 11,
+    name: "projects.list.dar_miya.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.moulay_rachid_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image25-398x530.jpg",
+    phone: "+212 6 33 44 55 66",
+    email: "contact@darmiya.ma",
+    address: "projects.list.dar_miya.address",
+    hours: "12:00 - 23:00",
+    website: "https://darmiya.ma",
+    description: "projects.list.dar_miya.description"
+  },
+  {
+    id: 12,
+    name: "projects.list.foratino.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.moulay_rachid_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image19-397x530.jpg",
+    phone: "+212 6 77 88 99 00",
+    email: "info@foratino.com",
+    address: "projects.list.foratino.address",
+    hours: "12:00 - 00:00",
+    website: "https://foratino.com",
+    description: "projects.list.foratino.description"
+  },
+  {
+    id: 13,
+    name: "projects.list.la_table_demotion.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.moulay_rachid_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image16-524x530.jpg",
+    phone: "+212 6 12 34 56 78",
+    email: "reserve@tabledemotion.ma",
+    address: "projects.list.la_table_demotion.address",
+    hours: "19:00 - 01:00",
+    website: "https://tabledemotion.ma",
+    description: "projects.list.la_table_demotion.description"
+  },
+  {
+    id: 14,
+    name: "projects.list.om_ali_food.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.el_harouiyine_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image15.jpg",
+    phone: "+212 6 98 76 54 32",
+    email: "contact@omalifood.ma",
+    address: "projects.list.om_ali_food.address",
+    hours: "12:00 - 22:00",
+    website: "https://omalifood.ma",
+    description: "projects.list.om_ali_food.description"
+  },
+  {
+    id: 15,
+    name: "projects.list.kitchen_chaimaa.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.moulay_rachid_industrial",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image14-399x530.jpg",
+    phone: "+212 6 11 22 33 44",
+    email: "info@kitchenchaimaa.com",
+    address: "projects.list.kitchen_chaimaa.address",
+    hours: "08:00 - 17:00",
+    website: "https://kitchenchaimaa.com",
+    description: "projects.list.kitchen_chaimaa.description"
+  },
+  {
+    id: 16,
+    name: "projects.list.wafae_el_hana.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.hay_el_rajae",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image9-398x530.jpg",
+    phone: "+212 6 55 66 77 88",
+    email: "contact@wafaelhana.ma",
+    address: "projects.list.wafae_el_hana.address",
+    hours: "10:00 - 20:00",
+    website: "https://wafaelhana.ma",
+    description: "projects.list.wafae_el_hana.description"
+  },
+  {
+    id: 17,
+    name: "projects.list.go_event_digilab.name",
+    category: "projects.categories.marketing_digital",
+    location: "projects.locations.hay_el_rajae",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/IMG_6635-Red-Reda-707x530.jpeg",
+    phone: "+212 6 33 44 55 66",
+    email: "contact@goeventdigilab.com",
+    address: "projects.list.go_event_digilab.address",
+    hours: "09:00 - 18:00",
+    website: "https://goeventdigilab.com",
+    description: "projects.list.go_event_digilab.description"
+  },
+  {
+    id: 18,
+    name: "projects.list.doja_event.name",
+    category: "projects.categories.evenementiel",
+    location: "projects.locations.sidi_othmane_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/WhatsApp-Image-2025-01-04-at-11.34.44-516x530.jpeg",
+    phone: "+212 6 77 88 99 00",
+    email: "info@dojaevent.ma",
+    address: "projects.list.doja_event.address",
+    hours: "10:00 - 19:00",
+    website: "https://dojaevent.ma",
+    description: "projects.list.doja_event.description"
+  },
+  {
+    id: 19,
+    name: "projects.list.mamon_foods.name",
+    category: "projects.categories.restauration",
+    location: "projects.locations.sadri_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2025/01/Image23-524x530.jpg",
+    phone: "+212 6 12 34 56 78",
+    email: "contact@mamonfoods.com",
+    address: "projects.list.mamon_foods.address",
+    hours: "11:00 - 23:00",
+    website: "https://mamonfoods.com",
+    description: "projects.list.mamon_foods.description"
+  },
+  {
+    id: 20,
+    name: "projects.list.mohcin_najmi_production.name",
+    category: "projects.categories.marketing_digital",
+    location: "projects.locations.sidi_othmane_admin",
+    lat: 33.61,
+    lng: -7.54,
+    image: "https://associationnajm.ma/wp-content/uploads/classified-listing/2024/12/WhatsApp-Image-2024-12-03-at-23.21.32-707x530.jpeg",
+    phone: "+212 6 98 76 54 32",
+    email: "prod@mohcinnajmi.com",
+    address: "projects.list.mohcin_najmi_production.address",
+    hours: "09:00 - 19:00",
+    website: "https://mohcinnajmi.com",
+    description: "projects.list.mohcin_najmi_production.description"
+  }
+];
+
+const seedDatabase = async () => {
+  try {
+    console.log('🌱 Starting database seeding with all 20 projects...');
+    
+    // Connect to MongoDB
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/association_najm');
+    console.log('✅ Connected to MongoDB');
+
+    // Clear existing projects
+    await Project.deleteMany({});
+    console.log('🗑️  Cleared existing projects');
+
+    // Transform and insert projects
+    const projects = projectsData.map(project => ({
+      name: project.name,
+      category: project.category,
+      location: project.location,
+      coordinates: {
+        lat: project.lat,
+        lng: project.lng
+      },
+      contact: {
+        phone: project.phone,
+        email: project.email,
+        website: project.website
+      },
+      address: project.address,
+      hours: project.hours,
+      description: project.description,
+      image: project.image,
+      status: 'active',
+      featured: project.id <= 5, // Make first 5 projects featured
+      tags: [project.category.split('.').pop()], // Extract category name as tag
+      metadata: {
+        views: Math.floor(Math.random() * 200), // Random views for demo
+        likes: Math.floor(Math.random() * 100)   // Random likes for demo
+      }
+    }));
+
+    const insertedProjects = await Project.insertMany(projects);
+    console.log(`✅ Successfully seeded ${insertedProjects.length} projects`);
+
+    // Display summary
+    const categoryCounts = await Project.aggregate([
+      { $group: { _id: '$category', count: { $sum: 1 } } },
+      { $sort: { count: -1 } }
+    ]);
+
+    const locationCounts = await Project.aggregate([
+      { $group: { _id: '$location', count: { $sum: 1 } } },
+      { $sort: { count: -1 } }
+    ]);
+
+    console.log('\n📊 Seeding Summary:');
+    console.log(`Total projects: ${insertedProjects.length}`);
+    console.log('\nProjects by category:');
+    categoryCounts.forEach(cat => {
+      console.log(`  - ${cat._id}: ${cat.count}`);
+    });
+    
+    console.log('\nProjects by location:');
+    locationCounts.forEach(loc => {
+      console.log(`  - ${loc._id}: ${loc.count}`);
+    });
+
+    console.log('\n🎉 Database seeding completed successfully with all 20 projects!');
+    
+  } catch (error) {
+    console.error('❌ Error seeding database:', error);
+    process.exit(1);
+  } finally {
+    await mongoose.connection.close();
+    console.log('🔌 Database connection closed');
+    process.exit(0);
+  }
+};
+
+// Run the seeding
+seedDatabase();
