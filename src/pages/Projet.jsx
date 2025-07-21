@@ -49,7 +49,10 @@ export default function Projet() {
   const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    // <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 mt-30 mx-10">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 mt-30 mx-10 rounded-2xl">
+
+
       {/* Header Hero Section */}
       <div className="relative bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 text-white py-20">
         <div className="absolute inset-0 bg-black/30"></div>
@@ -57,11 +60,15 @@ export default function Projet() {
           <div className="w-full h-full bg-gradient-to-br from-white/5 via-transparent to-white/5"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent text-center md:text-left leading-tight" dir="auto">
+          {/* <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent text-center leading-tight" dir="auto">
             {t("projects.title")}
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-200 font-light max-w-3xl mx-auto leading-relaxed">
-            Découvrez nos projets d'inclusion économique et d'autonomisation des jeunes
+          </h1> */}
+          <h1 className="text-[40px] font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent text-center leading-tight" dir="auto">
+  {t("projects.title")}
+</h1>
+
+          <p className="text-xl md:text-2xl text-blue-200 font-light max-w-3xl mx-auto leading-relaxed text-center">
+            {t("projects.subtitle")}
           </p>
         </div>
       </div>
@@ -197,7 +204,7 @@ export default function Projet() {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-lg font-semibold text-slate-800">Page {currentPage}</div>
+                    <div className="text-2xl font-bold text-slate-800">{t("projects.page_label")} {currentPage}</div>
                     <div className="text-sm text-slate-600">{t("projects.page_of", "sur {{totalPages}} pages", {totalPages})}</div>
                   </div>
                 </div>
@@ -361,7 +368,7 @@ export default function Projet() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
               </svg>
             </div>
-                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 ml-4 text-center md:text-left leading-tight">Localisation des projets</h2>
+                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 ml-4 text-center leading-tight">{t("projects.map_title")}</h2>
           </div>
           
           <div className="h-[500px] w-full rounded-xl overflow-hidden border border-slate-200 relative z-0">

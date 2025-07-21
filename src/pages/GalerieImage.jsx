@@ -47,7 +47,7 @@ export default function GalerieImage() {
     const handleResize = () => {
       const newItemsPerSlide = getItemsPerSlide();
       setItemsPerSlide(newItemsPerSlide);
-      
+
       // Recalculate currentSlide to stay within bounds
       const newTotalSlides = Math.ceil(galleryImages.length / newItemsPerSlide);
       if (currentSlide >= newTotalSlides) {
@@ -79,10 +79,15 @@ export default function GalerieImage() {
   return (
     <div className="px-8 py-12 bg-white min-h-screen font-sans text-gray-800 animate-fade-in">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl md:text-6xl font-extrabold text-center text-gray-900 mb-16 relative pb-4 leading-tight">
+        {/* <h1 className="text-2xl sm:text-3xl md:text-6xl font-extrabold text-center text-gray-900 mb-16 relative pb-4 leading-tight">
           {t("gallery.title")}
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-blue-600 rounded-full"></span>
+        </h1> */}
+        <h1 className="text-[40px] font-extrabold text-center text-[#1C398E] mb-16 relative pb-4 leading-tight">
+          {t("gallery.title")}
+          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-[#1C398E] rounded-full"></span>
         </h1>
+
 
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16 animate-fade-up border-b pb-12 border-gray-200">
@@ -113,7 +118,7 @@ export default function GalerieImage() {
           <div className="text-gray-700 text-lg leading-relaxed text-justify order-1 md:order-2">
             <p className="mb-6">
               {t("gallery.section2_p1")}
-            </p> 
+            </p>
             <p>
               {t("gallery.section2_p2")}
             </p>
@@ -173,16 +178,21 @@ export default function GalerieImage() {
           </div>
         </div>
         {/* Section Galerie interactive finale */}
-        <h2 className="text-xl sm:text-2xl md:text-5xl font-extrabold text-center text-gray-900 mt-24 mb-12 relative pb-4 leading-tight">
+        {/* <h2 className="text-xl sm:text-2xl md:text-5xl font-extrabold text-center text-gray-900 mt-24 mb-12 relative pb-4 leading-tight">
           {t("gallery.gallery_highlights")}
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-blue-600 rounded-full"></span>
+        </h2> */}
+        <h2 className="text-[40px] font-extrabold text-center text-[#1C398E] mt-24 mb-12 relative pb-4 leading-tight">
+          {t("gallery.gallery_highlights")}
+          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 h-1 bg-[#1C398E] rounded-full"></span>
         </h2>
+
 
         {/* Carousel Container */}
         <div className="relative max-w-7xl mx-auto mb-20">
           {/* Main carousel */}
           <div className="relative overflow-hidden rounded-2xl">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
@@ -224,7 +234,7 @@ export default function GalerieImage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          
+
           <button
             onClick={nextSlide}
             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl z-10"
@@ -240,11 +250,10 @@ export default function GalerieImage() {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  currentSlide === index 
-                    ? 'bg-blue-600 w-8' 
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
+                  ? 'bg-blue-600 w-8'
+                  : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
               />
             ))}
           </div>
@@ -255,7 +264,7 @@ export default function GalerieImage() {
     </div>
 
   );
-}const style = document.createElement("style");
+} const style = document.createElement("style");
 style.innerHTML = `
   @keyframes fade-in {
     from { opacity: 0; transform: translateY(20px); }

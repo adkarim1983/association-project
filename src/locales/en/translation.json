@@ -344,7 +344,10 @@
         "addressDetails": "Group 3, opposite the Faculty of Letters and Human Sciences Ben M'sik"
     },
     "projects": {
-        "title": "Projects carried out at the Prefecture\nof Moulay Rachid Districts",
+        "title": "Projects carried out in the Moulay Rachid Districts Prefecture",
+        "subtitle": "Discover our projects for economic inclusion and youth empowerment",
+        "map_title": "Project location on the map",
+        "page_label": "Page",
         "all": "All",
         "all_categories": "All Categories",
         "all_zones": "All Zones",

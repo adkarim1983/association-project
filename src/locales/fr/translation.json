@@ -363,9 +363,12 @@
 
 },
 "projects": {
-    "title": "Projets réalisés à la Préfecture\ndes Arrondissements Moulay Rachid",
-    "all": "Tous",
+    "title": "Projets réalisés à la Préfecture des Arrondissements Moulay Rachid",
+    "subtitle": "Découvrez nos projets d'inclusion économique et d'autonomisation des jeunes",
+    "map_title": "Localisation des projets au niveau de la carte",
+    "page_label": "Page",
     "all_categories": "Toutes les catégories",
+    "all": "Tous",
     "all_zones": "Toutes les zones",
     "category_label": "Catégorie",
     "location_label": "Localisation",

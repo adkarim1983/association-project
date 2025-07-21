@@ -3,32 +3,32 @@ import videoSrc from "../assets/video.mp4";
 import image2a from "../assets/image2a.jpg";
 import { useTranslation } from "react-i18next";
 const sections = [
-    {
-        title: "Axes d'intervention",
-        content: `La Plateforme des Jeunes Irchad a été créée pour soutenir et accompagner les coopératives émergentes, les initiatives libres et l’auto-emploi au niveau de la préfecture d’arrondissements Moulay Rachid, dans le cadre de la troisième phase de l’Initiative Nationale pour le Développement Humain (INDH).
+  {
+    title: "Axes d'intervention",
+    content: `La Plateforme des Jeunes Irchad a été créée pour soutenir et accompagner les coopératives émergentes, les initiatives libres et l’auto-emploi au niveau de la préfecture d’arrondissements Moulay Rachid, dans le cadre de la troisième phase de l’Initiative Nationale pour le Développement Humain (INDH).
 Cette plateforme vise à fournir un soutien matériel et intellectuel aux jeunes souhaitant lancer des projets économiques ou des initiatives sociales, en particulier dans les domaines de l’auto-emploi et de la création de coopératives.
 Elle constitue un espace d’innovation sociale, en mettant l’accent sur des formations et des ateliers destinés à renforcer les compétences des jeunes dans divers domaines tels que la gestion, le marketing et la gestion de projets. Elle cherche également à promouvoir l’emploi, à encourager la création d’entreprises et à développer les coopératives, tout en facilitant l’accès à l’information sur les opportunités économiques et les sources de financement disponibles.
 À travers cette plateforme, l’initiative ambitionne de stimuler l’esprit entrepreneurial et la coopération entre les jeunes, tout en renforçant l’innovation et le développement durable dans la région. Elle contribue ainsi à accroître le développement économique et social dans la préfecture de Moulay Rachid.
 
 `,
-    },
-    {
-        title: "Mission de la « Plateforme des Jeunes »",
-        content: `La mission de la plateforme repose sur l’écoute, l’orientation et le conseil. Elle vise à fournir un accompagnement psychologique et social aux jeunes à travers plusieurs volets :
+  },
+  {
+    title: "Mission de la « Plateforme des Jeunes »",
+    content: `La mission de la plateforme repose sur l’écoute, l’orientation et le conseil. Elle vise à fournir un accompagnement psychologique et social aux jeunes à travers plusieurs volets :
 Écoute : La plateforme permet aux jeunes de s’exprimer librement sur leurs idées et ressentis, renforçant ainsi leur capacité à faire face aux défis de la vie.
 Orientation : Elle offre des conseils spécialisés dans divers domaines tels que l’éducation, l’emploi, les relations, la santé mentale, et d’autres sujets importants pour la jeunesse.
 Conseil : La plateforme guide les jeunes dans leurs prises de décision, tant sur le plan personnel que professionnel, les aidant à construire un avenir meilleur.
 À travers cette mission, la plateforme œuvre à renforcer les capacités des jeunes et à les autonomiser, afin qu’ils deviennent des acteurs actifs et influents au sein de la société.`,
-    },
-    {
-        title: "Gestion des plateformes Irchad de Moulay Rachid – Sidi Othmane",
-        content: `L’Association Najm pour l’inclusion économique des jeunes assure la gestion de deux plateformes Irchad situées dans la préfecture Moulay Rachid – Sidi Othmane. À travers cette initiative, l’association accompagne les porteurs d’idées de projets en les accueillant, en écoutant leurs idées et projets, puis en leur proposant un accompagnement adapté à chaque cas.
+  },
+  {
+    title: "Gestion des plateformes Irchad de Moulay Rachid – Sidi Othmane",
+    content: `L’Association Najm pour l’inclusion économique des jeunes assure la gestion de deux plateformes Irchad situées dans la préfecture Moulay Rachid – Sidi Othmane. À travers cette initiative, l’association accompagne les porteurs d’idées de projets en les accueillant, en écoutant leurs idées et projets, puis en leur proposant un accompagnement adapté à chaque cas.
 
 Les plateformes offrent un environnement stimulant pour les jeunes entrepreneurs, avec un appui professionnel, technique et financier, facilitant ainsi leur intégration économique et le développement de leurs idées en projets concrets et réussis.`,
-    },
-    {
-        title: "Économie sociale et solidaire : Mesures de soutien aux coopératives",
-        content: `Dans le cadre du développement économique et de la promotion de l’innovation sociale, des mesures spécifiques de soutien aux coopératives sont mises en œuvre, couvrant plusieurs axes :
+  },
+  {
+    title: "Économie sociale et solidaire : Mesures de soutien aux coopératives",
+    content: `Dans le cadre du développement économique et de la promotion de l’innovation sociale, des mesures spécifiques de soutien aux coopératives sont mises en œuvre, couvrant plusieurs axes :
 Accompagnement des coopératives
 Un soutien intégré et progressif est proposé aux coopératives et aux porteurs de projets, depuis la phase de création jusqu’à l’après-lancement. Ce soutien vise à assurer leur pérennité et développement, avec un accent particulier sur les projets issus de l’analyse des chaînes de valeur.
 Soutien technique et assistance à la création
@@ -42,10 +42,10 @@ En plus de la phase de lancement, un suivi continu est assuré : conseils suppl�
 L’objectif de ces actions est de garantir une croissance durable, la compétitivité des coopératives, et la création d’emplois pour les jeunes et la population locale, tout en valorisant l’innovation.
 
 `,
-    },
-    {
-        title: "Composantes d’un incubateur de projets",
-        content: `Un incubateur de projets est une structure dédiée à l’appui des individus ou équipes souhaitant lancer un projet, surtout dans les premières étapes. Son objectif est d’offrir un environnement favorable à la transformation d’idées en projets viables et évolutifs.
+  },
+  {
+    title: "Composantes d’un incubateur de projets",
+    content: `Un incubateur de projets est une structure dédiée à l’appui des individus ou équipes souhaitant lancer un projet, surtout dans les premières étapes. Son objectif est d’offrir un environnement favorable à la transformation d’idées en projets viables et évolutifs.
 Soutien technique et orientation
 L’incubateur fournit des conseils en stratégie, marketing, finance et gestion, afin que les projets soient bâtis sur des fondations solides et capables de s’adapter au marché.
 Soutien financier
@@ -60,18 +60,18 @@ Accès aux marchés
 Les incubateurs appuient la commercialisation des produits, en facilitant la participation à des foires, salons et événements économiques.
 Suivi continu
 Ils assurent un accompagnement à moyen et long terme, via l’analyse des performances du projet, des ajustements stratégiques et un appui ciblé.`,
-    },
-    {
-        title: "Objectifs d’un incubateur de projets",
-        content: `+ Stimuler l’innovation à travers le soutien aux projets innovants
+  },
+  {
+    title: "Objectifs d’un incubateur de projets",
+    content: `+ Stimuler l’innovation à travers le soutien aux projets innovants
 + Réduire les risques d’échec en offrant un appui dès les premières étapes
 + Favoriser la création d’emplois
 + Renforcer l’économie locale via la valorisation de l’entrepreneuriat`,
-    },
+  },
 
-    {
-        title: "Développement des capacités des jeunes",
-        content: `Renforcement des compétences personnelles et professionnelles
+  {
+    title: "Développement des capacités des jeunes",
+    content: `Renforcement des compétences personnelles et professionnelles
 La plateforme vise à renforcer des compétences clés telles que :
 - La communication efficace
 - La gestion du temps
@@ -113,41 +113,48 @@ Avantages de la plateforme :
 - Impact local positif : création d’emplois, hausse de la productivité locale
 - Adaptation à l’ère numérique : acquisition de compétences digitales
 - Renforcement de la culture entrepreneuriale : valorisation de l’innovation`,
-    },
+  },
 
 
 ];
 
 
 export default function IrchadPage() {
-    const [openIndex, setOpenIndex] = useState(null);
-const { t } = useTranslation();
+  const [openIndex, setOpenIndex] = useState(null);
+  const { t } = useTranslation();
 
   const sections = t("irchad.sections", { returnObjects: true });
-    const toggle = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
-    return (
+  return (
     <>  <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-xl p-6 mt-25 mb-10">
-                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-indigo-800 mb-4 text-center leading-tight">
-    {t("vision_guidelines.title")}
-  </h2>
-  <p className="text-gray-800 leading-relaxed whitespace-pre-line text-justify">
-    {t("vision_guidelines.paragraph")}
-    {"\n\n"}
-    <span className="font-semibold italic">
-      {t("vision_guidelines.citation")}
-    </span>
-  </p>
-</div>
+      {/* <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-indigo-800 mb-4 text-center leading-tight">
+        {t("vision_guidelines.title")}
+      </h2> */}
+      <h2 className="text-[30px] font-bold text-[#1C398E] mb-4 text-center leading-tight">
+  {t("vision_guidelines.title")}
+</h2>
+      <p className="text-gray-800 leading-relaxed whitespace-pre-line text-justify">
+        {t("vision_guidelines.paragraph")}
+        {"\n\n"}
+        <span className="font-semibold italic">
+          {t("vision_guidelines.citation")}
+        </span>
+      </p>
+    </div>
 
       {/* Vidéo */}
 
       <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden p-6 mb-5">
-                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-800 mb-6 text-center leading-tight">
+        {/* <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-800 mb-6 text-center leading-tight">
           {t("irchad.videoTitle")}
-        </h3>
+        </h3> */}
+        <h3 className="text-[30px] font-bold text-[#1C398E] mb-6 text-center leading-tight">
+  {t("irchad.videoTitle")}
+</h3>
+
         <div className="rounded-lg overflow-hidden">
           <video className="w-full h-auto" controls muted loop>
             <source src={videoSrc} type="video/mp4" />
@@ -158,7 +165,7 @@ const { t } = useTranslation();
 
       {/* Titre principal et accordéon */}
       <div className="max-w-5xl mx-auto px-6 py-12">
-                      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-indigo-700 mb-10 leading-tight">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-[#1C398E] mb-10 leading-tight">
           {t("irchad.mainTitle")}
         </h1>
 
@@ -182,9 +189,9 @@ const { t } = useTranslation();
                         </p>
                       </div>
                       <div className="flex-shrink-0 lg:w-1/3">
-                        <img 
-                          src={image2a} 
-                          alt="Mission de la Plateforme des Jeunes" 
+                        <img
+                          src={image2a}
+                          alt="Mission de la Plateforme des Jeunes"
                           className="w-full h-auto rounded-lg shadow-md"
                         />
                       </div>

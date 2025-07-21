@@ -5,12 +5,15 @@ import { useTranslation } from "react-i18next";
 
 
 export default function PartenariatIrchadFaculte() {
-    const { t } = useTranslation();
-    return (
-       <section className="bg-gradient-to-br from-blue-50 to-white py-20 px-6">
+  const { t } = useTranslation();
+  return (
+    <section className="bg-gradient-to-br from-blue-50 to-white py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 drop-shadow-md">
+          {/* <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 drop-shadow-md">
+            {t("partnership_section.title")}
+          </h2> */}
+          <h2 className="text-[36px] font-extrabold text-blue-900 mb-6 drop-shadow-md">
             {t("partnership_section.title")}
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -24,9 +27,13 @@ export default function PartenariatIrchadFaculte() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-gray-800 leading-relaxed">
           <div>
-            <h3 className="text-2xl font-bold text-blue-800 mb-4">
+            {/* <h3 className="text-2xl font-bold text-blue-800 mb-4">
+              {t("partnership_section.intro_title")}
+            </h3> */}
+            <h3 className="text-[30px] font-bold text-[#1C398E] mb-4">
               {t("partnership_section.intro_title")}
             </h3>
+
             <p className="text-justify">
               {t("partnership_section.intro_text")}
             </p>
@@ -34,9 +41,13 @@ export default function PartenariatIrchadFaculte() {
 
           <div className="space-y-6">
             <div>
-              <h4 className="text-xl font-semibold text-blue-700">
+              {/* <h4 className="text-xl font-semibold text-blue-700">
+                {t("partnership_section.objectives_title")}
+              </h4> */}
+              <h4 className="text-[30px] font-semibold text-[#1C398E]">
                 {t("partnership_section.objectives_title")}
               </h4>
+
               <ul className="list-disc list-inside mt-3 space-y-2 text-justify">
                 {t("partnership_section.objectives", { returnObjects: true }).map((item, idx) => (
                   <li key={idx}>{item}</li>
@@ -45,9 +56,12 @@ export default function PartenariatIrchadFaculte() {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold text-blue-700">
+              {/* <h4 className="text-xl font-semibold text-blue-700">
                 {t("partnership_section.perspectives_title")}
-              </h4>
+              </h4> */}
+              <h4 className="text-[30px] font-semibold text-[#1C398E]">
+  {t("partnership_section.perspectives_title")}
+</h4>
               <p className="text-justify">
                 {t("partnership_section.perspectives_text")}
               </p>
@@ -56,5 +70,5 @@ export default function PartenariatIrchadFaculte() {
         </div>
       </div>
     </section>
-    );
+  );
 }

@@ -6,8 +6,8 @@ import image37 from "../assets/image37.jpg";
 export default function PartenariatIrchadFaculte() {
     const { t } = useTranslation();
   return (
-     <section className="bg-gradient-to-br from-white via-blue-50 to-blue-100 py-6 px-6 min-h-screen">
-      <h1 className="text-4xl font-bold text-center text-blue-800 mb-6">
+     <section className="bg-gradient-to-br from-white via-blue-50 to-blue-100 py-6 px-6 min-h-screen mt-30">
+      <h1 className="text-4xl font-bold text-center text-[#1C398E] mb-6">
         {t("partnership_irchad.main_title")}
       </h1>
 
@@ -25,9 +25,13 @@ export default function PartenariatIrchadFaculte() {
         </p>
       </div>
 
-      <h2 className="text-2xl font-semibold text-center text-blue-700 mb-6">
+      {/* <h2 className="text-2xl font-semibold text-center text-blue-700 mb-6">
         {t("partnership_irchad.section_title")}
-      </h2>
+      </h2> */}
+      <h2 className="text-[30px] font-semibold text-center text-[#1C398E] mb-6">
+  {t("partnership_irchad.section_title")}
+</h2>
+
 
       <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-10">
         {[1, 2, 3, 4].map((i) => (

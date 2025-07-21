@@ -55,7 +55,9 @@ export default function PresidentMessage() {
 
         {!showFullMessage ? (
           <div ref={scrollRef} className="flex-1 overflow-hidden">
-            <div className="inline-block whitespace-nowrap text-gray-700 text-sm md:text-base min-w-max">
+            {/* <div className="inline-block whitespace-nowrap text-gray-700 text-sm md:text-base min-w-max"> */}
+            <div className="inline-block whitespace-nowrap text-gray-700 text-[18px] min-w-max">
+
               {t("president_text")}
             </div>
           </div>

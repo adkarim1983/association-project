@@ -238,7 +238,7 @@ export default function ValeursEtPrincipes() {
                   </h3>
                 </div>
                 <div className="absolute w-full h-full bg-white text-gray-800 rounded-xl shadow-xl p-6 rotate-y-180 backface-hidden overflow-auto flex items-center justify-center">
-                  <p className="text-sm leading-relaxed text-justify">
+                  <p className="text-sm leading-relaxed text-justify ">
                     {t(`valeurs.${valeur.key}.texte`)}
                   </p>
                 </div>
@@ -252,9 +252,13 @@ export default function ValeursEtPrincipes() {
       <section className="bg-white py-16 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
           <div className="flex flex-col justify-between text-gray-800">
-            <h2 className="text-lg sm:text-xl md:text-4xl font-extrabold text-blue-800 mb-6 text-center md:text-left leading-tight">
+            {/* <h2 className="text-lg sm:text-xl md:text-4xl font-extrabold text-blue-800 mb-6 text-center md:text-left leading-tight">
               {t("vision.titre")}
-            </h2>
+            </h2> */}
+            <h2 className="text-[30px] font-extrabold text-[#1C398E] mb-6 text-center leading-tight">
+  {t("vision.titre")}
+</h2>
+
             <div className="text-lg leading-relaxed space-y-4 text-justify">
               <p>{t("vision.intro")}</p>
               {t("vision.objectifs", { returnObjects: true }).map((item, i) => (
@@ -272,9 +276,12 @@ export default function ValeursEtPrincipes() {
       {/* Organigramme */}
       <section className="bg-white pb-10 px-6 mt-10">
         <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-blue-800 mb-10 text-center md:text-left leading-tight">
+          {/* <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-blue-800 mb-10 text-center md:text-left leading-tight">
             {t("organigramme.titre")}
-          </h2>
+          </h2> */}
+          <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-blue-800 mb-10 text-center leading-tight">
+  {t("organigramme.titre")}
+</h2>
           <img src={organigramme} alt="Organigramme" className="mx-auto max-w-full h-auto rounded shadow" />
         </div>
       </section>

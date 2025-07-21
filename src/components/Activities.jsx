@@ -51,7 +51,10 @@ export default function CarouselActivites() {
   return (
     <section className="py-16 mx-1 sm:mx-2 md:mx-4 rounded-2xl" style={{ backgroundColor: '#EFF6FF' }}>
       <div className="max-w-7xl mx-auto px-4 relative">
-        <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-blue-900 mb-12 text-center leading-tight">
+        {/* <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-blue-900 mb-12 text-center leading-tight">
+          {t("activities.title")}
+        </h2> */}
+        <h2 className="text-[30px] font-bold text-blue-900 mb-12 text-center leading-tight">
           {t("activities.title")}
         </h2>
 

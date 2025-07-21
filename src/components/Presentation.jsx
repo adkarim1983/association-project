@@ -22,7 +22,9 @@ export default function Presentation() {
         {/* Texte centré verticalement */}
         <div className="flex items-center justify-center text-center h-full px-2 sm:px-3 md:px-4">
           <div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center md:text-left leading-tight">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center leading-tight">
+
+            {/* <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center md:text-left leading-tight"> */}
               {t("presentation_title")}
             </h2>
             <p className="text-gray-700 leading-relaxed text-justify">
