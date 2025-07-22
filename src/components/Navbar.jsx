@@ -176,7 +176,7 @@ export default function Navbar() {
   const currentLanguage = i18n.language || 'fr';
 
   return (
-    <header className="bg-black shadow-md fixed top-0 left-0 w-full z-50">
+    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="mx-auto px-4 py-3 flex items-center justify-between max-w-7xl" style={{ direction: 'ltr' }}>
         {/* Logo */}
         <Link to="/">
@@ -190,7 +190,7 @@ export default function Navbar() {
         {/* Menu Desktop */}
         <ul className={`hidden lg:flex ${currentLanguage === 'ar' ? 'flex-row-reverse' : ''} items-center space-x-6 font-medium text-white`}>
           <li>
-            <Link to="/" className="relative group text-white transition-colors duration-300" style={{ '&:hover': { color: '#1B7CC1' } }} onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            <Link to="/" className="relative group text-black transition-colors duration-300" style={{ '&:hover': { color: '#1B7CC1' } }} onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.accueil")}
               <span
                 className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
@@ -199,7 +199,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/about-us" className="relative group text-white transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            <Link to="/about-us" className="relative group text-black transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.a_propos")}
               <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
                 style={{ backgroundColor: '#FCBD18' }}
@@ -207,7 +207,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/Axe" className="relative group text-white transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#673D98'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            <Link to="/Axe" className="relative group text-black transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#673D98'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.axe")}
               <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
                 style={{ backgroundColor: '#673D98' }}
@@ -215,7 +215,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/project" className="relative group text-white transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            <Link to="/project" className="relative group text-black transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.projets")}
               <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
                 style={{ backgroundColor: '#FCBD18' }}
@@ -223,7 +223,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/academie-najm" className="relative group text-white transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#56B04A'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            <Link to="/academie-najm" className="relative group text-black transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#56B04A'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.academie_najm")}
               <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
                 style={{ backgroundColor: '#56B04A' }}
@@ -231,7 +231,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/galerie" className="relative group text-white transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#2D7FC1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            <Link to="/galerie" className="relative group text-black transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#2D7FC1'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.galerie")}
               <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
                 style={{ backgroundColor: '#2D7FC1' }}
@@ -239,7 +239,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="relative group text-white transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            <Link to="/contact" className="relative group text-black transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.contact")}
               <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
                 style={{ backgroundColor: '#FCBD18' }}
@@ -252,7 +252,7 @@ export default function Navbar() {
           <li className="absolute right-10 top-1/2 transform -translate-y-1/2">
             <button
               onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
-              className="w-10 h-10 rounded-full bg-gray-800 border border-gray-600 flex items-center justify-center hover:bg-yellow-400 transition duration-300 shadow-sm"
+              className="w-10 h-10 rounded-full bg-white border border-gray-600 flex items-center justify-center hover:bg-white transition duration-300 shadow-sm"
               title="Choisir la langue"
             >
               🌐

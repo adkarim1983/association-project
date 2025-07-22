@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center ">
             <span className="text-[#155DFC] font-semibold uppercase tracking-wider">{t("contact.stayInTouch")}</span>
-            <h2 className="text-lg sm:text-xl md:text-5xl font-bold text-slate-800 mt-2 mb-4 text-center md:text-left leading-tight">{t("contact.title")}</h2>
+            <h2 className="text-lg sm:text-xl md:text-5xl font-bold text-slate-800 mt-2 mb-4 text-center leading-tight">{t("contact.title")}</h2>
             <div className="w-24 h-1.5 bg-[#155DFC] mx-auto rounded-full mb-6"></div>
             <p className="text-slate-600 max-w-3xl mx-auto text-lg">{t("contact.paragraph")}</p>
           </div>

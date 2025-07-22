@@ -199,46 +199,46 @@ export default function ValeursEtPrincipes() {
     return (
     <>
       {/* Objectifs */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-          <div className="md:w-1/2 text-gray-800">
-            <h2 className="text-lg sm:text-xl md:text-4xl font-extrabold text-blue-800 mb-6 text-center md:text-left leading-tight">
-              {t("objectifs.titre")}
-            </h2>
-            <div className="text-lg leading-relaxed space-y-5 text-justify">
+      <section className="bg-white py-20 px-6">
+        <h2 className="text-4xl font-extrabold text-blue-900 mb-16 text-center leading-tight max-w-4xl mx-auto">
+          Objectifs de l'Association Najm
+        </h2>
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-12">
+          <div className="md:w-1/2 text-gray-800 bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="text-[18px] leading-relaxed space-y-6 text-justify">
               {[1, 2, 3, 4].map(i => (
-                <p key={i}>{t(`objectifs.p${i}`)}</p>
+                <p key={i} className="text-gray-700">{t(`objectifs.p${i}`)}</p>
               ))}
             </div>
           </div>
-          <div className="md:w-1/2 flex flex-col gap-13">
-            <img src={image30} alt="Objectif 1" className="rounded-xl shadow-md w-full h-80 object-cover" />
-            <img src={image32} alt="Objectif 2" className="rounded-xl shadow-md w-full h-80 object-cover" />
+          <div className="md:w-1/2 flex flex-col gap-8">
+            <img src={image30} alt="Objectif 1" className="rounded-2xl shadow-lg w-full h-[400px] object-cover hover:shadow-xl transition-shadow duration-300" />
+            <img src={image32} alt="Objectif 2" className="rounded-2xl shadow-lg w-full h-[400px] object-cover hover:shadow-xl transition-shadow duration-300" />
           </div>
         </div>
       </section>
 
       {/* Valeurs */}
-      <section className="py-5 px-6 bg-gray-100 mx-6 rounded-lg">
-                      <h2 className="text-center text-lg sm:text-xl md:text-3xl font-bold text-blue-800 mb-6 leading-tight">
+      <section className="py-10 px-6 bg-gray-100 mx-6 rounded-lg">
+                      <h2 className="text-center text-4xl font-bold text-blue-900 mb-12 leading-tight">
           {t("valeurs.titre")}
         </h2>
-        <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center">
           {valeursData.map((valeur, index) => (
-            <div key={index} className="group perspective w-80 h-64 cursor-pointer">
+            <div key={index} className="group perspective w-[340px] h-[380px] cursor-pointer">
               <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                <div className="absolute w-full h-full bg-[#072ac8] text-white rounded-xl shadow-xl px-6 py-10 flex flex-col items-center justify-center backface-hidden">
+                <div className="absolute w-full h-full bg-[#072ac8] text-white rounded-xl shadow-xl px-8 py-12 flex flex-col items-center justify-center backface-hidden">
                   <img
                     src={valeur.image}
                     alt={t(`valeurs.${valeur.key}.titre`)}
-                    className="w-20 h-20 rounded-full bg-white p-1 mb-4 shadow-md object-cover"
+                    className="w-24 h-24 rounded-full bg-white p-2 mb-6 shadow-lg object-cover"
                   />
-                  <h3 className="text-2xl font-semibold text-center tracking-wide">
+                  <h3 className="text-3xl font-semibold text-center tracking-wide">
                     {t(`valeurs.${valeur.key}.titre`)}
                   </h3>
                 </div>
-                <div className="absolute w-full h-full bg-white text-gray-800 rounded-xl shadow-xl p-6 rotate-y-180 backface-hidden overflow-auto flex items-center justify-center">
-                  <p className="text-sm leading-relaxed text-justify ">
+                <div className="absolute w-full h-full bg-white text-gray-800 rounded-xl shadow-xl p-8 rotate-y-180 backface-hidden overflow-auto flex items-center justify-center">
+                  <p className="text-[18px] leading-relaxed text-justify">
                     {t(`valeurs.${valeur.key}.texte`)}
                   </p>
                 </div>
