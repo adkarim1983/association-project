@@ -112,7 +112,7 @@ export default function Contact() {
                     <span className="text-[#155DFC] font-bold">{t("contact.closed")}</span>
                   </li>
                 </ul>
-              </div>
+                </div>
 
               {/* Réseaux sociaux */}
               <div className="bg-[#155DFC] p-8 rounded-2xl shadow-xl text-white">
