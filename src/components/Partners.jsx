@@ -42,7 +42,7 @@ export default function Partners() {
   const scrollRight = () => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollBy({
-        left: 300,
+        left: 320,
         behavior: 'smooth'
       });
     }
@@ -107,13 +107,13 @@ export default function Partners() {
           <button
             onClick={scrollLeft}
             disabled={!canScrollLeft}
-            className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg border hover:bg-gray-50 transition-all duration-200 ${
+            className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full w-12 h-12 shadow-lg border-2 border-[#1C398E]/20 hover:border-[#1C398E] hover:bg-[#1C398E]/5 transition-all duration-300 ${
               !canScrollLeft ? 'opacity-50 cursor-not-allowed' : 'hover:scale-110'
             }`}
-            style={{ left: '-20px' }}
+            style={{ left: '-32px' }}
           >
             <svg
-              className="w-6 h-6 text-gray-600"
+              className="w-6 h-6 mx-auto text-[#1C398E]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -121,7 +121,7 @@ export default function Partners() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={2.5}
                 d="M15 19l-7-7 7-7"
               />
             </svg>
@@ -131,13 +131,13 @@ export default function Partners() {
           <button
             onClick={scrollRight}
             disabled={!canScrollRight}
-            className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg border hover:bg-gray-50 transition-all duration-200 ${
+            className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full w-12 h-12 shadow-lg border-2 border-[#1C398E]/20 hover:border-[#1C398E] hover:bg-[#1C398E]/5 transition-all duration-300 ${
               !canScrollRight ? 'opacity-50 cursor-not-allowed' : 'hover:scale-110'
             }`}
-            style={{ right: '-20px' }}
+            style={{ right: '-32px' }}
           >
             <svg
-              className="w-6 h-6 text-gray-600"
+              className="w-6 h-6 mx-auto text-[#1C398E]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -145,7 +145,7 @@ export default function Partners() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={2.5}
                 d="M9 5l7 7-7 7"
               />
             </svg>
@@ -169,30 +169,30 @@ export default function Partners() {
               }
             `}</style>
             
-            <div className="flex gap-8 pb-4" style={{ minWidth: 'max-content' }}>
+            <div className="flex gap-12 pb-4 px-4" style={{ minWidth: 'max-content' }}>
               {partners.map((partner, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-white border-t border-b border-gray-300 rounded-lg shadow p-4 hover:shadow-lg transition-shadow duration-300"
+                  className="flex-shrink-0 w-64 h-48 flex items-center justify-center bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 border border-gray-100"
                 >
                   {partner.link ? (
                     <a
                       href={partner.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex w-full h-full items-center justify-center"
+                      className="flex w-full h-full items-center justify-center p-4"
                     >
                       <img
                         src={partner.image}
                         alt={partner.name}
-                        className="h-full w-auto object-contain"
+                        className="max-h-full w-auto object-contain transition-transform duration-300"
                       />
                     </a>
                   ) : (
                     <img
                       src={partner.image}
                       alt={partner.name}
-                      className="h-full w-auto object-contain"
+                      className="max-h-full w-auto object-contain transition-transform duration-300"
                     />
                   )}
                 </div>

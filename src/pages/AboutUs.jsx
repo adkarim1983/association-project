@@ -194,8 +194,6 @@ export default function ValeursEtPrincipes() {
   };
 
 
-
-
     return (
     <>
       {/* Objectifs */}
@@ -227,7 +225,7 @@ export default function ValeursEtPrincipes() {
           {valeursData.map((valeur, index) => (
             <div key={index} className="group perspective w-[340px] h-[380px] cursor-pointer">
               <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-                <div className="absolute w-full h-full bg-[#072ac8] text-white rounded-xl shadow-xl px-8 py-12 flex flex-col items-center justify-center backface-hidden">
+                <div className="absolute w-full h-full bg-[#1C398E] text-white rounded-xl shadow-xl px-8 py-12 flex flex-col items-center justify-center backface-hidden">
                   <img
                     src={valeur.image}
                     alt={t(`valeurs.${valeur.key}.titre`)}
@@ -249,26 +247,24 @@ export default function ValeursEtPrincipes() {
       </section>
 
       {/* Vision stratégique */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-          <div className="flex flex-col justify-between text-gray-800">
-            {/* <h2 className="text-lg sm:text-xl md:text-4xl font-extrabold text-blue-800 mb-6 text-center md:text-left leading-tight">
+      <section className="bg-white py-14 px-8">
+        <div className="max-w-full mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-4 items-start">
+          <div className="md:col-span-3 flex flex-col pr-6">
+            <h2 className="text-[26px] font-extrabold text-[#1C398E] mb-5 text-center md:text-left">
               {t("vision.titre")}
-            </h2> */}
-            <h2 className="text-[30px] font-extrabold text-[#1C398E] mb-6 text-center leading-tight">
-  {t("vision.titre")}
-</h2>
-
-            <div className="text-lg leading-relaxed space-y-4 text-justify">
-              <p>{t("vision.intro")}</p>
-              {t("vision.objectifs", { returnObjects: true }).map((item, i) => (
-                <p key={i}>• {item}</p>
-              ))}
+            </h2>
+            <div className="text-[16px] leading-relaxed space-y-3 text-justify">
+              <p className="mb-4">{t("vision.intro")}</p>
+              <ul className="space-y-2 list-disc pl-4">
+                {t("vision.objectifs", { returnObjects: true }).map((item, i) => (
+                  <li key={i} className="text-[16px] leading-relaxed">{item.replace(/^•\s*/, '')}</li>
+                ))}
+              </ul>
             </div>
           </div>
-          <div className="flex flex-col gap-6 justify-between">
-            <img src={image33} alt="Vision 1" className="h-1/2 rounded-xl shadow-lg object-cover w-full max-h-[320px]" />
-            <img src={image34} alt="Vision 2" className="h-1/2 rounded-xl shadow-lg object-cover w-full max-h-[320px]" />
+          <div className="md:col-span-2 flex flex-col gap-4 pl-2">
+            <img src={image33} alt="Vision 1" className="rounded-xl shadow-lg object-cover w-full h-[200px]" />
+            <img src={image34} alt="Vision 2" className="rounded-xl shadow-lg object-cover w-full h-[200px]" />
           </div>
         </div>
       </section>

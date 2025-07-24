@@ -177,18 +177,18 @@ export default function Navbar() {
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="mx-auto px-4 py-3 flex items-center justify-between max-w-7xl" style={{ direction: 'ltr' }}>
+      <div className="mx-auto px-4 py-2 flex items-center justify-between max-w-7xl" style={{ direction: 'ltr' }}>
         {/* Logo */}
         <Link to="/">
           <img
             src={logo2}
             alt="Logo Association Najm"
-            className="h-20 w-auto cursor-pointer hover:scale-105 transition-transform duration-300"
+            className="h-16 w-auto cursor-pointer hover:scale-105 transition-transform duration-300"
           />
         </Link>
 
         {/* Menu Desktop */}
-        <ul className={`hidden lg:flex ${currentLanguage === 'ar' ? 'flex-row-reverse' : ''} items-center space-x-6 font-medium text-white`}>
+        <ul className={`hidden lg:flex ${currentLanguage === 'ar' ? 'flex-row-reverse' : ''} items-center space-x-6 font-medium text-white text-[16px]`}>
           <li>
             <Link to="/" className="relative group text-black transition-colors duration-300" style={{ '&:hover': { color: '#1B7CC1' } }} onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.accueil")}
@@ -335,7 +335,7 @@ export default function Navbar() {
             alt="Fond mobile"
             className="absolute top-1/2 left-1/2 w-72 opacity-10 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
           />
-          <ul className="flex flex-col space-y-4 mt-4 text-white font-medium">
+          <ul className="flex flex-col space-y-4 mt-4 text-white font-medium text-[18px]">
             <li>
               <Link 
                 to="/" 
