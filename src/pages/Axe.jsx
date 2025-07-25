@@ -182,7 +182,7 @@ export default function IrchadPage() {
             <div key={index} className="mb-6 border-b">
               <button
                 onClick={() => toggle(index)}
-                className={`w-full ${t("lng") === "ar" ? "text-right" : "text-left"} text-xl font-semibold text-gray-800 hover:text-indigo-700 transition py-4`}
+                className="w-full text-left text-xl font-semibold text-gray-800 hover:text-indigo-700 transition py-4"
               >
                 {section.title}
               </button>

@@ -38,7 +38,7 @@ export default function PresidentMessage() {
   return (
     <section className="mt-10 bg-gray-100 py-4 px-3 sm:px-6 md:px-14 mx-2 sm:mx-4 md:mx-7 mt-32 rounded-lg">
       <div
-        className={`flex flex-col gap-4 overflow-hidden cursor-pointer md:items-center md:flex-row`}
+        className={`flex flex-col gap-4 overflow-hidden cursor-pointer md:items-center ${isArabic ? 'md:flex-row-reverse' : 'md:flex-row'}`}
         onMouseEnter={() => {
           setIsPaused(true);
           setShowFullMessage(true);
@@ -49,20 +49,18 @@ export default function PresidentMessage() {
         }}
         onClick={handleToggleMessage} // Ajout pour mobile
       >
-        <h2 className="text-base md:text-lg font-bold text-blue-800 whitespace-nowrap mx-2 sm:mx-4 md:mx-10 text-center md:text-left">
+        <h2 className={`text-base md:text-lg font-bold text-blue-800 whitespace-nowrap mx-2 sm:mx-4 md:mx-10 text-center ${isArabic ? 'md:text-right' : 'md:text-left'}`}>
           {t("president_title")}
         </h2>
 
         {!showFullMessage ? (
           <div ref={scrollRef} className="flex-1 overflow-hidden">
-            {/* <div className="inline-block whitespace-nowrap text-gray-700 text-sm md:text-base min-w-max"> */}
             <div className="inline-block whitespace-nowrap text-gray-700 text-[18px] min-w-max">
-
               {t("president_text")}
             </div>
           </div>
         ) : (
-          <div className={`flex flex-col sm:flex-row items-center gap-4 sm:gap-6 bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-md w-full mt-2`}>
+          <div className={`flex flex-col ${isArabic ? 'sm:flex-row-reverse' : 'sm:flex-row'} items-center gap-4 sm:gap-6 bg-white p-3 sm:p-4 md:p-6 rounded-lg shadow-md w-full mt-2`}>
             <img
               src={presidentImg}
               alt="Président"
