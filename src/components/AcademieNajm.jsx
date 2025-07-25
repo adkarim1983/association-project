@@ -74,7 +74,7 @@ export default function AcademieNajm() {
           return (
             <section
               key={idx}
-              className={`relative flex flex-col md:flex-row items-center gap-4 p-4 rounded-2xl shadow-xl bg-blue-950 text-gray-200 ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
+              className={`relative flex flex-col md:flex-row items-center gap-4 p-4 rounded-2xl shadow-xl text-gray-800 ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
             >
               <div className="md:w-1/2 w-full flex-shrink-0 space-y-4">
                 <div className="relative group rounded-xl overflow-hidden shadow-2xl border border-gray-700">
@@ -101,15 +101,15 @@ export default function AcademieNajm() {
                   {section.title}
                   <span className="absolute left-1/2 md:left-0 -bottom-3 w-20 h-1 bg-blue-700 rounded-full transform -translate-x-1/2 md:translate-x-0"></span>
                 </h2> */}
-                <h2 className="text-[30px] font-extrabold text-white mb-6 leading-tight relative">
+                <h2 className="text-[30px] font-extrabold text-[#1C398E] mb-6 leading-tight relative">
                   {section.title}
-                  <span className="absolute left-1/2 md:left-0 -bottom-3 w-20 h-1 bg-blue-700 rounded-full transform -translate-x-1/2 md:translate-x-0"></span>
+                  <span className="absolute left-1/2 md:left-0 -bottom-3 w-20 h-1 bg-[#1C398E] rounded-full transform -translate-x-1/2 md:translate-x-0"></span>
                 </h2>
 
                 {/* <p className="text-gray-300 whitespace-pre-line leading-relaxed text-base mb-6 text-justify">
                   {section.text}
                 </p> */}
-                <p className="text-[18px] text-gray-300 whitespace-pre-line leading-relaxed text-justify mb-6">
+                <p className="text-[18px] text-gray-800 whitespace-pre-line leading-relaxed text-justify mb-6">
                   {section.text}
                 </p>
 

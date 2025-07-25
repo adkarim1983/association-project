@@ -6,7 +6,7 @@ export default function Contact() {
 
   return (
     <>
-      <section id="contact" className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      <section id="contact" className="py-10 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[#1C398E]/5 rounded-full opacity-70 -mr-20 -mt-20 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#1C398E]/5 rounded-full opacity-70 -ml-20 -mb-20 blur-3xl"></div>
