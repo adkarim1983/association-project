@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import videoSrc from "../assets/video.mp4";
 import image2a from "../assets/image2a.jpg";
 import { useTranslation } from "react-i18next";
+import CountUp from 'react-countup';
 const sections = [
   {
     title: "Axes d'intervention",
@@ -181,7 +182,7 @@ export default function IrchadPage() {
             <div key={index} className="mb-6 border-b">
               <button
                 onClick={() => toggle(index)}
-                className="w-full text-left text-xl font-semibold text-gray-800 hover:text-indigo-700 transition py-4"
+                className={`w-full ${t("lng") === "ar" ? "text-right" : "text-left"} text-xl font-semibold text-gray-800 hover:text-indigo-700 transition py-4`}
               >
                 {section.title}
               </button>
@@ -254,7 +255,16 @@ export default function IrchadPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                       {platformManagementStats.map((stat, index) => (
                         <div key={index} className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
-                          <p className="text-6xl font-extrabold mb-2">{platformManagementStatsValues[index]}</p>
+                          <p className="text-6xl font-extrabold mb-2">
+                            <CountUp
+                              end={parseInt(platformManagementStatsValues[index], 10)}
+                              duration={2.5}
+                              separator={t("lng") === "ar" ? " " : " "}
+                              formattingFn={(value) => t("lng") === "ar" ? value.toLocaleString('ar-MA') : value.toLocaleString('fr-FR')}
+                              enableScrollSpy={true}
+                              scrollSpyOnce={true}
+                            />
+                          </p>
                           <p className="text-sm font-medium text-center">{stat}</p>
                         </div>
                       ))}
@@ -307,12 +317,19 @@ export default function IrchadPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                       {socialEconomyStats.map((stat, index) => (
                         <div key={index} className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
-                          <p className="text-6xl font-extrabold mb-2">{socialEconomyStatsValues[index]}</p>
-                          {/* <p className="text-sm font-medium text-center">{stat}</p> */}
+                          <p className="text-6xl font-extrabold mb-2">
+                            <CountUp
+                              end={parseInt(socialEconomyStatsValues[index], 10)}
+                              duration={2.5}
+                              separator={t("lng") === "ar" ? " " : " "}
+                              formattingFn={(value) => t("lng") === "ar" ? value.toLocaleString('ar-MA') : value.toLocaleString('fr-FR')}
+                              enableScrollSpy={true}
+                              scrollSpyOnce={true}
+                            />
+                          </p>
                           <p className="text-[18px] font-medium text-center">
                             {stat}
                           </p>
-
                         </div>
                       ))}
                     </div>
