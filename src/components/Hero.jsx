@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 import imageB from "../assets/B.jpg";
 import imageC from "../assets/C.jpg";
 import imageD from "../assets/D.jpg";
@@ -7,6 +8,9 @@ import imageD from "../assets/D.jpg";
 export default function Hero() {
   const { t, ready } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
+  
+  const currentLanguage = i18next.language;
+  const isArabic = currentLanguage === "ar";
 
   const images = [
     {
@@ -80,7 +84,7 @@ export default function Hero() {
         </button>
 
         {/* Contenu textuel avec design moderne */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8">
+        <div className={`absolute bottom-0 left-0 right-0 p-4 md:p-8 ${isArabic ? 'text-right' : 'text-left'}`}>
           {/* Titre avec effet de brillance */}
           <div className="relative mb-2 md:mb-3">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight tracking-tight">
@@ -89,11 +93,11 @@ export default function Hero() {
               </span>
             </h2>
             {/* Ligne décorative */}
-            <div className="w-12 md:w-20 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mt-2 md:mt-3 shadow-lg"></div>
+            <div className={`w-12 md:w-20 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mt-2 md:mt-3 shadow-lg ${isArabic ? 'ml-auto' : ''}`}></div>
           </div>
           
           {/* Description avec style raffiné */}
-          <div className="max-w-2xl">
+          <div className={`max-w-2xl ${isArabic ? 'ml-auto' : ''}`}>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-100 leading-relaxed font-light backdrop-blur-sm">
               {description}
             </p>
