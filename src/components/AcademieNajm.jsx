@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 // import image1 from "../assets/image1.jpg";
 
@@ -11,12 +11,58 @@ import imagenum from "../assets/imagenum.jpg";
 import num1 from "../assets/imgs/num1.jpg";
 import num2 from "../assets/imgs/num2.jpg";
 
+// Composant pour animer les chiffres
+function AnimatedNumber({ targetNumber, duration = 2000, suffix = "" }) {
+  const [currentNumber, setCurrentNumber] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef();
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
 
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
 
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [isVisible]);
 
+  useEffect(() => {
+    if (isVisible) {
+      const increment = targetNumber / (duration / 16);
+      let current = 0;
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= targetNumber) {
+          setCurrentNumber(targetNumber);
+          clearInterval(timer);
+        } else {
+          setCurrentNumber(Math.floor(current));
+        }
+      }, 16);
 
+      return () => clearInterval(timer);
+    }
+  }, [isVisible, targetNumber, duration]);
 
+  return (
+    <span ref={ref}>
+      {currentNumber}{suffix}
+    </span>
+  );
+}
 
 export default function AcademieNajm() {
   const { t } = useTranslation();
@@ -209,13 +255,20 @@ export default function AcademieNajm() {
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-              {entrepreneurshipStats.map((stat, index) => (
-                <div key={index} className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
-                  <p className="text-6xl font-extrabold mb-2">{entrepreneurshipStatsValues[index]}</p>
-                  {/* <p className="text-sm font-medium text-center">{stat}</p> */}
-                  <p className="text-[18px]  font-medium text-center">{stat}</p>
-                </div>
-              ))}
+              {entrepreneurshipStats.map((stat, index) => {
+                // Extraire le nombre de la chaîne (en supposant que les valeurs sont comme "25", "150", etc.)
+                const numericValue = parseInt(entrepreneurshipStatsValues[index].replace(/[^0-9]/g, ''));
+                const suffix = entrepreneurshipStatsValues[index].replace(/[0-9]/g, '');
+                
+                return (
+                  <div key={index} className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
+                    <p className="text-6xl font-extrabold mb-2">
+                      <AnimatedNumber targetNumber={numericValue} duration={2000} suffix={suffix} />
+                    </p>
+                    <p className="text-[18px] font-medium text-center">{stat}</p>
+                  </div>
+                );
+              })}
             </div>
             <p className="text-[18px] opacity-85 mt-8 max-w-4xl mx-auto leading-relaxed text-gray-700 text-justify">
               {t("academieNajm.entrepreneurship.renewalText")}
@@ -243,13 +296,20 @@ export default function AcademieNajm() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-              {digitalAcademyStats.map((stat, index) => (
-                <div key={index} className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
-                  <p className="text-6xl font-extrabold mb-2">{digitalAcademyStatsValues[index]}</p>
-                  {/* <p className="text-sm font-medium text-center">{stat}</p> */}
-                  <p className="text-[18px] font-medium text-center">{stat}</p>
-                </div>
-              ))}
+              {digitalAcademyStats.map((stat, index) => {
+                // Extraire le nombre de la chaîne (en supposant que les valeurs sont comme "25", "150", etc.)
+                const numericValue = parseInt(digitalAcademyStatsValues[index].replace(/[^0-9]/g, ''));
+                const suffix = digitalAcademyStatsValues[index].replace(/[0-9]/g, '');
+                
+                return (
+                  <div key={index} className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center">
+                    <p className="text-6xl font-extrabold mb-2">
+                      <AnimatedNumber targetNumber={numericValue} duration={2000} suffix={suffix} />
+                    </p>
+                    <p className="text-[18px] font-medium text-center">{stat}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
