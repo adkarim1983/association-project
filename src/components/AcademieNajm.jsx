@@ -211,12 +211,9 @@ export default function AcademieNajm() {
         </section>
 
         {/* Section: Renforcement de l'Entrepreneuriat chez les Jeunes */}
-        <section className="py-4 px-6 bg-gray-50 mt-4 text-gray-800 shadow-inner-xl">
+        {/* <section className="py-4 px-6 bg-gray-50 mt-4 text-gray-800 shadow-inner-xl">
           <div className="max-w-7xl mx-auto text-center">
-            {/* <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
-              {t("academieNajm.entrepreneurship.title")}
-              <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
-            </h2> */}
+            
             <h2 className="text-[30px] font-extrabold text-[#1C398E] mb-8 text-center leading-tight">
               {t("academieNajm.entrepreneurship.title")}
               <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
@@ -226,7 +223,6 @@ export default function AcademieNajm() {
               dangerouslySetInnerHTML={{ __html: t("academieNajm.entrepreneurship.text") }}
             />
 
-            {/* <h3 className="text-lg sm:text-xl md:text-4xl font-bold mb-8 text-gray-900 text-center leading-tight">{t("academieNajm.entrepreneurship.methodologyTitle")}</h3> */}
             <h3 className="text-[30px] font-bold mb-8 text-[#1C398E] text-center leading-tight">
               {t("academieNajm.entrepreneurship.methodologyTitle")}
             </h3>
@@ -238,9 +234,7 @@ export default function AcademieNajm() {
                     <i className={index === 0 ? "fas fa-cogs" : "fas fa-chalkboard-teacher"}></i>
                   </div>
                   <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-[#1C398E] text-center">{card.title}</h3>
-                  {/* <p className="text-base text-center leading-relaxed text-gray-700 text-justify">
-                    {card.text}
-                  </p> */}
+                  
                   <p className="text-[18px] text-center text-justify leading-relaxed text-gray-700">
                     {card.text}
                   </p>
@@ -249,14 +243,13 @@ export default function AcademieNajm() {
               ))}
             </div>
 
-            {/* <h3 className="text-lg sm:text-xl md:text-4xl font-bold mb-8 text-gray-900 text-center leading-tight">{t("academieNajm.entrepreneurship.resultsTitle")}</h3> */}
             <h3 className="text-[30px] font-bold mb-8 text-[#1C398E] text-center leading-tight">
               {t("academieNajm.entrepreneurship.resultsTitle")}
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
               {entrepreneurshipStats.map((stat, index) => {
-                // Extraire le nombre de la chaîne (en supposant que les valeurs sont comme "25", "150", etc.)
+                
                 const numericValue = parseInt(entrepreneurshipStatsValues[index].replace(/[^0-9]/g, ''));
                 const suffix = entrepreneurshipStatsValues[index].replace(/[0-9]/g, '');
                 
@@ -274,7 +267,7 @@ export default function AcademieNajm() {
               {t("academieNajm.entrepreneurship.renewalText")}
             </p>
           </div>
-        </section>
+        </section> */}
 
         {/* Section: Axe de Soutien à l'Économie Sociale et Solidaire */}
         
@@ -349,10 +342,7 @@ export default function AcademieNajm() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6 items-center">
             <div className="text-gray-800">
-              {/* <h2 className="text-lg sm:text-xl md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight relative text-center md:text-left">
-                {t("academieNajm.support.title")}
-                <span className="absolute left-1/2 md:left-0 -bottom-3 w-20 h-1 bg-blue-700 rounded-full transform -translate-x-1/2 md:translate-x-0"></span>
-              </h2> */}
+              
               <h2 className="text-[30px] font-extrabold text-[#1C398E] mb-8 leading-tight relative text-center md:text-left">
                 {t("academieNajm.support.title")}
                 <span className="absolute left-1/2 md:left-0 -bottom-3 w-20 h-1 bg-[#1C398E] rounded-full transform -translate-x-1/2 md:translate-x-0"></span>
@@ -362,7 +352,7 @@ export default function AcademieNajm() {
                 {t("academieNajm.support.text")}
               </p>
               <div className="bg-white p-10 rounded-xl shadow-xl border border-gray-200">
-                {/* <h3 className="text-base sm:text-lg md:text-2xl font-semibold mb-6 text-gray-900 text-center md:text-left leading-tight">{t("academieNajm.support.programIncludes")}</h3> */}
+                
                 <h3 className="text-[30px] font-semibold text-[#1C398E] mb-6 text-center md:text-left leading-tight">
                   {t("academieNajm.support.programIncludes")}
                 </h3>
@@ -370,7 +360,7 @@ export default function AcademieNajm() {
                 <ul className="space-y-3 text-gray-700">
                   {supportList.map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <span className="text-blue-700 mr-4 text-3xl">&#10003;</span> {/* Checkmark */}
+                      <span className="text-blue-700 mr-4 text-3xl">&#10003;</span> 
                       <span className="text-[18px]">{item}</span>
                     </li>
                   ))}
@@ -382,7 +372,7 @@ export default function AcademieNajm() {
               <div className="absolute inset-0 bg-blue-700/10 rounded-3xl transform rotate-3 scale-105"></div>
               <div className="relative w-full h-96 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden">
                 <img
-                  src={image3} // Reusing image3 for this section
+                  src={image3} 
                   alt={t("academieNajm.support.imageText")}
                   className="w-full h-full object-cover rounded-3xl opacity-90 transform scale-105 transition-transform duration-500 hover:scale-100"
                 />
