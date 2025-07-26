@@ -280,12 +280,9 @@ export default function AcademieNajm() {
         
 
         {/* Section: Statistiques de l'Académie Najm pour les Métiers du Numérique */}
-        <section className="py-4 px-6 bg-gray-50 mt-4 text-gray-800 shadow-inner-xl">
+        {/* <section className="py-4 px-6 bg-gray-50 mt-4 text-gray-800 shadow-inner-xl">
           <div className="max-w-7xl mx-auto text-center">
-            {/* <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
-              {t("academieNajm.digitalAcademyStats.title")}
-              <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
-            </h2> */}
+           
             <h2 className="text-[30px] font-extrabold text-[#1C398E] mb-8 text-center leading-tight">
               {t("academieNajm.digitalAcademyStats.title")}
               <span className="block w-32 h-1 bg-[#1C398E] mx-auto mt-4 rounded-full"></span>
@@ -312,17 +309,14 @@ export default function AcademieNajm() {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
 
       </main>
 
       {/* Section des objectifs */}
-      <section id="programmes" className="bg-gray-50 py-4 mt-4 px-6 sm:px-8 lg:px-10 text-gray-800 shadow-inner-xl">
+      {/* <section id="programmes" className="bg-gray-50 py-4 mt-4 px-6 sm:px-8 lg:px-10 text-gray-800 shadow-inner-xl">
         <div className="max-w-7xl mx-auto text-center">
-          {/* <h2 className="text-lg sm:text-xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gray-900 text-center leading-tight">
-            {t("academieNajm.objectives.title")}
-            <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
-          </h2> */}
+          
           <h2 className="text-[30px] font-extrabold text-[#1C398E] mb-8 text-center leading-tight">
             {t("academieNajm.objectives.title")}
             <span className="block w-32 h-1 bg-[#1C398E] mx-auto mt-4 rounded-full"></span>
@@ -339,9 +333,7 @@ export default function AcademieNajm() {
                   <div className="text-6xl font-extrabold text-[#1C398E] mb-6 drop-shadow-sm">
                     {`0${index + 1}`}
                   </div>
-                  {/* <p className="text-sm text-center leading-relaxed opacity-90 text-gray-700 text-justify">
-                    {objective}
-                  </p> */}
+                 
                   <p className="text-[18px] text-center leading-relaxed opacity-90 text-gray-700 text-justify">
                     {objective}
                   </p>
@@ -350,7 +342,7 @@ export default function AcademieNajm() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Section Accompagnement */}
       <section className="py-4 px-6 bg-gray-100">
