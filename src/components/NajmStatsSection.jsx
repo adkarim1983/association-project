@@ -112,6 +112,12 @@ export default function NajmStatsSection() {
           ))}
         </div>
       </div>
+     {/* POUR TESTER LA PAGE D ACCUEIL */}
+          
+
+     {/* POUR TESTER LA PAGE D ACCUEIL */}
     </section>
+    
+    
   );
 }

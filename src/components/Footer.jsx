@@ -14,7 +14,7 @@ export default function Footer() {
     return (
         <footer
             className="text-white py-10 px-6 transition duration-500 ease-in-out shadow-[inset_0_10px_15px_-10px_rgba(0,0,0,0.3)] hover:shadow-[0_0_20px_#666666]"
-            style={{ backgroundColor: '#000000' }}
+            style={{ backgroundColor: '#1C398E' }}
         >
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
