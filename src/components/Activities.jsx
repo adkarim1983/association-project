@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import RapportActivites2024 from "../pages/RapportActivites2024";
+import RapportCultureEtJeunesse from "../pages/RapportCultureEtJeunesse";
+import RapportSolidariteDev from "../pages/RapportSolidariteDev";
 
 export default function CarouselActivites() {
   const { t } = useTranslation();
@@ -43,6 +46,8 @@ export default function CarouselActivites() {
   ];
 
   const [index, setIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
 
   const nextSlide = () => {
     if (index + 3 < activities.length) setIndex(index + 3);
@@ -50,6 +55,14 @@ export default function CarouselActivites() {
 
   const prevSlide = () => {
     if (index - 3 >= 0) setIndex(index - 3);
+  };
+
+  const handleReadMore = (cardIndex) => {
+    // Seules les 3 premières cartes ont du contenu
+    if (cardIndex < 3) {
+      setSelectedCard(cardIndex);
+      setShowModal(true);
+    }
   };
 
   const visibleCards = activities.slice(index, index + 3);
@@ -102,12 +115,16 @@ export default function CarouselActivites() {
                 <p className="text-gray-600 leading-relaxed mb-4">
                   {activity.description}
                 </p>
-                <div className="flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-700 transition-colors">
+                <button 
+                  onClick={() => handleReadMore(i + index)}
+                  className={`flex items-center text-sm font-medium transition-colors ${i + index < 3 ? 'text-blue-600 group-hover:text-blue-700 cursor-pointer' : 'text-gray-400 cursor-not-allowed'}`}
+                  disabled={i + index >= 3}
+                >
                   <span>En savoir plus</span>
                   <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </div>
+                </button>
               </div>
 
               {/* Decorative elements */}
@@ -143,6 +160,46 @@ export default function CarouselActivites() {
             </div>
           ))}
         </div>
+
+        {/* Modal pour afficher les rapports */}
+        {showModal && (
+          <div className="fixed inset-0 z-50 overflow-y-auto">
+            <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+              {/* Overlay */}
+              <div 
+                className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75" 
+                onClick={() => setShowModal(false)}
+              ></div>
+
+              {/* Modal content */}
+              <div className="inline-block w-full max-w-6xl p-0 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                {/* Header avec bouton de fermeture */}
+                <div className="flex items-center justify-between p-6 border-b border-gray-200">
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {selectedCard === 0 && "Rapport d'Activités 2024"}
+                    {selectedCard === 1 && "Rapport Culture et Jeunesse"}
+                    {selectedCard === 2 && "Rapport Solidarité et Développement"}
+                  </h3>
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-colors"
+                  >
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+
+                {/* Contenu du rapport */}
+                <div className="max-h-[80vh] overflow-y-auto p-6">
+                  {selectedCard === 0 && <RapportActivites2024 />}
+                  {selectedCard === 1 && <RapportCultureEtJeunesse />}
+                  {selectedCard === 2 && <RapportSolidariteDev />}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Navigation */}
         <div className="flex justify-center items-center mt-12 space-x-4">

@@ -17,7 +17,7 @@ function Home() {
         <Hero />
         <Presentation />
         {/* <Valeurs /> */}
-        <Activities />
+        {/* <Activities /> */}
         {/* <PlatformObjectives /> */}
         {/* <Galerie /> */}
         <ReportsSection />
