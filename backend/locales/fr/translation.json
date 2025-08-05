@@ -1,12 +1,12 @@
 {
   "header": {
     "home": "Accueil",
-    "about": "� propos",
+    "about": "À propos",
     "axes": "Axes",
     "projects": "Projets",
     "contact": "Contact",
     "gallery": "Galerie",
-    "najm_academy": "Acad�mie Najm"
+    "najm_academy": "Académie Najm"
   },
   "contact_form": {
     "title": "Contactez-nous",
@@ -17,16 +17,142 @@
   },
   "platform_management": {
     "title": "Gestion et Administration des Plateformes d'Orientation",
-    "description": "La gestion des plateformes d'orientation est au c�ur de notre action. Nous offrons un accompagnement complet aux porteurs de projets, depuis l'accueil jusqu'� la concr�tisation de leurs id�es.",
-    "personalized_support": "Accompagnement personnalis�",
-    "personalized_support_desc": "Un suivi individuel pour chaque porteur de projet, adapt� � ses besoins sp�cifiques.",
-    "targeted_training": "Formations cibl�es",
-    "targeted_training_desc": "Des modules de formation adapt�s aux comp�tences n�cessaires � la r�ussite des projets.",
-    "professional_network": "R�seau professionnel",
+    "description": "La gestion des plateformes d'orientation est au cœur de notre action. Nous offrons un accompagnement complet aux porteurs de projets, depuis l'accueil jusqu'à la concrétisation de leurs idées.",
+    "personalized_support": "Accompagnement personnalisé",
+    "personalized_support_desc": "Un suivi individuel pour chaque porteur de projet, adapté à ses besoins spécifiques.",
+    "targeted_training": "Formations ciblées",
+    "targeted_training_desc": "Des modules de formation adaptés aux compétences nécessaires à la réussite des projets.",
+    "professional_network": "Réseau professionnel",
     "professional_network_desc": "Mise en relation avec des experts et des partenaires potentiels.",
-    "key_stats": "Statistiques Cl�s (au 30 avril 2025)",
-    "projects_supported": "Projets accompagn�s",
-    "success_rate": "Taux de r�ussite",
+    "key_stats": "Statistiques Clés (au 30 avril 2025)",
+    "projects_supported": "Projets accompagnés",
+    "success_rate": "Taux de réussite",
     "active_partnerships": "Partenariats actifs"
+  },
+  "projects": {
+    "title": "Projets Réalisés dans la Préfecture de Moulay Rachid",
+    "subtitle": "Découvrez nos projets d'inclusion économique et d'autonomisation des jeunes",
+    "categories": {
+      "restauration": "Restauration",
+      "marketing_digital": "Marketing Digital",
+      "evenementiel": "Événementiel",
+      "design": "Design Graphique",
+      "patisserie": "Pâtisserie",
+      "production_digitale": "Production Digitale",
+      "audio_visuel": "Audiovisuel"
+    },
+    "locations": {
+      "sidi_othmane_admin": "Sidi Othmane - Administratif",
+      "sidi_othmane_industrial": "Sidi Othmane - Zone Industrielle",
+      "moulay_rachid_admin": "Moulay Rachid - Administratif",
+      "moulay_rachid_industrial": "Moulay Rachid - Industriel",
+      "el_harouiyine_admin": "El Harouiyine - Administratif",
+      "el_rajae_admin": "El Rajae - Administratif",
+      "mabrouka_admin": "Mabrouka - Administratif",
+      "sadri_admin": "Sadri - Administratif",
+      "hay_el_rajae": "Hay El Rajae"
+    },
+    "list": {
+      "planet_food": {
+        "name": "PLANET FOOD",
+        "address": "123 Rue de la Nourriture, Casablanca",
+        "description": "La meilleure street food dans une ambiance conviviale."
+      },
+      "alphacom": {
+        "name": "Alphacom",
+        "address": "456 Avenue Digitale, Casablanca",
+        "description": "Agence de marketing digital pour booster votre présence en ligne."
+      },
+      "baha_happye_park": {
+        "name": "Baha Happye Park",
+        "address": "789 Boulevard des Loisirs, Casablanca",
+        "description": "Parc de loisirs familial avec des activités pour tous les âges."
+      },
+      "pixel_prod": {
+        "name": "Pixel Prod",
+        "address": "321 Rue du Design, Casablanca",
+        "description": "Studio de design graphique et production visuelle."
+      },
+      "taha_prodd": {
+        "name": "Taha Prod",
+        "address": "456 Avenue des Médias, Casablanca",
+        "description": "Production audiovisuelle et création de contenu multimédia."
+      },
+      "az_event_733": {
+        "name": "AZ Event 733",
+        "address": "987 Place de la Fête, Casablanca",
+        "description": "Organisation d'événements sur mesure pour professionnels et particuliers."
+      },
+      "pretty_events": {
+        "name": "Pretty Events",
+        "address": "654 Avenue de la Célébration, Casablanca",
+        "description": "Services de planification d'événements créatifs et élégants."
+      },
+      "erregyby_event": {
+        "name": "ERREGYBY EVENT",
+        "address": "789 Boulevard de la Célébration, Casablanca",
+        "description": "Organisation d'événements d'entreprise et lancements de produits."
+      },
+      "snack": {
+        "name": "Snack Rajae",
+        "address": "123 Rue Rajae, Casablanca",
+        "description": "Repas rapides et délicieux dans le quartier Rajae."
+      },
+      "snack_yacout": {
+        "name": "Snack Yacout",
+        "address": "456 Avenue Yacout, Casablanca",
+        "description": "Cuisine traditionnelle et moderne dans un cadre accueillant."
+      },
+      "mohcin_najmi_production": {
+        "name": "Mohcin Najmi Production",
+        "address": "789 Rue de la Production, Casablanca",
+        "description": "Production audiovisuelle professionnelle et services créatifs."
+      },
+      "patisserie_najm": {
+        "name": "Pâtisserie Najm",
+        "address": "321 Avenue des Délices, Casablanca",
+        "description": "Pâtisserie artisanale avec des créations uniques et savoureuses."
+      },
+      "digital_marketing_hub": {
+        "name": "Digital Marketing Hub",
+        "address": "654 Rue du Numérique, Casablanca",
+        "description": "Centre de marketing digital avec des solutions innovantes."
+      },
+      "creative_studio_najm": {
+        "name": "Creative Studio Najm",
+        "address": "987 Boulevard de la Créativité, Casablanca",
+        "description": "Studio créatif offrant des services de design et de branding."
+      },
+      "event_planning_pro": {
+        "name": "Event Planning Pro",
+        "address": "123 Place des Événements, Casablanca",
+        "description": "Planification d'événements professionnels avec expertise."
+      },
+      "food_corner": {
+        "name": "Food Corner",
+        "address": "456 Coin Gourmand, Casablanca",
+        "description": "Corner food avec une variété de plats locaux et internationaux."
+      },
+      "media_production_najm": {
+        "name": "Media Production Najm",
+        "address": "789 Avenue des Médias, Casablanca",
+        "description": "Production média complète avec équipement professionnel."
+      },
+      "design_workshop": {
+        "name": "Design Workshop",
+        "address": "321 Atelier du Design, Casablanca",
+        "description": "Atelier de design collaboratif pour projets créatifs."
+      },
+      "go_event_digilab": {
+        "name": "Go Event DigiLab",
+        "address": "654 Laboratoire Digital, Casablanca",
+        "description": "Laboratoire d'événements digitaux et solutions technologiques."
+      },
+      "najm_catering": {
+        "name": "Najm Catering",
+        "address": "987 Service Traiteur, Casablanca",
+        "description": "Service de traiteur professionnel pour tous types d'événements."
+      }
+    }
   }
 }

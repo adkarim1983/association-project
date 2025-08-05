@@ -63,6 +63,39 @@ const projectSchema = new mongoose.Schema({
     type: String,
     trim: true
   },
+  images: [{
+    url: {
+      type: String,
+      required: true,
+      trim: true
+    },
+    filename: {
+      type: String,
+      required: true,
+      trim: true
+    },
+    size: {
+      type: Number,
+      required: true
+    },
+    uploadedAt: {
+      type: Date,
+      default: Date.now
+    },
+    uploadedBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User'
+    },
+    alt: {
+      type: String,
+      trim: true,
+      default: ''
+    },
+    isMain: {
+      type: Boolean,
+      default: false
+    }
+  }],
   status: {
     type: String,
     enum: ['active', 'inactive', 'pending'],
@@ -113,6 +146,58 @@ projectSchema.methods.incrementViews = function() {
 // Method to increment likes
 projectSchema.methods.incrementLikes = function() {
   this.metadata.likes += 1;
+  return this.save();
+};
+
+// Method to get main image
+projectSchema.methods.getMainImage = function() {
+  const mainImage = this.images.find(img => img.isMain);
+  return mainImage || this.images[0] || null;
+};
+
+// Method to set main image
+projectSchema.methods.setMainImage = function(imageId) {
+  // Reset all images to not main
+  this.images.forEach(img => {
+    img.isMain = false;
+  });
+  
+  // Set the specified image as main
+  const targetImage = this.images.id(imageId);
+  if (targetImage) {
+    targetImage.isMain = true;
+    return this.save();
+  }
+  throw new Error('Image not found');
+};
+
+// Method to add image
+projectSchema.methods.addImage = function(imageData) {
+  this.images.push(imageData);
+  
+  // If this is the first image, make it main
+  if (this.images.length === 1) {
+    this.images[0].isMain = true;
+  }
+  
+  return this.save();
+};
+
+// Method to remove image
+projectSchema.methods.removeImage = function(imageId) {
+  const imageIndex = this.images.findIndex(img => img._id.toString() === imageId);
+  if (imageIndex === -1) {
+    throw new Error('Image not found');
+  }
+  
+  const wasMain = this.images[imageIndex].isMain;
+  this.images.splice(imageIndex, 1);
+  
+  // If we removed the main image and there are other images, make the first one main
+  if (wasMain && this.images.length > 0) {
+    this.images[0].isMain = true;
+  }
+  
   return this.save();
 };
 
