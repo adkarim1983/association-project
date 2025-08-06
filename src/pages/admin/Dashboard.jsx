@@ -92,8 +92,8 @@ const Dashboard = () => {
   };
 
   const handleAddProject = async (projectData) => {
-    if (!projectData.name.trim() || !projectData.category || !projectData.location || !projectData.description.trim()) {
-      setError('Please fill in all required fields');
+    if (!projectData.name.trim() || !projectData.category || !projectData.location || !projectData.description.trim() || !projectData.address.trim()) {
+      setError('Veuillez remplir tous les champs obligatoires (nom, catégorie, localisation, adresse, description)');
       return;
     }
 
@@ -145,8 +145,8 @@ const Dashboard = () => {
   };
 
   const handleUpdateProject = async (projectData) => {
-    if (!projectData.name.trim() || !projectData.category || !projectData.location || !projectData.description.trim()) {
-      setError('Please fill in all required fields');
+    if (!projectData.name.trim() || !projectData.category || !projectData.location || !projectData.description.trim() || !projectData.address.trim()) {
+      setError('Veuillez remplir tous les champs obligatoires (nom, catégorie, localisation, adresse, description)');
       return;
     }
 
@@ -314,10 +314,11 @@ const Dashboard = () => {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium mb-1">Adresse</label>
+            <label className="block text-sm font-medium mb-1">Adresse *</label>
             <input
               type="text"
               name="address"
+              required
               value={formData.address}
               onChange={handleInputChange}
               className="w-full border rounded px-3 py-2"

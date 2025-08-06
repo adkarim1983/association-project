@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -7,7 +7,7 @@ import L from "leaflet";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
-import { projects as projectsData } from "../data/projects";
+import { projectService } from "../services/projectService";
 
 // Fix icônes Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -26,17 +26,62 @@ export default function Projet() {
   const [selectedZone, setSelectedZone] = useState("all_zones");
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const [projectsData, setProjectsData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Charger les projets depuis l'API
+  useEffect(() => {
+    const loadProjects = async () => {
+      try {
+        setLoading(true);
+        const response = await projectService.getProjects({ limit: 1000 }); // Récupérer tous les projets
+        
+        // Adapter les données de l'API au format attendu par le composant
+        const adaptedProjects = response.projects.map(project => ({
+          id: project._id,
+          name: project.name, // Nom direct au lieu de clé de traduction
+          category: project.category,
+          location: project.location,
+          lat: project.coordinates?.lat || 33.5731,
+          lng: project.coordinates?.lng || -7.5898,
+          image: project.image || 'https://via.placeholder.com/400x300?text=Pas+d\'image',
+          phone: project.contact?.phone || '',
+          email: project.contact?.email || '',
+          address: project.address,
+          hours: project.hours || '',
+          website: project.contact?.website || '',
+          description: project.description
+        }));
+        
+        setProjectsData(adaptedProjects);
+      } catch (err) {
+        console.error('Erreur lors du chargement des projets:', err);
+        setError('Impossible de charger les projets');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadProjects();
+  }, []);
 
   const allCategories = ["all", ...Object.keys(t("projects.categories", { returnObjects: true }))];
   const allZones = ["all_zones", ...Object.keys(t("projects.locations", { returnObjects: true }))];
 
   const filteredProjects = projectsData.filter((p) => {
-    const categoryKey = p.category.split('.').pop();
-    const locationKey = p.location.split('.').pop();
+    // Pour les projets de l'API, on compare directement les valeurs
+    const matchCategory = selectedCategory === "all" || p.category === selectedCategory || 
+      (selectedCategory === "restauration" && p.category === "Restauration") ||
+      (selectedCategory === "marketing_digital" && p.category === "Marketing Digital") ||
+      (selectedCategory === "evenementiel" && p.category === "Événementiel") ||
+      (selectedCategory === "design" && p.category === "Design") ||
+      (selectedCategory === "production" && p.category === "Production") ||
+      (selectedCategory === "commerce" && p.category === "Commerce");
     
-    const matchCategory = selectedCategory === "all" || categoryKey === selectedCategory;
-    const matchZone = selectedZone === "all_zones" || locationKey === selectedZone;
-    const matchSearch = t(p.name).toLowerCase().includes(searchTerm.toLowerCase());
+    const matchZone = selectedZone === "all_zones" || p.location.toLowerCase().includes(selectedZone.toLowerCase());
+    const matchSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                       p.description.toLowerCase().includes(searchTerm.toLowerCase());
 
     return matchCategory && matchZone && matchSearch;
   });
@@ -47,6 +92,31 @@ export default function Projet() {
   );
 
   const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
+
+  // Affichage du loading
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 mt-30 mx-10 rounded-2xl flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-xl text-slate-600">Chargement des projets...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Affichage de l'erreur
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 mt-30 mx-10 rounded-2xl flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-red-500 text-6xl mb-4">⚠️</div>
+          <h2 className="text-2xl font-bold text-slate-800 mb-2">Erreur de chargement</h2>
+          <p className="text-slate-600">{error}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     // <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 mt-30 mx-10">
@@ -222,7 +292,7 @@ export default function Projet() {
                   <div className="relative">
                     <img
                       src={p.image}
-                      alt={t(p.name)}
+                      alt={p.name}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -236,7 +306,7 @@ export default function Projet() {
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-3">
                       <h3 className="text-lg sm:text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors line-clamp-2 text-center md:text-left leading-tight" dir="auto">
-                        {t(p.name)}
+                        {p.name}
                       </h3>
                       <div className="flex-shrink-0 ml-2">
                         <svg className="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -249,13 +319,13 @@ export default function Projet() {
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                         <span className="text-sm text-slate-600" dir="auto">
-                          <span className="font-medium">{t("projects.category_label", "Catégorie")}:</span> {t(p.category)}
+                          <span className="font-medium">{t("projects.category_label", "Catégorie")}:</span> {p.category}
                         </span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
                         <span className="text-sm text-slate-600" dir="auto">
-                          <span className="font-medium">{t("projects.location_label", "Localisation")}:</span> {t(p.location)}
+                          <span className="font-medium">{t("projects.location_label", "Localisation")}:</span> {p.location}
                         </span>
                       </div>
                     </div>
@@ -394,15 +464,15 @@ export default function Projet() {
                         <div className="flex items-center space-x-3" dir="auto">
                           <img 
                             src={project.image} 
-                            alt={t(project.name)}
+                            alt={project.name}
                             className="w-16 h-16 object-cover rounded-lg shadow-sm"
                           />
                           <div className="flex-1">
                             <h3 className="text-blue-700 font-bold text-base leading-tight" dir="auto">
-                              {t(project.name)}
+                              {project.name}
                             </h3>
                             <p className="text-gray-600 text-sm" dir="auto">
-                              {t(project.category)}
+                              {project.category}
                             </p>
                           </div>
                         </div>
@@ -435,7 +505,7 @@ export default function Projet() {
                             <div className="flex items-start space-x-2" dir="auto">
                               <span className="text-red-600 text-lg">📍</span>
                               <span className="text-gray-700 text-sm">{t("projects.address_label", "Adresse")}:</span>
-                              <p className="text-gray-700 text-sm leading-tight flex-1">{t(project.address)}</p>
+                              <p className="text-gray-700 text-sm leading-tight flex-1">{project.address}</p>
                             </div>
                           )}
                           
