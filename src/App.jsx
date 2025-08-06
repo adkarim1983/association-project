@@ -17,9 +17,9 @@ import { useEffect, useState } from 'react';
 import Dashboard from './pages/admin/Dashboard';
 import ArticleForms from './pages/admin/ArticleForms';
 import AcademieNajm from "./components/AcademieNajm";
-
-
-
+import Unauthorized from './pages/Unauthorized';
+import { AuthProvider } from './contexts/AuthContext';
+import PrivateRoute, { AdminRoute } from './components/PrivateRoute';
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -35,8 +35,7 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <>
-
+    <AuthProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -44,6 +43,7 @@ function App() {
           <Route path="project" element={<Projet />} />
           <Route path="about-us" element={<AboutUs />} />
           <Route path="login" element={<Login />} />
+          <Route path="unauthorized" element={<Unauthorized />} />
           <Route path="galerie" element={<GalerieImage />} />
           <Route path="axe" element={<Axe />} />
           <Route path="/" element={<ListingLocationPage />} />
@@ -52,16 +52,30 @@ function App() {
           <Route path="/rapports/culture-et-jeunesse" element={<RapportCultureEtJeunesse />} />
           <Route path="/rapports/solidarite-developpement" element={<RapportSolidariteDev />} />
           
-          
           <Route path="academie-najm" element={<AcademieNajm />} />
 
+          {/* Protected Admin Routes */}
+          <Route 
+            path="/admin/dashboard" 
+            element={
+              <AdminRoute>
+                <Dashboard />
+              </AdminRoute>
+            } 
+          />
+          <Route 
+            path="addArticle" 
+            element={
+              <AdminRoute>
+                <ArticleForms />
+              </AdminRoute>
+            } 
+          />
 
           <Route path="*" element={<h1>Page not found</h1>} />
-          <Route path="/admin/dashboard" element={<Dashboard />} />
-          <Route path="addArticle" element={<ArticleForms />} />
         </Route>
       </Routes>
-    </>
+    </AuthProvider>
   );
 }
 

@@ -24,15 +24,8 @@ const AdminUsers = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const token = localStorage.getItem('token');
       const queryParams = new URLSearchParams(filters);
-      
-      const response = await fetch(`/api/admin/users?${queryParams}`, {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        }
-      });
+      const response = await authFetch(`/api/admin/users?${queryParams}`);
 
       if (!response.ok) {
         throw new Error('Erreur lors de la récupération des utilisateurs');
@@ -80,13 +73,8 @@ const AdminUsers = () => {
 
   const handleStatusChange = async (userId, isActive) => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await fetch(`/api/admin/users/${userId}/status`, {
+      const response = await authFetch(`/api/admin/users/${userId}/status`, {
         method: 'PUT',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        },
         body: JSON.stringify({ isActive })
       });
 
@@ -113,13 +101,8 @@ const AdminUsers = () => {
     }
 
     try {
-      const token = localStorage.getItem('token');
-      const response = await fetch(`/api/admin/users/${userId}`, {
-        method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        }
+      const response = await authFetch(`/api/admin/users/${userId}`, {
+        method: 'DELETE'
       });
 
       if (!response.ok) {
