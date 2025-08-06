@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -7,7 +7,7 @@ import L from "leaflet";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
-import { projects as projectsData } from "../data/projects";
+import { projectService } from "../services/projectService";
 
 // Fix icônes Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -52,15 +52,74 @@ function MobileTruncatedText({ text }) {
 export default function PageProjet() {
   const { t } = useTranslation();
   const { id } = useParams();
-  const project = projectsData.find((p) => p.id === parseInt(id));
+  const [project, setProject] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [isContactVisible, setIsContactVisible] = useState(false);
 
-  if (!project) {
+  // Charger le projet depuis l'API
+  useEffect(() => {
+    const loadProject = async () => {
+      try {
+        setLoading(true);
+        const response = await projectService.getProjects({ limit: 1000 });
+        
+        // Trouver le projet par ID
+        const foundProject = response.projects.find(p => p._id === id);
+        
+        if (foundProject) {
+          // Adapter les données pour correspondre au format attendu
+          const adaptedProject = {
+            id: foundProject._id,
+            name: foundProject.name,
+            category: foundProject.category,
+            location: foundProject.location,
+            lat: foundProject.coordinates?.lat || 33.5731,
+            lng: foundProject.coordinates?.lng || -7.5898,
+            image: foundProject.image || 'https://via.placeholder.com/400x300?text=Pas+d\'image',
+            phone: foundProject.contact?.phone || '',
+            email: foundProject.contact?.email || '',
+            address: foundProject.address,
+            hours: foundProject.hours || '',
+            website: foundProject.contact?.website || '',
+            description: foundProject.description
+          };
+          setProject(adaptedProject);
+        } else {
+          setError('Projet non trouvé');
+        }
+      } catch (err) {
+        console.error('Erreur lors du chargement du projet:', err);
+        setError('Impossible de charger le projet');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (id) {
+      loadProject();
+    }
+  }, [id]);
+
+  // Affichage du loading
+  if (loading) {
     return (
       <div className="flex items-center justify-center h-screen bg-gray-100">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-red-600 mb-4">{t("projects.project_not_found", "Projet non trouvé")}</h2>
-          <Link to="/projects" className="text-blue-600 hover:underline">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-xl text-slate-600">Chargement du projet...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Affichage de l'erreur ou projet non trouvé
+  if (error || !project) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-red-600 mb-4">{error || t("projects.project_not_found", "Projet non trouvé")}</h2>
+          <Link to="/projets" className="text-blue-600 hover:underline">
             {t("projects.back_to_list", "Retour à la liste des projets")}
           </Link>
         </div>
@@ -68,8 +127,7 @@ export default function PageProjet() {
     );
   }
 
-  // Créer la clé de base pour ce projet
-  const projectKey = project.name.replace('projects.list.', '').replace('.name', '');
+  // Plus besoin de clé de projet car on utilise les données directes
 
  return (
     <div className="min-h-screen bg-white">
@@ -82,7 +140,7 @@ export default function PageProjet() {
               <div className="flex-shrink-0">
                 <img
                   src={project.image}
-                  alt={t(project.name)}
+                  alt={project.name}
                   className="w-32 h-32 md:w-40 md:h-40 rounded-2xl object-cover shadow-xl ring-4 ring-blue-200"
                 />
               </div>
@@ -90,18 +148,18 @@ export default function PageProjet() {
               {/* Titre et informations */}
               <div className="flex-1 text-center md:text-left">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600 mb-3 tracking-wider" dir="auto">
-                  {t(project.name)}
+                  {project.name}
                 </h1>
                 <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-4">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                    {t(project.category)}
+                    {project.category}
                   </span>
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">
-                    📍 {t(project.location)}
+                    📍 {project.location}
                   </span>
                 </div>
                                  <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl" dir="auto">
-                   {t(`projects.list.${projectKey}.presentation`, t(project.description)).substring(0, 150)}...
+                   {project.description.substring(0, 150)}...
                  </p>
               </div>
             </div>
@@ -112,40 +170,13 @@ export default function PageProjet() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Colonne de gauche - Informations détaillées */}
           <div className="space-y-8">
-            {/* Section Informations sur la fondatrice */}
+            {/* Section Description complète */}
             <div>
               <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center" dir="auto">
                 <span className="mr-2">📋</span>
-                {t('projects.founder_info_title', 'Informations sur la fondatrice')}
+                {t('projects.description', 'Description')}
               </h2>
-              <MobileTruncatedText text={t(`projects.list.${projectKey}.founder_info`, t(project.description))} />
-            </div>
-
-            {/* Section Présentation du projet */}
-            <div>
-              <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center" dir="auto">
-                <span className="mr-2">📈</span>
-                {t('projects.presentation_title', 'Présentation du projet')}
-              </h2>
-              <MobileTruncatedText text={t(`projects.list.${projectKey}.presentation`, t(project.description))} />
-            </div>
-
-            {/* Section Soutien et accompagnement */}
-            <div>
-              <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center" dir="auto">
-                <span className="mr-2">🤝</span>
-                {t('projects.support_title', 'Soutien et accompagnement')}
-              </h2>
-              <MobileTruncatedText text={t(`projects.list.${projectKey}.support`, 'Information sur le soutien disponible bientôt.')} />
-            </div>
-
-            {/* Section Produits et services */}
-            <div>
-              <h2 className="text-xl font-semibold text-blue-600 mb-4 flex items-center" dir="auto">
-                <span className="mr-2">🛍️</span>
-                {t('projects.products_title', 'Produits et services')}
-              </h2>
-              <MobileTruncatedText text={t(`projects.list.${projectKey}.products`, 'Information sur les produits et services disponible bientôt.')} />
+              <MobileTruncatedText text={project.description} />
             </div>
 
             {/* Section Partenaires */}
@@ -154,7 +185,7 @@ export default function PageProjet() {
                 <span className="mr-2">🤝</span>
                 {t('projects.partners_title', 'Partenaires')}
               </h2>
-              <MobileTruncatedText text={t(`projects.list.${projectKey}.partners`, 'Information sur les partenaires disponible bientôt.')} />
+              <MobileTruncatedText text={"Information sur les partenaires disponible bientôt."} />
             </div>
           </div>
 
@@ -227,7 +258,7 @@ export default function PageProjet() {
                           <div className="flex items-start space-x-1" dir="auto">
                             <span className="text-red-600 text-sm">📍</span>
                             <span className="text-gray-700 text-xs">{t("projects.address_label", "Adresse")}:</span>
-                            <p className="text-gray-700 text-xs leading-tight flex-1">{t(project.address)}</p>
+                            <p className="text-gray-700 text-xs leading-tight flex-1">{project.address}</p>
                           </div>
                         )}
                         
@@ -277,9 +308,9 @@ export default function PageProjet() {
               
               {/* Contenu - caché sur desktop sauf si cliqué, toujours visible sur mobile */}
               <div className={`space-y-2 text-gray-800 block md:${isContactVisible ? 'block' : 'hidden'}`}>
-                <p dir="auto"><strong>{t('projects.category_label', 'Catégorie')}:</strong> {t(project.category)}</p>
-                <p dir="auto"><strong>{t('projects.location_label', 'Lieu')}:</strong> {t(project.location)}</p>
-                <p dir="auto"><strong>{t('projects.address_label', 'Adresse')}:</strong> {t(project.address)}</p>
+                <p dir="auto"><strong>{t('projects.category_label', 'Catégorie')}:</strong> {project.category}</p>
+                <p dir="auto"><strong>{t('projects.location_label', 'Lieu')}:</strong> {project.location}</p>
+                <p dir="auto"><strong>{t('projects.address_label', 'Adresse')}:</strong> {project.address}</p>
                 <p dir="auto"><strong>{t('projects.phone_label', 'Téléphone')}:</strong> <span dir="ltr">{project.phone}</span></p>
                 <p dir="auto"><strong>{t('projects.email_label', 'Email')}:</strong> <span dir="ltr">{project.email}</span></p>
                 <p dir="auto"><strong>{t('projects.website_label', 'Site Web')}:</strong> 

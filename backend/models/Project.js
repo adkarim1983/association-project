@@ -59,6 +59,26 @@ const projectSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
+  founder_info: {
+    type: String,
+    trim: true
+  },
+  presentation: {
+    type: String,
+    trim: true
+  },
+  support: {
+    type: String,
+    trim: true
+  },
+  products: {
+    type: String,
+    trim: true
+  },
+  partners: {
+    type: String,
+    trim: true
+  },
   image: {
     type: String,
     trim: true

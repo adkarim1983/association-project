@@ -12,7 +12,9 @@
     "seed-admin": "node scripts/seed-admin.js",
     "test-contact": "node scripts/test-contact-system.js",
     "test-admin": "node scripts/test-admin-system.js",
-    "test-upload": "node scripts/test-image-upload.js"
+    "test-upload": "node scripts/test-image-upload.js",
+    "populate-fields": "node scripts/populate-project-fields.js",
+    "populate-fields-complete": "node scripts/populate-project-fields-complete.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

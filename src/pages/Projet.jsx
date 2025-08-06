@@ -296,11 +296,11 @@ export default function Projet() {
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute top-4 right-4">
+                    {/* <div className="absolute top-4 right-4">
                       <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                         <span className="text-xs font-medium text-slate-700">#{p.id}</span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   
                   <div className="p-6">
