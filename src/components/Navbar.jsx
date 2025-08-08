@@ -140,19 +140,19 @@ export default function Navbar() {
             </button>
             {missionsMenuOpen && (
               <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-200 shadow-2xl rounded-xl z-50 overflow-hidden">
-                <Link to="/missions/gestion-plateformes" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                <Link to="/missions/gestion-plateformes"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
                   {t("missions.gestion_plateformes")}
                 </Link>
-                <Link to="/missions/economie-sociale" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                <Link to="/missions/economie-sociale"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
                   {t("missions.economie_sociale")}
                 </Link>
-                <Link to="/missions/entrepreneuriat" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                <Link to="/missions/entrepreneuriat"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
                   {t("missions.entrepreneuriat")}
                 </Link>
-                <Link to="/missions/incubation" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                <Link to="/missions/incubation"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
                   {t("missions.incubation")}
                 </Link>
-                <Link to="/missions/developpement-capacites" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200">
+                <Link to="/missions/developpement-capacites"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200">
                   {t("missions.developpement_capacites")}
                 </Link>
               </div>
