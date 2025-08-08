@@ -20,6 +20,7 @@ import AcademieNajm from "./components/AcademieNajm";
 import Unauthorized from './pages/Unauthorized';
 import { AuthProvider } from './contexts/AuthContext';
 import PrivateRoute, { AdminRoute } from './components/PrivateRoute';
+import Splash from './pages/Splash';
 
 // Mission pages
 import GestionPlateformes from './pages/missions/GestionPlateformes';
@@ -44,6 +45,7 @@ function App() {
   return (
     <AuthProvider>
       <Routes>
+        <Route path="/intro" element={<Splash />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
