@@ -2,11 +2,18 @@
     "menu": {
         "accueil": "Accueil",
         "a_propos": "À propos",
-        "axe": "Axe d'intervention",
+        "missions": "Missions",
         "projets": "Projets",
         "contact": "Contact",
         "galerie": "Galerie",
         "academie_najm": "Académie Najm"
+    },
+    "missions": {
+        "gestion_plateformes": "Gestion des plateformes Erchad",
+        "economie_sociale": "Économie sociale et solidaire",
+        "entrepreneuriat": "Entrepreneuriat",
+        "incubation": "Incubation",
+        "developpement_capacites": "Développement des capacités des jeunes"
     },
     "president_title": "Mot du Président",
     "president_text": "Au nom de l'ensemble des membres de l'Association Najm, je vous souhaite la bienvenue sur notre plateforme numérique. Elle reflète notre engagement envers la jeunesse, notre vision du développement communautaire et notre volonté d'agir pour l'insertion économique et professionnelle.",

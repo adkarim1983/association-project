@@ -21,6 +21,13 @@ import Unauthorized from './pages/Unauthorized';
 import { AuthProvider } from './contexts/AuthContext';
 import PrivateRoute, { AdminRoute } from './components/PrivateRoute';
 
+// Mission pages
+import GestionPlateformes from './pages/missions/GestionPlateformes';
+import EconomieSociale from './pages/missions/EconomieSociale';
+import Entrepreneuriat from './pages/missions/Entrepreneuriat';
+import Incubation from './pages/missions/Incubation';
+import DeveloppementCapacites from './pages/missions/DeveloppementCapacites';
+
 function App() {
   const [language, setLanguage] = useState('en');
   const location = useLocation();
@@ -53,6 +60,13 @@ function App() {
           <Route path="/rapports/solidarite-developpement" element={<RapportSolidariteDev />} />
           
           <Route path="academie-najm" element={<AcademieNajm />} />
+          
+          {/* Mission Routes */}
+          <Route path="missions/gestion-plateformes" element={<GestionPlateformes />} />
+          <Route path="missions/economie-sociale" element={<EconomieSociale />} />
+          <Route path="missions/entrepreneuriat" element={<Entrepreneuriat />} />
+          <Route path="missions/incubation" element={<Incubation />} />
+          <Route path="missions/developpement-capacites" element={<DeveloppementCapacites />} />
 
           {/* Protected Admin Routes */}
           <Route 

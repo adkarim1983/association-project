@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import image4 from "../assets/image4.jpg";
-import image5 from "../assets/image5.png";
+// import image5 from "../assets/image5.png";
 import image6 from "../assets/image6.png";
 import image7 from "../assets/image7.png";
 import image8 from "../assets/image8.png";
@@ -9,11 +9,12 @@ import image9 from "../assets/image9.png";
 import image10 from "../assets/image10.png";
 import image11 from "../assets/image11.png";
 import image12 from "../assets/image12.png";
+import ofppt from "../assets/ofppt.png";
 import logo2 from "../assets/logo2.png";
 
 const partners = [
   { id: 1, name: "", image: image4, link: "https://www.univh2c.ma/" },
-  { id: 2, name: "", image: image5, link: "https://www.ofppt.ma/" },
+  { id: 2, name: "", image: ofppt, link: "https://www.ofppt.ma/" },
   { id: 3, name: "", image: image6, link: "https://anapec.ma/home-page-o1/" },
   { id: 4, name: "", image: image7, link: "https://www.entraide.ma/" },
   { id: 5, name: "", image: image8, link: "https://www.amideast.org/morocco" },

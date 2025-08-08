@@ -1,88 +1,4 @@
 // import { Link } from 'react-router-dom';
-// import logo2 from '../assets/logo2.png';
-// import { useState } from 'react';
-// import { useTranslation } from "react-i18next";
-
-// export default function Navbar() {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
-
-//   const { t, i18n } = useTranslation();
-
-//   const handleLanguageChange = (lang) => {
-//     i18n.changeLanguage(lang);
-//     document.documentElement.lang = lang;
-//     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-//     setLanguageMenuOpen(false);
-//   };
-
-//   return (
-//     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-99">
-//       <div className="mx-auto px-4 py-3 flex items-center justify-between max-w-7xl">
-//         {/* Logo */}
-//         <Link to="/">
-//           <img
-//             src={logo2}
-//             alt="Logo Association Najm"
-//             className="h-14 w-auto cursor-pointer hover:scale-105 transition-transform duration-300"
-//           />
-//         </Link>
-
-//         {/* Menu Desktop */}
-//         <ul className="hidden lg:flex items-center space-x-6 font-medium text-gray-700">
-//           <li><Link to="/">{t("menu.accueil")}</Link></li>
-//           <li><Link to="/about-us">{t("menu.a_propos")}</Link></li>
-//           <li><Link to="/Axe">{t("menu.axe")}</Link></li>
-//           <li><Link to="/project">{t("menu.projets")}</Link></li>
-//           <Link to="/galerie" onClick={() => setIsMenuOpen(false)}>{t("menu.galerie")}
-//           </Link>
-//           <li><Link to="/contact">{t("menu.contact")}</Link></li>
-
-//           {/* Langue Desktop */}
-//           <li className="relative">
-//             <button
-//               onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
-//               className="w-10 h-10 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center hover:bg-blue-100 transition duration-300 shadow-sm"
-//               title="Choisir la langue"
-//             >
-//               🌐
-//             </button>
-
-//             {languageMenuOpen && (
-//               <div className="absolute right-0 mt-2 w-44 bg-white/80 backdrop-blur-md border border-gray-200 shadow-2xl rounded-xl z-50">
-//                 <button onClick={() => handleLanguageChange("fr")} className="block px-4 py-2 w-full text-left hover:bg-blue-50">FR - Français</button>
-//                 <button onClick={() => handleLanguageChange("en")} className="block px-4 py-2 w-full text-left hover:bg-blue-50">EN - English</button>
-//                 <button onClick={() => handleLanguageChange("ar")} className="block px-4 py-2 w-full text-left hover:bg-blue-50">AR - العربية</button>
-//               </div>
-//             )}
-//           </li>
-//         </ul>
-
-//         {/* Burger Button (mobile) */}
-//         <button
-//           onClick={() => setIsMenuOpen(!isMenuOpen)}
-//           className="lg:hidden text-gray-700"
-//         >
-//           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-//               d="M4 6h16M4 12h16M4 18h16" />
-//           </svg>
-//         </button>
-//       </div>
-
-//       {/* Menu Mobile */}
-//       {isMenuOpen && (
-//         <div className="lg:hidden bg-white border-t border-gray-200 px-6 pb-4">
-//           <ul className="flex flex-col space-y-4 mt-4 text-gray-700 font-medium">
-//             <li><Link to="/" onClick={() => setIsMenuOpen(false)}>{t("menu.accueil")}</Link></li>
-//             <li><Link to="/about-us" onClick={() => setIsMenuOpen(false)}>{t("menu.a_propos")}</Link></li>
-//             <li><Link to="/Axe" onClick={() => setIsMenuOpen(false)}>{t("menu.axe")}</Link></li>
-//             <li><Link to="/project" onClick={() => setIsMenuOpen(false)}>{t("menu.projets")}</Link></li>
-
-//             <li><Link to="/galerie" onClick={() => setIsMenuOpen(false)}>{t("menu.galerie")}</Link></li>
-
-//             <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>{t("menu.contact")}</Link></li>
-
 //             <li className="pt-2 border-t">
 //               Langue :
 //               <div className="flex gap-4 mt-2">
@@ -105,6 +21,7 @@ import { useTranslation } from "react-i18next";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
+  const [missionsMenuOpen, setMissionsMenuOpen] = useState(false);
   const mobileMenuRef = useRef(null);
 
   const { t, i18n } = useTranslation();
@@ -206,13 +123,40 @@ export default function Navbar() {
               ></span>
             </Link>
           </li>
-          <li>
-            <Link to="/Axe" className="relative group text-black transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#673D98'} onMouseLeave={(e) => e.target.style.color = 'black'}>
-              {t("menu.axe")}
+          <li className="relative">
+            <button
+              onClick={() => setMissionsMenuOpen(!missionsMenuOpen)}
+              className="relative group text-black transition-colors duration-300 flex items-center space-x-1"
+              onMouseEnter={(e) => e.target.style.color = '#673D98'}
+              onMouseLeave={(e) => e.target.style.color = 'black'}
+            >
+              <span>{t("menu.missions")}</span>
+              <svg className={`w-4 h-4 transition-transform duration-200 ${missionsMenuOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
               <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
                 style={{ backgroundColor: '#673D98' }}
               ></span>
-            </Link>
+            </button>
+            {missionsMenuOpen && (
+              <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-200 shadow-2xl rounded-xl z-50 overflow-hidden">
+                <Link to="/missions/gestion-plateformes" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                  {t("missions.gestion_plateformes")}
+                </Link>
+                <Link to="/missions/economie-sociale" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                  {t("missions.economie_sociale")}
+                </Link>
+                <Link to="/missions/entrepreneuriat" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                  {t("missions.entrepreneuriat")}
+                </Link>
+                <Link to="/missions/incubation" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                  {t("missions.incubation")}
+                </Link>
+                <Link to="/missions/developpement-capacites" target="_blank" className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200">
+                  {t("missions.developpement_capacites")}
+                </Link>
+              </div>
+            )}
           </li>
           <li>
             <Link to="/project" className="relative group text-black transition-colors duration-300" onMouseEnter={(e) => e.target.style.color = '#FCBD18'} onMouseLeave={(e) => e.target.style.color = 'black'}>
@@ -365,18 +309,39 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link 
-                to="/Axe" 
-                onClick={closeMobileMenu} 
-                className="relative group transition-colors duration-300 block py-2" 
-                onMouseEnter={(e) => e.target.style.color = '#673D98'} 
+              <button
+                onClick={() => setMissionsMenuOpen(!missionsMenuOpen)}
+                className="relative group transition-colors duration-300 flex items-center justify-between w-full text-left py-2"
+                onMouseEnter={(e) => e.target.style.color = '#673D98'}
                 onMouseLeave={(e) => e.target.style.color = 'white'}
                 onTouchStart={(e) => e.target.style.color = '#673D98'}
                 onTouchEnd={(e) => setTimeout(() => e.target.style.color = 'white', 150)}
               >
-                {t("menu.axe")}
+                <span>{t("menu.missions")}</span>
+                <svg className={`w-4 h-4 transition-transform duration-200 ${missionsMenuOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                </svg>
                 <span className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full group-active:w-full" style={{ backgroundColor: '#673D98' }}></span>
-              </Link>
+              </button>
+              {missionsMenuOpen && (
+                <div className="ml-4 mt-2 space-y-1 bg-gray-800/50 rounded-lg p-3">
+                  <Link to="/missions/gestion-plateformes" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                    {t("missions.gestion_plateformes")}
+                  </Link>
+                  <Link to="/missions/economie-sociale" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                    {t("missions.economie_sociale")}
+                  </Link>
+                  <Link to="/missions/entrepreneuriat" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                    {t("missions.entrepreneuriat")}
+                  </Link>
+                  <Link to="/missions/incubation" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                    {t("missions.incubation")}
+                  </Link>
+                  <Link to="/missions/developpement-capacites" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                    {t("missions.developpement_capacites")}
+                  </Link>
+                </div>
+              )}
             </li>
             <li>
               <Link 
