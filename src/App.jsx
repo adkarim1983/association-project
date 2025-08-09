@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
@@ -47,7 +47,8 @@ function App() {
       <Routes>
         <Route path="/intro" element={<Splash />} />
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Navigate to="/intro" replace />} />
+          <Route path="home" element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="project" element={<Projet />} />
           <Route path="about-us" element={<AboutUs />} />

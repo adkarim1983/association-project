@@ -96,7 +96,7 @@ export default function Navbar() {
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="mx-auto px-4 py-2 flex items-center justify-between max-w-7xl" style={{ direction: 'ltr' }}>
         {/* Logo */}
-        <Link to="/">
+        <Link to="/home">
           <img
             src={logo2}
             alt="Logo Association Najm"
@@ -107,7 +107,7 @@ export default function Navbar() {
         {/* Menu Desktop */}
         <ul className={`hidden lg:flex ${currentLanguage === 'ar' ? 'flex-row-reverse' : ''} items-center space-x-6 font-medium text-white text-[16px]`}>
           <li>
-            <Link to="/" className="relative group text-black transition-colors duration-300" style={{ '&:hover': { color: '#1B7CC1' } }} onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} onMouseLeave={(e) => e.target.style.color = 'black'}>
+            <Link to="/home" className="relative group text-black transition-colors duration-300" style={{ '&:hover': { color: '#1B7CC1' } }} onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} onMouseLeave={(e) => e.target.style.color = 'black'}>
               {t("menu.accueil")}
               <span
                 className="absolute left-0 -bottom-1 w-0 h-1 transition-all duration-300 group-hover:w-full"
@@ -282,7 +282,7 @@ export default function Navbar() {
           <ul className="flex flex-col space-y-4 mt-4 text-white font-medium text-[18px]">
             <li>
               <Link 
-                to="/" 
+                to="/home" 
                 onClick={closeMobileMenu} 
                 className="relative group transition-colors duration-300 block py-2" 
                 onMouseEnter={(e) => e.target.style.color = '#1B7CC1'} 

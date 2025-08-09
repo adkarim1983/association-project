@@ -9,7 +9,7 @@ function Splash() {
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
 
   const handleClick = () => {
-    navigate('/');
+    navigate('/home');
   };
 
   const handleLanguageChange = (lang) => {
