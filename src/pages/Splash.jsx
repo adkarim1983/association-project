@@ -126,7 +126,7 @@ function Splash() {
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6">
         <div className="text-center">
           {/* Logo */}
-          <div className="fade-in-up mb-12">
+          <div className="fade-in-up mb-2 md:mb-4">
             <div className="relative inline-block">
               <img
                 src={logo}
@@ -172,14 +172,14 @@ function Splash() {
           </div>
 
           {/* Call to Action */}
-          <div className="fade-in-up-delay-2">
+          {/* <div className="fade-in-up-delay-2">
             <div className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white hover:bg-white/20 transition-all duration-300">
               <span className="text-lg font-medium">
                 {currentLanguage === 'ar' ? 'انقر للدخول' : currentLanguage === 'en' ? 'Click to enter' : 'Cliquez pour entrer'}
               </span>
               <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
