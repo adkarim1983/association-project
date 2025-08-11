@@ -1,8 +1,52 @@
 import SupportedEnterprisesMap from "../components/SupportedEnterprisesMap";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import contactService from "../services/contactService";
 
 export default function Contact() {
   const { t } = useTranslation();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    phone: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setForm((prev) => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setSuccess("");
+
+    // Minimal front validation
+    if (!form.name || !form.email || !form.subject || !form.message) {
+      setError(t("contact.validationRequired") || "Veuillez remplir tous les champs obligatoires.");
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const res = await contactService.sendMessage({
+        ...form,
+        category: "general",
+        language: "fr",
+      });
+      setSuccess(res.message || t("contact.success") || "Message envoyé avec succès.");
+      setForm({ name: "", email: "", subject: "", message: "", phone: "" });
+    } catch (err) {
+      setError(err.message || t("contact.error") || "Erreur lors de l'envoi du message.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -24,7 +68,13 @@ export default function Contact() {
             {/* Formulaire */}
             <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <h3 className="text-[30px] font-bold text-[#1C398E] mb-8 text-center md:text-left">{t("contact.formTitle")}</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                {error && (
+                  <div className="p-3 rounded-xl bg-red-50 text-red-700 border border-red-100 text-sm">{error}</div>
+                )}
+                {success && (
+                  <div className="p-3 rounded-xl bg-green-50 text-green-700 border border-green-100 text-sm">{success}</div>
+                )}
                 {["name", "email", "subject"].map((field) => (
                   <div className="relative" key={field}>
                     <label htmlFor={field} className="block text-gray-700 font-medium mb-2 text-sm uppercase tracking-wide">
@@ -36,6 +86,8 @@ export default function Contact() {
                       className="w-full px-4 py-3.5 bg-gray-50 border-2 border-gray-100 rounded-xl focus:outline-none focus:border-[#1C398E] focus:bg-white transition-all duration-300 placeholder-gray-400"
                       placeholder={t(`contact.${field}`)}
                       required
+                      value={form[field]}
+                      onChange={handleChange}
                     />
                   </div>
                 ))}
@@ -47,13 +99,16 @@ export default function Contact() {
                     className="w-full px-4 py-3.5 bg-gray-50 border-2 border-gray-100 rounded-xl focus:outline-none focus:border-[#1C398E] focus:bg-white transition-all duration-300 placeholder-gray-400 resize-none"
                     placeholder={t("contact.messagePlaceholder")}
                     required
+                    value={form.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#1C398E] hover:bg-[#152a68] text-white py-4 rounded-xl font-semibold transition-all duration-300 transform hover:translate-y-[-2px] hover:shadow-lg mb-8"
+                  className="w-full bg-[#1C398E] hover:bg-[#152a68] text-white py-4 rounded-xl font-semibold transition-all duration-300 transform hover:translate-y-[-2px] hover:shadow-lg mb-8 disabled:opacity-60 disabled:cursor-not-allowed"
+                  disabled={loading}
                 >
-                  {t("contact.sendMessage")}
+                  {loading ? t("contact.sending") || "Envoi..." : t("contact.sendMessage")}
                 </button>
               </form>
 
