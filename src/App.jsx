@@ -45,9 +45,8 @@ function App() {
   return (
     <AuthProvider>
       <Routes>
-        <Route path="/intro" element={<Splash />} />
         <Route path="/" element={<Layout />}>
-          <Route index element={<Navigate to="/intro" replace />} />
+          <Route index element={<Navigate to="/home" replace />} />
           <Route path="home" element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="project" element={<Projet />} />
