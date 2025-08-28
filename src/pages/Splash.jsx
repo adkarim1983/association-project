@@ -27,12 +27,12 @@ function Splash() {
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') handleClick();
       }}
-      className="relative h-screen w-full bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 flex items-center justify-center select-none overflow-hidden"
+      className="relative min-h-screen w-full bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 flex flex-col items-center justify-start select-none overflow-auto"
       style={{ cursor: 'pointer' }}
     >
-      {/* Disable scroll */}
+      {/* Styles */}
       <style>{`
-        body { overflow: hidden; }
+        body { overflow-x: hidden; }
         @keyframes shimmer {
           0% { background-position: -200% 0; }
           100% { background-position: 200% 0; }
@@ -49,6 +49,7 @@ function Splash() {
         .fade-in-up { animation: fadeInUp 0.8s ease-out; }
         .fade-in-up-delay { animation: fadeInUp 0.8s ease-out 0.3s both; }
         .fade-in-up-delay-2 { animation: fadeInUp 0.8s ease-out 0.6s both; }
+        .arabic-text { direction: rtl; text-align: right; font-family: 'Noto Sans Arabic', 'Arial', sans-serif; }
       `}</style>
 
       {/* Language Selector - Top Right */}
@@ -123,63 +124,145 @@ function Splash() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6">
-        <div className="text-center">
-          {/* Logo */}
-          <div className="fade-in-up mb-2 md:mb-4">
-            <div className="relative inline-block">
-              <img
-                src={logo}
-                alt="Association Najm"
-                className="w-80 h-80 md:w-96 md:h-96 object-contain mx-auto filter drop-shadow-2xl"
-              />
-              <div className="absolute inset-0 shimmer rounded-full" />
-            </div>
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-8">
+        {/* Logo */}
+        <div className="fade-in-up text-center mb-8">
+          <div className="relative inline-block">
+            <img
+              src={logo}
+              alt="Association Najm"
+              className="w-32 h-32 md:w-48 md:h-48 object-contain mx-auto filter drop-shadow-2xl"
+            />
+            <div className="absolute inset-0 shimmer rounded-full" />
           </div>
+        </div>
 
-          {/* Title */}
-          <div className="fade-in-up-delay mb-8">
-            <h1 className="text-5xl md:text-7xl font-light text-white mb-4 leading-tight">
-              {currentLanguage === 'ar' ? 'مرحباً بكم في' : currentLanguage === 'en' ? 'Welcome to' : 'Bienvenue à'}
-            </h1>
-            <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
-              {currentLanguage === 'ar' ? 'جمعية نجم' : 'Association Najm'}
-            </h2>
-          </div>
+        {/* Main Title */}
+        <div className="fade-in-up-delay text-center mb-8">
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight arabic-text">
+            تنزيل محور دعم ريادة الأعمال لدى شباب عمالة مقاطعات مولاي رشيد
+          </h1>
+        </div>
 
-          {/* Pillars */}
-          <div className="fade-in-up-delay-2 mb-10">
-            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-8">
-              <span className="px-6 py-3 text-lg md:text-xl rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 backdrop-blur-md border border-white/20 text-white font-medium">
-                {currentLanguage === 'ar' ? 'الثقافة' : currentLanguage === 'en' ? 'Culture' : 'Culture'}
-              </span>
-              <span className="px-6 py-3 text-lg md:text-xl rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-md border border-white/20 text-white font-medium">
-                {currentLanguage === 'ar' ? 'الشباب' : currentLanguage === 'en' ? 'Youth' : 'Jeunesse'}
-              </span>
-              <span className="px-6 py-3 text-lg md:text-xl rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-md border border-white/20 text-white font-medium">
-                {currentLanguage === 'ar' ? 'الإدماج' : currentLanguage === 'en' ? 'Inclusion' : 'Inclusion'}
-              </span>
-            </div>
-
-            <p className="text-xl md:text-2xl text-gray-200 font-light italic max-w-4xl mx-auto leading-relaxed">
-              {currentLanguage === 'ar' 
-                ? '"متحدون لنلهم ونبدع ونبني مستقبلاً أفضل"'
-                : currentLanguage === 'en'
-                ? '"United to inspire, create and build a better future"'
-                : '"Unis pour inspirer, créer et construire un avenir meilleur"'
-              }
+        {/* Main Paragraph */}
+        <div className="fade-in-up-delay-2 mb-12">
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-white leading-relaxed arabic-text">
+              بفضل كفاءة أعضائها والتزام هيكلها التنظيمي الدائم، ساهمت جمعية نجم في طلب إبداء الاهتمام الذي أطلقته
+              عمالة مقاطعات مولاي رشيد في نونبر 2023، والمتعلق بتنزيل محور دعم ريادة الأعمال لدى الشباب.
+            </p>
+            <p className="text-lg md:text-xl text-white leading-relaxed arabic-text mt-4">
+              وقد مكّن تميز ملف الترشيح الذي قدمته الجمعية من نيل ثقة لجنة الانتقاء والسيد العامل، تجسدت هذه الثقة
+              من خلال إسناد هذه المهمة الاستراتيجية إلى جمعية نجم. حيث وقعت الجمعية اتفاقيتي شراكة برسم سنة
+              2024، بتراب عمالة مقاطعات مولاي رشيد.
             </p>
           </div>
+        </div>
 
-          {/* Call to Action */}
-          {/* <div className="fade-in-up-delay-2">
-            <div className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white hover:bg-white/20 transition-all duration-300">
-              <span className="text-lg font-medium">
-                {currentLanguage === 'ar' ? 'انقر للدخول' : currentLanguage === 'en' ? 'Click to enter' : 'Cliquez pour entrer'}
-              </span>
-              <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+        {/* Images Section */}
+        <div className="fade-in-up mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 h-64">
+              <div className="w-full h-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl flex items-center justify-center">
+                <span className="text-white text-lg font-medium">صورة 1</span>
+              </div>
             </div>
-          </div> */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 h-64">
+              <div className="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl flex items-center justify-center">
+                <span className="text-white text-lg font-medium">صورة 2</span>
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 h-64">
+              <div className="w-full h-full bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl flex items-center justify-center">
+                <span className="text-white text-lg font-medium">صورة 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Section Title */}
+        <div className="fade-in-up text-center mb-8">
+          <h2 className="text-2xl md:text-4xl font-bold text-white arabic-text">
+            تنزيل محور دعم ريادة الأعمال لدى شباب
+          </h2>
+        </div>
+
+        {/* Two Cards Section */}
+        <div className="fade-in-up-delay mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* First Card */}
+            <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-md border border-white/20 rounded-2xl p-8">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-blue-500/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">📊</span>
+                </div>
+              </div>
+              <p className="text-white text-lg leading-relaxed arabic-text">
+                اعتمدت الجمعية منهجية عمل تقوم على تنظيم دورات تكوين
+                قبلي محددة المدة (كل ثلاث أشهر)، تتخللها مجموعة من
+                آليات التتبع والتقييم المستمر، حيث تختتم هذه الدورات بعقد
+                الاجتماعات الدورية للجنة الإقليمية للتنمية البشرية
+                (CPDH)، وذلك بهدف تمكين هياكل الحكامة الخاصة
+                بالمبادرة الوطنية للتنمية البشرية من تتبع مستوى الإنجاز
+                ومدى تحقيق الأهداف المسطرة.
+              </p>
+            </div>
+
+            {/* Second Card */}
+            <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-md border border-white/20 rounded-2xl p-8">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-purple-500/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🎓</span>
+                </div>
+              </div>
+              <p className="text-white text-lg leading-relaxed arabic-text">
+                تعتمد جمعية نجم مقاربة تربوية حديثة ترتكز على منهج
+                الأندراغوجيا، المصمم خصيصاً لتلبية احتياجات التعلم لدى
+                الكبار. وتُعزَّز هذه المقاربة بتكوين تطبيقي وتفاعلي مبني
+                على معالجة حالات واقعية، وفق مبدأ "التعلم من خلال
+                الممارسة". ويشرف على هذا المسار فريق بيداغوجي دائم،
+                يضمن مواكبة دقيقة وجودة في التكوين، من خلال تواصل
+                مستمر مع خبراء ومهنيين، مما يعزز فعالية التعلم ويضمن
+                تحقيق نتائج ملموسة.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional Images Section */}
+        <div className="fade-in-up-delay-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 h-48">
+              <div className="w-full h-full bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-xl flex items-center justify-center">
+                <span className="text-white text-lg font-medium">صورة 4</span>
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 h-48">
+              <div className="w-full h-full bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-xl flex items-center justify-center">
+                <span className="text-white text-lg font-medium">صورة 5</span>
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 h-48">
+              <div className="w-full h-full bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-xl flex items-center justify-center">
+                <span className="text-white text-lg font-medium">صورة 6</span>
+              </div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 h-48">
+              <div className="w-full h-full bg-gradient-to-br from-pink-500/20 to-rose-500/20 rounded-xl flex items-center justify-center">
+                <span className="text-white text-lg font-medium">صورة 7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Click to Enter Hint */}
+        <div className="text-center mt-12">
+          <div className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white hover:bg-white/20 transition-all duration-300">
+            <span className="text-lg font-medium arabic-text">
+              انقر للدخول إلى الموقع
+            </span>
+            <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+          </div>
         </div>
       </div>
     </div>

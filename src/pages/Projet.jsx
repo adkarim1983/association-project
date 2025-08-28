@@ -19,6 +19,16 @@ L.Icon.Default.mergeOptions({
 
 const itemsPerPage = 6;
 
+// Helper pour normaliser les textes (accents, espaces, tirets, etc.)
+const normalizeString = (s) =>
+  (s || "")
+    .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // enlever accents
+    .toLowerCase()
+    .replace(/[\s\-_]+/g, "") // enlever espaces/underscores/tirets
+    .replace(/[^a-z0-9]/g, ""); // garder alphanum uniquement
+
 // === COMPOSANT PRINCIPAL ===
 export default function Projet() {
   const { t } = useTranslation();
@@ -79,7 +89,8 @@ export default function Projet() {
       (selectedCategory === "production" && p.category === "Production") ||
       (selectedCategory === "commerce" && p.category === "Commerce");
     
-    const matchZone = selectedZone === "all_zones" || p.location.toLowerCase().includes(selectedZone.toLowerCase());
+    const matchZone = selectedZone === "all_zones" 
+      || normalizeString(p.location).includes(normalizeString(selectedZone));
     const matchSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
                        p.description.toLowerCase().includes(searchTerm.toLowerCase());
 

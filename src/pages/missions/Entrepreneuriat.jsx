@@ -1,130 +1,225 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import CountUp from 'react-countup';
 
 const Entrepreneuriat = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isAr = i18n.language && i18n.language.toLowerCase().startsWith('ar');
 
   return (
-    <div className="min-h-screen bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-4 px-6 bg-gray-100 mt-4 text-gray-800">
+      <style>{`
+        .arabic-text { direction: rtl; text-align: right; font-family: 'Noto Sans Arabic', 'Arial', sans-serif; }
+        @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: translateY(0) } }
+        .fade-in { animation: fadeIn .6s ease-out both }
+        .fade-in-up { animation: fadeInUp .7s ease-out both }
+        @keyframes bounceIn { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .bounce-in { animation: bounceIn 0.6s ease-out both }
+      `}</style>
+      
+      <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            {t('missions.entrepreneuriat')}
+        <div className="text-center mb-8 fade-in-up" style={{ animationDelay: '0s' }}>
+          <h1 className={`text-[30px] md:text-5xl font-extrabold text-[#1C398E] mb-4 leading-tight ${isAr ? 'arabic-text' : ''}`}>
+            {t('entrepreneurship.header_title')}
           </h1>
-          <div className="w-24 h-1 bg-orange-600 mx-auto"></div>
+          <span className="block w-32 h-1 bg-blue-700 mx-auto mt-2 rounded-full"></span>
         </div>
 
-        {/* Content Section */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-              Renforcement de l'Entrepreneuriat chez les Jeunes
-            </h2>
-            
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Grâce à la compétence de ses membres et à l'engagement constant de sa structure organisationnelle, 
-              l'Association Najm a contribué à l'appel à manifestation d'intérêt lancé par la préfecture de Moulay Rachid 
-              en novembre 2023, concernant la mise en œuvre de l'axe de soutien à l'entrepreneuriat des jeunes.
-            </p>
+        {/* Main Paragraph */}
+        <div className="fade-in-up mb-12" style={{ animationDelay: '0.05s' }}>
+          <div className="bg-white text-gray-700 shadow-lg rounded-2xl p-8 border border-gray-200 max-w-4xl mx-auto">
+          <p className={`text-base sm:text-lg leading-relaxed text-justify ${isAr ? 'arabic-text' : ''}`}> 
+            {t('entrepreneurship.intro1')}
+          </p>
+          <p className={`text-base sm:text-lg leading-relaxed mt-4 text-justify ${isAr ? 'arabic-text' : ''}`}>
+            {t('entrepreneurship.intro2')}
+          </p>
+          </div>
+        </div>
 
-            <div className="bg-orange-50 p-6 rounded-lg mb-8">
-              <h3 className="text-xl font-semibold text-orange-800 mb-4">Excellence reconnue</h3>
-              <p className="text-gray-700">
-                L'excellence du dossier de candidature présenté par l'Association a permis de gagner la confiance du comité de sélection 
-                et de Monsieur le Gouverneur, cette confiance s'est concrétisée par l'attribution de cette mission stratégique à l'Association Najm. 
-                L'Association a ainsi signé deux conventions de partenariat pour l'année 2024, sur le territoire de la préfecture de Moulay Rachid.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-blue-800 mb-4">Formation pré-création</h3>
-                <div className="text-center mb-4">
-                  <div className="text-4xl font-bold text-blue-600">200</div>
-                  <div className="text-gray-600">Jeunes formés</div>
-                </div>
-                <p className="text-gray-700">
-                  Formation complète pour les jeunes en phase de pré-création d'entreprise, couvrant tous les aspects 
-                  essentiels de l'entrepreneuriat.
-                </p>
-              </div>
-              
-              <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-green-800 mb-4">Accompagnement post-création</h3>
-                <div className="text-center mb-4">
-                  <div className="text-4xl font-bold text-green-600">115</div>
-                  <div className="text-gray-600">Entrepreneurs accompagnés</div>
-                </div>
-                <p className="text-gray-700">
-                  Accompagnement personnalisé pour les entrepreneurs en phase post-création, garantissant 
-                  la pérennité et le développement de leurs entreprises.
-                </p>
+        {/* Images Section */}
+        <div className="mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-64 border border-gray-200 fade-in-up" style={{ animationDelay: '0.1s' }}>
+              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
+                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 1 })}</span>
               </div>
             </div>
-
-            <div className="bg-purple-50 p-6 rounded-lg mb-6">
-              <h3 className="text-xl font-semibold text-purple-800 mb-4">Méthodologie et Approche Pédagogique</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Approche pratique</h4>
-                  <ul className="list-disc list-inside space-y-1 text-gray-700">
-                    <li>Ateliers interactifs</li>
-                    <li>Études de cas réels</li>
-                    <li>Simulations d'entreprise</li>
-                    <li>Mentorat personnalisé</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Soutien continu</h4>
-                  <ul className="list-disc list-inside space-y-1 text-gray-700">
-                    <li>Suivi post-formation</li>
-                    <li>Réseau d'entrepreneurs</li>
-                    <li>Accès au financement</li>
-                    <li>Conseil stratégique</li>
-                  </ul>
-                </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-64 border border-gray-200 fade-in-up" style={{ animationDelay: '0.15s' }}>
+              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
+                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 2 })}</span>
+              </div>
+            </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-64 border border-gray-200 fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
+                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 3 })}</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Timeline or Process */}
-        <div className="bg-white rounded-lg shadow-lg p-8">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Processus d'accompagnement</h3>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-orange-600">1</span>
-              </div>
-              <h4 className="font-semibold mb-2">Évaluation</h4>
-              <p className="text-sm text-gray-600">Analyse du profil et du projet entrepreneurial</p>
+        {/* Section Title */}
+        <div className="text-center mb-8 fade-in-up" style={{ animationDelay: '0.25s' }}>
+          <h2 className={`text-[30px] font-extrabold text-[#1C398E] leading-tight ${isAr ? 'arabic-text' : ''}`}>
+            {t('entrepreneurship.section_title')}
+          </h2>
+          <span className="block w-32 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></span>
+        </div>
+
+        {/* Two Cards Section */}
+        <div className="mb-16 fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+            {/* First Card */}
+            <div className="group flex flex-col items-center bg-white text-gray-800 shadow-lg rounded-xl p-8 transition-all duration-300 transition-colors hover:scale-105 hover:shadow-2xl hover:bg-[#1C398E] hover:text-white border border-gray-200 hover:border-[#1C398E] hover:ring-2 hover:ring-[#1C398E] fade-in-up" style={{ animationDelay: '0.35s' }}>
+              <div className="text-5xl text-blue-700 group-hover:text-white transition-colors duration-300 mb-4">📊</div>
+              <p className={`text-[18px] text-justify leading-relaxed ${isAr ? 'arabic-text' : ''}`}>
+                {t('entrepreneurship.methodology')}
+              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-blue-600">2</span>
-              </div>
-              <h4 className="font-semibold mb-2">Formation</h4>
-              <p className="text-sm text-gray-600">Programme de formation adapté aux besoins</p>
+
+            {/* Second Card */}
+            <div className="group flex flex-col items-center bg-white text-gray-800 shadow-lg rounded-xl p-8 transition-all duration-300 transition-colors hover:scale-105 hover:shadow-2xl hover:bg-[#1C398E] hover:text-white border border-gray-200 hover:border-[#1C398E] hover:ring-2 hover:ring-[#1C398E] fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <div className="text-5xl text-blue-700 group-hover:text-white transition-colors duration-300 mb-4">🎓</div>
+              <p className={`text-[18px] text-justify leading-relaxed ${isAr ? 'arabic-text' : ''}`}>
+                {t('entrepreneurship.pedagogy')}
+              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-green-600">3</span>
-              </div>
-              <h4 className="font-semibold mb-2">Lancement</h4>
-              <p className="text-sm text-gray-600">Soutien à la création et au lancement</p>
+          </div>
+        </div>
+
+        {/* Statistics Section */}
+        <div className="mb-16 fade-in-up" style={{ animationDelay: '0.45s' }}>
+          <div className="text-center mb-8">
+            <h2 className={`text-[30px] font-bold mb-4 text-[#1C398E] leading-tight ${isAr ? 'arabic-text' : ''}`}>
+              {t('statistics.title')}
+            </h2>
+            <span className="block w-32 h-1 bg-blue-700 mx-auto rounded-full"></span>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+            {/* Card 1 */}
+            <div className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center fade-in-up" style={{ animationDelay: '0.5s' }}>
+                <p className="text-6xl font-extrabold mb-2">
+                  <CountUp end={parseInt(t('statistics.card1.number'))} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} />
+                </p>
+                <p className="text-[18px] font-medium text-center arabic-text">
+                  {t('statistics.card1.text')}
+                </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-purple-600">4</span>
+
+            {/* Card 2 */}
+            <div className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center fade-in-up" style={{ animationDelay: '0.6s' }}>
+                <p className="text-6xl font-extrabold mb-2">
+                  <CountUp end={parseInt(t('statistics.card2.number'))} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} />
+                </p>
+                <p className="text-[18px] font-medium text-center arabic-text">
+                  {t('statistics.card2.text')}
+                </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center fade-in-up" style={{ animationDelay: '0.7s' }}>
+                <p className="text-6xl font-extrabold mb-2">
+                  <CountUp end={parseInt(t('statistics.card3.number'))} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} />
+                </p>
+                <p className="text-[18px] font-medium text-center arabic-text">
+                  {t('statistics.card3.text')}
+                </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-[#1C398E] text-white rounded-xl p-8 shadow-lg flex flex-col items-center fade-in-up" style={{ animationDelay: '0.8s' }}>
+                <p className="text-6xl font-extrabold mb-2">
+                  <CountUp end={parseInt(t('statistics.card4.number'))} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} />
+                </p>
+                <p className="text-[18px] font-medium text-center arabic-text">
+                  {t('statistics.card4.text')}
+                </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Stages Section */}
+        <div className="mb-16 fade-in-up" style={{ animationDelay: '0.55s' }}>
+          <div className="text-center mb-8">
+            <h2 className={`text-[30px] font-extrabold text-[#1C398E] mb-2 leading-tight ${isAr ? 'arabic-text' : ''}`}>
+              {t('entrepreneurship.stages.title')}
+            </h2>
+            <span className="block w-40 h-1 bg-blue-700 mx-auto rounded-full"></span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+            {/* Stage Card 1 */}
+            <div
+              className="flex flex-col items-center bg-[#FCBD18] text-white shadow-lg rounded-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-200 fade-in-up bounce-in"
+              style={{ animationDelay: '0s' }}
+            >
+              <div className="text-5xl text-white mb-4">💡</div>
+              <h3 className={`text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-white text-center ${isAr ? 'arabic-text' : ''}`}>{t('entrepreneurship.stages.card1.title')}</h3>
+              <p className={`text-[18px] text-center text-justify leading-relaxed text-white ${isAr ? 'arabic-text' : ''}`}>{t('entrepreneurship.stages.card1.text')}</p>
+            </div>
+
+            {/* Stage Card 2 */}
+            <div
+              className="flex flex-col items-center bg-[#70499E] text-white shadow-lg rounded-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-200 fade-in-up bounce-in"
+              style={{ animationDelay: '0.1s' }}
+            >
+              <div className="text-5xl text-white mb-4">📝</div>
+              <h3 className={`text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-white text-center ${isAr ? 'arabic-text' : ''}`}>{t('entrepreneurship.stages.card2.title')}</h3>
+              <p className={`text-[18px] text-center text-justify leading-relaxed text-white ${isAr ? 'arabic-text' : ''}`}>{t('entrepreneurship.stages.card2.text')}</p>
+            </div>
+
+            {/* Stage Card 3 */}
+            <div
+              className="flex flex-col items-center bg-[#56B04A] text-white shadow-lg rounded-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-200 fade-in-up bounce-in"
+              style={{ animationDelay: '0.2s' }}
+            >
+              <div className="text-5xl text-white mb-4">🏗️</div>
+              <h3 className={`text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-white text-center ${isAr ? 'arabic-text' : ''}`}>{t('entrepreneurship.stages.card3.title')}</h3>
+              <p className={`text-[18px] text-center text-justify leading-relaxed text-white ${isAr ? 'arabic-text' : ''}`}>{t('entrepreneurship.stages.card3.text')}</p>
+            </div>
+
+            {/* Stage Card 4 */}
+            <div
+              className="flex flex-col items-center bg-[#1B7CC1] text-white shadow-lg rounded-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-200 fade-in-up bounce-in"
+              style={{ animationDelay: '0.3s' }}
+            >
+              <div className="text-5xl text-white mb-4">📈</div>
+              <h3 className={`text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-white text-center ${isAr ? 'arabic-text' : ''}`}>{t('entrepreneurship.stages.card4.title')}</h3>
+              <p className={`text-[18px] text-center text-justify leading-relaxed text-white ${isAr ? 'arabic-text' : ''}`}>{t('entrepreneurship.stages.card4.text')}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional Images Section */}
+        <div className="mb-12 fade-in-up" style={{ animationDelay: '0.6s' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-48 border border-gray-200 fade-in-up" style={{ animationDelay: '0.65s' }}>
+              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
+                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 4 })}</span>
               </div>
-              <h4 className="font-semibold mb-2">Suivi</h4>
-              <p className="text-sm text-gray-600">Accompagnement post-création continu</p>
+            </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-48 border border-gray-200 fade-in-up" style={{ animationDelay: '0.7s' }}>
+              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
+                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 5 })}</span>
+              </div>
+            </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-48 border border-gray-200 fade-in-up" style={{ animationDelay: '0.75s' }}>
+              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
+                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 6 })}</span>
+              </div>
+            </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-48 border border-gray-200 fade-in-up" style={{ animationDelay: '0.8s' }}>
+              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
+                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 7 })}</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

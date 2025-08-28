@@ -25,29 +25,20 @@
     "education": {
       "title": "Education",
       "description": "Tutoring, literacy and educational programs for disadvantaged children."
-    }
-  },
-  "presentation_title": "Who are we?",
-  "presentation_text": "The Najm Association is a non-profit organization that aims to support young people, children, and families through educational, cultural, and social actions. It is actively committed to promoting solidarity, equal opportunities, and local development.",
-  "activities": {
-    "title": "Our Activities",
-    "education": {
-      "title": "Education",
-      "description": "Tutoring, literacy and educational programs for disadvantaged children."
     },
-  "social": {
-            "title": "Social aid",
-            "description": "Distribution of food, clothing and support to vulnerable families."
-  },
-  "community": {
-            "title": "Community development",
-            "description": "Neighborhood renovation, creation of public spaces and social inclusion projects."
-  },
-  "training": {
-            "title": "Vocational training",
-            "description": "Initiation to crafts, IT, sewing and cooking."
-  },
-  "environment": {
+    "social": {
+      "title": "Social aid",
+      "description": "Distribution of food, clothing and support to vulnerable families."
+    },
+    "community": {
+      "title": "Community development",
+      "description": "Neighborhood renovation, creation of public spaces and social inclusion projects."
+    },
+    "training": {
+      "title": "Vocational training",
+      "description": "Initiation to crafts, IT, sewing and cooking."
+    },
+    "environment": {
     "title": "Environment",
             "description": "Reforestation actions, ecological awareness and waste management."
   },
@@ -846,5 +837,39 @@
     "title": "Vision and General Guidelines",
     "paragraph": "In accordance with the High Royal Guidelines, aiming to give special attention to young people, considered the true wealth of the Nation, and in application of the recommendations of the New Development Model, which emphasizes the need to strengthen the economic and social inclusion of young people, by ensuring the convergence of the different programs and initiatives intended for them, a platform for young people has been set up at the level of the prefecture of Moulay Rachid. This platform's mission is to become a meeting point for the different institutional actors and civil society involved in supporting young people, in order to offer them concrete, pragmatic and effective solutions, in response to their aspirations and expectations.",
     "citation": "It is therefore necessary to continue to support young people, by placing their issues at the heart of the New Development Model."
+  },
+  "statistics": {
+    "title": "Statistics until July 2025",
+    "card1": {
+      "number": "384",
+      "text": "Young people who started the pre-training phase"
+    },
+    "card2": {
+      "number": "332",
+      "text": "Young people who completed the pre-training phase"
+    },
+    "card3": {
+      "number": "288",
+      "text": "Projects accepted by the Regional Human Development Committee"
+    },
+    "card4": {
+      "number": "156",
+      "text": "Projects implemented in the prefecture territory"
+    }
+  },
+  "entrepreneurship": {
+    "header_title": "Deployment of the youth entrepreneurship support pillar in the Prefecture of Moulay Rachid",
+    "intro1": "Thanks to the competence of its members and the commitment of its structure, the Najm Association responded to the call for expressions of interest launched by the Prefecture of the districts of Moulay Rachid in November 2023, relating to the deployment of the youth entrepreneurship support pillar.",
+    "intro2": "The excellence of the application file submitted by the association earned it the trust of the selection committee and the Governor. This trust was reflected in the delegation of this strategic mission to the Najm Association. Two partnership agreements were signed for the year 2024, in the territory of the Prefecture of the districts of Moulay Rachid.",
+    "section_title": "Deployment of the youth entrepreneurship support pillar",
+    "methodology": "The association adopted a methodology based on organizing pre-training cycles of a set duration (every three months), interspersed with monitoring and continuous evaluation mechanisms. These cycles conclude with the periodic meetings of the CPDH, in order to enable INDH governance bodies to monitor the level of achievement and the attainment of the set objectives.",
+    "pedagogy": "The Najm Association adopts a modern educational approach based on andragogy, specially designed to meet adult learning needs, reinforced by practical and interactive training based on real cases, according to the principle of 'learning by doing'. This pathway is supervised by a permanent pedagogical team, ensuring quality support and continuous communication with experts and professionals, which enhances learning effectiveness and ensures concrete results.",
+    "stages": {
+      "title": "Support Phases",
+      "card1": { "title": "Awareness phase", "text": "Project ideation" },
+      "card2": { "title": "Pre-creation phase", "text": "Business plan elaboration" },
+      "card3": { "title": "Creation phase", "text": "Individualized support · Financing · Legal form creation · Specific authorizations" },
+      "card4": { "title": "Post-creation phase", "text": "Training · Follow-up" }
+    }
   }
-} 
+}

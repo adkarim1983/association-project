@@ -17,9 +17,9 @@ export default function Contact() {
   const [success, setSuccess] = useState("");
 
   const handleChange = (e) => {
-    const { id, value } = e.target;
+    const { id, value } = e.target; 
     setForm((prev) => ({ ...prev, [id]: value }));
-  };
+  };  
 
   const handleSubmit = async (e) => {
     e.preventDefault();

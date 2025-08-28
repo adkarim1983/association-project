@@ -367,7 +367,40 @@
   "socialText": "Restez connectés avec nous sur les réseaux sociaux pour suivre nos activités et nos actualités.",
   "image_label": "Image {{index}}",
     "addressDetails": "Groupe 3, en face de la Faculté des Lettres et des Sciences Humaines Ben M'sik"
-
+},
+"statistics": {
+  "title": "Statistiques jusqu'à juillet 2025",
+  "card1": {
+    "number": "384",
+    "text": "Jeunes ayant commencé la formation pré-création"
+  },
+  "card2": {
+    "number": "332", 
+    "text": "Jeunes ayant terminé la formation pré-création"
+  },
+  "card3": {
+    "number": "288",
+    "text": "Projets acceptés par le Comité Régional de Développement Humain"
+  },
+  "card4": {
+    "number": "156",
+    "text": "Projets réalisés sur le territoire de la préfecture"
+  }
+},
+"entrepreneurship": {
+  "header_title": "Mise en œuvre du pilier de soutien à l’entrepreneuriat des jeunes de la Préfecture de Moulay Rachid",
+  "intro1": "Grâce à la compétence de ses membres et à l’engagement de sa structure, l’Association Najm a répondu à l’appel à manifestation d’intérêt lancé par la Préfecture des arrondissements de Moulay Rachid en novembre 2023, relatif à la mise en œuvre du pilier de soutien à l’entrepreneuriat des jeunes.",
+  "intro2": "L’excellence du dossier présenté par l’association lui a valu la confiance de la commission de sélection et de Monsieur le Gouverneur. Cette confiance s’est traduite par la délégation de cette mission stratégique à l’Association Najm. Deux conventions de partenariat ont été signées au titre de l’année 2024, sur le territoire de la Préfecture des arrondissements de Moulay Rachid.",
+  "section_title": "Mise en œuvre du pilier de soutien à l’entrepreneuriat des jeunes",
+  "methodology": "L’association a adopté une méthodologie basée sur l’organisation de cycles de pré-formation, d’une durée déterminée (tous les trois mois), ponctués par des mécanismes de suivi et d’évaluation continue. Ces cycles se clôturent par la tenue des réunions périodiques du CPDH, afin de permettre aux instances de gouvernance de l’INDH de suivre le niveau de réalisation et l’atteinte des objectifs fixés.",
+  "pedagogy": "L’Association Najm adopte une approche pédagogique moderne fondée sur l’andragogie, spécialement conçue pour répondre aux besoins d’apprentissage des adultes, renforcée par une formation pratique et interactive basée sur des cas réels, selon le principe « apprendre par la pratique ». Ce parcours est encadré par une équipe pédagogique permanente, assurant un accompagnement de qualité et une communication continue avec des experts et des professionnels, ce qui renforce l’efficacité de l’apprentissage et garantit des résultats concrets.",
+  "stages": {
+    "title": "Phases d’accompagnement",
+    "card1": { "title": "Phase sensibilisation", "text": "Idéation de projet" },
+    "card2": { "title": "Phase pré-création", "text": "Élaboration du business plan" },
+    "card3": { "title": "Phase création", "text": "Accompagnement individualisé · Financement · Création de la forme juridique · Autorisations spécifiques" },
+    "card4": { "title": "Phase post-création", "text": "Formations · Suivi" }
+  }
 },
 "projects": {
     "title": "Projets réalisés à la Préfecture des Arrondissements Moulay Rachid",

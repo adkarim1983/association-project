@@ -123,9 +123,8 @@ export default function Navbar() {
               ></span>
             </Link>
           </li>
-          <li className="relative">
+          <li className="relative" onMouseEnter={() => setMissionsMenuOpen(true)} onMouseLeave={() => setMissionsMenuOpen(false)}>
             <button
-              onClick={() => setMissionsMenuOpen(!missionsMenuOpen)}
               className="relative group text-black transition-colors duration-300 flex items-center space-x-1"
               onMouseEnter={(e) => e.target.style.color = '#673D98'}
               onMouseLeave={(e) => e.target.style.color = 'black'}
@@ -143,16 +142,16 @@ export default function Navbar() {
                 <Link to="/missions/gestion-plateformes"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
                   {t("missions.gestion_plateformes")}
                 </Link>
-                <Link to="/missions/economie-sociale"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                <Link to="/missions/economie-sociale"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-amber-50 hover:text-amber-700 transition-colors duration-200 border-b border-gray-100">
                   {t("missions.economie_sociale")}
                 </Link>
-                <Link to="/missions/entrepreneuriat"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                <Link to="/missions/entrepreneuriat"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200 border-b border-gray-100">
                   {t("missions.entrepreneuriat")}
                 </Link>
-                <Link to="/missions/incubation"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200 border-b border-gray-100">
+                <Link to="/missions/incubation"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-emerald-50 hover:text-emerald-700 transition-colors duration-200 border-b border-gray-100">
                   {t("missions.incubation")}
                 </Link>
-                <Link to="/missions/developpement-capacites"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-purple-50 hover:text-purple-700 transition-colors duration-200">
+                <Link to="/missions/developpement-capacites"  className="block px-6 py-4 text-gray-800 font-medium hover:bg-indigo-50 hover:text-indigo-700 transition-colors duration-200">
                   {t("missions.developpement_capacites")}
                 </Link>
               </div>
@@ -328,16 +327,16 @@ export default function Navbar() {
                   <Link to="/missions/gestion-plateformes" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
                     {t("missions.gestion_plateformes")}
                   </Link>
-                  <Link to="/missions/economie-sociale" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                  <Link to="/missions/economie-sociale" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-amber-300 hover:bg-amber-900/30 py-2 px-3 rounded transition-colors duration-200">
                     {t("missions.economie_sociale")}
                   </Link>
-                  <Link to="/missions/entrepreneuriat" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                  <Link to="/missions/entrepreneuriat" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-blue-300 hover:bg-blue-900/30 py-2 px-3 rounded transition-colors duration-200">
                     {t("missions.entrepreneuriat")}
                   </Link>
-                  <Link to="/missions/incubation" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                  <Link to="/missions/incubation" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-emerald-300 hover:bg-emerald-900/30 py-2 px-3 rounded transition-colors duration-200">
                     {t("missions.incubation")}
                   </Link>
-                  <Link to="/missions/developpement-capacites" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-purple-300 hover:bg-purple-900/30 py-2 px-3 rounded transition-colors duration-200">
+                  <Link to="/missions/developpement-capacites" onClick={closeMobileMenu} className="block text-sm text-white font-medium hover:text-indigo-300 hover:bg-indigo-900/30 py-2 px-3 rounded transition-colors duration-200">
                     {t("missions.developpement_capacites")}
                   </Link>
                 </div>
