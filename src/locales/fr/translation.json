@@ -11,7 +11,7 @@
     "missions": {
         "gestion_plateformes": "Gestion des plateformes Erchad",
         "economie_sociale": "Économie sociale et solidaire",
-        "entrepreneuriat": "Entrepreneuriat",
+        "entrepreneuriat": "Entreprenariat",
         "incubation": "Incubation",
         "developpement_capacites": "Développement des capacités des jeunes"
     },
@@ -46,6 +46,10 @@
   "innovation": {
     "title": "Innovation sociale",
     "description": "Hackathons, idées innovantes et incubation de projets à impact social."
+  },
+  "entreprenariat": {
+    "title": "Entreprenariat",
+    "description": "Accompagnement des jeunes dans la création de leur propre entreprise."
   }
 },
 
@@ -190,7 +194,7 @@
       "Autonomiser les jeunes : en développant leurs compétences pour favoriser leur intégration dans le marché du travail.",
       "Valoriser les talents : identifier les potentiels cachés des jeunes et les faire émerger.",
       "Améliorer l'employabilité : offrir des formations efficaces pour augmenter les chances d'embauche.",
-      "Soutenir l'entrepreneuriat : accompagner les jeunes porteurs de projets avec appui technique et financier.",
+      "Soutenir l'entreprenariat : accompagner les jeunes porteurs de projets avec appui technique et financier.",
       "Encourager l'économie sociale : promouvoir les initiatives coopératives locales durables.",
       "Développer les partenariats : créer des réseaux avec les secteurs public, privé et associatif.",
       "Renforcer la citoyenneté : diffuser les valeurs de volontariat et d'engagement communautaire.",
@@ -243,7 +247,7 @@
         },
         "hanaDahman": {
             "nom": "Hana Dahman",
-            "statut": "Formatrice dans le domaine de l'entrepreneuriat"
+            "statut": "Formatrice dans le domaine de l'entreprenariat"
         },
         "yousraHashoum": {
             "nom": "Yousra Hashoum",
@@ -277,7 +281,7 @@
       },
       {
         "q": "Quels types de projets soutenez-vous ?",
-        "r": "Nous soutenons principalement les projets à fort impact social ou économique : coopératives, auto-entrepreneuriat, initiatives communautaires."
+        "r": "Nous soutenons principalement les projets à fort impact social ou économique : coopératives, auto-entreprenariat, initiatives communautaires."
       },
       {
         "q": "Qui peut bénéficier de vos services ?",
@@ -321,7 +325,7 @@
     },
     {
       "title": "Développement des capacités des jeunes",
-      "content": "- Formations (compétences personnelles et pro)\n- Accompagnement à l'entrepreneuriat\n- Accès à l'emploi (formations, stages, coaching)\n- Incitation à l'innovation\n- Engagement social (volontariat, environnement, éducation)"
+      "content": "- Formations (compétences personnelles et pro)\n- Accompagnement à l'entreprenariat\n- Accès à l'emploi (formations, stages, coaching)\n- Incitation à l'innovation\n- Engagement social (volontariat, environnement, éducation)"
     }
   ],
   "contactTitle": "Contactez-nous",
@@ -388,10 +392,10 @@
   }
 },
 "entrepreneurship": {
-  "header_title": "Mise en œuvre du pilier de soutien à l’Entrepreneuriat des jeunes de la Préfecture de Moulay Rachid",
-  "intro1": "Grâce à la compétence de ses membres et à l’engagement de sa structure, l’Association Najm a répondu à l’appel à manifestation d’intérêt lancé par la Préfecture des arrondissements de Moulay Rachid en novembre 2023, relatif à la mise en œuvre du pilier de soutien à l’Entrepreneuriat des jeunes.",
+  "header_title": "Mise en œuvre du pilier de soutien à l’Entreprenariat des jeunes de la Préfecture de Moulay Rachid",
+  "intro1": "Grâce à la compétence de ses membres et à l’engagement de sa structure, l’Association Najm a répondu à l’appel à manifestation d’intérêt lancé par la Préfecture des arrondissements de Moulay Rachid en novembre 2023, relatif à la mise en œuvre du pilier de soutien à l’Entreprenariat des jeunes.",
   "intro2": "L’excellence du dossier présenté par l’association lui a valu la confiance de la commission de sélection et de Monsieur le Gouverneur. Cette confiance s’est traduite par la délégation de cette mission stratégique à l’Association Najm. Deux conventions de partenariat ont été signées au titre de l’année 2024, sur le territoire de la Préfecture des arrondissements de Moulay Rachid.",
-  "section_title": "Mise en œuvre du pilier de soutien à l’Entrepreneuriat des jeunes",
+  "section_title": "Mise en œuvre du pilier de soutien à l’Entreprenariat des jeunes",
   "methodology": "L’association a adopté une méthodologie basée sur l’organisation de cycles de pré-formation, d’une durée déterminée (tous les trois mois), ponctués par des mécanismes de suivi et d’évaluation continue. Ces cycles se clôturent par la tenue des réunions périodiques du CPDH, afin de permettre aux instances de gouvernance de l’INDH de suivre le niveau de réalisation et l’atteinte des objectifs fixés.",
   "pedagogy": "L’Association Najm adopte une approche pédagogique moderne fondée sur l’andragogie, spécialement conçue pour répondre aux besoins d’apprentissage des adultes, renforcée par une formation pratique et interactive basée sur des cas réels, selon le principe « apprendre par la pratique ». Ce parcours est encadré par une équipe pédagogique permanente, assurant un accompagnement de qualité et une communication continue avec des experts et des professionnels, ce qui renforce l’efficacité de l’apprentissage et garantit des résultats concrets.",
   "stages": {
