@@ -870,6 +870,8 @@
       "card2": { "title": "Pre-creation phase", "text": "Business plan elaboration" },
       "card3": { "title": "Creation phase", "text": "Individualized support · Financing · Legal form creation · Specific authorizations" },
       "card4": { "title": "Post-creation phase", "text": "Training · Follow-up" }
-    }
+    },
+    "gallery_title": "Gallery",
+    "workshops_gallery_title": "Our workshops in pictures"
   }
 }

@@ -5,6 +5,52 @@ import CountUp from 'react-countup';
 const Entrepreneuriat = () => {
   const { t, i18n } = useTranslation();
   const isAr = i18n.language && i18n.language.toLowerCase().startsWith('ar');
+  
+  // Collect images from assets/imgEntr and pick 10 random ones (reuse if fewer than 10 exist)
+  const allImages = React.useMemo(() => {
+    const modules = import.meta.glob('/src/assets/imgEntr/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true, as: 'url' });
+    // modules is an object: { path: url }
+    return Object.entries(modules).map(([path, url]) => {
+      const filename = path.split('/').pop() || '';
+      const name = filename.replace(/\.[^.]+$/, '');
+      const display = name.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
+      return { url, name, display };
+    });
+  }, []);
+
+  const randomImages = React.useMemo(() => {
+    if (!allImages || allImages.length === 0) return [];
+    const picks = [];
+    for (let i = 0; i < 10; i++) {
+      const idx = Math.floor(Math.random() * allImages.length);
+      picks.push(allImages[idx]);
+    }
+    return picks;
+  }, [allImages]);
+
+  // Simple modal to enlarge images
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [modalSrc, setModalSrc] = React.useState(null);
+
+  const openModal = (src) => {
+    if (!src) return;
+    setModalSrc(src);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalSrc(null);
+  };
+
+  // Close on ESC
+  React.useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') closeModal();
+    };
+    if (isModalOpen) window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [isModalOpen]);
 
   return (
     <section className="py-4 px-6 bg-gray-100 mt-4 text-gray-800">
@@ -39,23 +85,28 @@ const Entrepreneuriat = () => {
           </div>
         </div>
 
+        {/* Title above first images section */}
+        <div className="text-center mb-6 fade-in-up" style={{ animationDelay: '0.08s' }}>
+          <h2 className={`text-[30px] font-extrabold text-[#1C398E] leading-tight ${isAr ? 'arabic-text' : ''}`}>
+            {t('entrepreneurship.workshops_gallery_title', 'Nos ateliers en images')}
+          </h2>
+          <span className="block w-24 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></span>
+        </div>
+
         {/* Images Section */}
         <div className="mb-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-64 border border-gray-200 fade-in-up" style={{ animationDelay: '0.1s' }}>
-              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
-                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 1 })}</span>
-              </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-72 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.1s' }}>
+              <img onClick={() => openModal(randomImages[0]?.url)} src={randomImages[0]?.url} alt={randomImages[0]?.display || randomImages[0]?.name || 'image 1'} className="w-full h-[88%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-2 text-center text-sm text-gray-600 truncate">{randomImages[0]?.display || randomImages[0]?.name || 'Image 1'}</div>
             </div>
-            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-64 border border-gray-200 fade-in-up" style={{ animationDelay: '0.15s' }}>
-              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
-                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 2 })}</span>
-              </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-72 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.15s' }}>
+              <img onClick={() => openModal(randomImages[1]?.url)} src={randomImages[1]?.url} alt={randomImages[1]?.display || randomImages[1]?.name || 'image 2'} className="w-full h-[88%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-2 text-center text-sm text-gray-600 truncate">{randomImages[1]?.display || randomImages[1]?.name || 'Image 2'}</div>
             </div>
-            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-64 border border-gray-200 fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
-                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 3 })}</span>
-              </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-72 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.2s' }}>
+              <img onClick={() => openModal(randomImages[2]?.url)} src={randomImages[2]?.url} alt={randomImages[2]?.display || randomImages[2]?.name || 'image 3'} className="w-full h-[88%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-2 text-center text-sm text-gray-600 truncate">{randomImages[2]?.display || randomImages[2]?.name || 'Image 3'}</div>
             </div>
           </div>
         </div>
@@ -193,31 +244,69 @@ const Entrepreneuriat = () => {
           </div>
         </div>
 
+        {/* Galerie Title (separator between the two image sections) */}
+        <div className="text-center mb-6 fade-in-up" style={{ animationDelay: '0.58s' }}>
+          <h2 className={`text-[30px] font-extrabold text-[#1C398E] leading-tight ${isAr ? 'arabic-text' : ''}`}>
+            {t('entrepreneurship.gallery_title', 'Galerie')}
+          </h2>
+          <span className="block w-24 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></span>
+        </div>
+
         {/* Additional Images Section */}
         <div className="mb-12 fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-48 border border-gray-200 fade-in-up" style={{ animationDelay: '0.65s' }}>
-              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
-                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 4 })}</span>
-              </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-56 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.65s' }}>
+              <img onClick={() => openModal(randomImages[3]?.url)} src={randomImages[3]?.url} alt={randomImages[3]?.display || randomImages[3]?.name || 'image 4'} className="w-full h-[85%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-1 text-center text-xs text-gray-600 truncate">{randomImages[3]?.display || randomImages[3]?.name || 'Image 4'}</div>
             </div>
-            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-48 border border-gray-200 fade-in-up" style={{ animationDelay: '0.7s' }}>
-              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
-                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 5 })}</span>
-              </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-56 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.7s' }}>
+              <img onClick={() => openModal(randomImages[4]?.url)} src={randomImages[4]?.url} alt={randomImages[4]?.display || randomImages[4]?.name || 'image 5'} className="w-full h-[85%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-1 text-center text-xs text-gray-600 truncate">{randomImages[4]?.display || randomImages[4]?.name || 'Image 5'}</div>
             </div>
-            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-48 border border-gray-200 fade-in-up" style={{ animationDelay: '0.75s' }}>
-              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
-                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 6 })}</span>
-              </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-56 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.75s' }}>
+              <img onClick={() => openModal(randomImages[5]?.url)} src={randomImages[5]?.url} alt={randomImages[5]?.display || randomImages[5]?.name || 'image 6'} className="w-full h-[85%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-1 text-center text-xs text-gray-600 truncate">{randomImages[5]?.display || randomImages[5]?.name || 'Image 6'}</div>
             </div>
-            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-4 h-48 border border-gray-200 fade-in-up" style={{ animationDelay: '0.8s' }}>
-              <div className="w-full h-full rounded-xl flex items-center justify-center bg-gray-50">
-                <span className="text-gray-700 text-lg font-medium">{t('image_label', { index: 7 })}</span>
-              </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-56 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.8s' }}>
+              <img onClick={() => openModal(randomImages[6]?.url)} src={randomImages[6]?.url} alt={randomImages[6]?.display || randomImages[6]?.name || 'image 7'} className="w-full h-[85%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-1 text-center text-xs text-gray-600 truncate">{randomImages[6]?.display || randomImages[6]?.name || 'Image 7'}</div>
+            </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-56 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.85s' }}>
+              <img onClick={() => openModal(randomImages[7]?.url)} src={randomImages[7]?.url} alt={randomImages[7]?.display || randomImages[7]?.name || 'image 8'} className="w-full h-[85%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-1 text-center text-xs text-gray-600 truncate">{randomImages[7]?.display || randomImages[7]?.name || 'Image 8'}</div>
+            </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-56 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.9s' }}>
+              <img onClick={() => openModal(randomImages[8]?.url)} src={randomImages[8]?.url} alt={randomImages[8]?.display || randomImages[8]?.name || 'image 9'} className="w-full h-[85%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-1 text-center text-xs text-gray-600 truncate">{randomImages[8]?.display || randomImages[8]?.name || 'Image 9'}</div>
+            </div>
+            <div className="bg-white text-gray-800 shadow-lg rounded-xl p-2 h-56 border border-gray-200 fade-in-up overflow-hidden" style={{ animationDelay: '0.95s' }}>
+              <img onClick={() => openModal(randomImages[9]?.url)} src={randomImages[9]?.url} alt={randomImages[9]?.display || randomImages[9]?.name || 'image 10'} className="w-full h-[85%] object-cover rounded-lg cursor-zoom-in" loading="lazy" />
+              <div className="mt-1 text-center text-xs text-gray-600 truncate">{randomImages[9]?.display || randomImages[9]?.name || 'Image 10'}</div>
             </div>
           </div>
         </div>
+
+        {/* Modal for enlarged image */}
+        {isModalOpen && (
+          <div
+            className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+            onClick={closeModal}
+            role="dialog"
+            aria-modal="true"
+          >
+            <div className="relative max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
+              <button
+                onClick={closeModal}
+                className="absolute -top-3 -right-3 bg-white text-gray-700 rounded-full w-9 h-9 shadow flex items-center justify-center hover:bg-gray-100"
+                aria-label="Close"
+              >
+                ✕
+              </button>
+              <img src={modalSrc || ''} alt="preview" className="w-full max-h-[80vh] object-contain rounded-lg" />
+            </div>
+          </div>
+        )}
+
       </div>
     </section>
   );
